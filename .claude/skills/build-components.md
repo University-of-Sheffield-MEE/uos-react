@@ -1,0 +1,225 @@
+You are running the UoS React component library build pipeline. Your job is to loop through the pending CSS selectors in `selector-manifest.json`, implement each one as a React component, and update the manifest as you go.
+
+## Configuration
+
+Set these values before starting (adjust to match the actual project):
+
+```
+BASE_URL = https://www.example.ac.uk   ← replace with the real site base URL
+MAX_QA_RETRIES = 2
+MAX_IMPLEMENT_RETRIES = 2
+```
+
+## Startup
+
+1. Check that `selector-manifest.json` exists. If it does not, stop and print:
+   ```
+   selector-manifest.json not found.
+   Run: node tools/init-manifest.js --index-cli <query-tool> --selector-list <selectors.txt>
+   ```
+
+2. Run:
+   ```bash
+   mkdir -p src/components src/stories specs logs
+   ```
+
+3. Read the first few entries of `selector-manifest.json` to count pending/done/skipped selectors. Print a summary line:
+   ```
+   Build pipeline starting. N pending selectors, N done, N skipped.
+   ```
+
+## The Loop
+
+Repeat until the manifest agent reports no more pending selectors.
+
+---
+
+### Step 1 — Get the next selector
+
+Call the manifest agent with the prompt:
+```
+pick-next
+```
+
+It returns a small JSON object: `{ targetSelector, pageCount, relatedSelectors, notes }`.
+
+If `targetSelector` is null, print the completion message from the agent and stop the loop.
+
+---
+
+### Step 2 — Call the explore agent
+
+Call the explore agent with this prompt (fill in the actual values):
+
+```
+TARGET SELECTOR: <targetSelector>
+TARGET PAGE COUNT: <pageCount>
+
+RELATED SELECTORS:
+<for each related selector: "  - <selector>  (<pageCount> pages)">
+
+BASE URL: <BASE_URL>
+
+NOTES FROM MANIFEST AGENT:
+<notes — or "none" if empty>
+
+Fetch DOM samples using the index CLI and extract-component.js, then produce a ComponentSpec JSON.
+Output ONLY a valid ComponentSpec JSON object. No explanation, no markdown fences.
+```
+
+The explore agent will query the index, fetch fragments, analyse them, and return a ComponentSpec JSON object.
+
+**Validate the returned JSON:**
+- Must have: `componentName`, `rootClassName`, `selectorsCovered`, `props`, `stories`
+- `componentName` must be PascalCase (or null for utility/no-match)
+- `selectorsCovered` must be a non-empty array of strings starting with `.`
+- `stories` must have at least one entry
+
+If validation fails, retry the explore agent once with the note: `"Your previous response was not valid JSON or was missing required fields. Try again."`
+
+If it fails again, or if `componentName` is null (utility or no-match), call the manifest agent with:
+```
+update
+COMPONENT_NAME: _skipped
+SELECTORS_COVERED: ["<targetSelector>"]
+STATUS: skipped
+SPEC_FILE:
+STORY_FILE:
+```
+Then continue to the next iteration.
+
+**Check for component name conflicts:** If `componentName` already appears in the manifest's `components` map, append `2` to the name (e.g. `NewsTeaser2`) and note this in the log.
+
+**Save the spec:** Write the ComponentSpec JSON to `specs/<ComponentName>.json`.
+
+---
+
+### Step 3 — Call the implement agent
+
+Call the implement agent with this prompt:
+
+```
+Implement the following React component based on this ComponentSpec:
+
+<ComponentSpec JSON>
+
+FILE CONVENTIONS:
+- Component: src/components/<ComponentName>/<ComponentName>.tsx
+- Index: src/components/<ComponentName>/index.ts
+- Stories: src/stories/<ComponentName>.stories.tsx
+- TypeScript strict mode, react-jsx transform (no React import needed)
+- Plain className strings (no CSS modules, no className libraries)
+- Storybook 8 CSF3 format with Meta and StoryObj types
+
+Write all three files now.
+```
+
+After the agent returns, verify the files exist:
+- `src/components/<ComponentName>/<ComponentName>.tsx`
+- `src/components/<ComponentName>/index.ts`
+- `src/stories/<ComponentName>.stories.tsx`
+
+Use `ls` to check. If any are missing, call the implement agent again with: `"These files were not created: <list>. Write them now."` Allow 1 retry.
+
+---
+
+### Step 4 — TypeScript check
+
+```bash
+npx tsc --noEmit 2>&1
+```
+
+Note any errors. Pass them to the QA agent as context.
+
+---
+
+### Step 5 — Call the QA agent
+
+Read the generated files, then call the QA agent with this prompt:
+
+```
+QA TASK: Validate the following React component against its spec.
+
+COMPONENT SPEC:
+<ComponentSpec JSON>
+
+GENERATED COMPONENT (src/components/<ComponentName>/<ComponentName>.tsx):
+<file contents>
+
+GENERATED INDEX (src/components/<ComponentName>/index.ts):
+<file contents>
+
+GENERATED STORIES (src/stories/<ComponentName>.stories.tsx):
+<file contents>
+
+TYPESCRIPT ERRORS (if any):
+<tsc output, or "none">
+
+Return a verdict JSON: { "pass": boolean, "issues": [...] }
+Output ONLY valid JSON.
+```
+
+The QA agent returns a verdict JSON.
+
+**If `pass` is false and there are `severity: "error"` issues:**
+
+Call the implement agent again with:
+```
+Fix the following issues in the <ComponentName> component:
+
+CURRENT COMPONENT SPEC:
+<ComponentSpec JSON>
+
+QA ISSUES TO FIX:
+<JSON array of error-severity issues>
+
+Rewrite the affected files to fix these issues.
+```
+
+Re-run the QA agent after each fix attempt. Allow up to MAX_QA_RETRIES total fix attempts.
+
+If errors persist after all retries: proceed with `STATUS: "needs-review"`.
+
+---
+
+### Step 6 — Update the manifest
+
+Call the manifest agent with:
+```
+update
+COMPONENT_NAME: <ComponentName>
+SELECTORS_COVERED: <JSON array from ComponentSpec.selectorsCovered>
+STATUS: <"done" or "needs-review">
+SPEC_FILE: specs/<ComponentName>.json
+STORY_FILE: src/stories/<ComponentName>.stories.tsx
+```
+
+---
+
+### Step 7 — Log the iteration
+
+Append a JSON line to `logs/orchestrator.log`:
+```json
+{"timestamp":"<ISO timestamp>","selector":"<targetSelector>","componentName":"<name>","selectorsCovered":<N>,"qaPass":<true/false>,"status":"<done/needs-review/skipped>"}
+```
+
+---
+
+### Step 8 — Loop
+
+Track consecutive failures (iterations where the explore agent failed or QA could not be resolved). If 5 consecutive failures occur, stop and report: "5 consecutive failures — stopping pipeline. Check logs/orchestrator.log for details."
+
+Otherwise, return to Step 1.
+
+---
+
+## Completion
+
+When the loop ends naturally, print a summary:
+```
+Pipeline complete.
+  Components built:   N
+  Selectors covered:  N
+  Needs review:       N
+  Skipped:            N
+```
