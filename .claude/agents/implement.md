@@ -18,6 +18,8 @@ In fix mode: read each existing file before editing it, make only the changes ne
 
 You will receive a ComponentSpec JSON and must write a complete React component with Storybook stories to disk.
 
+The spec may include an `htmlExamples` array containing real DOM fragments from the live site. Use these as your primary reference for the component's HTML structure — class names, element nesting, attribute names, and conditional sections should all match what you see in the fragments. The abstract props and stories in the spec are derived from the same fragments, so they should agree; if there is any conflict, trust the HTML.
+
 ## Files to write
 
 For a component named `NewsTeaser`, write exactly these three files:

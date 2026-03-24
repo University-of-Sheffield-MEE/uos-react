@@ -48,7 +48,7 @@ node tools/get-examples.js --selector ".news-teaser" --samples 4 --context
 # html is the lowest ancestor containing all instances of the selector on the page
 ```
 
-**If the notes mention an ancestor-context selector** (e.g. `#main > .card`): use the verbatim selector for the initial call (so it looks up the right pages), but also try with just the inner class (e.g. `--selector ".card"`) to get broader structural samples. Use your judgment about which fragments are more informative.
+**If the notes mention an ancestor-context selector** (e.g. `#main > .card`): use the verbatim selector for the initial call (so it looks up the right pages), but also try with just the inner class (e.g. `--selector ".card"`) to get broader structural samples. Use your judgment about which fragments are more informative. Bear in mind that the index may not have an entry for child selectors, and abscence of results does not necessarily mean the structure doesn't exist on the site.
 
 ---
 
@@ -109,7 +109,10 @@ Output ONLY a single valid JSON object. No prose, no explanation, no markdown fe
       ]
     }
   ],
-  "notes": "string — caveats, optional patterns, edge cases observed"
+  "notes": "string — caveats, optional patterns, edge cases observed",
+  "htmlExamples": [
+    "string — verbatim outer HTML of a representative fragment (2–4 examples, chosen for variety)"
+  ]
 }
 ```
 
@@ -170,6 +173,18 @@ Do NOT use subcomponents for:
 - Name stories clearly: `Default`, `WithImage`, `Featured`, `WithLongTitle`, `Group`.
 - Write a **"Group"** story if the component is typically rendered in a list or grid. Use `instances` (an array of prop objects) instead of `props` — populate each entry with real content from the `--context` fragments. Also record the wrapping element from the `--context` output as `container` (element tag + any CSS classes). If the `--context` ancestor has no meaningful class, omit `className` from `container`.
 - Aim for 2–5 stories. More than 5 is usually noise.
+
+### Choosing htmlExamples
+
+Pick 2–4 fragments from your sample set that together best illustrate the component's range:
+- Always include the most common / dominant structure.
+- Include one example of each meaningful structural variation (optional section present, boolean modifier class active, etc.).
+- Omit exact duplicates and fragments that add no new information.
+- Trim deeply nested boilerplate (e.g. long `<script>` or `<style>` blocks) if they obscure the structure, but keep all class names and attributes intact.
+- For **pure layout containers** (e.g. `.row`, `.container`), the inner content is irrelevant — include only the root element's opening tag and attributes, e.g. `<div class="row">…</div>`.
+- Each entry is the verbatim `outerHTML` of the element matching the target selector (or the context ancestor when you used `--context`), subject to the trimming rules above.
+
+---
 
 ### Edge cases
 
@@ -240,6 +255,10 @@ Expected output:
       "props": { "items": [{ "label": "Home", "href": "/" }, { "label": "About", "href": "/about" }, { "label": "Our Team" }] }
     }
   ],
-  "notes": "The last item has class 'active' and no href — it represents the current page. aria-label is always 'breadcrumb' — hardcode it in the component."
+  "notes": "The last item has class 'active' and no href — it represents the current page. aria-label is always 'breadcrumb' — hardcode it in the component.",
+  "htmlExamples": [
+    "<nav class=\"breadcrumb\" aria-label=\"breadcrumb\"><ol><li><a href=\"/\">Home</a></li><li><a href=\"/about\">About</a></li><li class=\"active\">Our Team</li></ol></nav>",
+    "<nav class=\"breadcrumb\" aria-label=\"breadcrumb\"><ol><li><a href=\"/\">Home</a></li><li class=\"active\">Contact</li></ol></nav>"
+  ]
 }
 ```

@@ -73,7 +73,8 @@ BASE URL: <BASE_URL>
 NOTES FROM MANIFEST AGENT:
 <notes — or "none" if empty>
 
-Fetch DOM samples using the index CLI and extract-component.js, then produce a ComponentSpec JSON.
+Fetch DOM samples using the index CLI, then produce a ComponentSpec JSON.
+Include an `htmlExamples` array with 2–4 representative HTML fragments (verbatim outerHTML).
 Output ONLY a valid ComponentSpec JSON object. No explanation, no markdown fences.
 ```
 
@@ -84,6 +85,7 @@ The explore agent will query the index, fetch fragments, analyse them, and retur
 - `componentName` must be PascalCase (or null for utility/no-match)
 - `selectorsCovered` must be a non-empty array of strings starting with `.`
 - `stories` must have at least one entry
+- `htmlExamples` should have at least on entry
 
 If validation fails, retry the explore agent once with the note: `"Your previous response was not valid JSON or was missing required fields. Try again."`
 

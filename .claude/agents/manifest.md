@@ -31,7 +31,7 @@ Collect all utility-class selectors you identify from the results, then mark the
 node tools/manifest.js set-status --selectors '["sel1","sel2"]' --status skipped --skip-reason utility-class
 ```
 
-If none of the 30 results are valid candidates after filtering, fetch the next page and repeat:
+You should then re-fetch the first page, as the skipped selectors will no longer appear in the list. If none of the 30 results are valid candidates after filtering, fetch the next page and repeat:
 
 ```bash
 node tools/manifest.js list-pending --page 2 --per-page 30
