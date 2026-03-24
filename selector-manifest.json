@@ -374,7 +374,8 @@
     },
     ".block-alertbanner": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BlockAlertbanner"
     },
     "a[href^=\"https://www.sheffield.ac.uk\"]": {
       "pageCount": 26276,
@@ -3815,6 +3816,13 @@
       ],
       "specFile": "specs/Personinfo.json",
       "storyFile": "src/stories/Personinfo.stories.tsx"
+    },
+    "BlockAlertbanner": {
+      "selectors": [
+        ".block-alertbanner"
+      ],
+      "specFile": "specs/BlockAlertbanner.json",
+      "storyFile": "src/stories/BlockAlertbanner.stories.tsx"
     }
   }
 }

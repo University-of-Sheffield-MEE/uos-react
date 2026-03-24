@@ -1,0 +1,27 @@
+{
+  "componentName": "BlockAlertbanner",
+  "description": "A site-wide alert banner block rendered by the CMS as a fixed block; appears on every page but renders empty when no alert is active.",
+  "rootElement": "section",
+  "rootClassName": "block-alertbanner",
+  "selectorsCovered": [".block-alertbanner"],
+  "props": [
+    { "name": "children", "type": "ReactNode", "required": false }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Empty alert banner as rendered by the CMS when no alert is active",
+      "props": {}
+    },
+    {
+      "name": "WithContent",
+      "description": "Alert banner with content inside",
+      "props": {}
+    }
+  ],
+  "notes": "Root element is a section (not div). Carries fixed id='block-alertbanner' and classes: block-alertbanner block block-fixed-block-content block-fixed-block-contentalert-banner. Accepts optional children. All 26276 pages render it empty.",
+  "htmlExamples": [
+    "<section id=\"block-alertbanner\" class=\"block-alertbanner block block-fixed-block-content block-fixed-block-contentalert-banner\"></section>"
+  ]
+}
