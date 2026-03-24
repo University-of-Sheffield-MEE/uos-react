@@ -1490,7 +1490,7 @@ cite {
 
 .cite-block:before,
 cite:before {
-  content: "â€” ";
+  content: "— ";
 }
 
 .code-inline,
@@ -5930,7 +5930,7 @@ screen and (min-width:48em) {
 
 .pagination .ellipsis::after {
   padding: 0.1875rem 0.625rem;
-  content: "â€¦";
+  content: "…";
   color: #0a0a0a;
 }
 
@@ -5938,14 +5938,14 @@ screen and (min-width:48em) {
 .pagination-previous.disabled::before {
   display: inline-block;
   margin-right: 0.5rem;
-  content: "Â«";
+  content: "«";
 }
 
 .pagination-next a::after,
 .pagination-next.disabled::after {
   display: inline-block;
   margin-left: 0.5rem;
-  content: "Â»";
+  content: "»";
 }
 
 .accordion {
@@ -5996,7 +5996,7 @@ screen and (min-width:48em) {
 }
 
 .is-active>.accordion-title::before {
-  content: "â€“";
+  content: "–";
 }
 
 .accordion-content {
@@ -9332,7 +9332,7 @@ screen and (min-width:131.25em) {
   position: absolute;
   top: -55px;
   left: -52px;
-  content: "â€œ";
+  content: "“";
   color: rgba(255, 255, 255, 0.95);
   font-family: "Times New Roman", serif;
   font-size: 100px;
@@ -9342,7 +9342,7 @@ screen and (min-width:131.25em) {
 .fullimgblock:not(.promo) blockquote p:last-of-type ::after {
   position: absolute;
   margin-left: 5px;
-  content: "â€";
+  content: "”";
   color: rgba(255, 255, 255, 0.95);
   font-family: "Times New Roman", serif;
   font-size: 100px;
@@ -9946,7 +9946,7 @@ blockquote:not(.uosquote) p:first-of-type::before {
   position: absolute;
   top: 22px;
   left: -23px;
-  content: "â€œ";
+  content: "“";
   font-family: "Source Serif", serif;
   font-size: 80px;
   font-weight: 700;
@@ -9975,7 +9975,7 @@ blockquote.uosquote .uosquote-quote p:first-of-type::before {
   position: absolute;
   top: 22px;
   left: -23px;
-  content: "â€œ";
+  content: "“";
   font-family: "Source Serif", serif;
   font-size: 80px;
   font-weight: 700;
@@ -21363,7 +21363,7 @@ screen and (min-width:48em) {
   width: 0.9rem;
   height: 0.6rem;
   margin-left: -1rem;
-  content: "â€¢";
+  content: "•";
   vertical-align: middle;
   color: #000;
   font-size: 22px;
