@@ -42,7 +42,8 @@
     },
     ".menu a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".off-canvas-wrapper": {
       "pageCount": 26276,
@@ -116,7 +117,8 @@
     },
     ".footicons": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Footicons"
     },
     ".footicons .social .embedded-entity": {
       "pageCount": 26276,
@@ -415,7 +417,8 @@
     },
     ".region-left_off_canvas .section-navigation": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".off-canvas button": {
       "pageCount": 26274,
@@ -450,11 +453,13 @@
     },
     ".region-banner a": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-banner .section-navigation": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-banner .section-navigation .button.menu": {
       "pageCount": 26256,
@@ -463,7 +468,8 @@
     },
     ".region-banner .section-navigation .button .section-title-burger": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-banner": {
       "pageCount": 26256,
@@ -471,27 +477,33 @@
     },
     ".section-title .off-canv > a": {
       "pageCount": 26249,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".section-title .section-title-holder > a": {
       "pageCount": 26249,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".section-title .section-title-holder h4.off-canv a": {
       "pageCount": 26249,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-banner .views-field-field-section-navigation": {
       "pageCount": 26244,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-banner .paragraph--type--para-section-nav > nav": {
       "pageCount": 26244,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li": {
       "pageCount": 26243,
@@ -3563,6 +3575,21 @@
       "pageCount": 0,
       "status": "done",
       "implementedBy": "SiteHeader"
+    },
+    "skip-link": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "utility-class"
+    },
+    "smooth-criminal": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "utility-class"
+    },
+    "nav-overlay": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "utility-class"
     }
   },
   "components": {
@@ -3631,6 +3658,13 @@
       ],
       "specFile": "specs/Breadcrumbs.json",
       "storyFile": "src/stories/Breadcrumbs.stories.tsx"
+    },
+    "Footicons": {
+      "selectors": [
+        ".footicons"
+      ],
+      "specFile": "specs/Footicons.json",
+      "storyFile": "src/stories/Footicons.stories.tsx"
     }
   }
 }

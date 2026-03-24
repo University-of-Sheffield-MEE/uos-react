@@ -1,0 +1,1 @@
+export { Footicons } from './Footicons';
