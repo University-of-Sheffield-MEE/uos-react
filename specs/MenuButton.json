@@ -1,0 +1,52 @@
+{
+  "componentName": "MenuButton",
+  "description": "Off-canvas mobile navigation toggle button that opens the left slide-out menu.",
+  "rootElement": "a",
+  "rootClassName": "button menu",
+  "selectorsCovered": [".menu", ".region-banner .section-navigation .button.menu"],
+  "props": [
+    {
+      "name": "menuId",
+      "type": "string",
+      "required": false,
+      "default": "left-off-canvas-menu",
+      "mapsTo": {
+        "element": "a",
+        "attribute": "data-toggle"
+      }
+    },
+    {
+      "name": "isExpanded",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "mapsTo": {
+        "togglesClass": "aria-expanded",
+        "on": "a"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Menu toggle button in collapsed state as seen on most pages",
+      "props": {
+        "menuId": "left-off-canvas-menu",
+        "isExpanded": false
+      }
+    },
+    {
+      "name": "Expanded",
+      "description": "Menu toggle button in expanded/open state",
+      "props": {
+        "menuId": "left-off-canvas-menu",
+        "isExpanded": true
+      }
+    }
+  ],
+  "notes": "This element appears on 26,276 pages as the off-canvas mobile menu trigger. The label text 'Menu' and the burger icon span are hardcoded — they never vary across samples. The aria-controls, data-toggle, and data-off-canvas-wrapper attributes all reference the same id 'left-off-canvas-menu' on every page. The .ug-explore-menu selector (413 pages) is a structurally distinct empty <ul class=\"ug-explore-menu school\"> used as a dynamic menu container for UG explore pages — it is not related to this component. The .menu a selector (26,276 pages) refers to anchor links rendered inside the off-canvas panel content, not this toggle button itself.",
+  "htmlExamples": [
+    "<a class=\"button menu\" role=\"button\" data-toggle=\"left-off-canvas-menu\" aria-expanded=\"false\" aria-controls=\"left-off-canvas-menu\" tabindex=\"0\">Menu <span class=\"section-title-burger\" aria-hidden=\"true\"></span></a>"
+  ]
+}
