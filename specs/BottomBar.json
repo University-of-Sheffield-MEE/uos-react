@@ -1,0 +1,61 @@
+{
+  "componentName": "BottomBar",
+  "description": "Site-wide footer bottom bar displaying a navigation menu with legal and contact links alongside a copyright notice.",
+  "rootElement": "div",
+  "rootClassName": "bottom-bar",
+  "selectorsCovered": [".bottom-bar"],
+  "props": [
+    {
+      "name": "menuItems",
+      "type": "Array<{ label: string; href: string }>",
+      "required": false,
+      "default": [
+        { "label": "Feedback", "href": "https://www.sheffield.ac.uk/contact/comments" },
+        { "label": "Privacy", "href": "https://www.sheffield.ac.uk/privacy" },
+        { "label": "Accessibility", "href": "https://www.sheffield.ac.uk/accessibility" },
+        { "label": "FOI", "href": "https://www.sheffield.ac.uk/foi" },
+        { "label": "Modern slavery statement", "href": "https://www.sheffield.ac.uk/procurement/modern-slavery" }
+      ],
+      "mapsTo": { "element": "ul.menu li a", "attribute": "innerText" }
+    },
+    {
+      "name": "copyrightText",
+      "type": "string",
+      "required": false,
+      "default": "© 2026 The University of Sheffield",
+      "mapsTo": { "element": ".copyright", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard bottom bar with the default footer navigation links and copyright notice.",
+      "props": {
+        "menuItems": [
+          { "label": "Feedback", "href": "https://www.sheffield.ac.uk/contact/comments" },
+          { "label": "Privacy", "href": "https://www.sheffield.ac.uk/privacy" },
+          { "label": "Accessibility", "href": "https://www.sheffield.ac.uk/accessibility" },
+          { "label": "FOI", "href": "https://www.sheffield.ac.uk/foi" },
+          { "label": "Modern slavery statement", "href": "https://www.sheffield.ac.uk/procurement/modern-slavery" }
+        ],
+        "copyrightText": "© 2026 The University of Sheffield"
+      }
+    },
+    {
+      "name": "CustomMenuItems",
+      "description": "Bottom bar with a reduced set of custom navigation links.",
+      "props": {
+        "menuItems": [
+          { "label": "Privacy", "href": "https://www.sheffield.ac.uk/privacy" },
+          { "label": "Accessibility", "href": "https://www.sheffield.ac.uk/accessibility" }
+        ],
+        "copyrightText": "© 2026 The University of Sheffield"
+      }
+    }
+  ],
+  "notes": "This component appears on 26,276 pages with a single consistent DOM structure throughout. All menu links and copyright text are identical across all sampled pages (duplicates: 14, textVaries: false), so they are treated as optional props with hardcoded defaults. The root element also carries the class 'panel' alongside 'bottom-bar'. The inner layout uses Foundation grid classes (row, large-7, large-5, columns).",
+  "htmlExamples": [
+    "<div class=\"bottom-bar panel\">\n    <div class=\"row\">\n      <div class=\"large-7 columns\">\n        <nav role=\"navigation\" aria-labelledby=\"block-uos-public-footer-menu\">\n          <ul class=\"menu\">\n            <li><a href=\"https://www.sheffield.ac.uk/contact/comments\">Feedback</a></li>\n            <li><a href=\"https://www.sheffield.ac.uk/privacy\">Privacy</a></li>\n            <li><a href=\"https://www.sheffield.ac.uk/accessibility\">Accessibility</a></li>\n            <li><a href=\"https://www.sheffield.ac.uk/foi\">FOI</a></li>\n            <li><a href=\"https://www.sheffield.ac.uk/procurement/modern-slavery\">Modern slavery statement</a></li>\n          </ul>\n        </nav>\n      </div>\n      <div class=\"large-5 columns copyright\">\n        © 2026 The University of Sheffield\n      </div>\n    </div>\n  </div>"
+  ]
+}

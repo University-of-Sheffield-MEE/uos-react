@@ -157,7 +157,8 @@
     },
     ".bottom-bar": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BottomBar"
     },
     ".bottom-bar .row a": {
       "pageCount": 26276,
@@ -514,7 +515,8 @@
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".off-canvas ul": {
       "pageCount": 26243,
@@ -618,11 +620,13 @@
     },
     ".large-4": {
       "pageCount": 18950,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".row.page-body .large-8": {
       "pageCount": 17353,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".leadintro": {
       "pageCount": 15941,
@@ -638,31 +642,38 @@
     },
     ".paragraph--type--para-promotion h2": {
       "pageCount": 13556,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".paragraph--type--para-promotion p": {
       "pageCount": 13327,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".paragraph--type--para-promotion .promo-link a": {
       "pageCount": 13079,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".paragraph--type--para-promotion .promo-link": {
       "pageCount": 13079,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     "main ul:not(.breadcrumbs):not(.ug-explore-menu):not(.coursemeta):not(.course-features):not(.otherways) li": {
       "pageCount": 12197,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".paragraph--type--para-promotion.blue-bar": {
       "pageCount": 11720,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".block-uos-page-title h1": {
       "pageCount": 8813,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".block-field-blocknodepagefield-show-onpage-anchors": {
       "pageCount": 8400,
@@ -674,7 +685,8 @@
     },
     "hr.related": {
       "pageCount": 8146,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".personinfo": {
       "pageCount": 6437,
@@ -682,11 +694,13 @@
     },
     ".personinfo h1": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".deptname p": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".mainrole": {
       "pageCount": 6437,
@@ -3723,6 +3737,15 @@
       ],
       "specFile": "specs/RegionFooterLast.json",
       "storyFile": "src/stories/RegionFooterLast.stories.tsx"
+    },
+    "BottomBar": {
+      "selectors": [
+        [
+          ".bottom-bar"
+        ]
+      ],
+      "specFile": "specs/BottomBar.json",
+      "storyFile": "src/stories/BottomBar.stories.tsx"
     }
   }
 }
