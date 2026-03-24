@@ -1,0 +1,3457 @@
+{
+  "selectors": {
+    ".row": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".columns": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".columns:last-child:not(:first-child)": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".large-3": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".large-5": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".large-7": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".large-9": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".menu": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".menu a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".off-canvas-wrapper": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".off-canvas": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".position-left": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".position-right": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".off-canvas-content": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".hide-for-medium": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".show-for-sr": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".backtotop": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "footer .large-3": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "footer .footer-heading": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "footer .quicklinks": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "footer .quicklinks a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "footer .quicklinks ul": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "footer .quicklinks li": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".footicons": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".footicons .social .embedded-entity": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".footicons .social > div": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".footicons .social > div a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".footicons .awards": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".footicons .awards a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".footicons .awards a > img": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".region-footer_last": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".bottom-bar": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".bottom-bar .row a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".bottom-bar ul": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".bottom-bar .copyright": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".resp": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".pad": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".embedded-entity": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".site-search": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".site-search .site-search-wrapper": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".site-search form": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".site-search button": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".site-search input": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".site-search .site-search-toggle": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".site-search .site-search-toggle .fa-times": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".search-autocomplete__inputs": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".smooth-criminal": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "body.public": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "header.site-header": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".header": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".header .logo": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".header .logo img": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".skip-link": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".meganav": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav > ul": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav > ul > li > ul": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav > ul > li > ul > li > a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav > ul > li > ul > li > ul": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav > ul > li > ul > li > ul > li": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav > ul > li > ul > li > ul > li > a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav > ul > li > ul > li": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-uos-globalnav": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-fixed-block-contentglobal-nav": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "nav.muse": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".muse-bar-container": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".muse-bar": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".muse-bar a": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".muse-bar ul": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".muse-nav": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".muse-nav > li": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".muse-nav > li.switcher-container": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".switcher-container": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".switcher-container .switcher-button": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "body .region-meta_header ~ .nav-overlay": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".nav-overlay": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".block-alertbanner": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    "a[href^=\"https://www.sheffield.ac.uk\"]": {
+      "pageCount": 26276,
+      "status": "pending"
+    },
+    ".close-button": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    ".breadcrumbs": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    ".breadcrumbs li": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    ".breadcrumbs a": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    ".hideonmobile": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    "ul.breadcrumbs a": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    "ul.breadcrumbs": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    "ul.breadcrumbs li": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    "ul.breadcrumbs li.current": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    ".off-canvas button": {
+      "pageCount": 26274,
+      "status": "pending"
+    },
+    ".button": {
+      "pageCount": 26258,
+      "status": "pending"
+    },
+    ".section-title": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".section-title .section-title-holder": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".section-title .section-title-holder h4.off-canv": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".section-title-wrapper": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".off-canvas a": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".region-banner a": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".region-banner .section-navigation": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".region-banner .section-navigation .button.menu": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".region-banner .section-navigation .button .section-title-burger": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".region-banner": {
+      "pageCount": 26256,
+      "status": "pending"
+    },
+    ".section-title .off-canv > a": {
+      "pageCount": 26249,
+      "status": "pending"
+    },
+    ".section-title .section-title-holder > a": {
+      "pageCount": 26249,
+      "status": "pending"
+    },
+    ".section-title .section-title-holder h4.off-canv a": {
+      "pageCount": 26249,
+      "status": "pending"
+    },
+    ".region-banner .views-field-field-section-navigation": {
+      "pageCount": 26244,
+      "status": "pending"
+    },
+    ".region-banner .paragraph--type--para-section-nav > nav": {
+      "pageCount": 26244,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".off-canvas ul": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".off-canvas li": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".region-banner ul": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".region-banner li": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".region-banner .paragraph--type--para-section-nav > nav > ul": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".region-banner .paragraph--type--para-section-nav > nav > ul > li": {
+      "pageCount": 26243,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li a": {
+      "pageCount": 26241,
+      "status": "pending"
+    },
+    ".off-canvas li a": {
+      "pageCount": 26241,
+      "status": "pending"
+    },
+    ".row .row": {
+      "pageCount": 26038,
+      "status": "pending"
+    },
+    ".row:not(.expanded) .row": {
+      "pageCount": 26038,
+      "status": "pending"
+    },
+    ".large-8": {
+      "pageCount": 24355,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul": {
+      "pageCount": 23347,
+      "status": "pending"
+    },
+    ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul": {
+      "pageCount": 23347,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
+      "pageCount": 23336,
+      "status": "pending"
+    },
+    ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
+      "pageCount": 23336,
+      "status": "pending"
+    },
+    ".desktop-section-navigation ul ul li a": {
+      "pageCount": 23300,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
+      "pageCount": 21935,
+      "status": "pending"
+    },
+    ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li": {
+      "pageCount": 21935,
+      "status": "pending"
+    },
+    ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
+      "pageCount": 21935,
+      "status": "pending"
+    },
+    ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li": {
+      "pageCount": 21935,
+      "status": "pending"
+    },
+    ".large-4": {
+      "pageCount": 18950,
+      "status": "pending"
+    },
+    ".row.page-body .large-8": {
+      "pageCount": 17353,
+      "status": "pending"
+    },
+    ".leadintro": {
+      "pageCount": 15941,
+      "status": "pending"
+    },
+    "p.leadintro": {
+      "pageCount": 14286,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion": {
+      "pageCount": 13556,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion h2": {
+      "pageCount": 13556,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion p": {
+      "pageCount": 13327,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion .promo-link a": {
+      "pageCount": 13079,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion .promo-link": {
+      "pageCount": 13079,
+      "status": "pending"
+    },
+    "main ul:not(.breadcrumbs):not(.ug-explore-menu):not(.coursemeta):not(.course-features):not(.otherways) li": {
+      "pageCount": 12197,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion.blue-bar": {
+      "pageCount": 11720,
+      "status": "pending"
+    },
+    ".block-uos-page-title h1": {
+      "pageCount": 8813,
+      "status": "pending"
+    },
+    ".block-field-blocknodepagefield-show-onpage-anchors": {
+      "pageCount": 8400,
+      "status": "pending"
+    },
+    ".deptname": {
+      "pageCount": 8197,
+      "status": "pending"
+    },
+    "hr.related": {
+      "pageCount": 8146,
+      "status": "pending"
+    },
+    ".personinfo": {
+      "pageCount": 6437,
+      "status": "pending"
+    },
+    ".personinfo h1": {
+      "pageCount": 6437,
+      "status": "pending"
+    },
+    ".deptname p": {
+      "pageCount": 6437,
+      "status": "pending"
+    },
+    ".mainrole": {
+      "pageCount": 6437,
+      "status": "pending"
+    },
+    ".contactinfo": {
+      "pageCount": 6437,
+      "status": "pending"
+    },
+    ".news-date": {
+      "pageCount": 6175,
+      "status": "pending"
+    },
+    ".contactinfo a:not(.standalone-accordion-toggler)": {
+      "pageCount": 6107,
+      "status": "pending"
+    },
+    ".node--type-news-article ul.breadcrumbs li:last-child": {
+      "pageCount": 5887,
+      "status": "pending"
+    },
+    "h1.headline": {
+      "pageCount": 5887,
+      "status": "pending"
+    },
+    ".headline": {
+      "pageCount": 5887,
+      "status": "pending"
+    },
+    ".block-field-blocknodenews-articlefield-n-media": {
+      "pageCount": 5760,
+      "status": "pending"
+    },
+    ".showfull": {
+      "pageCount": 5375,
+      "status": "pending"
+    },
+    ".fullcontact": {
+      "pageCount": 5375,
+      "status": "pending"
+    },
+    ".fullcontact .address": {
+      "pageCount": 5375,
+      "status": "pending"
+    },
+    ".fullcontact .social": {
+      "pageCount": 5375,
+      "status": "pending"
+    },
+    ".contactinfo .loclink": {
+      "pageCount": 5307,
+      "status": "pending"
+    },
+    ".profilepic-modal": {
+      "pageCount": 5082,
+      "status": "pending"
+    },
+    ".profilepic-modal img": {
+      "pageCount": 5082,
+      "status": "pending"
+    },
+    ".profilepic-modal .close": {
+      "pageCount": 5082,
+      "status": "pending"
+    },
+    ".uosblock": {
+      "pageCount": 4800,
+      "status": "pending"
+    },
+    ".block-field-blocknodepagefield-b-media": {
+      "pageCount": 4266,
+      "status": "pending"
+    },
+    ".uosblock.grey": {
+      "pageCount": 3932,
+      "status": "pending"
+    },
+    ".profiletext": {
+      "pageCount": 3889,
+      "status": "pending"
+    },
+    ".profiletext dd": {
+      "pageCount": 3889,
+      "status": "pending"
+    },
+    ".personinfo .profilepic": {
+      "pageCount": 3381,
+      "status": "pending"
+    },
+    ".personinfo .profilepic img": {
+      "pageCount": 3381,
+      "status": "pending"
+    },
+    ".personinfo .profilepic .enlarge": {
+      "pageCount": 3381,
+      "status": "pending"
+    },
+    ".personinfo .profilepic-modal img": {
+      "pageCount": 3381,
+      "status": "pending"
+    },
+    ".uosbutton": {
+      "pageCount": 2962,
+      "status": "pending"
+    },
+    "a.uosbutton": {
+      "pageCount": 2953,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion .media--image--figure": {
+      "pageCount": 2744,
+      "status": "pending"
+    },
+    "blockquote.uosquote": {
+      "pageCount": 2382,
+      "status": "pending"
+    },
+    "blockquote.uosquote p": {
+      "pageCount": 2382,
+      "status": "pending"
+    },
+    "blockquote.uosquote .uosquote-quote p:first-of-type": {
+      "pageCount": 2378,
+      "status": "pending"
+    },
+    ".contactinfo .telnum a": {
+      "pageCount": 2372,
+      "status": "pending"
+    },
+    ".uosblock a[href]:not(.uosbutton):not(.textbutton)": {
+      "pageCount": 2334,
+      "status": "pending"
+    },
+    "blockquote.uosquote .uosquote-name": {
+      "pageCount": 2288,
+      "status": "pending"
+    },
+    ".publicationsList": {
+      "pageCount": 2172,
+      "status": "pending"
+    },
+    ".publicationsList .author": {
+      "pageCount": 2172,
+      "status": "pending"
+    },
+    ".publicationsList .export-icon": {
+      "pageCount": 2172,
+      "status": "pending"
+    },
+    ".publicationsList a": {
+      "pageCount": 2172,
+      "status": "pending"
+    },
+    ".publicationsList cite": {
+      "pageCount": 2168,
+      "status": "pending"
+    },
+    "blockquote.uosquote .uosquote-attribution": {
+      "pageCount": 2151,
+      "status": "pending"
+    },
+    ".jobtitle": {
+      "pageCount": 1903,
+      "status": "pending"
+    },
+    ".stap-contact": {
+      "pageCount": 1899,
+      "status": "pending"
+    },
+    ".stap-contact dd": {
+      "pageCount": 1893,
+      "status": "pending"
+    },
+    ".stap-contact dd a": {
+      "pageCount": 1893,
+      "status": "pending"
+    },
+    ".video-embed-field-lazy-play": {
+      "pageCount": 1862,
+      "status": "pending"
+    },
+    ".video-embed-field-lazy": {
+      "pageCount": 1862,
+      "status": "pending"
+    },
+    ".stap-teaser": {
+      "pageCount": 1827,
+      "status": "pending"
+    },
+    ".stap-teaser a": {
+      "pageCount": 1827,
+      "status": "pending"
+    },
+    ".stap-teaser .jobtitle": {
+      "pageCount": 1827,
+      "status": "pending"
+    },
+    ".stap-teaser .summary-text": {
+      "pageCount": 1827,
+      "status": "pending"
+    },
+    ".stap-teaser__info": {
+      "pageCount": 1823,
+      "status": "pending"
+    },
+    ".stap-teaser .deptname": {
+      "pageCount": 1820,
+      "status": "pending"
+    },
+    ".stap-teaser dl dd:not(first-of-type)": {
+      "pageCount": 1817,
+      "status": "pending"
+    },
+    ".matchheight": {
+      "pageCount": 1813,
+      "status": "pending"
+    },
+    ".matchheight > .columns": {
+      "pageCount": 1813,
+      "status": "pending"
+    },
+    ".stap-teaser .profilepic": {
+      "pageCount": 1705,
+      "status": "pending"
+    },
+    ".stap-teaser .profilepic img": {
+      "pageCount": 1705,
+      "status": "pending"
+    },
+    ".stap-teaser .profilepic .imgcapt": {
+      "pageCount": 1705,
+      "status": "pending"
+    },
+    ".stap-teaser .enlarge": {
+      "pageCount": 1701,
+      "status": "pending"
+    },
+    ".multicol": {
+      "pageCount": 1683,
+      "status": "pending"
+    },
+    ".multicol .columns": {
+      "pageCount": 1683,
+      "status": "pending"
+    },
+    ".multicol .row": {
+      "pageCount": 1683,
+      "status": "pending"
+    },
+    ".bottomlogos": {
+      "pageCount": 1674,
+      "status": "pending"
+    },
+    ".node--type-student-profile ul.breadcrumbs li:last-child": {
+      "pageCount": 1623,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profiletitle": {
+      "pageCount": 1623,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profiletitle h1": {
+      "pageCount": 1623,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profilefield-stup-name": {
+      "pageCount": 1623,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profilefield-stup-black-text-sub-header": {
+      "pageCount": 1623,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profilefield-stup-grey-text-sub-header": {
+      "pageCount": 1623,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profilefield-stup-profile-image img": {
+      "pageCount": 1622,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profilefield-stup-intro": {
+      "pageCount": 1615,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profilefield-stup-intro .leadintro": {
+      "pageCount": 1615,
+      "status": "pending"
+    },
+    ".matchheight > .columns > div": {
+      "pageCount": 1575,
+      "status": "pending"
+    },
+    ".full-width": {
+      "pageCount": 1575,
+      "status": "pending"
+    },
+    ".stap-contact dd .telnum a": {
+      "pageCount": 1494,
+      "status": "pending"
+    },
+    ".postnom": {
+      "pageCount": 1485,
+      "status": "pending"
+    },
+    ".multicol .paragraph": {
+      "pageCount": 1457,
+      "status": "pending"
+    },
+    "body.node--type-hub": {
+      "pageCount": 1451,
+      "status": "pending"
+    },
+    "body.node--type-hub .breadcrumbs a": {
+      "pageCount": 1451,
+      "status": "pending"
+    },
+    "body.node--type-hub .breadcrumbs li": {
+      "pageCount": 1451,
+      "status": "pending"
+    },
+    "body.node--type-hub .region-banner .section-navigation": {
+      "pageCount": 1449,
+      "status": "pending"
+    },
+    ".hub-header": {
+      "pageCount": 1448,
+      "status": "pending"
+    },
+    ".hub-header .hubintro": {
+      "pageCount": 1448,
+      "status": "pending"
+    },
+    ".hub-header .hubintro p": {
+      "pageCount": 1448,
+      "status": "pending"
+    },
+    ".hub-header .hubintro h1": {
+      "pageCount": 1448,
+      "status": "pending"
+    },
+    "body.node--type-hub .region-banner .views-field-field-section-navigation": {
+      "pageCount": 1447,
+      "status": "pending"
+    },
+    ".medium-6": {
+      "pageCount": 1353,
+      "status": "pending"
+    },
+    ".medium-4": {
+      "pageCount": 1289,
+      "status": "pending"
+    },
+    ".event-details": {
+      "pageCount": 1196,
+      "status": "pending"
+    },
+    ".event-details.ev-venue span": {
+      "pageCount": 1196,
+      "status": "pending"
+    },
+    ".multicol p": {
+      "pageCount": 1172,
+      "status": "pending"
+    },
+    ".fullcontact .social a": {
+      "pageCount": 1172,
+      "status": "pending"
+    },
+    ".multicol .uosblock": {
+      "pageCount": 1167,
+      "status": "pending"
+    },
+    ".profile-link-promo": {
+      "pageCount": 1165,
+      "status": "pending"
+    },
+    ".profile-link-promo a": {
+      "pageCount": 1165,
+      "status": "pending"
+    },
+    ".profile-link-promo a:last-of-type": {
+      "pageCount": 1165,
+      "status": "pending"
+    },
+    ".profile-link-promo span": {
+      "pageCount": 1165,
+      "status": "pending"
+    },
+    ".profile-link-promo span:last-of-type": {
+      "pageCount": 1165,
+      "status": "pending"
+    },
+    ".logos-homehub": {
+      "pageCount": 1037,
+      "status": "pending"
+    },
+    ".logos-homehub .row-width": {
+      "pageCount": 1037,
+      "status": "pending"
+    },
+    ".logos-homehub .row-width .logo-container": {
+      "pageCount": 1037,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box": {
+      "pageCount": 977,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box > a": {
+      "pageCount": 977,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
+      "pageCount": 977,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbtitle": {
+      "pageCount": 977,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow": {
+      "pageCount": 977,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box.dark .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
+      "pageCount": 937,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box.dark": {
+      "pageCount": 937,
+      "status": "pending"
+    },
+    ".coursecard": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".coursecard .coursecardcontent": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".coursecard .link-arrow": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".coursecard .link-arrow .ccarrow": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".coursecard h3": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".coursecard .award": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".coursecard .level": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".coursecard p": {
+      "pageCount": 896,
+      "status": "pending"
+    },
+    ".header .logo.mgmt-logo img": {
+      "pageCount": 848,
+      "status": "pending"
+    },
+    ".header .logo.mgmt-logo": {
+      "pageCount": 848,
+      "status": "pending"
+    },
+    ".accred-banner": {
+      "pageCount": 846,
+      "status": "pending"
+    },
+    ".accred-banner .mgmt-logos": {
+      "pageCount": 846,
+      "status": "pending"
+    },
+    ".accred-banner .mgmt-logos div": {
+      "pageCount": 846,
+      "status": "pending"
+    },
+    ".accred-banner .mgmt-logos div.aacsb": {
+      "pageCount": 846,
+      "status": "pending"
+    },
+    ".roles": {
+      "pageCount": 845,
+      "status": "pending"
+    },
+    "h2.field-multi-title": {
+      "pageCount": 820,
+      "status": "pending"
+    },
+    ".multicol .columns > a": {
+      "pageCount": 747,
+      "status": "pending"
+    },
+    ".uosblock ul li a": {
+      "pageCount": 694,
+      "status": "pending"
+    },
+    ".signpost-card": {
+      "pageCount": 661,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-card": {
+      "pageCount": 660,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-card p": {
+      "pageCount": 660,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-card .link-arrow": {
+      "pageCount": 660,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-card .link-arrow .scarrow": {
+      "pageCount": 660,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-card .field-sc-title": {
+      "pageCount": 659,
+      "status": "pending"
+    },
+    ".multicol .medium-4 .paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
+      "pageCount": 656,
+      "status": "pending"
+    },
+    ".multicol .medium-4 .paragraph--type--para-signpost-box": {
+      "pageCount": 656,
+      "status": "pending"
+    },
+    ".event-details.ev-date span": {
+      "pageCount": 653,
+      "status": "pending"
+    },
+    ".uosblock.dark": {
+      "pageCount": 653,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion .promo-links": {
+      "pageCount": 646,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion .promo-links a": {
+      "pageCount": 646,
+      "status": "pending"
+    },
+    ".paragraph--type--para-promotion .promo-links br": {
+      "pageCount": 646,
+      "status": "pending"
+    },
+    ".block-field-blocknodestudent-profilefield-stup-year": {
+      "pageCount": 625,
+      "status": "pending"
+    },
+    "dd #my-pubs .pubs-tabs": {
+      "pageCount": 608,
+      "status": "pending"
+    },
+    "dd #my-pubs .pubs-tabs.fave-link": {
+      "pageCount": 608,
+      "status": "pending"
+    },
+    "dd #my-pubs .pubs-tabs.all-link": {
+      "pageCount": 608,
+      "status": "pending"
+    },
+    ".uos-tabs .tab-gradient": {
+      "pageCount": 604,
+      "status": "pending"
+    },
+    ".uos-tabs [role=tablist]": {
+      "pageCount": 604,
+      "status": "pending"
+    },
+    ".uos-tabs [role=tab]": {
+      "pageCount": 604,
+      "status": "pending"
+    },
+    ".uos-tabs [role=tab][aria-selected=true]": {
+      "pageCount": 604,
+      "status": "pending"
+    },
+    ".uos-tabs [role=tabpanel]": {
+      "pageCount": 604,
+      "status": "pending"
+    },
+    ".tab-gradient": {
+      "pageCount": 604,
+      "status": "pending"
+    },
+    ".uos-tabs button": {
+      "pageCount": 604,
+      "status": "pending"
+    },
+    ".uosblock.dark h2": {
+      "pageCount": 588,
+      "status": "pending"
+    },
+    ".block-field-blocknodeeventtitle h2": {
+      "pageCount": 585,
+      "status": "pending"
+    },
+    ".block-field-blocknodeeventfield-ev-media": {
+      "pageCount": 585,
+      "status": "pending"
+    },
+    ".multicol .medium-4 > a": {
+      "pageCount": 556,
+      "status": "pending"
+    },
+    ".coursecard ul.course-features": {
+      "pageCount": 547,
+      "status": "pending"
+    },
+    ".event2-date-times": {
+      "pageCount": 543,
+      "status": "pending"
+    },
+    ".event2-date-times h2": {
+      "pageCount": 543,
+      "status": "pending"
+    },
+    ".stap-teaser p": {
+      "pageCount": 530,
+      "status": "pending"
+    },
+    ".uosblock.dark a[href]:not(.uosbutton):not(.textbutton)": {
+      "pageCount": 527,
+      "status": "pending"
+    },
+    ".event-details.ev-time span": {
+      "pageCount": 526,
+      "status": "pending"
+    },
+    ".coursecard ul.coursemeta": {
+      "pageCount": 458,
+      "status": "pending"
+    },
+    ".coursecard ul.coursemeta li": {
+      "pageCount": 458,
+      "status": "pending"
+    },
+    ".coursecard ul.coursemeta li:not(:last-of-type)": {
+      "pageCount": 458,
+      "status": "pending"
+    },
+    ".coursecard__heading": {
+      "pageCount": 455,
+      "status": "pending"
+    },
+    ".coursecard ul.coursemeta li .year-suffix": {
+      "pageCount": 455,
+      "status": "pending"
+    },
+    ".multicol .medium-4 .field-sc-title": {
+      "pageCount": 453,
+      "status": "pending"
+    },
+    ".ugcoursecard h3": {
+      "pageCount": 451,
+      "status": "pending"
+    },
+    ".ugcoursecard .details": {
+      "pageCount": 451,
+      "status": "pending"
+    },
+    ".ugcoursecard .details div": {
+      "pageCount": 451,
+      "status": "pending"
+    },
+    ".ugcoursecard .details div.stmnthmarg": {
+      "pageCount": 451,
+      "status": "pending"
+    },
+    ".ugcoursecard .award": {
+      "pageCount": 451,
+      "status": "pending"
+    },
+    ".ug-explore-menu": {
+      "pageCount": 413,
+      "status": "pending"
+    },
+    ".block-uos-public-content .explore-box": {
+      "pageCount": 413,
+      "status": "pending"
+    },
+    ".block-uos-public-content .explore-box h3": {
+      "pageCount": 413,
+      "status": "pending"
+    },
+    ".block-uos-public-content .explore-box ul": {
+      "pageCount": 413,
+      "status": "pending"
+    },
+    ".explore-item:not(.explore-unstyled)": {
+      "pageCount": 413,
+      "status": "pending"
+    },
+    ".explore-item:not(.explore-unstyled):not(#studentprofiles) h2": {
+      "pageCount": 413,
+      "status": "pending"
+    },
+    ".paragraph figure.imgcapt figcaption": {
+      "pageCount": 407,
+      "status": "pending"
+    },
+    ".profilecard": {
+      "pageCount": 405,
+      "status": "pending"
+    },
+    ".profilecard p": {
+      "pageCount": 405,
+      "status": "pending"
+    },
+    ".profilecard .name": {
+      "pageCount": 405,
+      "status": "pending"
+    },
+    ".profilecard .subhead": {
+      "pageCount": 405,
+      "status": "pending"
+    },
+    ".profilecard .subhead2": {
+      "pageCount": 405,
+      "status": "pending"
+    },
+    ".profilecard img": {
+      "pageCount": 405,
+      "status": "pending"
+    },
+    "a.profilecard .name": {
+      "pageCount": 403,
+      "status": "pending"
+    },
+    ".ugcredits": {
+      "pageCount": 403,
+      "status": "pending"
+    },
+    ".teaser-thumb": {
+      "pageCount": 375,
+      "status": "pending"
+    },
+    ".multicol .medium-6 .field-sc-title": {
+      "pageCount": 355,
+      "status": "pending"
+    },
+    ".staff-pronouns": {
+      "pageCount": 354,
+      "status": "pending"
+    },
+    "body.node--type-hub .uosblock.grey": {
+      "pageCount": 315,
+      "status": "pending"
+    },
+    ".event-details.ev-ticket-details span": {
+      "pageCount": 311,
+      "status": "pending"
+    },
+    ".button.primary": {
+      "pageCount": 298,
+      "status": "pending"
+    },
+    "#apply a:not(.uosbutton)": {
+      "pageCount": 287,
+      "status": "pending"
+    },
+    ".uosblock.highlight": {
+      "pageCount": 284,
+      "status": "pending"
+    },
+    ".printonly": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".padbot": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-form button.primary": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search a": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".footer-course-search-label": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "body.node--type-ug-course .ug-course-structure .additional-info": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ugcourserow": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ugcourserow .ug-course-structure + .block-fixed-block-contentugp-modules-disclaimer": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".coursestats": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .startyr": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box h1": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .text": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details > li": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details > li span": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details > li span.alevels": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details > li span.ucascode": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details > li span.duration": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details > li span.startdate": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.features": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.features li": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.features li a": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .topdetail": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .topdetail h1": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .topdetail .award-type": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .topdetail div": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .summary": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .buttons": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .buttons .uosbutton": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .buttons .uosbutton:last-of-type": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .sticky-ctas": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .sticky-ctas .ugbuttons": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .sticky-ctas .shrinkctas": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .sticky-ctas .ugbuttons .stickybutton": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .sticky-ctas .stickybutton": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "#main .ugkeybg .sticky-ctas.on-load": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    "h4.stat-title": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".course-ug-fee-lookup": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search a:first-of-type": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search .ug-course-form": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search .ug-course-form input": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search .ug-course-form button": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search strong.sim-courses-pipe": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ug-course-search br.sim-courses-link-break": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".title-box": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ugcourserow .columns.large-4": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".ugcourserow #coursedescription .media--image--figure": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".moduletab-label": {
+      "pageCount": 283,
+      "status": "pending"
+    },
+    ".large-12": {
+      "pageCount": 282,
+      "status": "pending"
+    },
+    ".course-ereq-panel": {
+      "pageCount": 282,
+      "status": "pending"
+    },
+    ".course-ereq-panel .grades": {
+      "pageCount": 282,
+      "status": "pending"
+    },
+    ".grades": {
+      "pageCount": 282,
+      "status": "pending"
+    },
+    ".offer-headers": {
+      "pageCount": 282,
+      "status": "pending"
+    },
+    ".paragraph--type--ug-course-structure-module-block h4": {
+      "pageCount": 281,
+      "status": "pending"
+    },
+    ".departmentstats": {
+      "pageCount": 281,
+      "status": "pending"
+    },
+    ".learningtext": {
+      "pageCount": 281,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.details > li span.attendance": {
+      "pageCount": 277,
+      "status": "pending"
+    },
+    ".stap-teaser .profileinitials": {
+      "pageCount": 272,
+      "status": "pending"
+    },
+    "body.node--type-landing": {
+      "pageCount": 267,
+      "status": "pending"
+    },
+    "body.node--type-landing .breadcrumbs a": {
+      "pageCount": 267,
+      "status": "pending"
+    },
+    "body.node--type-landing .breadcrumbs li": {
+      "pageCount": 267,
+      "status": "pending"
+    },
+    ".nlpheader": {
+      "pageCount": 266,
+      "status": "pending"
+    },
+    ".nlpheader .lpaspect": {
+      "pageCount": 266,
+      "status": "pending"
+    },
+    ".nlpheader .lpaspect .lpcontent": {
+      "pageCount": 266,
+      "status": "pending"
+    },
+    ".nlpheader .lpaspect .lpcontent p": {
+      "pageCount": 266,
+      "status": "pending"
+    },
+    ".nlpheader .lpaspect .lpcontent h1": {
+      "pageCount": 266,
+      "status": "pending"
+    },
+    ".nlpheader .lpaspect .lpcontent .arrow": {
+      "pageCount": 265,
+      "status": "pending"
+    },
+    ".nlpheader .lpaspect .lpcontent .arrow button": {
+      "pageCount": 265,
+      "status": "pending"
+    },
+    ".paragraph--type--featured-image": {
+      "pageCount": 263,
+      "status": "pending"
+    },
+    ".featured-image": {
+      "pageCount": 263,
+      "status": "pending"
+    },
+    ".featured-image .img_container": {
+      "pageCount": 263,
+      "status": "pending"
+    },
+    ".featured-image .img_container img": {
+      "pageCount": 263,
+      "status": "pending"
+    },
+    ".featured-image .img_container picture": {
+      "pageCount": 263,
+      "status": "pending"
+    },
+    ".featured-image .img_descript": {
+      "pageCount": 263,
+      "status": "pending"
+    },
+    ".featured-image .img_descript .descripttext": {
+      "pageCount": 263,
+      "status": "pending"
+    },
+    ".featured-image .img_descript h3": {
+      "pageCount": 256,
+      "status": "pending"
+    },
+    ".module-disclaimer": {
+      "pageCount": 255,
+      "status": "pending"
+    },
+    ".node--type-modules-single-course h1": {
+      "pageCount": 252,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .altentry a": {
+      "pageCount": 251,
+      "status": "pending"
+    },
+    ".accreds": {
+      "pageCount": 240,
+      "status": "pending"
+    },
+    ".accreds .accbody": {
+      "pageCount": 240,
+      "status": "pending"
+    },
+    ".lpheaderimg": {
+      "pageCount": 236,
+      "status": "pending"
+    },
+    ".nlpheader .lpheaderimg .media--image--figure": {
+      "pageCount": 235,
+      "status": "pending"
+    },
+    ".nlpheader .lpheaderimg .media--image--figure .imgcapt picture img": {
+      "pageCount": 235,
+      "status": "pending"
+    },
+    ".uosblock.highlight h2": {
+      "pageCount": 235,
+      "status": "pending"
+    },
+    ".featured-news": {
+      "pageCount": 234,
+      "status": "pending"
+    },
+    ".featured-news > div": {
+      "pageCount": 234,
+      "status": "pending"
+    },
+    ".dark .uosbutton": {
+      "pageCount": 232,
+      "status": "pending"
+    },
+    ".featured-image .img_descript .link-arrow": {
+      "pageCount": 228,
+      "status": "pending"
+    },
+    ".featured-image .img_descript .link-arrow .fmarrow": {
+      "pageCount": 228,
+      "status": "pending"
+    },
+    ".featured-image .img_descript p": {
+      "pageCount": 228,
+      "status": "pending"
+    },
+    ".featured-image .img_descript .feat-title": {
+      "pageCount": 228,
+      "status": "pending"
+    },
+    ".uosblock.highlight a[href]:not(.uosbutton):not(.textbutton)": {
+      "pageCount": 228,
+      "status": "pending"
+    },
+    ".inline-description-list__term": {
+      "pageCount": 227,
+      "status": "pending"
+    },
+    ".inline-description-list__term:not(:first-of-type)": {
+      "pageCount": 227,
+      "status": "pending"
+    },
+    ".inline-description-list__description": {
+      "pageCount": 227,
+      "status": "pending"
+    },
+    ".inline-description-list dd": {
+      "pageCount": 227,
+      "status": "pending"
+    },
+    ".accreds .accbody figure": {
+      "pageCount": 227,
+      "status": "pending"
+    },
+    ".accreds .accbody img": {
+      "pageCount": 227,
+      "status": "pending"
+    },
+    ".course-ereq-tabs": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    ".course-ereq-tabslist": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    "#main .course-ereq-tabslist": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    "#main .course-ereq-tabslist li": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    ".course-ereq-tabslist button": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    ".course-ereq-panel .inline-description-list": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    ".course-ereq-panel .inline-description-list__term": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    ".course-ereq-panel .inline-description-list__description": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    ".course-ereq-panel .inline-description-list__term:not(:first-of-type)": {
+      "pageCount": 224,
+      "status": "pending"
+    },
+    ".otherreqstext": {
+      "pageCount": 222,
+      "status": "pending"
+    },
+    ".otherreqstext p:last-of-type": {
+      "pageCount": 222,
+      "status": "pending"
+    },
+    ".featured-news > div a": {
+      "pageCount": 204,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard .card-content": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard a": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard a p": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard .bottomrow": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard .bottomrow .link-arrow": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard .bottomrow .link-arrow .ncarrow": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard p": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard:last-of-type": {
+      "pageCount": 202,
+      "status": "pending"
+    },
+    ".news-teaser-link": {
+      "pageCount": 191,
+      "status": "pending"
+    },
+    ".news-teaser": {
+      "pageCount": 191,
+      "status": "pending"
+    },
+    ".news-teaser .teaser-text": {
+      "pageCount": 191,
+      "status": "pending"
+    },
+    ".news-teaser .teaser-text h2": {
+      "pageCount": 191,
+      "status": "pending"
+    },
+    ".news-teaser .news-date": {
+      "pageCount": 191,
+      "status": "pending"
+    },
+    ".eventbutton a": {
+      "pageCount": 190,
+      "status": "pending"
+    },
+    ".news-teaser .teaser-text p": {
+      "pageCount": 187,
+      "status": "pending"
+    },
+    ".matchheight > .columns .block-field-blockparagraphfrom-libraryfield-reusable-paragraph": {
+      "pageCount": 182,
+      "status": "pending"
+    },
+    ".personinfo .profilepic .imgcapt figcaption": {
+      "pageCount": 172,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard h2": {
+      "pageCount": 165,
+      "status": "pending"
+    },
+    ".image-gallery": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".image-gallery__image": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".image-gallery .imgcapt": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".image-gallery .media--image--figure": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".image-gallery img": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".image-gallery__content": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".image-gallery__view-all": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".image-gallery-content": {
+      "pageCount": 164,
+      "status": "pending"
+    },
+    ".profile-gallery": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".profile-gallery > *": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".profile-gallery .profilecard": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".profile-gallery .profilecard .name": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".profile-gallery .profilecard .subhead": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".profile-gallery .profilecard .subhead2": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".profile-gallery .profilecard p": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".profile-gallery .profilecard img": {
+      "pageCount": 159,
+      "status": "pending"
+    },
+    ".course-full": {
+      "pageCount": 158,
+      "status": "pending"
+    },
+    ".course-full p": {
+      "pageCount": 158,
+      "status": "pending"
+    },
+    ".course-full a": {
+      "pageCount": 158,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard.mainfeat": {
+      "pageCount": 154,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard.mainfeat .thumb img": {
+      "pageCount": 154,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard.mainfeat a .thumb": {
+      "pageCount": 154,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard.mainfeat a": {
+      "pageCount": 154,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard.mainfeat .bottomrow": {
+      "pageCount": 154,
+      "status": "pending"
+    },
+    ".button.success": {
+      "pageCount": 148,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard.mainfeat p": {
+      "pageCount": 148,
+      "status": "pending"
+    },
+    ".views-exposed-form": {
+      "pageCount": 148,
+      "status": "pending"
+    },
+    ".views-exposed-form label": {
+      "pageCount": 148,
+      "status": "pending"
+    },
+    ".views-exposed-form div": {
+      "pageCount": 148,
+      "status": "pending"
+    },
+    ".views-exposed-form .button": {
+      "pageCount": 148,
+      "status": "pending"
+    },
+    ".uosblock .block-field-blockparagraphpara-text-boxfield-text-box-media": {
+      "pageCount": 144,
+      "status": "pending"
+    },
+    ".uosblock .block-field-blockparagraphpara-text-boxfield-text-box-media img": {
+      "pageCount": 144,
+      "status": "pending"
+    },
+    ".apply-button": {
+      "pageCount": 142,
+      "status": "pending"
+    },
+    ".paragraph--type--featured-video": {
+      "pageCount": 141,
+      "status": "pending"
+    },
+    ".featured-video": {
+      "pageCount": 141,
+      "status": "pending"
+    },
+    ".featured-video > div": {
+      "pageCount": 141,
+      "status": "pending"
+    },
+    ".featured-video .vid_descript": {
+      "pageCount": 141,
+      "status": "pending"
+    },
+    ".featured-video .vid_descript .descripttext": {
+      "pageCount": 141,
+      "status": "pending"
+    },
+    ".pagination": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination li": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination li:last-child": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination li:first-child": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination a": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination .current": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pager__item--last [aria-hidden=true]": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pager__item--next [aria-hidden=true]": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination li.pager__item": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination li.pager__item a": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination li.pager__item.current": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".pagination li.pager__item.current a": {
+      "pageCount": 140,
+      "status": "pending"
+    },
+    ".sp-teaser": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".sp-teaser .student-profile-name": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".sp-teaser .student-profile-course": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".sp-teaser .teaser-text": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".sp-teaser .teaser-text h3": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".sp-teaser .teaser-text p": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".featured-video .vid_descript h3": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".sp-teaser h3 a": {
+      "pageCount": 136,
+      "status": "pending"
+    },
+    ".block-views-blocksection-news-block-1 .views-exposed-form": {
+      "pageCount": 133,
+      "status": "pending"
+    },
+    ".block-views-blocksection-news-block-1 .views-exposed-form div": {
+      "pageCount": 133,
+      "status": "pending"
+    },
+    ".block-views-blocksection-news-block-1 .views-exposed-form div label": {
+      "pageCount": 133,
+      "status": "pending"
+    },
+    ".block-views-blocksection-news-block-1 .views-exposed-form input": {
+      "pageCount": 133,
+      "status": "pending"
+    },
+    ".block-views-blocksection-news-block-1 .views-exposed-form .button": {
+      "pageCount": 133,
+      "status": "pending"
+    },
+    "h2.news-index": {
+      "pageCount": 133,
+      "status": "pending"
+    },
+    "h1.pgtitle": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".deptfac": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".pg-course-introd": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".pgcourserow": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box .startyear": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box h1": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box h1 .award-type": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box .deptfac": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.details": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.details > li": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.features": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.features li": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.features li a": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box .buttons": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box .buttons .uosbutton": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box .buttons .uosbutton:last-of-type": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .sticky-ctas": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .sticky-ctas .ugbuttons": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .sticky-ctas .shrinkctas": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .sticky-ctas .ugbuttons .stickybutton": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .sticky-ctas .stickybutton": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    "#main .pgkeybg .sticky-ctas.on-load": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".grouppromoPG": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".startyear": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".pgcourserow .large-4": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".pgcourserow .large-8": {
+      "pageCount": 130,
+      "status": "pending"
+    },
+    ".pg-course-image img": {
+      "pageCount": 129,
+      "status": "pending"
+    },
+    ".paragraph--type--ug-course-structure-module-block h3": {
+      "pageCount": 129,
+      "status": "pending"
+    },
+    ".pg-course-image": {
+      "pageCount": 129,
+      "status": "pending"
+    },
+    "#main .ugkeybg .title-box .left .keydetails ul.features li .fy": {
+      "pageCount": 126,
+      "status": "pending"
+    },
+    ".ug-course-teaching": {
+      "pageCount": 125,
+      "status": "pending"
+    },
+    "main .multicol ul li": {
+      "pageCount": 124,
+      "status": "pending"
+    },
+    ".stap-card__info": {
+      "pageCount": 123,
+      "status": "pending"
+    },
+    ".stap-card .summary-text": {
+      "pageCount": 123,
+      "status": "pending"
+    },
+    ".stap-card": {
+      "pageCount": 123,
+      "status": "pending"
+    },
+    ".stap-card .summary-text h3": {
+      "pageCount": 123,
+      "status": "pending"
+    },
+    ".stap-card .summary-text a": {
+      "pageCount": 123,
+      "status": "pending"
+    },
+    ".stap-card .jobtitle": {
+      "pageCount": 123,
+      "status": "pending"
+    },
+    ".stap-card .profilepic": {
+      "pageCount": 122,
+      "status": "pending"
+    },
+    ".stap-card .profilepic img": {
+      "pageCount": 122,
+      "status": "pending"
+    },
+    ".stap-card .enlarge": {
+      "pageCount": 122,
+      "status": "pending"
+    },
+    ".stap-card .profilepic-modal": {
+      "pageCount": 122,
+      "status": "pending"
+    },
+    ".staffcardindex": {
+      "pageCount": 121,
+      "status": "pending"
+    },
+    ".stap-card .deptname": {
+      "pageCount": 119,
+      "status": "pending"
+    },
+    ".staffcardindex > div": {
+      "pageCount": 114,
+      "status": "pending"
+    },
+    ".staffcardindex > div .stap-card": {
+      "pageCount": 113,
+      "status": "pending"
+    },
+    ".staffcardindex > div .stap-card a[href^=\"mailto:\"]": {
+      "pageCount": 113,
+      "status": "pending"
+    },
+    ".staffcardindex > div .stap-card .enlarge": {
+      "pageCount": 112,
+      "status": "pending"
+    },
+    ".staffcardindex > div .stap-card .close": {
+      "pageCount": 112,
+      "status": "pending"
+    },
+    ".staffcardindex > div .stap-card .profilepic-modal": {
+      "pageCount": 112,
+      "status": "pending"
+    },
+    ".callout": {
+      "pageCount": 109,
+      "status": "pending"
+    },
+    ".callout > :first-child": {
+      "pageCount": 109,
+      "status": "pending"
+    },
+    ".callout > :last-child": {
+      "pageCount": 109,
+      "status": "pending"
+    },
+    ".callout.secondary": {
+      "pageCount": 109,
+      "status": "pending"
+    },
+    ".coursecard ul.course-features li": {
+      "pageCount": 109,
+      "status": "pending"
+    },
+    ".atoz-list": {
+      "pageCount": 108,
+      "status": "pending"
+    },
+    ".atoz-list span": {
+      "pageCount": 108,
+      "status": "pending"
+    },
+    ".atoz-list span a": {
+      "pageCount": 108,
+      "status": "pending"
+    },
+    ".atoz-list a": {
+      "pageCount": 108,
+      "status": "pending"
+    },
+    ".field-paragraph--field-mb-media-item": {
+      "pageCount": 107,
+      "status": "pending"
+    },
+    ".field-paragraph--field-mb-media-item img": {
+      "pageCount": 107,
+      "status": "pending"
+    },
+    ".uosblock.grey .uosquote": {
+      "pageCount": 103,
+      "status": "pending"
+    },
+    ".quicklinks .matchheight": {
+      "pageCount": 103,
+      "status": "pending"
+    },
+    ".quicklinks .rellink": {
+      "pageCount": 103,
+      "status": "pending"
+    },
+    ".quicklinks .rellink .linktext": {
+      "pageCount": 103,
+      "status": "pending"
+    },
+    ".quicklinks .rellink .arrow": {
+      "pageCount": 103,
+      "status": "pending"
+    },
+    ".block-field-blocknodeeventfield-ev-location h2": {
+      "pageCount": 98,
+      "status": "pending"
+    },
+    ".node--type-hub .paragraph--type--para-media-box": {
+      "pageCount": 97,
+      "status": "pending"
+    },
+    ".featured-news .featured-news-view-all-link": {
+      "pageCount": 96,
+      "status": "pending"
+    },
+    "dd #my-pubs .backToTop": {
+      "pageCount": 96,
+      "status": "pending"
+    },
+    ".node--type-staff-profile-index .atoz-header + div .atoz-list": {
+      "pageCount": 94,
+      "status": "pending"
+    },
+    ".stap-teaser .profilepic .imgcapt figcaption": {
+      "pageCount": 92,
+      "status": "pending"
+    },
+    ".stap-card p": {
+      "pageCount": 90,
+      "status": "pending"
+    },
+    ".stap-card .profileinitials": {
+      "pageCount": 86,
+      "status": "pending"
+    },
+    ".newscard figure.imgcapt figcaption": {
+      "pageCount": 82,
+      "status": "pending"
+    },
+    ".newscard h3": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard h3": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
+      "pageCount": 80,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow": {
+      "pageCount": 80,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-box.highlight": {
+      "pageCount": 80,
+      "status": "pending"
+    },
+    ".uosblock.highlight h3": {
+      "pageCount": 78,
+      "status": "pending"
+    },
+    "blockquote:not(.uosquote)": {
+      "pageCount": 77,
+      "status": "pending"
+    },
+    ".quicklinks h3": {
+      "pageCount": 73,
+      "status": "pending"
+    },
+    ".contactinfo .officehours": {
+      "pageCount": 72,
+      "status": "pending"
+    },
+    ".staffcardindex.manual > div:nth-of-type(3n)": {
+      "pageCount": 72,
+      "status": "pending"
+    },
+    "blockquote:not(.uosquote) p": {
+      "pageCount": 70,
+      "status": "pending"
+    },
+    "blockquote:not(.uosquote) p:first-of-type": {
+      "pageCount": 70,
+      "status": "pending"
+    },
+    ".medium-12": {
+      "pageCount": 67,
+      "status": "pending"
+    },
+    "body.node--type-landing .uosblock.grey": {
+      "pageCount": 66,
+      "status": "pending"
+    },
+    ".node--type-staff-profile-index .tablesaw-stack.staff-profile-list-block": {
+      "pageCount": 63,
+      "status": "pending"
+    },
+    ".node--type-staff-profile-index .tablesaw-stack td.views-field-field-stap-show-telephone": {
+      "pageCount": 63,
+      "status": "pending"
+    },
+    ".node--type-staff-profile-index .tablesaw-stack td[colspan=\"6\"]": {
+      "pageCount": 63,
+      "status": "pending"
+    },
+    ".staff-profile-list-block table th.views-field-field-stap-surname-2": {
+      "pageCount": 63,
+      "status": "pending"
+    },
+    ".staff-profile-list-block table td.views-field-field-stap-surname-2": {
+      "pageCount": 63,
+      "status": "pending"
+    },
+    ".node--type-course .accreds": {
+      "pageCount": 62,
+      "status": "pending"
+    },
+    ".node--type-course .accreds .accbody": {
+      "pageCount": 62,
+      "status": "pending"
+    },
+    ".node--type-hub .paragraph--type--para-media-box p": {
+      "pageCount": 61,
+      "status": "pending"
+    },
+    ".node--type-hub .paragraph--type--para-media-box h3": {
+      "pageCount": 59,
+      "status": "pending"
+    },
+    ".course-ereq-panel--no-access": {
+      "pageCount": 58,
+      "status": "pending"
+    },
+    ".event2-date-times ul": {
+      "pageCount": 56,
+      "status": "pending"
+    },
+    ".event2-date-times ul li": {
+      "pageCount": 56,
+      "status": "pending"
+    },
+    ".event-time": {
+      "pageCount": 56,
+      "status": "pending"
+    },
+    ".event-time .add-to-cal": {
+      "pageCount": 53,
+      "status": "pending"
+    },
+    ".calendar-buttons": {
+      "pageCount": 53,
+      "status": "pending"
+    },
+    ".accreds .accbody:nth-of-type(3n)": {
+      "pageCount": 53,
+      "status": "pending"
+    },
+    ".event-teaser": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".event-teaser .teaser-text h2": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".event-teaser .event-details.ev-venue span": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".paragraph--type--featured-video .feat-vid-link": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".featured-video .vid_descript .descripttext .feat-title": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".featured-video .vid_descript .link-arrow": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".featured-video .vid_descript .link-arrow .fmarrow": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".featured-video .vid_descript p": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".event-teaser .teaser-text .event-details.ev-venue span": {
+      "pageCount": 52,
+      "status": "pending"
+    },
+    ".pagination li.pager__item--ellipsis": {
+      "pageCount": 49,
+      "status": "pending"
+    },
+    ".profile-sliders": {
+      "pageCount": 49,
+      "status": "pending"
+    },
+    ".profile-sliders > div": {
+      "pageCount": 49,
+      "status": "pending"
+    },
+    ".profile-sliders > div.inactive": {
+      "pageCount": 49,
+      "status": "pending"
+    },
+    ".multicol .profilecard": {
+      "pageCount": 48,
+      "status": "pending"
+    },
+    ".stap-card .profilepic .imgcapt figcaption": {
+      "pageCount": 46,
+      "status": "pending"
+    },
+    ".node--type-hub .paragraph--type--para-media-box h3.field-mb-title": {
+      "pageCount": 45,
+      "status": "pending"
+    },
+    ".block-field-blocknodenews-indexfield-ni-intro": {
+      "pageCount": 40,
+      "status": "pending"
+    },
+    ".uosblock.dark h3": {
+      "pageCount": 39,
+      "status": "pending"
+    },
+    ".staffcardindex > div.col1": {
+      "pageCount": 38,
+      "status": "pending"
+    },
+    ".staffcardindex > div .cardrow": {
+      "pageCount": 38,
+      "status": "pending"
+    },
+    ".event-teaser .teaser-text__title a": {
+      "pageCount": 37,
+      "status": "pending"
+    },
+    ".staffcardindex > div.col3": {
+      "pageCount": 37,
+      "status": "pending"
+    },
+    ".image-gallery figcaption": {
+      "pageCount": 36,
+      "status": "pending"
+    },
+    ".image-gallery__content h2": {
+      "pageCount": 35,
+      "status": "pending"
+    },
+    ".image-gallery__content .description": {
+      "pageCount": 35,
+      "status": "pending"
+    },
+    ".paragraph--type--para-signpost-card .field-sc-link": {
+      "pageCount": 35,
+      "status": "pending"
+    },
+    ".signpost-card .paragraph--type--para-signpost-card .field-sc-link": {
+      "pageCount": 35,
+      "status": "pending"
+    },
+    ".signpost-card .field-sc-link": {
+      "pageCount": 35,
+      "status": "pending"
+    },
+    ".logos-homehub .row-width .logo-container .home-hub-logos": {
+      "pageCount": 33,
+      "status": "pending"
+    },
+    ".logos-homehub .row-width .logo-container img": {
+      "pageCount": 33,
+      "status": "pending"
+    },
+    ".nohead .nlpheader .lpaspect": {
+      "pageCount": 31,
+      "status": "pending"
+    },
+    ".nohead .nlpheader .lpaspect .lpcontent": {
+      "pageCount": 31,
+      "status": "pending"
+    },
+    ".nohead .nlpheader .lpaspect .lpcontent p": {
+      "pageCount": 31,
+      "status": "pending"
+    },
+    ".nohead .nlpheader .lpaspect .lpcontent h1": {
+      "pageCount": 31,
+      "status": "pending"
+    },
+    ".nohead .nlpheader": {
+      "pageCount": 31,
+      "status": "pending"
+    },
+    ".featured-news > div .newscard .news-src": {
+      "pageCount": 29,
+      "status": "pending"
+    },
+    ".ugcoursebold": {
+      "pageCount": 29,
+      "status": "pending"
+    },
+    ".news-teaser .news-src": {
+      "pageCount": 28,
+      "status": "pending"
+    },
+    ".accreds .accred-placeholder": {
+      "pageCount": 27,
+      "status": "pending"
+    },
+    ".homehub-top": {
+      "pageCount": 26,
+      "status": "pending"
+    },
+    ".ev-link": {
+      "pageCount": 25,
+      "status": "pending"
+    },
+    ".ev-link a": {
+      "pageCount": 25,
+      "status": "pending"
+    },
+    "hr.onthispage": {
+      "pageCount": 23,
+      "status": "pending"
+    },
+    ".highlight .uosbutton": {
+      "pageCount": 23,
+      "status": "pending"
+    },
+    ".logos-homehub .scrollarrows button": {
+      "pageCount": 22,
+      "status": "pending"
+    },
+    ".coursecard ul.course-features li:not(:last-of-type)": {
+      "pageCount": 22,
+      "status": "pending"
+    },
+    ".event-card-link": {
+      "pageCount": 20,
+      "status": "pending"
+    },
+    ".event-card-link h2 a": {
+      "pageCount": 20,
+      "status": "pending"
+    },
+    ".event-card-link .details": {
+      "pageCount": 20,
+      "status": "pending"
+    },
+    ".event-card-link .field-ev-title": {
+      "pageCount": 20,
+      "status": "pending"
+    },
+    ".event-card-link .event-details": {
+      "pageCount": 20,
+      "status": "pending"
+    },
+    ".event-card-link .link-arrow": {
+      "pageCount": 20,
+      "status": "pending"
+    },
+    ".event-card-link .link-arrow .scarrow": {
+      "pageCount": 20,
+      "status": "pending"
+    },
+    ".groupPubsPublist #my-pubs h3": {
+      "pageCount": 17,
+      "status": "pending"
+    },
+    ".teaser-thumb figure.imgcapt figcaption": {
+      "pageCount": 16,
+      "status": "pending"
+    },
+    ".block-views-blocksection-events-block-1 input": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".event-index input": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".event-index .form-item label": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".event-index .views-exposed-form": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".event-index .views-exposed-form div": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".course-form button.primary": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".homecoursesearch .otherways a": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".course-form .flex": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".course-form .flex button": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch a": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .course-form": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .course-form button": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .flex": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .flex button.primary": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .flex input": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .otherways": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".homecoursesearch": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".homecoursesearch .course-form": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".homecoursesearch .flex": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".homecoursesearch .flex button.primary": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".homecoursesearch .flex input": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".homecoursesearch .otherways": {
+      "pageCount": 15,
+      "status": "pending"
+    },
+    ".matchheight > .columns > div.paragraph--type--course-card": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    ".matchheight > .columns > div.paragraph--type--course-card > a": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    ".multicol .coursecard": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    ".course-form label": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .flex div": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .flex div > label": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .otherways li": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .otherways li:last-of-type": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    ".homecoursesearch .flex div": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    ".homecoursesearch .flex div > label": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    ".homecoursesearch .otherways li": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    ".atas_link": {
+      "pageCount": 13,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .flex select": {
+      "pageCount": 13,
+      "status": "pending"
+    },
+    ".homecoursesearch .flex select": {
+      "pageCount": 13,
+      "status": "pending"
+    },
+    ".block-field-blocknodemodules-single-coursefield-msc-media": {
+      "pageCount": 13,
+      "status": "pending"
+    },
+    "div[data-entity-embed-display=\"view_mode:taxonomy_term.wysiwyg_logos\"]": {
+      "pageCount": 12,
+      "status": "pending"
+    },
+    "div[data-entity-embed-display=\"view_mode:taxonomy_term.wysiwyg_logos\"] .wysilogo": {
+      "pageCount": 12,
+      "status": "pending"
+    },
+    "div[data-entity-embed-display=\"view_mode:taxonomy_term.wysiwyg_logos\"] .wysilogo img": {
+      "pageCount": 12,
+      "status": "pending"
+    },
+    "div[data-entity-embed-display=\"view_mode:taxonomy_term.wysiwyg_logos\"] + *": {
+      "pageCount": 11,
+      "status": "pending"
+    },
+    ".uosblock.dark h4": {
+      "pageCount": 11,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .horizontallinks": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .course-form h2": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .flex button.primary .fa-search": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .showotherways": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    ".homecoursesearch .flex button.primary .fa-search": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    ".uosblock.highlight h4": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    ".uosblock.highlight blockquote": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    ".uosblock.highlight blockquote p": {
+      "pageCount": 10,
+      "status": "pending"
+    },
+    ".logos-homehub p": {
+      "pageCount": 9,
+      "status": "pending"
+    },
+    ".featured-news .newscard .video-embed-field-lazy": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".featured-news .newscard .video-embed-field-lazy-play": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".event-index .views-row": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".node--type-landing .paragraph--type--para-media-box": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".inline-description-list--contact .inline-description-list__description a": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .horizontallinks a:not(:last-of-type)": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".inline-description-list--contact .inline-description-list__term": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".inline-description-list--contact .inline-description-list__description": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".fullimgblock": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock .uosblock": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock .uosblock > div.block": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock:not(.promo)": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock:not(.promo) .uosblock": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock:not(.promo) .qname": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock:not(.promo) .qsource": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock .block-field-blockparagraphpara-quotefield-qb-body p": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    "div[data-entity-embed-display=\"view_mode:taxonomy_term.wysiwyg_logos\"] + div[data-entity-embed-display=\"view_mode:taxonomy_term.wysiwyg_logos\"]": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".block-field-blocknodegroup-publicationsfield-gp-media": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".multicol .medium-4 .block-field-blockparagraphfrom-libraryfield-reusable-paragraph > a": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".node--type-staff-profile-index .hideicons .telnum br": {
+      "pageCount": 7,
+      "status": "pending"
+    },
+    ".fullimgblock .uosblock > div.block.block-field-blockparagraphpara-quotefield-qb-background-media": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".fullimgblock .uosblock img": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".campaign-header": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".campaign-header .campaign-overlay": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".campaign-header .campaign-holder": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".campaign-header .campaign-holder .info": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".campaign-header .campaign-holder .campaign-media": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".campaign-header .campaign-holder .campaign-mobile-media": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".campaign-header .campaign-holder .campaign-mobile-media img": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".vertical-video-embed": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".vertical-video-embed__overlay": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".vertical-video-embed__duration": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".vertical-video-embed__duration-icon": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".vertical-video-embed__title": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".vertical-video-embed img": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".studentprofile_studentteasers": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".inline-description-list--contact .inline-description-list__term:not(:first-of-type)": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".uosblock.dark blockquote": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".uosblock.dark blockquote p": {
+      "pageCount": 6,
+      "status": "pending"
+    },
+    ".event-card-link .ev-time": {
+      "pageCount": 5,
+      "status": "pending"
+    },
+    ".node--type-landing .paragraph--type--para-media-box p": {
+      "pageCount": 5,
+      "status": "pending"
+    },
+    ".media-360-embed--cloudpano .video-embed-field-lazy img": {
+      "pageCount": 5,
+      "status": "pending"
+    },
+    ".media-360-embed--cloudpano .video-embed-field-lazy-play": {
+      "pageCount": 5,
+      "status": "pending"
+    },
+    ".course-form h3": {
+      "pageCount": 5,
+      "status": "pending"
+    },
+    "#main .homecoursesearch .course-form h3": {
+      "pageCount": 5,
+      "status": "pending"
+    },
+    ".homecoursesearch .course-form h3": {
+      "pageCount": 5,
+      "status": "pending"
+    },
+    ".event-category-item": {
+      "pageCount": 4,
+      "status": "pending"
+    },
+    ".node--type-landing .paragraph--type--para-media-box h3": {
+      "pageCount": 4,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card .event-card-link": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card .event-card-link .field-ev-title": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card .event-card-link .field-ev-title a": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card .event-tag": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card h2": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card .details-flex": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card .details-flex .details": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".paragraph--type--event-signposting-card .details-flex .event-details": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".dark hr": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".highlight hr": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".matchheight > .columns > div.paragraph--type--event-signposting-card .event-card-link": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".uosblock.dark figure figcaption": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".vertical-shelf": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".vertical-shelf__track": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".vertical-shelf__item": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".vertical-shelf__item .vertical-video-embed": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".vertical-shelf__action": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".vertical-shelf__action button": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".vertical-shelf__action button[data-action=forward]": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    "[data-entity-embed-display=\"view_mode:media.video_embed_vertical\"]": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    "[data-entity-embed-display=\"view_mode:media.video_embed_vertical\"] .vertical-video-embed": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".block-field-blockparagraphpara-raw-htmlfield-raw-html-code .coursecard": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".coursecard h2": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".block-field-blocknodemodules-multiple-coursesfield-mmc-media": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".node--type-modules-multiple-courses h1": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    ".fullimgblock:not(.promo) .uosblock.highlight": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-tag": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex .details": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex .details .field-ev-title": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex .details h2": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex .details h2.field-ev-title a": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex .details .event-details": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex .link-arrow": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".paragraph--type--event-signposting-box .event-card-link .details-flex .link-arrow .scarrow": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".form-item-field-ev2-categories-target-id select": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".matchheight > .columns > div.paragraph--type--event-signposting-box .event-card-link": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".uosblock.highlight figure figcaption": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".node--type-home-demo #main .homecoursesearch": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".uosblock.highlight h5": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    ".campaign-header .campaign-holder .campaign-media video": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".campaign-header .campaign-holder .campaign-media .pause-button": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".mobileonly": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".home-banner-link .homepage-header": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".home-banner-link .homepage-header .imgbanner": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".home-banner-link .homepage-header .imgbanner img": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".home-banner-link .homepage-header .headrow": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".home-banner-link .homepage-header .headrow .mainheadline": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".home-banner-link .homepage-header .headrow .subheadline": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".home-banner-link .homepage-header .headrow .subheadline p": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".nlpheader .lpaspect .lpcontent .mgmt-logos": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".nlpheader .lpaspect .lpcontent .mgmt-logos div": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".nlpheader .lpaspect .lpcontent .mgmt-logos div.aacsb": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".nlpheader .lpaspect .lpcontent .mgmt-logos.hideonmobile": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".news-search-comp": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".news-search-comp input": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".news-search-comp button": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".news-search-comp form": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".paragraph--type--para-signpost-box.light": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".paragraph--type--para-signpost-box.light .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".paragraph--type--para-signpost-box.light .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    ".uosblock.dark h5": {
+      "pageCount": 1,
+      "status": "low-priority"
+    }
+  },
+  "components": {}
+}
