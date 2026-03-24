@@ -33,24 +33,9 @@ node tools/init-manifest.js --min-pages 3
 mkdir -p src/components src/stories specs logs
 ```
 
-## Page index CLI
+## Page index
 
-`query-index` is a bundled bin (registered in `package.json`, available after `npm install`) that queries the pre-built CSS selector index:
-
-```bash
-query-index --selector ".news-teaser"
-# → { "pageCount": 142, "pages": ["https://...", ...] }
-```
-
-The explore agent calls this at runtime to get page URLs. URLs are not stored in the manifest.
-
-The index is stored in `tools/index.json.gz` (generated artifact, not committed to git). To rebuild it:
-
-```bash
-npm run tools:crawl -- <sitemap-url> <css-url> --concurrency 10
-```
-
-The adapter script is `tools/query-index.js`.
+The index is stored in `tools/index.json.gz`. The explore agent queries it at runtime via `tools/get-examples.js`.
 
 ## Key files
 
@@ -102,6 +87,5 @@ Selector statuses: `pending` | `done` | `skipped` | `low-priority` | `needs-revi
 
 ## tools/
 
-- `extract-component.js` — fetches live pages, extracts DOM subtrees matching a selector via cheerio, deduplicates by structural skeleton
-- `init-manifest.js` — one-time setup; calls `query-index` per selector to build `selector-manifest.json`
-- `query-index.js` — JSON adapter for the page index; outputs `{ pageCount, pages }` for a given selector
+- `get-examples.js` — fetches live pages for a selector and returns HTML fragments; supports pagination (`--page`) and context mode (`--context`)
+- `init-manifest.js` — one-time setup; reads `tools/index.json.gz` directly to build `selector-manifest.json`

@@ -159,16 +159,17 @@ export const Featured: Story = {
 - `title` in meta: always `'Components/<ComponentName>'`.
 - Always include `tags: ['autodocs']`.
 - Story names must **exactly match** the names in the ComponentSpec `stories` array.
-- Use `args` for all prop values. Do NOT use a `render` function unless the story is a "Group" story.
-- **Group story** (renders multiple instances side by side):
+- Use `args` for all prop values. Do NOT use a `render` function unless the story has an `instances` array.
+- **Group story** — identified by an `instances` array in the spec rather than a `props` object. Render each entry in `instances` as a separate component instance. Use the exact prop values from `instances`; do not invent placeholder content. Wrap the instances in the `container` element from the spec (using its `className` if present); if no `container` is specified, fall back to `<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>`.
   ```tsx
+  // container: { element: "ul", className: "news-list" }
   export const Group: Story = {
     render: () => (
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-        <NewsTeaser title="Story One" summary="First summary." />
-        <NewsTeaser title="Story Two" summary="Second summary." />
-        <NewsTeaser title="Story Three" summary="Third summary." />
-      </div>
+      <ul className="news-list">
+        <NewsTeaser title="Research Funding Record" summary="The university secured..." />
+        <NewsTeaser title="New Library Opens" summary="Students can now access..." />
+        <NewsTeaser title="Graduation Ceremony 2024" summary="Over 2,000 students..." />
+      </ul>
     ),
   };
   ```

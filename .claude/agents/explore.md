@@ -13,36 +13,42 @@ You analyse real DOM fragments from a live website to produce a ComponentSpec JS
 
 You will receive a target CSS selector and a list of related selectors. Before analysing anything, gather real page samples.
 
-**Query the page index** for the target selector to get a list of page URLs:
+**Get examples** using the get-examples tool:
 ```bash
-query-index --selector ".news-teaser"
-# returns JSON: { "pageCount": 142, "pages": ["/news/annual-report", "/news/campus-update", ...] }
+node tools/get-examples.js --selector ".news-teaser" --samples 8
+# returns JSON: { "selector": ".news-teaser", "totalPages": 142, "page": 1, "results": [...] }
 ```
 
-**If `pageCount` is 0**, immediately output a ComponentSpec with `componentName: null` and `notes: "no-pages-in-index"`. Do not attempt extraction.
+Each result contains:
+- `url` — the source page
+- `matchCount` — how many times the selector appeared on that page
+- `html` — the first matching element's outer HTML
+- `duplicates` — how many other pages in this batch had the same DOM structure (skeleton) as this result
+- `textVaries` — whether any of those structurally identical pages had different text content
 
-**Extract DOM fragments** from those pages using the extraction script:
-```bash
-node tools/extract-component.js \
-  --selector ".news-teaser" \
-  --urls "/news/annual-report,/news/campus-update,/news/page3,..." \
-  --base-url "https://www.example.ac.uk" \
-  --max-samples 8 \
-  --dedupe \
-  --output /tmp/fragments.json
-```
+**Interpreting `duplicates` and `textVaries`:**
+- `duplicates: 0` — this structure was unique in the batch; no conclusions about frequency
+- `duplicates: N` (high) — this is the dominant structure across pages
+- `duplicates: N, textVaries: false` — the text content is the same on every page with this structure; treat it as hardcoded in the component, not a prop (or at most an optional prop with that value as the default)
+- `duplicates: N, textVaries: true` — the structure is shared but text differs across pages; the text is variable and should be a prop
 
-Read `/tmp/fragments.json` to get the extracted HTML fragments.
+**If `totalPages` is 0**, immediately output a ComponentSpec with `componentName: null` and `notes: "no-pages-in-index"`. Do not attempt extraction.
+
+**If `results` is empty**, output a ComponentSpec with `componentName: null` and `notes: "no-dom-match — selector found no elements in sampled pages"`. Do not attempt to invent a spec.
 
 **How many samples do you need?**
-- Start with 8. Read the fragments.
-- If all 8 fragments have identical DOM structure (only text/images differ), you have enough.
-- If there is structural variation (some have extra child elements, different class combinations), fetch more by increasing `--max-samples` to 15 or 20.
+- Start with 8. Analyse the results.
+- If all fragments have identical DOM structure (only text/images differ), you have enough.
+- If there is structural variation (some have extra child elements, different class combinations), fetch more: `--samples 15` or add `--page 2` to get a fresh set of pages.
 - You are looking for enough variation to identify all props and all conditional sections.
 
-**If the notes mention an ancestor-context selector** (e.g. `#main > .card`): use the verbatim selector for the `query-index` call (so it looks up the right pages), but also try extracting with just the inner class (e.g. `--selector ".card"`) to get broader structural samples. Use your judgment about which fragments are more informative.
+**If `matchCount` is greater than 1** on most pages, the component is usually rendered in groups. Use `--context` to see how multiple instances relate to one another — useful for writing a Group story:
+```bash
+node tools/get-examples.js --selector ".news-teaser" --samples 4 --context
+# html is the lowest ancestor containing all instances of the selector on the page
+```
 
-**If extract-component.js returns exit code 1** (no matches found): output a ComponentSpec with `componentName: null` and `notes: "no-dom-match — selector found no elements in sampled pages"`. Do not attempt to invent a spec.
+**If the notes mention an ancestor-context selector** (e.g. `#main > .card`): use the verbatim selector for the initial call (so it looks up the right pages), but also try with just the inner class (e.g. `--selector ".card"`) to get broader structural samples. Use your judgment about which fragments are more informative.
 
 ---
 
@@ -85,9 +91,22 @@ Output ONLY a single valid JSON object. No prose, no explanation, no markdown fe
   ],
   "stories": [
     {
-      "name": "string (PascalCase, e.g. Default, WithImage, Featured, Group)",
+      "name": "string (PascalCase, e.g. Default, WithImage, Featured)",
       "description": "string",
       "props": {}
+    },
+    {
+      "name": "Group",
+      "description": "string",
+      "container": {
+        "element": "string — HTML tag of the wrapping element seen in --context (e.g. ul, div, section)",
+        "className": "string — CSS class(es) on the container, or omit if none"
+      },
+      "instances": [
+        {},
+        {},
+        {}
+      ]
     }
   ],
   "notes": "string — caveats, optional patterns, edge cases observed"
@@ -106,7 +125,7 @@ Check the fragments — what HTML tag does the element matching the target selec
 
 Apply these rules **in priority order**:
 
-1. **Text content that varies across samples** → `string` prop. Map to the element and `"innerText"`. Name it semantically: `title`, `summary`, `label`, `date`, `caption`.
+1. **Text content that varies across samples** → `string` prop. Map to the element and `"innerText"`. Name it semantically: `title`, `summary`, `label`, `date`, `caption`. If the result has `textVaries: false` with a significant `duplicates` count, the text is the same across all pages with this structure — hardcode it in the JSX rather than making it a prop (or make it optional with that text as the default).
 2. **URL-like attributes that vary** (`src`, `href`) → `string` prop. Map to element + attribute name.
 3. **Alt text** → optional `string` prop (sometimes absent). Map to element + `"alt"`.
 4. **A CSS class on the root element in SOME samples but not others** (e.g. `featured`, `active`, `highlighted`) → `boolean` prop with `togglesClass`. Name it `is<ClassName>` (e.g. `isFeatured`). Default is `false`.
@@ -134,7 +153,7 @@ Do NOT use subcomponents for:
 - Write additional stories for each meaningful variation: each optional section toggled on, each boolean class toggled, each content-length variation.
 - Use **real content from the fragments** — real titles, real image URLs, real descriptions. Not Lorem Ipsum.
 - Name stories clearly: `Default`, `WithImage`, `Featured`, `WithLongTitle`, `Group`.
-- Write a **"Group"** story if the component is typically rendered in a list or grid (render 3 instances).
+- Write a **"Group"** story if the component is typically rendered in a list or grid. Use `instances` (an array of prop objects) instead of `props` — populate each entry with real content from the `--context` fragments. Also record the wrapping element from the `--context` output as `container` (element tag + any CSS classes). If the `--context` ancestor has no meaningful class, omit `className` from `container`.
 - Aim for 2–5 stories. More than 5 is usually noise.
 
 ### Edge cases
