@@ -57,13 +57,18 @@ let countPending = 0;
 let countSkipped = 0;
 let countLowPriority = 0;
 
+selectorEntries.sort((a, b) => {
+  const countA = a[1].mode === 'list' ? a[1].pages.length : totalPages - a[1].pages.length;
+  const countB = b[1].mode === 'list' ? b[1].pages.length : totalPages - b[1].pages.length;
+  return countB - countA;
+});
+
 for (const [selector, entry] of selectorEntries) {
   const pageCount = entry.mode === 'list'
     ? entry.pages.length
     : totalPages - entry.pages.length;
 
   if (pageCount === 0) {
-    manifest.selectors[selector] = { pageCount: 0, status: 'skipped', skipReason: 'dead-css' };
     countSkipped++;
   } else if (pageCount < minPages) {
     manifest.selectors[selector] = { pageCount, status: 'low-priority' };
