@@ -15951,7 +15951,7 @@ ul.breadcrumbs li.current::after {
 
 ul.breadcrumbs li:not(:last-child)::after {
   margin: 0 0.4rem;
-  content: "â€º";
+  content: "›";
   color: #5a6269;
   font-size: 1rem;
   font-weight: 700;

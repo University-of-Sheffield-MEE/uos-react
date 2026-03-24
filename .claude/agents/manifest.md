@@ -23,9 +23,27 @@ This returns the top 30 pending selectors by page count. Inspect the results.
 
 ### Step 2 — Skip utility classes
 
-A selector is a utility class if it has a short, generic, non-semantic name — e.g. `.hidden`, `.clearfix`, `.sr-only`, `.visually-hidden`, `.text-center`, `.text-left`, `.text-right`, `.d-flex`, `.d-block`, `.d-none`, `.float-left`, `.pull-right`, `.container`, `.row`, `.col`, `.col-md-6` (Bootstrap/utility grid columns), Foundation grid columns like `.large-3`, `.small-6`, `.medium-4`, etc.
+A selector is a **utility class** only if it is a pure presentational/layout helper with no semantic meaning or custom styling of its own. Safe examples to skip:
 
-Collect all utility-class selectors you identify from the results, then mark them in one batch:
+- Visibility helpers: `.hidden`, `.show-for-sr`, `.visually-hidden`, `.sr-only`, `.clearfix`
+- Generic text alignment: `.text-center`, `.text-left`, `.text-right`
+- Generic display helpers: `.d-flex`, `.d-block`, `.d-none`, `.float-left`, `.pull-right`
+
+**Do NOT skip** selectors that represent real UI components or branded/site-specific elements, even if they look "simple":
+- Navigation and menus: `.menu`, `.nav`, `.navbar`, `.menu a`, and similar
+- Layout regions that are required for page structure: `.row`, `.columns`, `.container` — these are in-scope as potential components
+- Interactive widgets: `.backtotop`, `.accordion`, `.tabs`, `.dropdown`
+- Any selector whose name is domain-specific or branded (not a generic CSS utility keyword)
+
+**If you are unsure** whether a selector is purely a utility class or might have real styling, fetch a few HTML examples before deciding:
+
+```bash
+node /root/uos-react/tools/get-examples.js --selector "sel" --limit 3
+```
+
+If the HTML shows meaningful content or structure (not just layout scaffolding), treat it as a real component candidate — do not skip it.
+
+Collect all confirmed utility-class selectors, then mark them in one batch:
 
 ```bash
 node tools/manifest.js set-status --selectors '["sel1","sel2"]' --status skipped --skip-reason utility-class
