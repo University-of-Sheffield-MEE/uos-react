@@ -81,7 +81,8 @@
     },
     ".backtotop": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BackToTop2"
     },
     "footer .large-3": {
       "pageCount": 26276,
@@ -3522,6 +3523,13 @@
       ],
       "specFile": "specs/OffCanvasWrapper.json",
       "storyFile": "src/stories/OffCanvasWrapper.stories.tsx"
+    },
+    "BackToTop2": {
+      "selectors": [
+        ".backtotop"
+      ],
+      "specFile": "specs/BackToTop2.json",
+      "storyFile": "src/stories/BackToTop2.stories.tsx"
     }
   }
 }

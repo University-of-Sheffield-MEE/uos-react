@@ -1,0 +1,20 @@
+{
+  "componentName": "BackToTop2",
+  "description": "A fixed scroll-to-top button that uses a FontAwesome chevron icon and appears on most site pages.",
+  "rootElement": "button",
+  "rootClassName": "backtotop",
+  "selectorsCovered": [".backtotop"],
+  "props": [],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "The back-to-top button as it appears on every page",
+      "props": {}
+    }
+  ],
+  "notes": "All 26276 pages share identical DOM structure and identical text/content — no props vary. The aria-label and icon are hardcoded in the component. The button likely has JavaScript and/or CSS-driven show/hide behaviour (e.g. only visible after scrolling down) handled outside this component's markup.",
+  "htmlExamples": [
+    "<button class=\"backtotop\" aria-label=\"Scroll to top of page\">\n    <i class=\"fas fa-angle-up fa-2x\" aria-hidden=\"true\"></i>\n  </button>"
+  ]
+}
