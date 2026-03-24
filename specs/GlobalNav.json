@@ -1,0 +1,24 @@
+{
+  "componentName": "GlobalNav",
+  "description": "Site-wide global navigation block containing a multi-level menu with top-level sections: Study, Research, Collaborate, and About.",
+  "rootElement": "div",
+  "rootClassName": "block-fixed-block-contentglobal-nav",
+  "selectorsCovered": [
+    ".block-fixed-block-contentglobal-nav",
+    ".block-globalnav",
+    ".block-uos-globalnav"
+  ],
+  "props": [],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Global navigation as it appears on every page of the university website — no configurable props, all content is hardcoded.",
+      "props": {}
+    }
+  ],
+  "notes": "This component has no props. The entire nav tree is identical across all 26,000+ pages sampled — textVaries: false on every sample. The content should be hardcoded in JSX. The root div also carries ids block-globalnav and classes block, block-fixed-block-content, block-globalnav. The inner nav element has class block-uos-globalnav, role=navigation, and aria-label='Global menu'. The menu is a nested ul structure three levels deep. Top-level items are: Study, Research, Collaborate, About. Items without an href (Study, Research, Collaborate, About, and 'Fees and funding') are plain text li nodes, not anchors. Some links carry a class uoslink. data-entity-type, data-entity-uuid, data-entity-substitution, and title attributes on anchors are CMS metadata and should be omitted.",
+  "htmlExamples": [
+    "<div id=\"block-globalnav\" class=\"block-globalnav block block-fixed-block-content block-fixed-block-contentglobal-nav\">\n  <nav class=\"block-uos-globalnav\" role=\"navigation\" aria-label=\"Global menu\">\n    <ul><li>Study<ul><li><a href=\"/courses\">Courses</a></li></ul></li><li>Research<ul><li><a href=\"/research/home\">Research at Sheffield</a></li></ul></li><li>Collaborate<ul><li><a href=\"/collaborate/home\">Partnerships</a></li></ul></li><li>About<ul><li><a href=\"/about/home\">About the University</a></li></ul></li></ul>\n  </nav>\n</div>"
+  ]
+}

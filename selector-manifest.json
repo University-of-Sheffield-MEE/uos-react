@@ -231,7 +231,8 @@
     },
     ".smooth-criminal": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "modifier-class-on-muse-bar-already-covered-by-Muse"
     },
     "body.public": {
       "pageCount": 26276,
@@ -304,11 +305,12 @@
     ".block-uos-globalnav": {
       "pageCount": 26276,
       "status": "done",
-      "implementedBy": "SiteHeader"
+      "implementedBy": "GlobalNav"
     },
     ".block-fixed-block-contentglobal-nav": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "GlobalNav"
     },
     "nav.muse": {
       "pageCount": 26276,
@@ -3666,6 +3668,11 @@
       "pageCount": 0,
       "status": "done",
       "implementedBy": "SiteSearch"
+    },
+    ".block-globalnav": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "GlobalNav"
     }
   },
   "components": {
@@ -3776,6 +3783,15 @@
       ],
       "specFile": "specs/SiteSearch.json",
       "storyFile": "src/stories/SiteSearch.stories.tsx"
+    },
+    "GlobalNav": {
+      "selectors": [
+        ".block-fixed-block-contentglobal-nav",
+        ".block-globalnav",
+        ".block-uos-globalnav"
+      ],
+      "specFile": "specs/GlobalNav.json",
+      "storyFile": "src/stories/GlobalNav.stories.tsx"
     }
   }
 }
