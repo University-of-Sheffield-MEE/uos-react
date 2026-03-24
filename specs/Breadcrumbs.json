@@ -1,0 +1,80 @@
+{
+  "componentName": "Breadcrumbs",
+  "description": "Site navigation breadcrumb trail rendered as an ordered list showing the current page's position in the hierarchy, with the last item marked as the current page.",
+  "rootElement": "ul",
+  "rootClassName": "breadcrumbs",
+  "selectorsCovered": [
+    ".breadcrumbs",
+    "ul.breadcrumbs",
+    ".node--type-news-article ul.breadcrumbs li:last-child",
+    ".node--type-student-profile ul.breadcrumbs li:last-child",
+    "body.node--type-hub .breadcrumbs a",
+    "body.node--type-hub .breadcrumbs li",
+    "body.node--type-landing .breadcrumbs a",
+    "body.node--type-landing .breadcrumbs li"
+  ],
+  "props": [
+    {
+      "name": "items",
+      "type": "Array<{ label: string; href?: string }>",
+      "required": true,
+      "mapsTo": { "element": "li", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Three-level breadcrumb trail ending on a current page with no link",
+      "props": {
+        "items": [
+          { "label": "Home", "href": "/" },
+          { "label": "New students", "href": "/new-students/home" },
+          { "label": "Travelling to Sheffield from the airport" }
+        ]
+      }
+    },
+    {
+      "name": "TwoLevels",
+      "description": "Minimal two-level breadcrumb",
+      "props": {
+        "items": [
+          { "label": "Home", "href": "/" },
+          { "label": "How to apply" }
+        ]
+      }
+    },
+    {
+      "name": "FiveLevels",
+      "description": "Deep five-level breadcrumb trail for deeply nested content",
+      "props": {
+        "items": [
+          { "label": "Home", "href": "/" },
+          { "label": "Management School", "href": "/management/home" },
+          { "label": "The Sheffield MBA", "href": "/management/mba" },
+          { "label": "Student and alumni insight", "href": "/management/mba/student-and-alumni-insight" },
+          { "label": "MBA blog archive", "href": "/management/mba/student-and-alumni-insight/mba-blog-archive" },
+          { "label": "An MBA's journey to industry 4.0: Key takeaways from Germany's tech leaders" }
+        ]
+      }
+    },
+    {
+      "name": "CoursePageFourLevels",
+      "description": "Four-level breadcrumb as seen on undergraduate course pages",
+      "props": {
+        "items": [
+          { "label": "Home", "href": "/" },
+          { "label": "Undergraduate study", "href": "/undergraduate/home" },
+          { "label": "Undergraduate courses", "href": "/undergraduate/courses/home" },
+          { "label": "2026-2027", "href": "/undergraduate/courses/2026" },
+          { "label": "Chemical Engineering" }
+        ]
+      }
+    }
+  ],
+  "notes": "The last item in the list always has class 'current' and is rendered as plain text (no anchor). All preceding items are rendered as anchor links. Context-specific CSS rules exist for different page types — these are styling variants controlled by body classes, not by the component itself.",
+  "htmlExamples": [
+    "<ul class=\"breadcrumbs\">\n  <li><a href=\"/\">Home</a></li>\n  <li><a href=\"/new-students/home\">New students</a></li>\n  <li class=\"current\">Travelling to Sheffield from the airport</li>\n</ul>",
+    "<ul class=\"breadcrumbs\">\n  <li><a href=\"/\">Home</a></li>\n  <li><a href=\"/management/home\">Management School</a></li>\n  <li><a href=\"/management/mba\">The Sheffield MBA</a></li>\n  <li><a href=\"/management/mba/student-and-alumni-insight\">Student and alumni insight</a></li>\n  <li><a href=\"/management/mba/student-and-alumni-insight/mba-blog-archive\">MBA blog archive</a></li>\n  <li class=\"current\">An MBA's journey to industry 4.0</li>\n</ul>"
+  ]
+}

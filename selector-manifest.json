@@ -91,23 +91,28 @@
     },
     "footer .footer-heading": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     "footer .quicklinks": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     "footer .quicklinks a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     "footer .quicklinks ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     "footer .quicklinks li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".footicons": {
       "pageCount": 26276,
@@ -115,27 +120,33 @@
     },
     ".footicons .social .embedded-entity": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".footicons .social > div": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".footicons .social > div a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".footicons .awards": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".footicons .awards a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".footicons .awards a > img": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".region-footer_last": {
       "pageCount": 26276,
@@ -147,15 +158,18 @@
     },
     ".bottom-bar .row a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".bottom-bar ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".bottom-bar .copyright": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".resp": {
       "pageCount": 26276,
@@ -178,31 +192,38 @@
     },
     ".site-search .site-search-wrapper": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".site-search form": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".site-search button": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".site-search input": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".site-search .site-search-toggle": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".site-search .site-search-toggle .fa-times": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".search-autocomplete__inputs": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".smooth-criminal": {
       "pageCount": 26276,
@@ -210,7 +231,8 @@
     },
     "body.public": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "header.site-header": {
       "pageCount": 26276,
@@ -219,15 +241,16 @@
     },
     ".header": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done"
     },
     ".header .logo": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".header .logo img": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done"
     },
     ".skip-link": {
       "pageCount": 26276,
@@ -255,15 +278,18 @@
     },
     ".block-uos-globalnav > ul > li > ul > li > ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul > li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul > li > a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".block-uos-globalnav > ul > li > ul > li": {
       "pageCount": 26276,
@@ -293,11 +319,13 @@
     },
     ".muse-bar a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".muse-bar ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".muse-nav": {
       "pageCount": 26276,
@@ -305,11 +333,13 @@
     },
     ".muse-nav > li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".muse-nav > li.switcher-container": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".switcher-container": {
       "pageCount": 26276,
@@ -317,11 +347,13 @@
     },
     ".switcher-container .switcher-button": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     "body .region-meta_header ~ .nav-overlay": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".nav-overlay": {
       "pageCount": 26276,
@@ -333,43 +365,53 @@
     },
     "a[href^=\"https://www.sheffield.ac.uk\"]": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".close-button": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".breadcrumbs": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     ".breadcrumbs li": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".breadcrumbs a": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".hideonmobile": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "ul.breadcrumbs a": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "ul.breadcrumbs": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     "ul.breadcrumbs li": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "ul.breadcrumbs li.current": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".region-left_off_canvas .section-navigation": {
       "pageCount": 26274,
@@ -390,7 +432,8 @@
     },
     ".section-title .section-title-holder": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".section-title .section-title-holder h4.off-canv": {
       "pageCount": 26256,
@@ -627,7 +670,8 @@
     },
     ".node--type-news-article ul.breadcrumbs li:last-child": {
       "pageCount": 5887,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     "h1.headline": {
       "pageCount": 5887,
@@ -863,7 +907,8 @@
     },
     ".node--type-student-profile ul.breadcrumbs li:last-child": {
       "pageCount": 1623,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     ".block-field-blocknodestudent-profiletitle": {
       "pageCount": 1623,
@@ -923,11 +968,13 @@
     },
     "body.node--type-hub .breadcrumbs a": {
       "pageCount": 1451,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     "body.node--type-hub .breadcrumbs li": {
       "pageCount": 1451,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     "body.node--type-hub .region-banner .section-navigation": {
       "pageCount": 1449,
@@ -1075,11 +1122,11 @@
     },
     ".header .logo.mgmt-logo img": {
       "pageCount": 848,
-      "status": "pending"
+      "status": "done"
     },
     ".header .logo.mgmt-logo": {
       "pageCount": 848,
-      "status": "pending"
+      "status": "done"
     },
     ".accred-banner": {
       "pageCount": 846,
@@ -1639,11 +1686,13 @@
     },
     "body.node--type-landing .breadcrumbs a": {
       "pageCount": 267,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     "body.node--type-landing .breadcrumbs li": {
       "pageCount": 267,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs"
     },
     ".nlpheader": {
       "pageCount": 266,
@@ -3568,6 +3617,20 @@
       ],
       "specFile": "/root/uos-react-worktree-components/specs/SiteHeader.json",
       "storyFile": "/root/uos-react-worktree-components/src/stories/SiteHeader.stories.tsx"
+    },
+    "Breadcrumbs": {
+      "selectors": [
+        ".breadcrumbs",
+        "ul.breadcrumbs",
+        ".node--type-news-article ul.breadcrumbs li:last-child",
+        ".node--type-student-profile ul.breadcrumbs li:last-child",
+        "body.node--type-hub .breadcrumbs a",
+        "body.node--type-hub .breadcrumbs li",
+        "body.node--type-landing .breadcrumbs a",
+        "body.node--type-landing .breadcrumbs li"
+      ],
+      "specFile": "specs/Breadcrumbs.json",
+      "storyFile": "src/stories/Breadcrumbs.stories.tsx"
     }
   }
 }
