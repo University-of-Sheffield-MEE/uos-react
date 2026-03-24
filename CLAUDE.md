@@ -17,7 +17,7 @@ Run `/build-components` to start the pipeline. Claude loops through pending CSS 
   └─► @qa         — validates output against spec, returns verdict JSON
 ```
 
-The orchestrator never loads the manifest JSON or page HTML directly — those stay inside the respective agents' context windows to avoid saturation over long runs.
+The orchestrator never loads the manifest JSON or page HTML directly. The manifest agent uses `tools/manifest.js` CLI subcommands instead of reading the full file, keeping its context small over long runs.
 
 ## Setup (one-time)
 
@@ -89,3 +89,10 @@ Selector statuses: `pending` | `done` | `skipped` | `low-priority` | `needs-revi
 
 - `get-examples.js` — fetches live pages for a selector and returns HTML fragments; supports pagination (`--page`) and context mode (`--context`)
 - `init-manifest.js` — one-time setup; reads `tools/index.json.gz` directly to build `selector-manifest.json`
+- `manifest.js` — low-level CLI for the manifest agent to read/write `selector-manifest.json` without loading the full file into context. Subcommands:
+  - `list-pending [--page N] [--per-page N]` — paginated pending selectors sorted by pageCount desc
+  - `set-status --selectors '<json>' --status <s> [--skip-reason <r>]` — batch-update selector statuses
+  - `search --query <str> [--status <s>]` — find selectors by substring (used to discover related selectors)
+  - `register-component --component <Name> --selectors '<json>' --status <s> --spec-file <p> --story-file <p>` — mark selectors done and add component to manifest
+  - `list-components` — list registered components
+  - `summary` — print status counts

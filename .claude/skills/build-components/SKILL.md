@@ -29,9 +29,13 @@ MAX_IMPLEMENT_RETRIES = 2              ← retries for missing files after imple
    mkdir -p src/components src/stories specs logs
    ```
 
-3. Read the first few entries of `selector-manifest.json` to count pending/done/skipped selectors. Print a summary line:
+3. Run:
+   ```bash
+   node tools/manifest.js summary
    ```
-   Build pipeline starting. N pending selectors, N done, N skipped.
+   Print the output as a summary line:
+   ```
+   Build pipeline starting. <summary output>
    ```
 
 ## The Loop
