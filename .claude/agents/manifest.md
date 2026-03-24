@@ -38,7 +38,7 @@ A selector is a **utility class** only if it is a pure presentational/layout hel
 **If you are unsure** whether a selector is purely a utility class or might have real styling, fetch a few HTML examples before deciding:
 
 ```bash
-node /root/uos-react/tools/get-examples.js --selector "sel" --limit 3
+node /tools/get-examples.js --selector "sel" --limit 3
 ```
 
 If the HTML shows meaningful content or structure (not just layout scaffolding), treat it as a real component candidate — do not skip it.
