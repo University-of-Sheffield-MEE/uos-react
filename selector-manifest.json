@@ -192,7 +192,7 @@
     },
     ".site-search": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done"
     },
     ".site-search .site-search-wrapper": {
       "pageCount": 26276,
@@ -258,7 +258,8 @@
     },
     ".skip-link": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".meganav": {
       "pageCount": 26276,
@@ -351,7 +352,8 @@
     },
     ".switcher-container": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".switcher-container .switcher-button": {
       "pageCount": 26276,
@@ -683,7 +685,8 @@
     },
     ".deptname": {
       "pageCount": 8197,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     "hr.related": {
       "pageCount": 8146,
@@ -706,7 +709,8 @@
     },
     ".mainrole": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".contactinfo": {
       "pageCount": 6437,
@@ -718,7 +722,8 @@
     },
     ".contactinfo a:not(.standalone-accordion-toggler)": {
       "pageCount": 6107,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".node--type-news-article ul.breadcrumbs li:last-child": {
       "pageCount": 5887,
@@ -747,27 +752,33 @@
     },
     ".fullcontact .address": {
       "pageCount": 5375,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".fullcontact .social": {
       "pageCount": 5375,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".contactinfo .loclink": {
       "pageCount": 5307,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".profilepic-modal": {
       "pageCount": 5082,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".profilepic-modal img": {
       "pageCount": 5082,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".profilepic-modal .close": {
       "pageCount": 5082,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".uosblock": {
       "pageCount": 4800,
@@ -787,23 +798,28 @@
     },
     ".profiletext dd": {
       "pageCount": 3889,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".personinfo .profilepic": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".personinfo .profilepic img": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".personinfo .profilepic .enlarge": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".personinfo .profilepic-modal img": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "component-internal"
     },
     ".uosbutton": {
       "pageCount": 2962,
