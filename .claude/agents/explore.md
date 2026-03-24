@@ -121,6 +121,21 @@ Convert the root CSS class to PascalCase: `.news-teaser` → `NewsTeaser`, `.bre
 
 Check the fragments — what HTML tag does the element matching the target selector use? It may be `div`, `nav`, `ul`, `article`, `section`, `header`, `aside`, etc. Do not assume `div`.
 
+### Identifying pure layout containers
+
+**Do this check first, before identifying props.**
+
+If across your samples the child elements vary in type, depth, and CSS classes with no consistent structure — and the root element's own CSS class is the only meaningful thing about the component — it is a **pure layout container**. Examples: `.row`, `.container`, `.grid`, `.wrapper`, `.col`, `.layout-*`.
+
+For a pure layout container:
+- Set `props` to a single entry: `{ "name": "children", "type": "ReactNode", "required": true }` with no `mapsTo`.
+- Set `subcomponents` to `[]`.
+- Set `notes` to `"Pure layout container — accepts arbitrary children. Child content in samples is irrelevant to the component's own structure."`.
+- Write only a **Default** story that renders two or three short placeholder `<div>` children so the layout class is visible in Storybook.
+- Do **not** attempt to model child element structure as props.
+
+If you are uncertain whether it is a pure container, err toward `children: ReactNode` rather than inventing structural props.
+
 ### Identifying props
 
 Apply these rules **in priority order**:
