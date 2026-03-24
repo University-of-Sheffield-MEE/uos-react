@@ -2,7 +2,7 @@
 name: manifest
 description: Reads and updates selector-manifest.json. Call with "pick-next" to get the next selector to implement, or "update" to mark selectors done after implementation.
 tools: [Read, Write, Edit]
-model: claude-sonnet-4-6
+model: haiku
 permissionMode: acceptEdits
 maxTurns: 10
 ---
@@ -71,17 +71,17 @@ If no suitable pending selectors remain after filtering:
 ## Operation: `update`
 
 The prompt will contain:
-- `COMPONENT_NAME`: PascalCase component name
+- `COMPONENT_NAME`: PascalCase component name, or `_skipped` for selectors that were skipped
 - `SELECTORS_COVERED`: JSON array of CSS selector strings
-- `STATUS`: `"done"` or `"needs-review"`
-- `SPEC_FILE`: path to the ComponentSpec JSON file
-- `STORY_FILE`: path to the Storybook stories file
+- `STATUS`: `"done"`, `"needs-review"`, or `"skipped"`
+- `SPEC_FILE`: path to the ComponentSpec JSON file (may be empty for skipped)
+- `STORY_FILE`: path to the Storybook stories file (may be empty for skipped)
 
 Read `selector-manifest.json`. For each selector in `SELECTORS_COVERED`:
 - If it exists in `manifest.selectors`: set `status` to STATUS and `implementedBy` to COMPONENT_NAME.
 - If it does not exist (the explore agent discovered a selector not in the original list): add it with the given status and implementedBy.
 
-Add to `manifest.components`:
+**Only add to `manifest.components` if `COMPONENT_NAME` is not `_skipped`:**
 ```json
 {
   "ComponentName": {

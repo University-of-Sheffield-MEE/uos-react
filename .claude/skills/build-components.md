@@ -5,9 +5,9 @@ You are running the UoS React component library build pipeline. Your job is to l
 Set these values before starting (adjust to match the actual project):
 
 ```
-BASE_URL = https://www.example.ac.uk   ← replace with the real site base URL
+BASE_URL = https://www.sheffield.ac.uk   ← replace with the real site base URL
 MAX_QA_RETRIES = 2
-MAX_IMPLEMENT_RETRIES = 2
+MAX_IMPLEMENT_RETRIES = 2              ← retries for missing files after implement
 ```
 
 ## Startup
@@ -56,7 +56,7 @@ TARGET SELECTOR: <targetSelector>
 TARGET PAGE COUNT: <pageCount>
 
 RELATED SELECTORS:
-<for each related selector: "  - <selector>  (<pageCount> pages)">
+<if relatedSelectors is empty, write "none"; otherwise list each as "  - <selector>  (<pageCount> pages)">
 
 BASE URL: <BASE_URL>
 
@@ -88,9 +88,9 @@ STORY_FILE:
 ```
 Then continue to the next iteration.
 
-**Check for component name conflicts:** If `componentName` already appears in the manifest's `components` map, append `2` to the name (e.g. `NewsTeaser2`) and note this in the log.
+**Check for component name conflicts:** If `componentName` already appears in the manifest's `components` map, append `2` to the name (e.g. `NewsTeaser2`), then check again; increment the number until the name is unique. Note the rename in the log. After renaming, also update the `componentName` field inside the spec JSON object to match the renamed value, so that the implement agent generates files with the correct name.
 
-**Save the spec:** Write the ComponentSpec JSON to `specs/<ComponentName>.json`.
+**Save the spec:** Write the (possibly updated) ComponentSpec JSON to `specs/<ComponentName>.json`.
 
 ---
 
@@ -119,7 +119,7 @@ After the agent returns, verify the files exist:
 - `src/components/<ComponentName>/index.ts`
 - `src/stories/<ComponentName>.stories.tsx`
 
-Use `ls` to check. If any are missing, call the implement agent again with: `"These files were not created: <list>. Write them now."` Allow 1 retry.
+Use `ls` to check. If any are missing, call the implement agent again with the full implement prompt (including the ComponentSpec JSON and file conventions), appending: `"Note: these files were not created on the previous attempt and must be written now: <list>."` Allow up to MAX_IMPLEMENT_RETRIES retries.
 
 ---
 
@@ -129,13 +129,13 @@ Use `ls` to check. If any are missing, call the implement agent again with: `"Th
 npx tsc --noEmit 2>&1
 ```
 
-Note any errors. Pass them to the QA agent as context.
+Note any errors. Pass them to the QA agent as context. When reviewing TSC output, only consider errors that reference files inside `src/components/<ComponentName>/` or `src/stories/<ComponentName>.stories.tsx` — errors in other components are pre-existing and not this component's responsibility.
 
 ---
 
 ### Step 5 — Call the QA agent
 
-Read the generated files, then call the QA agent with this prompt:
+**Before each QA call** (initial and after every fix attempt), read the current contents of all three generated files from disk. Do not reuse file contents from a previous read.
 
 ```
 QA TASK: Validate the following React component against its spec.
@@ -207,7 +207,7 @@ Append a JSON line to `logs/orchestrator.log`:
 
 ### Step 8 — Loop
 
-Track consecutive failures (iterations where the explore agent failed or QA could not be resolved). If 5 consecutive failures occur, stop and report: "5 consecutive failures — stopping pipeline. Check logs/orchestrator.log for details."
+Track consecutive failures (iterations where the explore agent failed or QA could not be resolved). A successful iteration (status `done` or `needs-review`) resets the counter to 0. If 5 consecutive failures occur, stop and report: "5 consecutive failures — stopping pipeline. Check logs/orchestrator.log for details."
 
 Otherwise, return to Step 1.
 

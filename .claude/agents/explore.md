@@ -2,7 +2,7 @@
 name: explore
 description: Given a target CSS selector and related selectors, queries the page index for sample URLs, extracts real DOM fragments, analyses them, and produces a ComponentSpec JSON describing the React component needed.
 tools: [Read, Bash]
-model: claude-sonnet-4-6
+model: sonnet
 permissionMode: default
 maxTurns: 20
 ---
@@ -18,6 +18,8 @@ You will receive a target CSS selector and a list of related selectors. Before a
 query-index --selector ".news-teaser"
 # returns JSON: { "pageCount": 142, "pages": ["/news/annual-report", "/news/campus-update", ...] }
 ```
+
+**If `pageCount` is 0**, immediately output a ComponentSpec with `componentName: null` and `notes: "no-pages-in-index"`. Do not attempt extraction.
 
 **Extract DOM fragments** from those pages using the extraction script:
 ```bash

@@ -2,7 +2,7 @@
 name: qa
 description: Validates a generated React component against its ComponentSpec. Returns a structured verdict JSON with pass/fail and any issues found.
 tools: [Read]
-model: claude-haiku-4-5-20251001
+model: haiku
 permissionMode: default
 maxTurns: 10
 ---
