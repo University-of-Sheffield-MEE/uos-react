@@ -442,7 +442,8 @@
     },
     ".section-title": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SectionTitleWrapper"
     },
     ".section-title .section-title-holder": {
       "pageCount": 26256,
@@ -3673,6 +3674,11 @@
       "pageCount": 0,
       "status": "done",
       "implementedBy": "GlobalNav"
+    },
+    "SectionTitleWrapper": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "SectionTitleWrapper"
     }
   },
   "components": {
@@ -3792,6 +3798,14 @@
       ],
       "specFile": "specs/GlobalNav.json",
       "storyFile": "src/stories/GlobalNav.stories.tsx"
+    },
+    "SectionTitleWrapper": {
+      "selectors": [
+        "SectionTitleWrapper",
+        ".section-title"
+      ],
+      "specFile": "specs/SectionTitleWrapper.json",
+      "storyFile": "src/stories/SectionTitleWrapper.stories.tsx"
     }
   }
 }

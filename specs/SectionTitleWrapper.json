@@ -1,0 +1,53 @@
+{
+  "componentName": "SectionTitleWrapper",
+  "description": "A section navigation header that displays the current section's title as a link alongside a mobile off-canvas menu toggle button.",
+  "rootElement": "div",
+  "rootClassName": "section-title-wrapper",
+  "selectorsCovered": [".section-title-wrapper", ".section-title"],
+  "props": [
+    {
+      "name": "sectionTitle",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h2.section-title-holder a", "attribute": "innerText" }
+    },
+    {
+      "name": "sectionHref",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h2.section-title-holder a", "attribute": "href" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Section title wrapper for a typical department section.",
+      "props": {
+        "sectionTitle": "Management School",
+        "sectionHref": "/management"
+      }
+    },
+    {
+      "name": "LongTitle",
+      "description": "Section title wrapper with a long section name.",
+      "props": {
+        "sectionTitle": "School of Chemical, Materials and Biological Engineering",
+        "sectionHref": "/cmbe"
+      }
+    },
+    {
+      "name": "UndergraduateStudy",
+      "description": "Section title wrapper for the undergraduate study section.",
+      "props": {
+        "sectionTitle": "Undergraduate study",
+        "sectionHref": "/undergraduate/courses"
+      }
+    }
+  ],
+  "notes": "The menu button always has the same text 'Menu', the same aria attributes, and the same data-toggle value 'left-off-canvas-menu' — these are hardcoded. The hreflang attribute on the anchor is always 'en' and should be hardcoded. The .section-title selector appears on a separate related element (div.field-content.section-title.row) used for the off-canvas panel.",
+  "htmlExamples": [
+    "<div class=\"section-title-wrapper\"><h2 class=\"section-title-holder\"><a href=\"/management\" hreflang=\"en\">Management School</a></h2>\n<a class=\"button menu\" role=\"button\" data-toggle=\"left-off-canvas-menu\" aria-expanded=\"false\" aria-controls=\"left-off-canvas-menu\" tabindex=\"0\">Menu <span class=\"section-title-burger\" aria-hidden=\"true\"></span></a></div>",
+    "<div class=\"section-title-wrapper\"><h2 class=\"section-title-holder\"><a href=\"/undergraduate/courses\" hreflang=\"en\">Undergraduate study</a></h2>\n<a class=\"button menu\" role=\"button\" data-toggle=\"left-off-canvas-menu\" aria-expanded=\"false\" aria-controls=\"left-off-canvas-menu\" tabindex=\"0\">Menu <span class=\"section-title-burger\" aria-hidden=\"true\"></span></a></div>"
+  ]
+}
