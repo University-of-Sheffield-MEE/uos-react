@@ -1,0 +1,86 @@
+{
+  "componentName": "SiteHeader",
+  "description": "Global page-level site header containing the university logo and the hardcoded global navigation meganav for the University of Sheffield website.",
+  "rootElement": "header",
+  "rootClassName": "site-header",
+  "selectorsCovered": [
+    "header.site-header",
+    ".header",
+    ".header .logo",
+    ".header .logo img",
+    ".meganav",
+    ".block-uos-globalnav",
+    ".block-uos-globalnav > ul",
+    ".block-uos-globalnav > ul > li",
+    ".block-uos-globalnav > ul > li > ul",
+    ".block-uos-globalnav > ul > li > ul > li",
+    ".block-uos-globalnav > ul > li > ul > li > a"
+  ],
+  "props": [
+    {
+      "name": "logoHref",
+      "type": "string",
+      "required": false,
+      "default": "/?home",
+      "mapsTo": { "element": ".logo a", "attribute": "href" }
+    },
+    {
+      "name": "logoSrc",
+      "type": "string",
+      "required": false,
+      "default": "/themes/custom/uos_public/images/logos/uos-crest.svg",
+      "mapsTo": { "element": ".logo img", "attribute": "src" }
+    },
+    {
+      "name": "logoSrcsetDesktop",
+      "type": "string",
+      "required": false,
+      "default": "/themes/custom/uos_public/images/logos/uos-crest.svg",
+      "mapsTo": { "element": ".logo picture source", "attribute": "srcset" }
+    },
+    {
+      "name": "logoAlt",
+      "type": "string",
+      "required": false,
+      "default": "University of Sheffield homepage",
+      "mapsTo": { "element": ".logo img", "attribute": "alt" }
+    },
+    {
+      "name": "isMgmtLogo",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "mapsTo": { "togglesClass": "mgmt-logo", "on": ".logo" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard University of Sheffield header with crest logo and global navigation.",
+      "props": {
+        "logoHref": "/?home",
+        "logoSrc": "/themes/custom/uos_public/images/logos/uos-crest.svg",
+        "logoSrcsetDesktop": "/themes/custom/uos_public/images/logos/uos-crest.svg",
+        "logoAlt": "University of Sheffield homepage",
+        "isMgmtLogo": false
+      }
+    },
+    {
+      "name": "ManagementSchool",
+      "description": "Header variant for the Management School with department-specific logo and modifier class.",
+      "props": {
+        "logoHref": "/management?home",
+        "logoSrc": "/themes/custom/uos_public/images/mgmt/tuosmgmt.png",
+        "logoSrcsetDesktop": null,
+        "logoAlt": "University of Sheffield Management School homepage",
+        "isMgmtLogo": true
+      }
+    }
+  ],
+  "notes": "The global navigation menu (.block-uos-globalnav) contains a deeply nested multi-level nav tree with top-level items: Study, Fees and funding, Research, Collaborate, About. This content is identical across all 26,276 sampled pages and should be hardcoded in the component JSX rather than driven by props. The Management School variant uses mgmt-logo modifier on .logo and has no <source> element inside <picture>. The aria-label='Site header' on the root element and aria-label='Global menu' on the nav are always the same — both hardcoded.",
+  "htmlExamples": [
+    "<header class=\"site-header\" role=\"banner\" aria-label=\"Site header\">\n  <div class=\"header row\">\n    <div class=\"logo\">\n      <a href=\"/?home\">\n      <picture>\n        <source media=\"(min-width: 768px)\" srcset=\"/themes/custom/uos_public/images/logos/uos-crest.svg\">\n        <img class=\"resp\" alt=\"University of Sheffield homepage\" src=\"/themes/custom/uos_public/images/logos/uos-crest.svg\">\n      </picture>\n      </a>\n    </div>\n    <div class=\"meganav\">\n      <div class=\"region region-header\">\n        <div id=\"block-globalnav\" class=\"block-globalnav block block-fixed-block-content block-fixed-block-contentglobal-nav\">\n          <nav class=\"block-uos-globalnav\" role=\"navigation\" aria-label=\"Global menu\">\n            <ul><li>Study<ul>...</ul></li><li>Fees and funding<ul>...</ul></li><li>Research<ul>...</ul></li><li>Collaborate<ul>...</ul></li><li>About<ul>...</ul></li></ul>\n          </nav>\n        </div>\n      </div>\n    </div>\n  </div>\n</header>",
+    "<header class=\"site-header\" role=\"banner\" aria-label=\"Site header\">\n  <div class=\"header row\">\n    <div class=\"logo mgmt-logo\">\n      <a href=\"/management?home\">\n      <picture>\n        <img class=\"resp\" alt=\"University of Sheffield Management School homepage\" src=\"/themes/custom/uos_public/images/mgmt/tuosmgmt.png\">\n      </picture>\n      </a>\n    </div>\n    <div class=\"meganav\">\n      <div class=\"region region-header\">\n        <div id=\"block-globalnav\" class=\"block-globalnav block block-fixed-block-content block-fixed-block-contentglobal-nav\">\n          <nav class=\"block-uos-globalnav\" role=\"navigation\" aria-label=\"Global menu\">\n            <ul><li>Study<ul>...</ul></li><li>Fees and funding<ul>...</ul></li><li>Research<ul>...</ul></li><li>Collaborate<ul>...</ul></li><li>About<ul>...</ul></li></ul>\n          </nav>\n        </div>\n      </div>\n    </div>\n  </div>\n</header>"
+  ]
+}
