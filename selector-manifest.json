@@ -369,7 +369,8 @@
     },
     ".nav-overlay": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".block-alertbanner": {
       "pageCount": 26276,
@@ -457,7 +458,7 @@
     },
     ".section-title-wrapper": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done"
     },
     ".off-canvas a": {
       "pageCount": 26256,
