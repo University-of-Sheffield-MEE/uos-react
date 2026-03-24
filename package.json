@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "bin": {
+    "query-index": "./tools/query-index.js"
+  },
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
