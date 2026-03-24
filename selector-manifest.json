@@ -2,11 +2,13 @@
   "selectors": {
     ".row": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".columns": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".columns:last-child:not(:first-child)": {
       "pageCount": 26276,
@@ -44,11 +46,13 @@
     },
     ".off-canvas-wrapper": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".off-canvas": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".position-left": {
       "pageCount": 26276,
@@ -62,7 +66,8 @@
     },
     ".off-canvas-content": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".hide-for-medium": {
       "pageCount": 26276,
@@ -364,7 +369,8 @@
     },
     ".off-canvas button": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".button": {
       "pageCount": 26258,
@@ -388,7 +394,8 @@
     },
     ".off-canvas a": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".region-banner a": {
       "pageCount": 26256,
@@ -441,11 +448,13 @@
     },
     ".off-canvas ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".off-canvas li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".region-banner ul": {
       "pageCount": 26243,
@@ -469,7 +478,8 @@
     },
     ".off-canvas li a": {
       "pageCount": 26241,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper"
     },
     ".row .row": {
       "pageCount": 26038,
@@ -3498,6 +3508,20 @@
       ],
       "specFile": "specs/MenuButton.json",
       "storyFile": "src/stories/MenuButton.stories.tsx"
+    },
+    "OffCanvasWrapper": {
+      "selectors": [
+        ".off-canvas-wrapper",
+        ".off-canvas",
+        ".off-canvas-content",
+        ".off-canvas button",
+        ".off-canvas a",
+        ".off-canvas ul",
+        ".off-canvas li",
+        ".off-canvas li a"
+      ],
+      "specFile": "specs/OffCanvasWrapper.json",
+      "storyFile": "src/stories/OffCanvasWrapper.stories.tsx"
     }
   }
 }

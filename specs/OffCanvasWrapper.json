@@ -1,0 +1,96 @@
+{
+  "componentName": "OffCanvasWrapper",
+  "description": "Full-page Foundation off-canvas layout shell that houses a slide-out navigation panel and the main page content area, used site-wide as the outermost page wrapper.",
+  "rootElement": "div",
+  "rootClassName": "off-canvas-wrapper",
+  "selectorsCovered": [
+    ".off-canvas-wrapper",
+    ".off-canvas",
+    ".off-canvas-content",
+    ".off-canvas button",
+    ".off-canvas a",
+    ".off-canvas ul",
+    ".off-canvas li",
+    ".off-canvas li a"
+  ],
+  "props": [
+    {
+      "name": "sectionTitle",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".off-canvas h4.off-canv a", "attribute": "innerText" }
+    },
+    {
+      "name": "sectionTitleHref",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".off-canvas h4.off-canv a", "attribute": "href" }
+    },
+    {
+      "name": "navItems",
+      "type": "Array<{ label: string; href?: string; children?: Array<{ label: string; href: string; children?: Array<{ label: string; href: string }> }> }>",
+      "required": true,
+      "mapsTo": { "element": ".off-canvas ul li", "attribute": "innerText" }
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true,
+      "mapsTo": { "element": ".off-canvas-content", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard off-canvas wrapper with section navigation and main content slot, as seen on a typical university section page.",
+      "props": {
+        "sectionTitle": "Support for new students",
+        "sectionTitleHref": "/new-students",
+        "navItems": [
+          {
+            "label": "Before you arrive",
+            "href": "/new-students/before",
+            "children": [
+              { "label": "Home undergraduate student checklist", "href": "/new-students/ug-checklist" },
+              { "label": "Home postgraduate taught student checklist", "href": "/new-students/pgt-checklist" }
+            ]
+          },
+          {
+            "label": "Travelling to Sheffield",
+            "href": "/new-students/travelling-airport"
+          }
+        ],
+        "children": "<main><p>Page content goes here.</p></main>"
+      }
+    },
+    {
+      "name": "LibrarySection",
+      "description": "Off-canvas wrapper configured for the University Library section.",
+      "props": {
+        "sectionTitle": "The University Library",
+        "sectionTitleHref": "/library",
+        "navItems": [
+          {
+            "label": "Study",
+            "href": "/library/study",
+            "children": [
+              { "label": "Study spaces", "href": "/library/study/spaces" },
+              { "label": "Referencing", "href": "/library/study/research-skills/referencing" },
+              { "label": "Research skills and critical thinking", "href": "/library/study/research-skills" }
+            ]
+          },
+          {
+            "label": "Researchers",
+            "href": "/library/research"
+          }
+        ],
+        "children": "<main><p>Library page content goes here.</p></main>"
+      }
+    }
+  ],
+  "notes": "This component is the outermost page-level shell used on virtually every page of the university website (26,276 pages). It implements the Foundation framework off-canvas pattern. The aside panel slides in from the left and contains a section-specific navigation tree with up to 3 levels of nesting. The close button text ('Close menu ×') and aria-label ('Close menu') are hardcoded. The data-off-canvas-wrapper, data-off-canvas, and data-off-canvas-content attributes are Foundation JS hooks and should be rendered as-is. The .off-canvas-content div contains the full site header and all page body content — modelled here as a children ReactNode slot. The navigation ul items vary per section of the site.",
+  "htmlExamples": [
+    "<div class=\"off-canvas-wrapper\">\n  <div class=\"inner-wrap off-canvas-wrapper-inner\" id=\"inner-wrap\" data-off-canvas-wrapper=\"\">\n    <aside id=\"left-off-canvas-menu\" class=\"off-canvas left-off-canvas-menu position-left\" role=\"complementary\" data-off-canvas=\"\" data-transition=\"overlap\">\n        <div class=\"region region-left_off_canvas\">\n    <button class=\"close-button\" aria-label=\"Close menu\" type=\"button\" data-close=\"\">\n      <span aria-hidden=\"true\">Close menu \u00d7</span>\n    </button>  \n    <div class=\"section-navigation\">\n      <div class=\"section-title-holder\"><h4 class=\"off-canv\"><a href=\"/new-students\" hreflang=\"en\">Support for new students</a></h4></div>\n      <ul><li>Before you arrive<ul><li><a href=\"/new-students/before\">Before you arrive</a></li></ul></li></ul>\n    </div>\n  </div>\n    </aside>\n    <div class=\"off-canvas-content\" data-off-canvas-content=\"\">\n      <!-- site header and page content -->\n    </div>\n  </div>\n</div>"
+  ]
+}
