@@ -152,7 +152,8 @@
     },
     ".region-footer_last": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionFooterLast"
     },
     ".bottom-bar": {
       "pageCount": 26276,
@@ -431,7 +432,8 @@
     },
     ".button": {
       "pageCount": 26258,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".section-title": {
       "pageCount": 26256,
@@ -444,7 +446,8 @@
     },
     ".section-title .section-title-holder h4.off-canv": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".section-title-wrapper": {
       "pageCount": 26256,
@@ -525,23 +528,28 @@
     },
     ".region-banner ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-banner li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li a": {
       "pageCount": 26241,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".off-canvas li a": {
       "pageCount": 26241,
@@ -550,11 +558,13 @@
     },
     ".row .row": {
       "pageCount": 26038,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".row:not(.expanded) .row": {
       "pageCount": 26038,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".large-8": {
       "pageCount": 24355,
@@ -563,39 +573,48 @@
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul": {
       "pageCount": 23347,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul": {
       "pageCount": 23347,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
       "pageCount": 23336,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
       "pageCount": 23336,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".desktop-section-navigation ul ul li a": {
       "pageCount": 23300,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     },
     ".large-4": {
       "pageCount": 18950,
@@ -3605,6 +3624,11 @@
       "pageCount": 0,
       "status": "skipped",
       "skipReason": "utility-class"
+    },
+    "html button": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "utility-class-or-internal-element"
     }
   },
   "components": {
@@ -3690,6 +3714,15 @@
       ],
       "specFile": "specs/Muse.json",
       "storyFile": "src/stories/Muse.stories.tsx"
+    },
+    "RegionFooterLast": {
+      "selectors": [
+        [
+          ".region-footer_last"
+        ]
+      ],
+      "specFile": "specs/RegionFooterLast.json",
+      "storyFile": "src/stories/RegionFooterLast.stories.tsx"
     }
   }
 }

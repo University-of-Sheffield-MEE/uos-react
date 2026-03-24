@@ -1,0 +1,37 @@
+{
+  "componentName": "RegionFooterLast",
+  "description": "Footer region displaying social media icon links for the University of Sheffield's social channels.",
+  "rootElement": "div",
+  "rootClassName": "region region-footer_last",
+  "selectorsCovered": [".region-footer_last"],
+  "props": [
+    {
+      "name": "socialLinks",
+      "type": "Array<{ href: string; src: string; alt: string }>",
+      "required": false,
+      "default": "[{ href: 'https://instagram.com/theuniversityofsheffield', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-in.png?itok=UpurzD83', alt: 'Instagram logo' }, { href: 'https://www.linkedin.com/school/university-of-sheffield/', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-li.png?itok=pBCn-VE3', alt: 'LinkedIn' }, { href: 'https://www.tiktok.com/@sheffielduni', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-tt.png?itok=G8v7iLhy', alt: 'TikTok' }, { href: 'https://bsky.app/profile/sheffielduni.bsky.social', src: '/sites/default/files/styles/original/public/2025-10/social-icon-bluesky2.png?h=ebc76fda&itok=vfSDiDHf', alt: 'Bluesky butterfly logo' }, { href: 'https://www.threads.com/@theuniversityofsheffield', src: '/sites/default/files/styles/original/public/2025-10/social-icon-threads.png?h=ebc76fda&itok=TswsZn-u', alt: 'Threads logo' }, { href: 'https://www.weibo.com/sheffielduni', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-wb.png?itok=c0RLZdQP', alt: 'Weibo' }]",
+      "mapsTo": { "element": ".social a", "attribute": "href" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Footer social links region with all six University of Sheffield social channels",
+      "props": {
+        "socialLinks": [
+          { "href": "https://instagram.com/theuniversityofsheffield", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-in.png?itok=UpurzD83", "alt": "Instagram logo" },
+          { "href": "https://www.linkedin.com/school/university-of-sheffield/", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-li.png?itok=pBCn-VE3", "alt": "LinkedIn" },
+          { "href": "https://www.tiktok.com/@sheffielduni", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-tt.png?itok=G8v7iLhy", "alt": "TikTok" },
+          { "href": "https://bsky.app/profile/sheffielduni.bsky.social", "src": "/sites/default/files/styles/original/public/2025-10/social-icon-bluesky2.png?h=ebc76fda&itok=vfSDiDHf", "alt": "Bluesky butterfly logo" },
+          { "href": "https://www.threads.com/@theuniversityofsheffield", "src": "/sites/default/files/styles/original/public/2025-10/social-icon-threads.png?h=ebc76fda&itok=TswsZn-u", "alt": "Threads logo" },
+          { "href": "https://www.weibo.com/sheffielduni", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-wb.png?itok=c0RLZdQP", "alt": "Weibo" }
+        ]
+      }
+    }
+  ],
+  "notes": "All sampled pages (26276 total, duplicates: 14 with textVaries: false) share the exact same DOM structure and content — the same six social media links with identical URLs, image sources, and alt text. The social links are effectively hardcoded site-wide. The socialLinks prop is made optional with a default covering all six channels so the component works out-of-the-box. Each icon image is 34x34px. The inner .social wrapper and .block elements are part of the CMS markup; the React component should render the outer region and .social wrapper with the anchor/img pairs directly.",
+  "htmlExamples": [
+    "<div class=\"region region-footer_last\">\n    <div class=\"social\">\n                <div class=\"block block-layout-builder block-field-blockblock-contentbasicbody\">\n                  <a href=\"https://instagram.com/theuniversityofsheffield\"><div class=\"embedded-entity\"><div class=\"media--image--figure\">\n      <figure class=\"imgcapt\">\n                <img loading=\"lazy\" src=\"//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-in.png?itok=UpurzD83\" width=\"34\" height=\"34\" alt=\"Instagram logo\">\n                </figure>\n  </div>\n</div>\n</a></div></div></div>"
+  ]
+}
