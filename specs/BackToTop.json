@@ -1,0 +1,20 @@
+{
+  "componentName": "BackToTop",
+  "description": "A fixed-position button that scrolls the user back to the top of the page.",
+  "rootElement": "button",
+  "rootClassName": "backtotop",
+  "selectorsCovered": [".backtotop"],
+  "props": [],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard back to top button with an upward chevron icon.",
+      "props": {}
+    }
+  ],
+  "notes": "All 26276 pages use an identical DOM structure with no variation in text or attributes. The aria-label 'Scroll to top of page' is hardcoded. The icon uses Font Awesome classes 'fas fa-angle-up fa-2x' with aria-hidden='true'. No props are needed — this is a fully static component. The related selector 'dd #my-pubs .backToTop' uses camelCase and appears inside a publications widget; it is a different element and not covered by this component.",
+  "htmlExamples": [
+    "<button class=\"backtotop\" aria-label=\"Scroll to top of page\">\n    <i class=\"fas fa-angle-up fa-2x\" aria-hidden=\"true\"></i>\n  </button>"
+  ]
+}

@@ -14,19 +14,23 @@
     },
     ".large-3": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-5": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-7": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-9": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".menu": {
       "pageCount": 26276,
@@ -46,11 +50,13 @@
     },
     ".position-left": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".position-right": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".off-canvas-content": {
       "pageCount": 26276,
@@ -58,11 +64,13 @@
     },
     ".hide-for-medium": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".show-for-sr": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".backtotop": {
       "pageCount": 26276,
@@ -70,7 +78,8 @@
     },
     "footer .large-3": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "footer .footer-heading": {
       "pageCount": 26276,
@@ -3451,7 +3460,20 @@
     ".uosblock.dark h5": {
       "pageCount": 1,
       "status": "low-priority"
+    },
+    "backtotop": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "BackToTop"
     }
   },
-  "components": {}
+  "components": {
+    "BackToTop": {
+      "selectors": [
+        "backtotop"
+      ],
+      "specFile": "specs/BackToTop.json",
+      "storyFile": "src/stories/BackToTop.stories.tsx"
+    }
+  }
 }
