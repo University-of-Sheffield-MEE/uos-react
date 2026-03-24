@@ -1,3 +1,9 @@
+---
+name: build-components
+description: Build pipeline that loops through pending CSS selectors in selector-manifest.json and implements each as a React component. Invokes the manifest, explore, implement, and QA sub-agents in sequence. Commits each component to git on success.
+disable-model-invocation: true
+---
+
 You are running the UoS React component library build pipeline. Your job is to loop through the pending CSS selectors in `selector-manifest.json`, implement each one as a React component, and update the manifest as you go.
 
 ## Configuration
