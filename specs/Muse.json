@@ -1,0 +1,49 @@
+{
+  "componentName": "Muse",
+  "description": "A fixed utility navigation bar containing a home link and site search form, displayed at the top of every page on the Sheffield university website.",
+  "rootElement": "div",
+  "rootClassName": "muse-bar-container",
+  "selectorsCovered": [
+    "nav.muse",
+    ".muse-bar-container",
+    ".muse-bar",
+    ".muse-nav"
+  ],
+  "props": [
+    {
+      "name": "searchAction",
+      "type": "string",
+      "required": false,
+      "default": "/find",
+      "mapsTo": {
+        "element": "form",
+        "attribute": "action"
+      }
+    },
+    {
+      "name": "searchQueryParam",
+      "type": "string",
+      "required": false,
+      "default": "query",
+      "mapsTo": {
+        "element": "input.site-search-input",
+        "attribute": "name"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard MUSE bar with home link and site search, matching all observed pages.",
+      "props": {
+        "searchAction": "/find",
+        "searchQueryParam": "query"
+      }
+    }
+  ],
+  "notes": "This component appears on all 26276 indexed pages with identical DOM structure — no structural variation was observed across any sample. The nav.muse contains only a single home icon link (href='/') using Font Awesome icons (fas fa-home). The muse-bar has an additional class 'smooth-criminal' that appears consistently on all pages — it is hardcoded, not a prop. The site-search includes a hidden input with name 'f.Tabs|AllDocumentsFill' and value 'All results' — hardcode in JSX. All aria-labels are static and should be hardcoded. The search form label text 'Search sheffield.ac.uk' and placeholder 'Search our site' are also identical across all pages — hardcode in JSX. Low structural variation (duplicates: 14 out of 15 samples, textVaries: false) confirms this is a fixed global utility bar.",
+  "htmlExamples": [
+    "<div class=\"muse-bar-container\">\n  <div class=\"muse-bar smooth-criminal\">\n    <nav class=\"muse\" aria-label=\"MUSE menu\">\n      <ul class=\"muse-nav\">\n        <li class=\"switcher-container\"><a class=\"switcher-button\" href=\"/\"><i title=\"Home\" class=\"fas fa-home fa-lg\"></i></a>\n        </li>\n      </ul>\n    </nav>\n\n    <div class=\"site-search\" role=\"search\">\n      <div class=\"site-search-wrapper search-autocomplete\">\n        <form action=\"/find\" method=\"get\">\n          <label for=\"site-search-box\" class=\"show-for-sr\">Search sheffield.ac.uk</label>\n          <div class=\"search-autocomplete__inputs\">\n            <input id=\"site-search-box\" class=\"site-search-input\" type=\"search\" name=\"query\" autocomplete=\"off\" placeholder=\"Search our site\" aria-label=\"Search our site\" aria-autocomplete=\"list\" aria-haspopup=\"true\" required=\"\">\n            <input type=\"hidden\" name=\"f.Tabs|AllDocumentsFill\" value=\"All results\">\n          </div>\n          <button type=\"submit\" aria-label=\"Site search\">\n            <i class=\"fas fa-search\"></i>\n          </button>\n        </form>\n      </div>\n      <button class=\"site-search-toggle hide-for-medium\" type=\"button\" aria-label=\"Open site search dropdown\">\n        <i class=\"fas fa-search\"></i>\n        <i class=\"fas fa-times\"></i>\n      </button>\n    </div>\n  </div>\n</div>"
+  ]
+}

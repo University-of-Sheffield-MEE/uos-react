@@ -309,15 +309,18 @@
     },
     "nav.muse": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Muse"
     },
     ".muse-bar-container": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Muse"
     },
     ".muse-bar": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Muse"
     },
     ".muse-bar a": {
       "pageCount": 26276,
@@ -331,7 +334,8 @@
     },
     ".muse-nav": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Muse"
     },
     ".muse-nav > li": {
       "pageCount": 26276,
@@ -554,7 +558,8 @@
     },
     ".large-8": {
       "pageCount": 24355,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul": {
       "pageCount": 23347,
@@ -3590,6 +3595,16 @@
       "pageCount": 0,
       "status": "skipped",
       "skipReason": "utility-class"
+    },
+    "row .row": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "utility-class"
+    },
+    "row:not(.expanded) .row": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "utility-class"
     }
   },
   "components": {
@@ -3665,6 +3680,16 @@
       ],
       "specFile": "specs/Footicons.json",
       "storyFile": "src/stories/Footicons.stories.tsx"
+    },
+    "Muse": {
+      "selectors": [
+        "nav.muse",
+        ".muse-bar-container",
+        ".muse-bar",
+        ".muse-nav"
+      ],
+      "specFile": "specs/Muse.json",
+      "storyFile": "src/stories/Muse.stories.tsx"
     }
   }
 }
