@@ -699,7 +699,8 @@
     },
     ".personinfo": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Personinfo"
     },
     ".personinfo h1": {
       "pageCount": 6437,
@@ -3807,6 +3808,13 @@
       ],
       "specFile": "specs/SectionTitleWrapper.json",
       "storyFile": "src/stories/SectionTitleWrapper.stories.tsx"
+    },
+    "Personinfo": {
+      "selectors": [
+        ".personinfo"
+      ],
+      "specFile": "specs/Personinfo.json",
+      "storyFile": "src/stories/Personinfo.stories.tsx"
     }
   }
 }

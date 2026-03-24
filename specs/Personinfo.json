@@ -1,0 +1,94 @@
+{
+  "componentName": "Personinfo",
+  "description": "Staff or student profile header showing name, title, department, primary role, optional secondary roles, optional post-nominal letters, and an optional profile picture with a modal enlargement.",
+  "rootElement": "div",
+  "rootClassName": "personinfo",
+  "selectorsCovered": [".personinfo"],
+  "props": [
+    { "name": "title", "type": "string", "required": false },
+    { "name": "firstName", "type": "string", "required": true },
+    { "name": "lastName", "type": "string", "required": true },
+    { "name": "postNominals", "type": "string", "required": false },
+    { "name": "department", "type": "string", "required": true },
+    { "name": "mainRole", "type": "string", "required": true },
+    { "name": "secondaryRole", "type": "string", "required": false },
+    { "name": "profileImageSrc", "type": "string", "required": false },
+    { "name": "profileImageAlt", "type": "string", "required": false },
+    { "name": "profileModalImageSrc", "type": "string", "required": false }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Basic profile with no photo, no post-nominals, and no secondary role",
+      "props": {
+        "title": "Dr",
+        "firstName": "Paraskevi",
+        "lastName": "Katsiampa",
+        "department": "Management School",
+        "mainRole": "Lecturer in Financial Management"
+      }
+    },
+    {
+      "name": "WithPostNominals",
+      "description": "Profile including post-nominal letters after the name",
+      "props": {
+        "title": "Professor",
+        "firstName": "Hui",
+        "lastName": "Long",
+        "postNominals": "BEng, MSc, PhD, CEng, FIMechE, SFHEA.",
+        "department": "School of Mechanical, Aerospace and Civil Engineering",
+        "mainRole": "Professor of Mechanics of Materials",
+        "secondaryRole": "Departmental Director of Research and Innovation"
+      }
+    },
+    {
+      "name": "WithPhoto",
+      "description": "Profile with a photo thumbnail and modal enlargement",
+      "props": {
+        "title": "Dr",
+        "firstName": "Alon",
+        "lastName": "Zivony",
+        "department": "School of Psychology",
+        "mainRole": "Lecturer in Psychology",
+        "profileImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2023-09/Photo%20of%20Alon%20Zivony.jpg?h=1b0af9cd&itok=X3TsJOAj",
+        "profileImageAlt": "Photo of Alon Zivony",
+        "profileModalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2023-09/Photo%20of%20Alon%20Zivony.jpg?h=1b0af9cd&itok=gfGUZ8VL"
+      }
+    },
+    {
+      "name": "WithPhotoAndSecondaryRole",
+      "description": "Full profile with photo, post-nominals, primary and secondary role",
+      "props": {
+        "title": "Professor",
+        "firstName": "Rob",
+        "lastName": "Howell",
+        "postNominals": "BEng, SFHEA, PhD",
+        "department": "School of Mechanical, Aerospace and Civil Engineering",
+        "mainRole": "Professor of Aerospace Engineering",
+        "secondaryRole": "Head of New Interdisciplinary Engineering Programmes",
+        "profileImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2021-09/2021-08-10%20%20Sheff%20Uni%20Mech%20Eng%20Headshots%20Meg06291_0.jpg?h=467247af&itok=dM6S6xD4",
+        "profileImageAlt": "Dr Rob Howell",
+        "profileModalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2021-09/2021-08-10%20%20Sheff%20Uni%20Mech%20Eng%20Headshots%20Meg06291_0.jpg?h=467247af&itok=eFPqDfVm"
+      }
+    },
+    {
+      "name": "NoTitle",
+      "description": "Profile for a person without an honorific title (e.g. a PhD student)",
+      "props": {
+        "firstName": "Nick",
+        "lastName": "Morgan",
+        "department": "School of Sociological Studies, Politics and International Relations",
+        "mainRole": "PhD student",
+        "profileImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2021-11/DSC_2187.JPG?h=6626aca4&itok=YFqD55cF",
+        "profileImageAlt": "Sociological Studies PhD student Nick Morgan",
+        "profileModalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2021-11/DSC_2187.JPG?h=6626aca4&itok=hXqr3oh4"
+      }
+    }
+  ],
+  "notes": "h1 contains title (optional), firstName, lastName as text. postNominals in p.postnom after h1. secondaryRole in p.roles. .profilepic block absent when no photo — when present includes thumbnail figure, enlarge button, and .profilepic-modal div. Enlarge button text and close button aria-label are hardcoded.",
+  "htmlExamples": [
+    "<div class=\"personinfo\">\n<div>\n<h1>Dr Paraskevi Katsiampa</h1><p class=\"postnom\">BSc, MSc, PhD</p><div class=\"deptname\"><p>Management School</p></div><p class=\"mainrole\">Lecturer in Financial Management</p></div></div>",
+    "<div class=\"personinfo\">\n<div>\n<h1>Professor Rob Howell</h1><p class=\"postnom\">BEng, SFHEA, PhD</p><div class=\"deptname\"><p>School of Mechanical, Aerospace and Civil Engineering</p></div><p class=\"mainrole\">Professor of Aerospace Engineering</p><p class=\"roles\">Head of New Interdisciplinary Engineering Programmes</p></div>\n<div class=\"profilepic\"><div class=\"media--image--figure\"><figure class=\"imgcapt\"><picture><img loading=\"eager\" width=\"180\" height=\"180\" src=\"//cdn.sheffield.ac.uk/...\" alt=\"Dr Rob Howell\"></picture></figure></div><button class=\"enlarge\"><span class=\"show-for-sr\">Open staff member portrait in a modal window</span></button><div class=\"profilepic-modal\"><button class=\"close\" aria-label=\"Close image modal\"><i class=\"fas fa-times-circle\"></i></button><picture><img width=\"600\" height=\"600\" src=\"//cdn.sheffield.ac.uk/...\" alt=\"Profile picture of Dr Rob Howell\" loading=\"lazy\"></picture></div></div></div>"
+  ]
+}
