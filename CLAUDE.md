@@ -25,10 +25,7 @@ The orchestrator never loads the manifest JSON or page HTML directly — those s
 npm install
 
 # Build the selector manifest from the page index
-node tools/init-manifest.js \
-  --index-cli query-index \
-  --selector-list selectors.txt \
-  --min-pages 3
+node tools/init-manifest.js --min-pages 3
 
 # Add the global CSS import to .storybook/preview.ts
 # import '../path/to/global.css'
