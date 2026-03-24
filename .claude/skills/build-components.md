@@ -196,7 +196,23 @@ STORY_FILE: src/stories/<ComponentName>.stories.tsx
 
 ---
 
-### Step 7 — Log the iteration
+### Step 7 — Commit the component
+
+Stage and commit the new component files:
+
+```bash
+git add specs/<ComponentName>.json \
+        src/components/<ComponentName>/ \
+        src/stories/<ComponentName>.stories.tsx \
+        selector-manifest.json
+git commit -m "feat: add <ComponentName> component (<targetSelector>)"
+```
+
+If the commit fails (e.g. nothing staged, hook error), log a warning but do not stop the pipeline.
+
+---
+
+### Step 9 — Log the iteration
 
 Append a JSON line to `logs/orchestrator.log`:
 ```json
@@ -205,7 +221,7 @@ Append a JSON line to `logs/orchestrator.log`:
 
 ---
 
-### Step 8 — Loop
+### Step 10 — Loop
 
 Track consecutive failures (iterations where the explore agent failed or QA could not be resolved). A successful iteration (status `done` or `needs-review`) resets the counter to 0. If 5 consecutive failures occur, stop and report: "5 consecutive failures — stopping pipeline. Check logs/orchestrator.log for details."
 
