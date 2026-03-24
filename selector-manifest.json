@@ -630,11 +630,13 @@
     },
     ".leadintro": {
       "pageCount": 15941,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "p.leadintro": {
       "pageCount": 14286,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".paragraph--type--para-promotion": {
       "pageCount": 13556,
@@ -3643,6 +3645,11 @@
       "pageCount": 0,
       "status": "skipped",
       "skipReason": "utility-class-or-internal-element"
+    },
+    "site-search": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "SiteSearch"
     }
   },
   "components": {
@@ -3746,6 +3753,13 @@
       ],
       "specFile": "specs/BottomBar.json",
       "storyFile": "src/stories/BottomBar.stories.tsx"
+    },
+    "SiteSearch": {
+      "selectors": [
+        "site-search"
+      ],
+      "specFile": "specs/SiteSearch.json",
+      "storyFile": "src/stories/SiteSearch.stories.tsx"
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "componentName": "SiteSearch",
+  "description": "A site-wide search widget with a text input, hidden filter, submit button, and a mobile toggle button for showing/hiding the search dropdown.",
+  "rootElement": "div",
+  "rootClassName": "site-search",
+  "selectorsCovered": [".site-search"],
+  "props": [],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard site search widget as it appears in the site header",
+      "props": {}
+    }
+  ],
+  "notes": "All 15 sampled pages (duplicates: 14, textVaries: false) share an identical DOM structure with no variable content. All text, labels, placeholder, form action, and aria-labels are hardcoded constants — no props are needed. The .site-search-toggle button is only visible on small screens (hide-for-medium class), and shows/hides the search form. The search-autocomplete wrapper enables autocomplete behaviour via a CSS class hook.",
+  "htmlExamples": [
+    "<div class=\"site-search\" role=\"search\">\n      <div class=\"site-search-wrapper search-autocomplete\">\n        <form action=\"/find\" method=\"get\">\n          <label for=\"site-search-box\" class=\"show-for-sr\">Search sheffield.ac.uk</label>\n          <div class=\"search-autocomplete__inputs\">\n            <input id=\"site-search-box\" class=\"site-search-input\" type=\"search\" name=\"query\" autocomplete=\"off\" placeholder=\"Search our site\" aria-label=\"Search our site\" aria-autocomplete=\"list\" aria-haspopup=\"true\" required=\"\">\n            <input type=\"hidden\" name=\"f.Tabs|AllDocumentsFill\" value=\"All results\">\n          </div>\n          <button type=\"submit\" aria-label=\"Site search\">\n            <i class=\"fas fa-search\"></i>\n          </button>\n        </form>\n      </div>\n      <button class=\"site-search-toggle hide-for-medium\" type=\"button\" aria-label=\"Open site search dropdown\">\n        <i class=\"fas fa-search\"></i>\n        <i class=\"fas fa-times\"></i>\n      </button>\n    </div>"
+  ]
+}
