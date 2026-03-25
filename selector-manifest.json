@@ -262,11 +262,11 @@
     },
     ".header": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done"
     },
     ".header .logo": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done"
     },
     ".header .logo img": {
       "pageCount": 26276,
@@ -829,15 +829,21 @@
     },
     "blockquote.uosquote": {
       "pageCount": 2382,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosQuote",
+      "atomicType": "atom"
     },
     "blockquote.uosquote p": {
       "pageCount": 2382,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosQuote",
+      "atomicType": "atom"
     },
     "blockquote.uosquote .uosquote-quote p:first-of-type": {
       "pageCount": 2378,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosQuote",
+      "atomicType": "atom"
     },
     ".contactinfo .telnum a": {
       "pageCount": 2372,
@@ -851,7 +857,9 @@
     },
     "blockquote.uosquote .uosquote-name": {
       "pageCount": 2288,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosQuote",
+      "atomicType": "atom"
     },
     ".publicationsList": {
       "pageCount": 2172,
@@ -875,7 +883,9 @@
     },
     "blockquote.uosquote .uosquote-attribution": {
       "pageCount": 2151,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosQuote",
+      "atomicType": "atom"
     },
     ".jobtitle": {
       "pageCount": 1903,
@@ -1187,11 +1197,11 @@
     },
     ".header .logo.mgmt-logo img": {
       "pageCount": 848,
-      "status": "pending"
+      "status": "done"
     },
     ".header .logo.mgmt-logo": {
       "pageCount": 848,
-      "status": "pending"
+      "status": "done"
     },
     ".accred-banner": {
       "pageCount": 846,
@@ -2601,7 +2611,9 @@
     },
     ".uosblock.grey .uosquote": {
       "pageCount": 103,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosQuote",
+      "atomicType": "atom"
     },
     ".quicklinks .matchheight": {
       "pageCount": 103,
@@ -4226,6 +4238,19 @@
       "specFile": "specs/SiteHeader.json",
       "storyFile": "src/stories/organisms/SiteHeader.stories.tsx",
       "atomicType": "organism"
+    },
+    "UosQuote": {
+      "selectors": [
+        "blockquote.uosquote",
+        "blockquote.uosquote p",
+        "blockquote.uosquote .uosquote-quote p:first-of-type",
+        "blockquote.uosquote .uosquote-name",
+        "blockquote.uosquote .uosquote-attribution",
+        ".uosblock.grey .uosquote"
+      ],
+      "specFile": "specs/UosQuote.json",
+      "storyFile": "src/stories/atoms/UosQuote.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
