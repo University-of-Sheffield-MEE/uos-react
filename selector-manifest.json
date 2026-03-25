@@ -177,15 +177,21 @@
     },
     ".site-search": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteSearch",
+      "atomicType": "molecule"
     },
     ".site-search .site-search-wrapper": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteSearch",
+      "atomicType": "molecule"
     },
     ".site-search form": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteSearch",
+      "atomicType": "molecule"
     },
     ".site-search button": {
       "pageCount": 26276,
@@ -201,11 +207,15 @@
     },
     ".site-search .site-search-toggle": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteSearch",
+      "atomicType": "molecule"
     },
     ".site-search .site-search-toggle .fa-times": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteSearch",
+      "atomicType": "molecule"
     },
     ".search-autocomplete__inputs": {
       "pageCount": 26276,
@@ -3872,6 +3882,18 @@
       "specFile": "specs/SearchSubmitButton.json",
       "storyFile": "src/stories/atoms/SearchSubmitButton.stories.tsx",
       "atomicType": "atom"
+    },
+    "SiteSearch": {
+      "selectors": [
+        ".site-search",
+        ".site-search .site-search-wrapper",
+        ".site-search form",
+        ".site-search .site-search-toggle",
+        ".site-search .site-search-toggle .fa-times"
+      ],
+      "specFile": "specs/SiteSearch.json",
+      "storyFile": "src/stories/molecules/SiteSearch.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }

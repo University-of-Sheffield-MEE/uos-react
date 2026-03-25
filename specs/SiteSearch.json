@@ -1,0 +1,66 @@
+{
+  "componentName": "SiteSearch",
+  "atomicType": "molecule",
+  "childComponents": ["SiteSearchInput", "SearchSubmitButton"],
+  "description": "Global site search widget containing a search form with text input and submit button, plus a mobile toggle button to open and close the search dropdown.",
+  "rootElement": "div",
+  "rootClassName": "site-search",
+  "selectorsCovered": [".site-search", ".site-search .site-search-wrapper", ".site-search form", ".site-search .site-search-toggle", ".site-search .site-search-toggle .fa-times"],
+  "props": [
+    {
+      "name": "action",
+      "type": "string",
+      "required": false,
+      "default": "/find",
+      "mapsTo": { "element": "form", "attribute": "action" }
+    },
+    {
+      "name": "inputName",
+      "type": "string",
+      "required": false,
+      "default": "query",
+      "mapsTo": { "element": "input.site-search-input", "attribute": "name" }
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "required": false,
+      "default": "Search our site",
+      "mapsTo": { "element": "input.site-search-input", "attribute": "placeholder" }
+    },
+    {
+      "name": "toggleAriaLabel",
+      "type": "string",
+      "required": false,
+      "default": "Open site search dropdown",
+      "mapsTo": { "element": "button.site-search-toggle", "attribute": "aria-label" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard site search widget as it appears in the global header",
+      "props": {
+        "action": "/find",
+        "inputName": "query",
+        "placeholder": "Search our site",
+        "toggleAriaLabel": "Open site search dropdown"
+      }
+    },
+    {
+      "name": "CustomAction",
+      "description": "Site search pointing to a different search endpoint",
+      "props": {
+        "action": "/search",
+        "inputName": "q",
+        "placeholder": "Search our site",
+        "toggleAriaLabel": "Open site search dropdown"
+      }
+    }
+  ],
+  "notes": "The form always submits to /find with method GET. The hidden input `f.Tabs|AllDocumentsFill` with value `All results` is hardcoded and not a prop. The label `Search sheffield.ac.uk` is hardcoded with class `show-for-sr` (screen-reader only). The toggle button uses `.hide-for-medium` so it only shows on small screens — it contains two Font Awesome icons (fa-search and fa-times) for open/close states. The `search-autocomplete` and `search-autocomplete__inputs` classes are structural wrappers. All samples are structurally identical with duplicates:7 and textVaries:false, confirming fully consistent markup across the site.",
+  "htmlExamples": [
+    "<div class=\"site-search\" role=\"search\">\n      <div class=\"site-search-wrapper search-autocomplete\">\n        <form action=\"/find\" method=\"get\">\n          <label for=\"site-search-box\" class=\"show-for-sr\">Search sheffield.ac.uk</label>\n          <div class=\"search-autocomplete__inputs\">\n            <input id=\"site-search-box\" class=\"site-search-input\" type=\"search\" name=\"query\" autocomplete=\"off\" placeholder=\"Search our site\" aria-label=\"Search our site\" aria-autocomplete=\"list\" aria-haspopup=\"true\" required=\"\">\n            <input type=\"hidden\" name=\"f.Tabs|AllDocumentsFill\" value=\"All results\">\n          </div>\n          <button type=\"submit\" aria-label=\"Site search\">\n            <i class=\"fas fa-search\"></i>\n          </button>\n        </form>\n      </div>\n      <button class=\"site-search-toggle hide-for-medium\" type=\"button\" aria-label=\"Open site search dropdown\">\n        <i class=\"fas fa-search\"></i>\n        <i class=\"fas fa-times\"></i>\n      </button>\n    </div>"
+  ]
+}
