@@ -247,7 +247,7 @@
     },
     ".search-autocomplete__inputs": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done"
     },
     ".smooth-criminal": {
       "pageCount": 26276,
@@ -393,7 +393,8 @@
     },
     ".nav-overlay": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".block-alertbanner": {
       "pageCount": 26276,
@@ -429,7 +430,8 @@
     },
     ".hideonmobile": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "ul.breadcrumbs a": {
       "pageCount": 26274,
@@ -501,11 +503,15 @@
     },
     ".region-banner a": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-banner .section-navigation": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-banner .section-navigation .button.menu": {
       "pageCount": 26256,
@@ -521,7 +527,9 @@
     },
     ".region-banner": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".section-title .off-canv > a": {
       "pageCount": 26249,
@@ -543,11 +551,15 @@
     },
     ".region-banner .views-field-field-section-navigation": {
       "pageCount": 26244,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-banner .paragraph--type--para-section-nav > nav": {
       "pageCount": 26244,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul": {
       "pageCount": 26243,
@@ -571,19 +583,27 @@
     },
     ".region-banner ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-banner li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li a": {
       "pageCount": 26241,
@@ -597,15 +617,18 @@
     },
     ".row .row": {
       "pageCount": 26038,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".row:not(.expanded) .row": {
       "pageCount": 26038,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-8": {
       "pageCount": 24355,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul": {
       "pageCount": 23347,
@@ -613,7 +636,9 @@
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul": {
       "pageCount": 23347,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
       "pageCount": 23336,
@@ -621,11 +646,15 @@
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
       "pageCount": 23336,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".desktop-section-navigation ul ul li a": {
       "pageCount": 23300,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
       "pageCount": 21935,
@@ -637,11 +666,15 @@
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RegionBanner",
+      "atomicType": "organism"
     },
     ".large-4": {
       "pageCount": 18950,
@@ -4337,6 +4370,27 @@
       "specFile": "specs/LeadIntro.json",
       "storyFile": "src/stories/atoms/LeadIntro.stories.tsx",
       "atomicType": "atom"
+    },
+    "RegionBanner": {
+      "selectors": [
+        ".region-banner",
+        ".region-banner .section-navigation",
+        ".region-banner a",
+        ".region-banner ul",
+        ".region-banner li",
+        ".region-banner .views-field-field-section-navigation",
+        ".region-banner .paragraph--type--para-section-nav > nav",
+        ".region-banner .paragraph--type--para-section-nav > nav > ul",
+        ".region-banner .paragraph--type--para-section-nav > nav > ul > li",
+        ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul",
+        ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li",
+        ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul",
+        ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li",
+        ".desktop-section-navigation ul ul li a"
+      ],
+      "specFile": "specs/RegionBanner.json",
+      "storyFile": "src/stories/organisms/RegionBanner.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
