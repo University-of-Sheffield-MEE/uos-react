@@ -1,0 +1,48 @@
+{
+  "componentName": "SkipLink",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A visually-hidden, focusable accessibility link that allows keyboard users to skip to the main content area.",
+  "rootElement": "a",
+  "rootClassName": "skip-link",
+  "selectorsCovered": [".skip-link"],
+  "props": [
+    {
+      "name": "targetId",
+      "type": "string",
+      "required": false,
+      "default": "main-content",
+      "mapsTo": { "element": "a", "attribute": "href" }
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": false,
+      "default": "Skip to main content",
+      "mapsTo": { "element": "a", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard skip link targeting main content — visually hidden but focusable via keyboard",
+      "props": {
+        "targetId": "main-content",
+        "label": "Skip to main content"
+      }
+    },
+    {
+      "name": "CustomTarget",
+      "description": "Skip link targeting a custom section ID",
+      "props": {
+        "targetId": "page-content",
+        "label": "Skip to page content"
+      }
+    }
+  ],
+  "notes": "The link has classes 'visually-hidden focusable skip-link' — it is hidden until focused. The href always points to '#main-content' and label is always 'Skip to main content' across all sampled pages, but both are modelled as props with defaults for flexibility. The 'visually-hidden' and 'focusable' classes should be hardcoded on the element.",
+  "htmlExamples": [
+    "<a href=\"#main-content\" class=\"visually-hidden focusable skip-link\">\n    Skip to main content\n  </a>"
+  ]
+}

@@ -247,7 +247,9 @@
     },
     ".skip-link": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SkipLink",
+      "atomicType": "atom"
     },
     ".meganav": {
       "pageCount": 26276,
@@ -3894,6 +3896,14 @@
       "specFile": "specs/SiteSearch.json",
       "storyFile": "src/stories/molecules/SiteSearch.stories.tsx",
       "atomicType": "molecule"
+    },
+    "SkipLink": {
+      "selectors": [
+        ".skip-link"
+      ],
+      "specFile": "specs/SkipLink.json",
+      "storyFile": "src/stories/atoms/SkipLink.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
