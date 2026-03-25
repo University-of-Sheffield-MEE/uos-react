@@ -778,7 +778,9 @@
     },
     ".contactinfo": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".news-date": {
       "pageCount": 6175,
@@ -786,7 +788,9 @@
     },
     ".contactinfo a:not(.standalone-accordion-toggler)": {
       "pageCount": 6107,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".node--type-news-article ul.breadcrumbs li:last-child": {
       "pageCount": 5887,
@@ -806,23 +810,33 @@
     },
     ".showfull": {
       "pageCount": 5375,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".fullcontact": {
       "pageCount": 5375,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".fullcontact .address": {
       "pageCount": 5375,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".fullcontact .social": {
       "pageCount": 5375,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".contactinfo .loclink": {
       "pageCount": 5307,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".profilepic-modal": {
       "pageCount": 5082,
@@ -922,7 +936,9 @@
     },
     ".contactinfo .telnum a": {
       "pageCount": 2372,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".uosblock a[href]:not(.uosbutton):not(.textbutton)": {
       "pageCount": 2334,
@@ -1172,7 +1188,9 @@
     },
     ".fullcontact .social a": {
       "pageCount": 1172,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".multicol .uosblock": {
       "pageCount": 1167,
@@ -2836,7 +2854,9 @@
     },
     ".contactinfo .officehours": {
       "pageCount": 72,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ContactInfo",
+      "atomicType": "molecule"
     },
     ".staffcardindex.manual > div:nth-of-type(3n)": {
       "pageCount": 72,
@@ -4431,6 +4451,23 @@
       ],
       "specFile": "specs/PersonInfo.json",
       "storyFile": "src/stories/molecules/PersonInfo.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "ContactInfo": {
+      "selectors": [
+        ".contactinfo",
+        ".contactinfo a:not(.standalone-accordion-toggler)",
+        ".contactinfo .loclink",
+        ".contactinfo .telnum a",
+        ".contactinfo .officehours",
+        ".showfull",
+        ".fullcontact",
+        ".fullcontact .address",
+        ".fullcontact .social",
+        ".fullcontact .social a"
+      ],
+      "specFile": "specs/ContactInfo.json",
+      "storyFile": "src/stories/molecules/ContactInfo.stories.tsx",
       "atomicType": "molecule"
     }
   }
