@@ -1,0 +1,40 @@
+{
+  "componentName": "BackToTop",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A button that scrolls the user back to the top of the page, displayed as an icon button with an upward chevron.",
+  "rootElement": "button",
+  "rootClassName": "backtotop",
+  "selectorsCovered": [".backtotop"],
+  "props": [
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "default": "Scroll to top of page",
+      "mapsTo": {
+        "element": "button",
+        "attribute": "aria-label"
+      }
+    },
+    {
+      "name": "onClick",
+      "type": "() => void",
+      "required": false
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard back to top button with upward chevron icon",
+      "props": {
+        "ariaLabel": "Scroll to top of page"
+      }
+    }
+  ],
+  "notes": "The icon inside uses Font Awesome classes (fas fa-angle-up fa-2x) which are rendered via the global CSS. The aria-label is always 'Scroll to top of page' across all sampled pages — provided as a prop with that default. The button has no visible text label, only the icon.",
+  "htmlExamples": [
+    "<button class=\"backtotop\" aria-label=\"Scroll to top of page\">\n    <i class=\"fas fa-angle-up fa-2x\" aria-hidden=\"true\"></i>\n  </button>"
+  ]
+}

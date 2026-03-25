@@ -14,23 +14,28 @@
     },
     ".columns:last-child:not(:first-child)": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-3": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-5": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-7": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-9": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".menu": {
       "pageCount": 26276,
@@ -50,11 +55,13 @@
     },
     ".position-left": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".position-right": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".off-canvas-content": {
       "pageCount": 26276,
@@ -62,15 +69,19 @@
     },
     ".hide-for-medium": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".show-for-sr": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".backtotop": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BackToTop",
+      "atomicType": "atom"
     },
     "footer .large-3": {
       "pageCount": 26276,
@@ -3754,7 +3765,7 @@
       ],
       "specFile": "specs/Grid.json",
       "storyFile": "src/stories/layouts/Grid.stories.tsx",
-      "atomicType": "atom"
+      "atomicType": "layout"
     },
     "Grid.Col": {
       "selectors": [
@@ -3762,7 +3773,7 @@
       ],
       "specFile": "specs/Grid.json",
       "storyFile": "src/stories/layouts/Grid.stories.tsx",
-      "atomicType": "atom"
+      "atomicType": "layout"
     },
     "UosButton": {
       "selectors": [
@@ -3800,6 +3811,14 @@
       "specFile": "specs/UosBlock.json",
       "storyFile": "src/stories/molecules/UosBlock.stories.tsx",
       "atomicType": "molecule"
+    },
+    "BackToTop": {
+      "selectors": [
+        ".backtotop"
+      ],
+      "specFile": "specs/BackToTop.json",
+      "storyFile": "src/stories/atoms/BackToTop.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
