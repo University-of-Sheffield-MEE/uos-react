@@ -1,0 +1,188 @@
+{
+  "componentName": "SiteHeader",
+  "atomicType": "organism",
+  "childComponents": [],
+  "description": "University site-wide header containing the institution logo and a three-level mega-navigation menu.",
+  "rootElement": "header",
+  "rootClassName": "site-header",
+  "selectorsCovered": [
+    "header.site-header",
+    ".site-header .header",
+    ".site-header .logo",
+    ".site-header .meganav",
+    ".site-header .block-globalnav",
+    ".site-header .block-uos-globalnav",
+    ".block-uos-globalnav",
+    ".block-globalnav"
+  ],
+  "props": [
+    {
+      "name": "logoHref",
+      "type": "string",
+      "required": false,
+      "default": "/?home",
+      "mapsTo": { "element": ".logo a", "attribute": "href" }
+    },
+    {
+      "name": "logoSrc",
+      "type": "string",
+      "required": false,
+      "default": "/themes/custom/uos_public/images/logos/uos-crest.svg",
+      "mapsTo": { "element": ".logo img", "attribute": "src" }
+    },
+    {
+      "name": "logoSrcDesktop",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".logo source", "attribute": "srcset" }
+    },
+    {
+      "name": "logoAlt",
+      "type": "string",
+      "required": false,
+      "default": "University of Sheffield homepage",
+      "mapsTo": { "element": ".logo img", "attribute": "alt" }
+    },
+    {
+      "name": "logoClassName",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".logo", "attribute": "class" }
+    },
+    {
+      "name": "navItems",
+      "type": "Array<{ label: string; href?: string; groups: Array<{ heading: { label: string; href: string; featured?: boolean }; links: Array<{ label: string; href: string; featured?: boolean }> }> }>",
+      "required": true,
+      "mapsTo": { "element": ".block-uos-globalnav > ul > li", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard UoS site header with crest logo and full global navigation",
+      "props": {
+        "logoHref": "/?home",
+        "logoSrc": "/themes/custom/uos_public/images/logos/uos-crest.svg",
+        "logoSrcDesktop": "/themes/custom/uos_public/images/logos/uos-crest.svg",
+        "logoAlt": "University of Sheffield homepage",
+        "navItems": [
+          {
+            "label": "Study",
+            "groups": [
+              {
+                "heading": { "label": "Courses", "href": "/courses" },
+                "links": [
+                  { "label": "Undergraduate courses", "href": "/undergraduate/home" },
+                  { "label": "Postgraduate taught courses", "href": "/postgraduate/taught" },
+                  { "label": "PhD study", "href": "/postgraduate/phd" },
+                  { "label": "Apprenticeships", "href": "/apprenticeships" }
+                ]
+              },
+              {
+                "heading": { "label": "Studying at Sheffield", "href": "/study/home" },
+                "links": [
+                  { "label": "Teaching", "href": "/study/teaching" },
+                  { "label": "Facilities", "href": "/study/facilities" },
+                  { "label": "Your career prospects", "href": "/study/career" }
+                ]
+              },
+              {
+                "heading": { "label": "Student life", "href": "/study/home", "featured": true },
+                "links": [
+                  { "label": "Students' Union - the UK's no. 1", "href": "/study/su" },
+                  { "label": "Clubs, societies and sport", "href": "/study/clubs-societies-sport" },
+                  { "label": "Guide to Sheffield", "href": "/sheffield-guide/home" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Research",
+            "groups": [
+              {
+                "heading": { "label": "Research at Sheffield", "href": "/research/home" },
+                "links": [
+                  { "label": "Our strategic priorities", "href": "/vision/our-pillars/research" },
+                  { "label": "Our people", "href": "/research/people" },
+                  { "label": "Open Research", "href": "/openresearch/home" }
+                ]
+              },
+              {
+                "heading": { "label": "Postgraduate research", "href": "/postgraduate/phd" },
+                "links": [
+                  { "label": "Find a PhD", "href": "/postgraduate/phd/search" },
+                  { "label": "PhD projects directory", "href": "/postgraduate/phd/projects" },
+                  { "label": "PhD scholarships", "href": "/postgraduate/phd/scholarships" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "About",
+            "groups": [
+              {
+                "heading": { "label": "About the University", "href": "/about/home" },
+                "links": [
+                  { "label": "News", "href": "/news" },
+                  { "label": "Events", "href": "/whatson/home" },
+                  { "label": "Jobs", "href": "/jobs/home" },
+                  { "label": "Sustainability at Sheffield", "href": "/sustainability/home" }
+                ]
+              },
+              {
+                "heading": { "label": "Schools, departments and services", "href": "/departments" },
+                "links": [
+                  { "label": "Schools", "href": "/departments/academic" },
+                  { "label": "Faculties", "href": "/departments/faculties" },
+                  { "label": "Professional services", "href": "/departments/professional-services" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "MicrositeLogo",
+      "description": "Variant with a department/microsite logo replacing the main UoS crest",
+      "props": {
+        "logoHref": "/management?home",
+        "logoSrc": "/themes/custom/uos_public/images/mgmt/tuosmgmt.png",
+        "logoAlt": "University of Sheffield Management School homepage",
+        "logoClassName": "logo mgmt-logo",
+        "navItems": [
+          {
+            "label": "Study",
+            "groups": [
+              {
+                "heading": { "label": "Courses", "href": "/courses" },
+                "links": [
+                  { "label": "Undergraduate courses", "href": "/undergraduate/home" },
+                  { "label": "Postgraduate taught courses", "href": "/postgraduate/taught" },
+                  { "label": "PhD study", "href": "/postgraduate/phd" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Research",
+            "groups": [
+              {
+                "heading": { "label": "Research at Sheffield", "href": "/research/home" },
+                "links": [
+                  { "label": "Our people", "href": "/research/people" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "notes": "The nav has a strict three-level structure rendered inside .block-uos-globalnav: (1) top-level category items rendered as plain text labels when they have no href, otherwise as <a> elements; (2) within each category's dropdown, column groups each consisting of a heading <a> and a child <ul> of links; (3) individual leaf links. Some links carry class 'uoslink' for a featured/highlighted style — modelled as the optional 'featured' boolean on both group headings and individual links. The logo wrapper gains an additional class (e.g. 'mgmt-logo') for microsite variants, modelled via logoClassName. The <source media='(min-width: 768px)'> srcset inside the picture element is the desktop logo source, modelled as logoSrcDesktop. The aria-label on the header is always 'Site header' — hardcode it. The aria-label on the nav is always 'Global menu' — hardcode it.",
+  "htmlExamples": [
+    "<header class=\"site-header\" role=\"banner\" aria-label=\"Site header\">\n  <div class=\"header row\">\n    <div class=\"logo\">\n      <a href=\"/?home\">\n      <picture>\n        <source media=\"(min-width: 768px)\" srcset=\"/themes/custom/uos_public/images/logos/uos-crest.svg\">\n        <img class=\"resp\" alt=\"University of Sheffield homepage\" src=\"/themes/custom/uos_public/images/logos/uos-crest.svg\">\n      </picture>\n      </a>\n    </div>\n    <div class=\"meganav\">\n      <div class=\"region region-header\">\n        <div id=\"block-globalnav\" class=\"block-globalnav block block-fixed-block-content block-fixed-block-contentglobal-nav\">\n          <nav class=\"block-uos-globalnav\" role=\"navigation\" aria-label=\"Global menu\">\n            <ul>\n              <li>Study\n                <ul>\n                  <li><a href=\"/courses\">Courses</a>\n                    <ul>\n                      <li><a href=\"/undergraduate/home\" title=\"Undergraduate study\">Undergraduate courses</a></li>\n                      <li><a href=\"/postgraduate/taught\" title=\"Postgraduate taught courses\">Postgraduate taught courses</a></li>\n                      <li><a href=\"/postgraduate/phd\" title=\"PhD study\">PhD study</a></li>\n                      <li><a href=\"/apprenticeships\">Apprenticeships</a></li>\n                    </ul>\n                  </li>\n                  <li><a href=\"/study/home\" title=\"Study at Sheffield\">Studying at Sheffield</a>\n                    <ul>\n                      <li><a href=\"/study/teaching\" title=\"Teaching\">Teaching</a></li>\n                      <li><a href=\"/study/facilities\" title=\"Facilities\">Facilities</a></li>\n                      <li><a href=\"/study/career\" title=\"Your career prospects\">Your career prospects</a></li>\n                    </ul>\n                  </li>\n                  <li><a class=\"uoslink\" href=\"/study/home\" title=\"Study at Sheffield\">Student life</a>\n                    <ul>\n                      <li><a href=\"/study/su\">Students' Union - the UK's no. 1</a></li>\n                      <li><a href=\"/study/clubs-societies-sport\">Clubs, societies and sport</a></li>\n                    </ul>\n                  </li>\n                </ul>\n              </li>\n              <li>Research\n                <ul>\n                  <li><a href=\"/research/home\" title=\"Research\">Research at Sheffield</a>\n                    <ul>\n                      <li><a href=\"/vision/our-pillars/research\">Our strategic priorities</a></li>\n                      <li><a href=\"/research/people\">Our people</a></li>\n                    </ul>\n                  </li>\n                </ul>\n              </li>\n            </ul>\n          </nav>\n        </div>\n      </div>\n    </div>\n  </div>\n</header>",
+    "<header class=\"site-header\" role=\"banner\" aria-label=\"Site header\">\n  <div class=\"header row\">\n    <div class=\"logo mgmt-logo\">\n      <a href=\"/management?home\">\n      <picture>\n        <img class=\"resp\" alt=\"University of Sheffield Management School homepage\" src=\"/themes/custom/uos_public/images/mgmt/tuosmgmt.png\">\n      </picture>\n      </a>\n    </div>\n    <div class=\"meganav\">\n      <div class=\"region region-header\">\n        <div id=\"block-globalnav\" class=\"block-globalnav block block-fixed-block-content block-fixed-block-contentglobal-nav\">\n          <nav class=\"block-uos-globalnav\" role=\"navigation\" aria-label=\"Global menu\">\n            <ul>\n              <li>Study\n                <ul>\n                  <li><a href=\"/courses\">Courses</a>\n                    <ul>\n                      <li><a href=\"/undergraduate/home\">Undergraduate courses</a></li>\n                      <li><a href=\"/postgraduate/taught\">Postgraduate taught courses</a></li>\n                    </ul>\n                  </li>\n                </ul>\n              </li>\n              <li>Fees and funding\n                <ul>\n                  <li><a href=\"/undergraduate/fees-funding\">Undergraduate fees and funding</a>\n                    <ul>\n                      <li><a href=\"/postgraduate/taught/fees\">Postgraduate taught fees</a></li>\n                    </ul>\n                  </li>\n                </ul>\n              </li>\n            </ul>\n          </nav>\n        </div>\n      </div>\n    </div>\n  </div>\n</header>"
+  ]
+}
