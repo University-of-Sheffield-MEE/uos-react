@@ -189,7 +189,9 @@
     },
     ".site-search button": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SearchSubmitButton",
+      "atomicType": "atom"
     },
     ".site-search input": {
       "pageCount": 26276,
@@ -3762,6 +3764,12 @@
       "status": "done",
       "implementedBy": "SiteSearchInput",
       "atomicType": "atom"
+    },
+    ".site-search button[type=\"submit\"]": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "SearchSubmitButton",
+      "atomicType": "atom"
     }
   },
   "components": {
@@ -3854,6 +3862,15 @@
       ],
       "specFile": "specs/SiteSearchInput.json",
       "storyFile": "src/stories/atoms/SiteSearchInput.stories.tsx",
+      "atomicType": "atom"
+    },
+    "SearchSubmitButton": {
+      "selectors": [
+        ".site-search button[type=\"submit\"]",
+        ".site-search button"
+      ],
+      "specFile": "specs/SearchSubmitButton.json",
+      "storyFile": "src/stories/atoms/SearchSubmitButton.stories.tsx",
       "atomicType": "atom"
     }
   }

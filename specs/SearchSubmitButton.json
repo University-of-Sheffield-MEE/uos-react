@@ -1,0 +1,35 @@
+{
+  "componentName": "SearchSubmitButton",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A submit button for the site search form containing a Font Awesome search icon, used inside the .site-search form.",
+  "rootElement": "button",
+  "rootClassName": "search-submit-button",
+  "selectorsCovered": [".site-search button[type=\"submit\"]", ".site-search button"],
+  "props": [
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "default": "Site search",
+      "mapsTo": { "element": "button", "attribute": "aria-label" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Search submit button with default aria-label",
+      "props": { "ariaLabel": "Site search" }
+    },
+    {
+      "name": "CustomAriaLabel",
+      "description": "Search submit button with a custom aria-label",
+      "props": { "ariaLabel": "Submit search" }
+    }
+  ],
+  "notes": "The button contains a hardcoded Font Awesome icon (fas fa-search) and no visible text. The aria-label is always 'Site search' in observed samples but is modelled as a prop for flexibility. This component does not use a CSS class from the existing stylesheet — assign rootClassName 'search-submit-button' for local scoping. The button type is always 'submit' and should be hardcoded.",
+  "htmlExamples": [
+    "<button type=\"submit\" aria-label=\"Site search\">\n            <i class=\"fas fa-search\"></i>\n          </button>"
+  ]
+}
