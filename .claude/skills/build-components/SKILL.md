@@ -224,18 +224,9 @@ If the commit fails (e.g. nothing staged, hook error), log a warning but do not 
 
 ---
 
-### Step 7 — Log the iteration
+### Step 7 — Loop
 
-Append a JSON line to `logs/orchestrator.log`:
-```json
-{"timestamp":"<ISO timestamp>","selector":"<targetSelector>","componentName":"<name>","atomicType":"<atom|molecule|layout|organism>","selectorsCovered":<N>,"qaPass":<true/false>,"status":"<done/needs-review/skipped>"}
-```
-
----
-
-### Step 8 — Loop
-
-Track consecutive failures (iterations where the explore agent failed or QA could not be resolved). A successful iteration (status `done` or `needs-review`) resets the counter to 0. If 5 consecutive failures occur, stop and report: "5 consecutive failures — stopping pipeline. Check logs/orchestrator.log for details."
+Track consecutive failures (iterations where the explore agent failed or QA could not be resolved). A successful iteration (status `done` or `needs-review`) resets the counter to 0. If 5 consecutive failures occur, stop and report: "5 consecutive failures — stopping pipeline."
 
 Otherwise, return to Step 1.
 
