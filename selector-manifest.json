@@ -162,7 +162,8 @@
     },
     ".region-footer_last": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-FootIcons"
     },
     ".bottom-bar": {
       "pageCount": 26276,
@@ -293,39 +294,48 @@
     },
     ".block-uos-globalnav > ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-uos-globalnav > ul > li > ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-uos-globalnav > ul > li > ul > li > a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul > li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul > li > a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-uos-globalnav > ul > li > ul > li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-uos-globalnav": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".block-fixed-block-contentglobal-nav": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     "nav.muse": {
       "pageCount": 26276,
@@ -389,7 +399,8 @@
     },
     "body .region-meta_header ~ .nav-overlay": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "skipReason": "covered-by-MegaNav"
     },
     ".nav-overlay": {
       "pageCount": 26276,
@@ -398,11 +409,13 @@
     },
     ".block-alertbanner": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "a[href^=\"https://www.sheffield.ac.uk\"]": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".close-button": {
       "pageCount": 26274,
@@ -459,7 +472,9 @@
     },
     ".region-left_off_canvas .section-navigation": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".off-canvas button": {
       "pageCount": 26274,
@@ -487,7 +502,9 @@
     },
     ".section-title .section-title-holder h4.off-canv": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".section-title-wrapper": {
       "pageCount": 26256,
@@ -563,11 +580,15 @@
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".off-canvas ul": {
       "pageCount": 26243,
@@ -607,7 +628,9 @@
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li a": {
       "pageCount": 26241,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".off-canvas li a": {
       "pageCount": 26241,
@@ -632,7 +655,9 @@
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul": {
       "pageCount": 23347,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul": {
       "pageCount": 23347,
@@ -642,7 +667,9 @@
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
       "pageCount": 23336,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li": {
       "pageCount": 23336,
@@ -658,11 +685,15 @@
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li": {
       "pageCount": 21935,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasSectionNav",
+      "atomicType": "organism"
     },
     ".region-banner .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul": {
       "pageCount": 21935,
@@ -4469,6 +4500,22 @@
       "specFile": "specs/ContactInfo.json",
       "storyFile": "src/stories/molecules/ContactInfo.stories.tsx",
       "atomicType": "molecule"
+    },
+    "OffCanvasSectionNav": {
+      "selectors": [
+        ".region-left_off_canvas .section-navigation",
+        ".section-title .section-title-holder h4.off-canv",
+        ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul",
+        ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li",
+        ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li a",
+        ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul",
+        ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li",
+        ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul",
+        ".region-left_off_canvas .section-navigation .paragraph--type--para-section-nav > nav > ul > li > ul > li > ul > li"
+      ],
+      "specFile": "specs/OffCanvasSectionNav.json",
+      "storyFile": "src/stories/organisms/OffCanvasSectionNav.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
