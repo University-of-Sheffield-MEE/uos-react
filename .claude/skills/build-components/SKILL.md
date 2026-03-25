@@ -6,6 +6,20 @@ disable-model-invocation: true
 
 You are running the UoS React component library build pipeline. Your job is to loop through the pending CSS selectors in `selector-manifest.json`, implement each one as a React component, and update the manifest as you go.
 
+## Usage
+
+```
+/build-components                    — auto-selects the next pending selector
+/build-components <target>           — targets a specific component or selector
+```
+
+`<target>` can be:
+- A CSS selector:   `.news-teaser`
+- Free-form text:   `"the breadcrumb navigation"`
+- A long description of what is to be built
+
+When a target is provided, pass all relevant information from the target to the explore agent. The agent resolves the selector, gathers DOM samples, and produces a spec for that component. Complete the rest of the pipeline as normal, and then terminate after that component is comitted. Only loop when no target is provided.
+
 ## Configuration
 
 Set these values before starting (adjust to match the actual project):
@@ -48,7 +62,16 @@ Repeat until the explore agent reports no more pending selectors.
 
 ### Step 1 — Call the explore agent
 
-The explore agent now handles both selector selection and DOM analysis in a single pass. Call it with:
+The explore agent handles both selector selection and DOM analysis in a single pass.
+
+**First iteration only:** If the user provided a `<target>` when invoking this skill, call the explore agent with:
+
+```
+Fetch DOM samples and produce a ComponentSpec JSON for: <TARGET>
+Output ONLY a valid ComponentSpec JSON object. No explanation, no markdown fences.
+```
+
+**All other iterations (or no target was specified):** call it with:
 
 ```
 Fetch DOM samples and produce a ComponentSpec JSON for the next pending selector.

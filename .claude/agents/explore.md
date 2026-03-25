@@ -20,7 +20,24 @@ node tools/manifest.js list-atoms-and-molecules --plain
 # returns one line per component: <atomicType> <Name> <primarySelector>
 # e.g.: atom Button .btn
 #        molecule NewsTeaser .news-teaser
+```
 
+Keep the `availableComponents` list in memory — you will use it throughout.
+
+**Check for a specified target:** If your prompt says "for: `<TARGET>`" (injected by the orchestrator when the user specifies a component), resolve the target to a CSS selector:
+
+- If `<TARGET>` already looks like a CSS selector (starts with `.`), use it directly.
+- If `<TARGET>` is a description (e.g. "buttons", "site headers"), search the manifest for the most relevant pending selector matching that description:
+  ```bash
+  node tools/manifest.js search --query <TARGET> --status pending --plain
+  ```
+  Use the best matching pending selector as the candidate.
+
+Once the candidate is resolved, skip Step 1 entirely and go straight to **Find related selectors** (at the end of Step 1), then continue from Step 2.
+
+If no target is specified, load the pending list and proceed with Step 1 as normal:
+
+```bash
 node tools/manifest.js list-pending --page 1 --per-page 30 --plain
 # returns one line per selector: <selector> <pageCount>
 # e.g.: .signpost-card 142
@@ -28,11 +45,9 @@ node tools/manifest.js list-pending --page 1 --per-page 30 --plain
 # followed by a summary comment line: # page 1/5, 230 pending total
 ```
 
-Keep the `availableComponents` list in memory — you will use it throughout.
-
 ---
 
-## Step 1: Select a candidate
+## Step 1: Select a candidate (auto-select only — skip if a target was specified in Step 0)
 
 From the pending results, pick the **highest-pageCount** selector that represents a standalone component root. Apply these filters:
 
