@@ -15,7 +15,7 @@
  *   summary               -- count selectors by status
  *
  * Usage:
- *   node tools/manifest.js list-pending [--page N] [--per-page N] [--manifest path]
+ *   node tools/manifest.js list-pending [--page N] [--per-page N] [--plain] [--manifest path]
  *   node tools/manifest.js set-status --selectors '<json>' --status <s> [--skip-reason <r>] [--manifest path]
  *   node tools/manifest.js search --query <str> [--status <s>] [--manifest path]
  *   node tools/manifest.js register-component --component <Name> --selectors '<json>' --status <s> --atomic-type <atom|molecule|organism> --spec-file <path> --story-file <path> [--manifest path]
@@ -76,6 +76,14 @@ function cmdListPending(args, manifestPath) {
   const totalPages = Math.max(1, Math.ceil(totalPending / perPage));
   const start = (page - 1) * perPage;
   const slice = pending.slice(start, start + perPage);
+
+  if (args.plain) {
+    for (const [selector, entry] of slice) {
+      process.stdout.write(`${selector} ${entry.pageCount}\n`);
+    }
+    process.stdout.write(`# page ${page}/${totalPages}, ${totalPending} pending total\n`);
+    return;
+  }
 
   const result = {
     page,
@@ -144,6 +152,13 @@ function cmdSearch(args, manifestPath) {
       ...(entry.implementedBy ? { implementedBy: entry.implementedBy } : {}),
     }));
 
+  if (args.plain) {
+    for (const r of results) {
+      process.stdout.write(`${r.selector} ${r.pageCount} ${r.status}${r.implementedBy ? ` (${r.implementedBy})` : ''}\n`);
+    }
+    return;
+  }
+
   process.stdout.write(JSON.stringify({ query: args.query, results }, null, 2) + '\n');
 }
 
@@ -202,6 +217,13 @@ function cmdListComponents(args, manifestPath) {
     storyFile: entry.storyFile,
   }));
 
+  if (args.plain) {
+    for (const c of result) {
+      process.stdout.write(`${c.name} ${c.atomicType ?? 'unknown'} (${c.selectorCount} selectors)\n`);
+    }
+    return;
+  }
+
   process.stdout.write(JSON.stringify(result, null, 2) + '\n');
 }
 
@@ -224,6 +246,13 @@ function cmdListAtomsAndMolecules(args, manifestPath) {
       atomicType: entry.atomicType,
       primarySelector: (entry.selectors ?? [])[0] ?? null,
     }));
+
+  if (args.plain) {
+    for (const c of result) {
+      process.stdout.write(`${c.atomicType} ${c.name} ${c.primarySelector ?? ''}\n`.trimEnd() + '\n');
+    }
+    return;
+  }
 
   process.stdout.write(JSON.stringify(result, null, 2) + '\n');
 }

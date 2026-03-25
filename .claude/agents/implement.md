@@ -37,7 +37,10 @@ mkdir -p src/components/molecules/NewsTeaser
 
 **If the spec has `childComponents` (Case A — intrinsic children):** before writing any files, call:
 ```bash
-node tools/manifest.js list-atoms-and-molecules
+node tools/manifest.js list-atoms-and-molecules --plain
+# returns one line per component: <atomicType> <Name> <primarySelector>
+# e.g.: atom Button .btn
+#        molecule NewsTeaser .news-teaser
 ```
 Match each name in `childComponents` to its entry to get its `atomicType` and derive import paths.
 

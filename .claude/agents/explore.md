@@ -16,11 +16,16 @@ You select the next component to build, analyse real DOM fragments from a live w
 Before doing anything else, load:
 
 ```bash
-node tools/manifest.js list-atoms-and-molecules
-# returns: [{ "name": "Button", "atomicType": "atom", "primarySelector": ".btn" }, ...]
+node tools/manifest.js list-atoms-and-molecules --plain
+# returns one line per component: <atomicType> <Name> <primarySelector>
+# e.g.: atom Button .btn
+#        molecule NewsTeaser .news-teaser
 
-node tools/manifest.js list-pending --page 1 --per-page 30
-# returns: { "totalPending": N, "results": [{ "selector": "...", "pageCount": N }, ...] }
+node tools/manifest.js list-pending --page 1 --per-page 30 --plain
+# returns one line per selector: <selector> <pageCount>
+# e.g.: .signpost-card 142
+#        .breadcrumb 87
+# followed by a summary comment line: # page 1/5, 230 pending total
 ```
 
 Keep the `availableComponents` list in memory — you will use it throughout.
@@ -60,7 +65,10 @@ Take care to avoid selecting a component that has already been built. For exampl
 
 Once you have a target (e.g. `.signpost-card`), search for related selectors:
 ```bash
-node tools/manifest.js search --query signpost-card --status pending
+node tools/manifest.js search --query signpost-card --status pending --plain
+# returns one line per match: <selector> <pageCount> <status>
+# e.g.: .signpost-card 142 pending
+#        .signpost-card__title 87 pending
 ```
 
 Include in `relatedSelectors` (for context, not for output): any pending selector that is a descendant, BEM modifier/element, or state class of the target. These will all be covered by the component you build.
@@ -143,7 +151,7 @@ If this is a molecule/organism and `childComponents` contains a name that is NOT
 
 1. Search the manifest for that atom's CSS selector:
    ```bash
-   node tools/manifest.js search --query <atom-root-class> --status pending
+   node tools/manifest.js search --query <atom-root-class> --status pending --plain
    ```
 2. If a matching pending selector is found:
    - **Pivot**: abandon the molecule candidate (leave it `pending` — do not modify it)
