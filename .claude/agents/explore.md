@@ -1,7 +1,7 @@
 ---
 name: explore
 description: Selects the next pending CSS selector, fetches real DOM fragments, classifies the component (atom/molecule/layout/organism), optionally pivots to spec a missing dependency atom first, and produces a ComponentSpec JSON.
-tools: [Read, Bash, AskUserQuestion]
+tools: [Read, Bash]
 model: sonnet
 permissionMode: default
 maxTurns: 30
@@ -187,25 +187,7 @@ For Case B (slot/freeform) children — you may make a judgement as to whether t
 
 ---
 
-## Step 6: Check in with the user
-
-Before writing the spec, use `AskUserQuestion` to briefly describe your selection and ask for approval.
-
-Your message should include:
-- The component name and selector you've chosen (or pivoted to)
-- One sentence on why it was selected (e.g. highest pageCount, required dependency for a molecule)
-- A URL from the DOM samples where it can be seen in context
-- The atomic type and a one-line description of what it does
-
-Offer two options:
-1. **Proceed** — continue to Step 7
-2. **Decline** — user provides feedback; restart from Step 1 using that feedback to guide a different selection (skip the declined selector this iteration, do not mark it as skipped in the manifest)
-
-If the user declines, apply their feedback, pick a different candidate, and loop back through Steps 1–6 until you get approval.
-
----
-
-## Step 7: Analyse and produce ComponentSpec
+## Step 6: Analyse and produce ComponentSpec
 
 Once you have the final target, analyse the fragments fully and output a ComponentSpec JSON.
 

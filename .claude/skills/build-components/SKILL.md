@@ -88,11 +88,21 @@ The explore agent self-loads the candidate list and available components via the
 - `stories` must have at least one entry
 - `htmlExamples` should have at least one entry
 
-If validation fails, retry the explore agent once with: `"Your previous response was not valid JSON or was missing required fields. Try again."`
+If validation fails, use the Task tool to resume the explore agent and ask it: `"Your previous response was not valid JSON or was missing required fields. Try again."`
 
 If it fails again, or if `componentName` is null with `notes: "all-pending-selectors-processed"`, stop the loop and print the completion message.
 
 If `componentName` is null for any other reason (utility or no-match), the explore agent will have already handled the skipping — proceed to Step 9 to log, then loop.
+
+**User confirmation:**
+
+Use `AskUserQuestion` to present the proposed component and ask for approval. Include:
+- The component name, selector, atomic type, and description from the spec
+- A URL from `spec.htmlExamples` (if present), so the user can see it in context
+
+If the user **approves**: continue.
+
+If the user **declines**: Use the Task tool to resume the explore agent and ask it to pick a different candidate, passing along the user's feedback (e.g. "The user declined that component. Feedback: <user message>. Please pick a different candidate and return a new ComponentSpec JSON."). Treat the declined selector as skipped for this iteration only — do not update the manifest. Repeat the confirmation loop until the user approves.
 
 **Check for component name conflicts:** If `componentName` already appears in the manifest's `components` map, append `2` to the name (e.g. `NewsTeaser2`), then check again; increment until the name is unique. Update the `componentName` field inside the spec JSON object to match.
 
@@ -164,7 +174,7 @@ The QA agent returns a verdict JSON.
 
 **If `pass` is false and there are `severity: "error"` issues:**
 
-Call the implement agent again with:
+Use the Task tool to resume the implement agent and ask it:
 ```
 Fix the following issues in the <ComponentName> component:
 
