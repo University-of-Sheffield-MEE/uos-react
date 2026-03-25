@@ -46,13 +46,13 @@ Output ONLY a single valid JSON object. No prose, no explanation, no markdown fe
 ### 0. Atomic placement and story title prefix
 
 **Check: `atomic-placement`**
-- The component file path must be `src/components/{atoms|molecules|organisms}/<ComponentName>/`
-- The story file path must be `src/stories/{atoms|molecules|organisms}/<ComponentName>.stories.tsx`
-- Both must match the `atomicType` in the spec (`atom` → `atoms`, `molecule` → `molecules`, `organism` → `organisms`)
+- The component file path must be `src/components/{atoms|molecules|layouts|organisms}/<ComponentName>/`
+- The story file path must be `src/stories/{atoms|molecules|layouts|organisms}/<ComponentName>.stories.tsx`
+- Both must match the `atomicType` in the spec (`atom` → `atoms`, `molecule` → `molecules`, `layout` → `layouts`, `organism` → `organisms`)
 - Severity: `error` if the subdirectory does not match `atomicType`
 
 **Check: `story-title-prefix`**
-- `meta.title` in the stories file must start with `"Atoms/"`, `"Molecules/"`, or `"Organisms/"` matching `atomicType`
+- `meta.title` in the stories file must start with `"Atoms/"`, `"Molecules/"`, `"Layouts/"`, or `"Organisms/"` matching `atomicType`
 - Severity: `error` if the prefix is wrong (e.g. still `"Components/"`)
 
 

@@ -17,7 +17,7 @@ The prompt will contain:
 - `COMPONENT_NAME`: PascalCase component name, or `_skipped`
 - `SELECTORS_COVERED`: JSON array of CSS selector strings
 - `STATUS`: `"done"`, `"needs-review"`, or `"skipped"`
-- `ATOMIC_TYPE`: `"atom"`, `"molecule"`, or `"organism"` (omitted when `_skipped`)
+- `ATOMIC_TYPE`: `"atom"`, `"molecule"`, `"layout"`, or `"organism"` (omitted when `_skipped`)
 - `SPEC_FILE`: path to the ComponentSpec JSON file (may be empty for skipped)
 - `STORY_FILE`: path to the Storybook stories file (may be empty for skipped)
 

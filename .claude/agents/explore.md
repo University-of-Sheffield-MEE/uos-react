@@ -1,6 +1,6 @@
 ---
 name: explore
-description: Selects the next pending CSS selector, fetches real DOM fragments, classifies the component (atom/molecule/organism), optionally pivots to spec a missing dependency atom first, and produces a ComponentSpec JSON.
+description: Selects the next pending CSS selector, fetches real DOM fragments, classifies the component (atom/molecule/layout/organism), optionally pivots to spec a missing dependency atom first, and produces a ComponentSpec JSON.
 tools: [Read, Bash, AskUserQuestion]
 model: sonnet
 permissionMode: default
@@ -16,7 +16,7 @@ You select the next component to build, analyse real DOM fragments from a live w
 Before doing anything else, load:
 
 ```bash
-node tools/manifest.js list-atoms-and-molecules --plain
+node tools/manifest.js list-existing-components --plain
 # returns one line per component: <atomicType> <Name> <primarySelector>
 # e.g.: atom Button .btn
 #        molecule NewsTeaser .news-teaser
@@ -68,7 +68,7 @@ Re-fetch the first page after skipping so they no longer appear.
 
 ### Advice on selecting a selector
 
-The project uses an atomic design philosophy,with atoms, molecules, and organisms.
+The project uses an atomic design philosophy, with atoms, molecules, layouts, and organisms.
 
 Atoms should always be built before molecules, and molecules before organisms.
 
@@ -141,9 +141,11 @@ Based on the DOM fragments and the `availableComponents` list, determine `atomic
 
 **Molecule** — Composes or groups atoms in a consistent pattern. Check the DOM: do known atoms appear as children? Examples: card, teaser, form row, action bar, pagination bar.
 
+**Layout** — A structural/grid wrapper whose primary purpose is arranging children. No intrinsic content of its own. Examples: page wrapper, grid container, column layout, constrained-width container.
+
 **Organism** — A large, complex page section composing multiple molecules/atoms. Examples: site header, footer, navigation bar, hero banner, article listing, sidebar.
 
-When in doubt: err toward **atom** for small/simple, **molecule** for grouping patterns.
+When in doubt: err toward **atom** for small/simple, **molecule** for grouping patterns, **layout** for pure structural wrappers.
 
 ---
 
@@ -216,7 +218,7 @@ Output ONLY a single valid JSON object. No prose, no explanation, no markdown fe
 ```json
 {
   "componentName": "string (PascalCase) or null if utility/no-match",
-  "atomicType": "atom | molecule | organism",
+  "atomicType": "atom | molecule | layout | organism",
   "childComponents": ["ExistingComponentName", ...],
   "description": "string — one sentence describing the component",
   "rootElement": "string — HTML tag of the root element",
@@ -279,7 +281,7 @@ Check the fragments — what HTML tag does the element matching the target selec
 
 If child elements vary wildly in type/depth/classes with no consistent structure, the component is a **pure layout container**:
 - Set `props` to a single entry: `{ "name": "children", "type": "ReactNode", "required": true }` with no `mapsTo`
-- Set `atomicType` to `"molecule"` (layout containers are molecules)
+- Set `atomicType` to `"layout"`
 - Set `notes` to `"Pure layout container — accepts arbitrary children."`
 - Write only a **Default** story with placeholder children
 

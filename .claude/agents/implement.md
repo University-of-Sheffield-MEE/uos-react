@@ -22,13 +22,13 @@ The spec includes an `htmlExamples` array containing real DOM fragments from the
 
 ## Files to write
 
-The spec includes an `atomicType` field (`"atom"`, `"molecule"`, or `"organism"`). Use it to determine the subdirectory. For a molecule named `NewsTeaser`:
+The spec includes an `atomicType` field (`"atom"`, `"molecule"`, `"layout"`, or `"organism"`). Use it to determine the subdirectory. For a molecule named `NewsTeaser`:
 
 1. `src/components/molecules/NewsTeaser/NewsTeaser.tsx` — the React component
 2. `src/components/molecules/NewsTeaser/index.ts` — barrel export
 3. `src/stories/molecules/NewsTeaser.stories.tsx` — Storybook stories
 
-Subdirectory mapping: `atom` → `atoms`, `molecule` → `molecules`, `organism` → `organisms`.
+Subdirectory mapping: `atom` → `atoms`, `molecule` → `molecules`, `layout` → `layouts`, `organism` → `organisms`.
 
 First, create the component directory:
 ```bash
@@ -37,7 +37,7 @@ mkdir -p src/components/molecules/NewsTeaser
 
 **If the spec has `childComponents` (Case A — intrinsic children):** before writing any files, call:
 ```bash
-node tools/manifest.js list-atoms-and-molecules --plain
+node tools/manifest.js list-existing-components --plain
 # returns one line per component: <atomicType> <Name> <primarySelector>
 # e.g.: atom Button .btn
 #        molecule NewsTeaser .news-teaser
@@ -105,7 +105,7 @@ export function NewsTeaser({
   Card.Body = CardBody;
   ```
 - **Child components — two distinct cases:**
-  - **Case A (listed in `spec.childComponents`):** The atom is intrinsic to the component — import it into the component `.tsx`. Resolve paths from `list-atoms-and-molecules`:
+  - **Case A (listed in `spec.childComponents`):** The atom is intrinsic to the component — import it into the component `.tsx`. Resolve paths from `list-existing-components`:
     ```tsx
     // e.g. in src/components/molecules/PaginationBar/PaginationBar.tsx
     import { PaginationButton } from '../../atoms/PaginationButton';
@@ -192,7 +192,7 @@ export const Featured: Story = {
 
 ### Rules
 
-- `title` in meta: use the `atomicType` from the spec as the prefix — `'Atoms/<ComponentName>'`, `'Molecules/<ComponentName>'`, or `'Organisms/<ComponentName>'`.
+- `title` in meta: use the `atomicType` from the spec as the prefix — `'Atoms/<ComponentName>'`, `'Molecules/<ComponentName>'`, `'Layouts/<ComponentName>'`, or `'Organisms/<ComponentName>'`.
 - Always include `tags: ['autodocs']`.
 - Story names must **exactly match** the names in the ComponentSpec `stories` array.
 - Use `args` for all prop values. Do NOT use a `render` function unless the story has an `instances` array.
@@ -227,4 +227,4 @@ Confirm what was written:
 ```bash
 ls -la src/components/<atomicSubdir>/<ComponentName>/ && ls -la src/stories/<atomicSubdir>/<ComponentName>.stories.tsx
 ```
-where `<atomicSubdir>` is `atoms`, `molecules`, or `organisms`.
+where `<atomicSubdir>` is `atoms`, `molecules`, `layouts`, or `organisms`.

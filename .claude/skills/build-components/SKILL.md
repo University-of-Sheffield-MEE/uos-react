@@ -40,8 +40,8 @@ MAX_IMPLEMENT_RETRIES = 2              ← retries for missing files after imple
 
 2. Run:
    ```bash
-   mkdir -p src/components/atoms src/components/molecules src/components/organisms \
-            src/stories/atoms src/stories/molecules src/stories/organisms \
+   mkdir -p src/components/atoms src/components/molecules src/components/layouts src/components/organisms \
+            src/stories/atoms src/stories/molecules src/stories/layouts src/stories/organisms \
             specs logs
    ```
 
@@ -83,7 +83,7 @@ The explore agent self-loads the candidate list and available components via the
 **Validate the returned JSON:**
 - Must have: `componentName`, `atomicType`, `rootClassName`, `selectorsCovered`, `props`, `stories`
 - `componentName` must be PascalCase (or null for utility/no-match/all-done)
-- `atomicType` must be `"atom"`, `"molecule"`, or `"organism"`
+- `atomicType` must be `"atom"`, `"molecule"`, `"layout"`, or `"organism"`
 - `selectorsCovered` must be a non-empty array of strings starting with `.`
 - `stories` must have at least one entry
 - `htmlExamples` should have at least one entry
@@ -96,7 +96,7 @@ If `componentName` is null for any other reason (utility or no-match), the explo
 
 **Check for component name conflicts:** If `componentName` already appears in the manifest's `components` map, append `2` to the name (e.g. `NewsTeaser2`), then check again; increment until the name is unique. Update the `componentName` field inside the spec JSON object to match.
 
-**Determine `atomicSubdir`** from `spec.atomicType`: `atom` → `atoms`, `molecule` → `molecules`, `organism` → `organisms`.
+**Determine `atomicSubdir`** from `spec.atomicType`: `atom` → `atoms`, `molecule` → `molecules`, `layout` → `layouts`, `organism` → `organisms`.
 
 **Save the spec:** Write the (possibly updated) ComponentSpec JSON to `specs/<ComponentName>.json`.
 
@@ -119,7 +119,7 @@ FILE CONVENTIONS:
 - TypeScript strict mode, react-jsx transform (no React import needed)
 - Plain className strings (no CSS modules, no className libraries)
 - Storybook 8 CSF3 format with Meta and StoryObj types
-- Story title: "<AtomicPrefix>/<ComponentName>" (Atoms/, Molecules/, or Organisms/)
+- Story title: "<AtomicPrefix>/<ComponentName>" (Atoms/, Molecules/, Layouts/, or Organisms/)
 
 Read the spec file first, then write all three files.
 ```
@@ -218,7 +218,7 @@ If the commit fails (e.g. nothing staged, hook error), log a warning but do not 
 
 Append a JSON line to `logs/orchestrator.log`:
 ```json
-{"timestamp":"<ISO timestamp>","selector":"<targetSelector>","componentName":"<name>","atomicType":"<atom|molecule|organism>","selectorsCovered":<N>,"qaPass":<true/false>,"status":"<done/needs-review/skipped>"}
+{"timestamp":"<ISO timestamp>","selector":"<targetSelector>","componentName":"<name>","atomicType":"<atom|molecule|layout|organism>","selectorsCovered":<N>,"qaPass":<true/false>,"status":"<done/needs-review/skipped>"}
 ```
 
 ---
