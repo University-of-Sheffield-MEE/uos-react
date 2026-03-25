@@ -1,0 +1,58 @@
+{
+  "componentName": "BottomBar",
+  "atomicType": "organism",
+  "childComponents": [],
+  "description": "Site footer bottom bar displaying a policy navigation menu and copyright notice.",
+  "rootElement": "div",
+  "rootClassName": "bottom-bar",
+  "selectorsCovered": [".bottom-bar", ".bottom-bar .row a", ".bottom-bar ul", ".bottom-bar .copyright"],
+  "props": [
+    {
+      "name": "links",
+      "type": "Array<{ label: string; href: string }>",
+      "required": false,
+      "default": "[{ label: 'Feedback', href: 'https://www.sheffield.ac.uk/contact/comments' }, { label: 'Privacy', href: 'https://www.sheffield.ac.uk/privacy' }, { label: 'Accessibility', href: 'https://www.sheffield.ac.uk/accessibility' }, { label: 'FOI', href: 'https://www.sheffield.ac.uk/foi' }, { label: 'Modern slavery statement', href: 'https://www.sheffield.ac.uk/procurement/modern-slavery' }]",
+      "mapsTo": { "element": "ul.menu li a", "attribute": "innerText" }
+    },
+    {
+      "name": "copyrightText",
+      "type": "string",
+      "required": false,
+      "default": "© 2026 The University of Sheffield",
+      "mapsTo": { "element": ".copyright", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard bottom bar with default policy links and copyright",
+      "props": {
+        "links": [
+          { "label": "Feedback", "href": "https://www.sheffield.ac.uk/contact/comments" },
+          { "label": "Privacy", "href": "https://www.sheffield.ac.uk/privacy" },
+          { "label": "Accessibility", "href": "https://www.sheffield.ac.uk/accessibility" },
+          { "label": "FOI", "href": "https://www.sheffield.ac.uk/foi" },
+          { "label": "Modern slavery statement", "href": "https://www.sheffield.ac.uk/procurement/modern-slavery" }
+        ],
+        "copyrightText": "© 2026 The University of Sheffield"
+      }
+    },
+    {
+      "name": "CustomLinks",
+      "description": "Bottom bar with a reduced set of custom links",
+      "props": {
+        "links": [
+          { "label": "Privacy", "href": "/privacy" },
+          { "label": "Accessibility", "href": "/accessibility" },
+          { "label": "Contact", "href": "/contact" }
+        ],
+        "copyrightText": "© 2026 The University of Sheffield"
+      }
+    }
+  ],
+  "notes": "Content is identical across all 26276 sampled pages — links and copyright text never vary. Props are provided for configurability. The nav has aria-labelledby pointing to a visually-hidden h2 with text 'Footer menu' — hardcode this. The root element also carries the class 'panel'.",
+  "htmlExamples": [
+    "<div class=\"bottom-bar panel\"><div class=\"row\"><div class=\"large-7 columns\"><div class=\"region region-footer_first\"><nav role=\"navigation\" aria-labelledby=\"block-uos-public-footer-menu\" id=\"block-uos-public-footer\" class=\"block-uos-public-footer\"><h2 class=\"block-title visually-hidden\" id=\"block-uos-public-footer-menu\">Footer menu</h2><ul class=\"menu\"><li><a href=\"https://www.sheffield.ac.uk/contact/comments\">Feedback</a></li><li><a href=\"https://www.sheffield.ac.uk/privacy\">Privacy</a></li><li><a href=\"https://www.sheffield.ac.uk/accessibility\">Accessibility</a></li><li><a href=\"https://www.sheffield.ac.uk/foi\">FOI</a></li><li><a href=\"https://www.sheffield.ac.uk/procurement/modern-slavery\">Modern slavery statement</a></li></ul></nav></div></div><div class=\"large-5 columns copyright\">© 2026 The University of Sheffield</div></div></div>"
+  ]
+}

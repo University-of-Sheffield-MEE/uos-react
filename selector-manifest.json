@@ -141,19 +141,27 @@
     },
     ".bottom-bar": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BottomBar",
+      "atomicType": "organism"
     },
     ".bottom-bar .row a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BottomBar",
+      "atomicType": "organism"
     },
     ".bottom-bar ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BottomBar",
+      "atomicType": "organism"
     },
     ".bottom-bar .copyright": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BottomBar",
+      "atomicType": "organism"
     },
     ".resp": {
       "pageCount": 26276,
@@ -3819,6 +3827,17 @@
       "specFile": "specs/BackToTop.json",
       "storyFile": "src/stories/atoms/BackToTop.stories.tsx",
       "atomicType": "atom"
+    },
+    "BottomBar": {
+      "selectors": [
+        ".bottom-bar",
+        ".bottom-bar .row a",
+        ".bottom-bar ul",
+        ".bottom-bar .copyright"
+      ],
+      "specFile": "specs/BottomBar.json",
+      "storyFile": "src/stories/organisms/BottomBar.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
