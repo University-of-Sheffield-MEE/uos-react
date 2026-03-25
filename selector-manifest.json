@@ -1043,31 +1043,45 @@
     },
     ".stap-teaser": {
       "pageCount": 1827,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser a": {
       "pageCount": 1827,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser .jobtitle": {
       "pageCount": 1827,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser .summary-text": {
       "pageCount": 1827,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser__info": {
       "pageCount": 1823,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser .deptname": {
       "pageCount": 1820,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser dl dd:not(first-of-type)": {
       "pageCount": 1817,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".matchheight": {
       "pageCount": 1813,
@@ -1079,19 +1093,27 @@
     },
     ".stap-teaser .profilepic": {
       "pageCount": 1705,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser .profilepic img": {
       "pageCount": 1705,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser .profilepic .imgcapt": {
       "pageCount": 1705,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-teaser .enlarge": {
       "pageCount": 1701,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".multicol": {
       "pageCount": 1683,
@@ -1507,7 +1529,9 @@
     },
     ".stap-teaser p": {
       "pageCount": 530,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".uosblock.dark a[href]:not(.uosbutton):not(.textbutton)": {
       "pageCount": 527,
@@ -1915,7 +1939,9 @@
     },
     ".stap-teaser .profileinitials": {
       "pageCount": 272,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     "body.node--type-landing": {
       "pageCount": 267,
@@ -2809,7 +2835,9 @@
     },
     ".stap-teaser .profilepic .imgcapt figcaption": {
       "pageCount": 92,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapTeaser",
+      "atomicType": "molecule"
     },
     ".stap-card p": {
       "pageCount": 90,
@@ -4544,6 +4572,27 @@
       ],
       "specFile": "specs/ProfilePicModal.json",
       "storyFile": "src/stories/molecules/ProfilePicModal.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "StapTeaser": {
+      "selectors": [
+        ".stap-teaser",
+        ".stap-teaser a",
+        ".stap-teaser .jobtitle",
+        ".stap-teaser .deptname",
+        ".stap-teaser .summary-text",
+        ".stap-teaser__info",
+        ".stap-teaser .profilepic",
+        ".stap-teaser .profilepic img",
+        ".stap-teaser .profilepic .imgcapt",
+        ".stap-teaser .profilepic .imgcapt figcaption",
+        ".stap-teaser .enlarge",
+        ".stap-teaser .profileinitials",
+        ".stap-teaser p",
+        ".stap-teaser dl dd:not(first-of-type)"
+      ],
+      "specFile": "specs/StapTeaser.json",
+      "storyFile": "src/stories/molecules/StapTeaser.stories.tsx",
       "atomicType": "molecule"
     }
   }
