@@ -1,7 +1,7 @@
 ---
 name: qa
 description: Validates a generated React component against its ComponentSpec. Returns a structured verdict JSON with pass/fail and any issues found.
-tools: [Read]
+tools: [Read, Bash]
 model: haiku
 permissionMode: default
 maxTurns: 10
@@ -102,7 +102,12 @@ Visual scan only — do not run a compiler:
 
 ### 6. HTML example reproducibility
 
-For each HTML snippet in the spec's `htmlExamples` array, check whether the component could theoretically produce that output given some valid combination of props and/or children:
+The spec's `htmlExamples` array contains sample IDs. Fetch each one before performing this check:
+```bash
+node tools/get-examples.js --get-sample 42_17
+```
+
+For each fetched HTML snippet, check whether the component could theoretically produce that output given some valid combination of props and/or children:
 
 - **Identify every distinct class name** that appears in the example HTML. For each class, verify the component either always applies it (static `className`) or can apply it via a prop or rendered child.
 - **Identify every HTML tag** used in the example. Verify the component renders those tags (directly or via children).

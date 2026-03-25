@@ -18,7 +18,11 @@ You are a React TypeScript developer. You will be invoked in one of two modes:
 ```
 Read that path to obtain the full ComponentSpec JSON before doing anything else.
 
-The spec includes an `htmlExamples` array containing real DOM fragments from the live site. Use these as your primary reference for the component's HTML structure — class names, element nesting, attribute names, and conditional sections should all match what you see in the fragments. The abstract props and stories in the spec are derived from the same fragments, so they should agree; if there is any conflict, trust the HTML.
+The spec includes an `htmlExamples` array of sample IDs. Before writing the component, fetch each one to get the real DOM fragments:
+```bash
+node tools/get-examples.js --get-sample 42_17
+```
+Use the fetched HTML as your primary reference for the component's HTML structure — class names, element nesting, attribute names, and conditional sections should all match what you see in the fragments. The abstract props and stories in the spec are derived from the same fragments, so they should agree; if there is any conflict, trust the HTML.
 
 ## Files to write
 

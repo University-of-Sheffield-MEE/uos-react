@@ -102,14 +102,15 @@ node tools/get-examples.js --selector ".signpost-card" --samples 8 --plain
 # prints a summary line then one HTML block per result, separated by --- headers:
 # selector: .signpost-card | totalPages: 142 | page: 1 | results: 8
 #
-# --- 1/8 https://example.com/page (matchCount:1 duplicates:0 textVaries:false) ---
+# --- 1/8 [42_17] https://example.com/page (matchCount:1 duplicates:0 textVaries:false) ---
 # <article class="signpost-card">...</article>
 #
-# --- 2/8 https://example.com/other (matchCount:1 duplicates:2 textVaries:true) ---
+# --- 2/8 [42_9] https://example.com/other (matchCount:1 duplicates:2 textVaries:true) ---
 # ...
 ```
 
 Each result contains:
+- `id` — sample ID in the format `{selectorIndex}_{pageIndex}` (e.g. `42_17`); record these for `htmlExamples`
 - `url` — the source page
 - `matchCount` — how many times the selector appeared on that page
 - `html` — the first matching element's outer HTML
@@ -244,7 +245,7 @@ Output ONLY a single valid JSON object. No prose, no explanation, no markdown fe
   ],
   "notes": "string",
   "htmlExamples": [
-    "string — verbatim outer HTML of a representative fragment (2–4 examples)"
+    "string — sample ID (e.g. '42_17') from get-examples results; not raw HTML"
   ]
 }
 ```
@@ -293,7 +294,7 @@ Use subcomponents only when 2+ structurally distinct, named sections each have t
 
 ### Choosing htmlExamples
 
-Pick 2–4 fragments that best illustrate the component's range. Always include the most common structure. Trim long `<script>` blocks but keep all class names and attributes.
+Pick 2–4 IDs from the results that best illustrate the component's range. Always include the most common structure. Record the `id` values exactly as they appear in the result headers — do not transcribe or modify the HTML.
 
 ---
 
@@ -355,9 +356,6 @@ Expected output:
     }
   ],
   "notes": "The last item has class 'active' and no href — it represents the current page. aria-label is always 'breadcrumb' — hardcode it.",
-  "htmlExamples": [
-    "<nav class=\"breadcrumb\" aria-label=\"breadcrumb\"><ol><li><a href=\"/\">Home</a></li><li><a href=\"/about\">About</a></li><li class=\"active\">Our Team</li></ol></nav>",
-    "<nav class=\"breadcrumb\" aria-label=\"breadcrumb\"><ol><li><a href=\"/\">Home</a></li><li class=\"active\">Contact</li></ol></nav>"
-  ]
+  "htmlExamples": ["18_12", "18_7"]
 }
 ```
