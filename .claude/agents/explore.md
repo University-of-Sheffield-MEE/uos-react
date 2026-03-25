@@ -98,8 +98,15 @@ Output: `{ "componentName": null, "notes": "all-pending-selectors-processed" }`
 
 Use the get-examples tool:
 ```bash
-node tools/get-examples.js --selector ".signpost-card" --samples 8
-# returns JSON: { "selector": ".signpost-card", "totalPages": 142, "page": 1, "results": [...] }
+node tools/get-examples.js --selector ".signpost-card" --samples 8 --plain
+# prints a summary line then one HTML block per result, separated by --- headers:
+# selector: .signpost-card | totalPages: 142 | page: 1 | results: 8
+#
+# --- 1/8 https://example.com/page (matchCount:1 duplicates:0 textVaries:false) ---
+# <article class="signpost-card">...</article>
+#
+# --- 2/8 https://example.com/other (matchCount:1 duplicates:2 textVaries:true) ---
+# ...
 ```
 
 Each result contains:
@@ -121,7 +128,7 @@ Each result contains:
 
 **If `matchCount > 1`** on most pages, use `--context` to see how instances relate:
 ```bash
-node tools/get-examples.js --selector ".signpost-card" --samples 4 --context
+node tools/get-examples.js --selector ".signpost-card" --samples 4 --context --plain
 ```
 
 ---

@@ -11,6 +11,7 @@
  *     [--samples 8] \
  *     [--page 1] \
  *     [--context] \
+ *     [--plain] \
  *     [--output /tmp/examples.json]
  *
  * Output JSON:
@@ -44,6 +45,7 @@ let samples = 8;
 let page = 1;
 let contextMode = false;
 let outputPath = null;
+let plainMode = false;
 
 const args = process.argv.slice(2);
 for (let i = 0; i < args.length; i++) {
@@ -52,10 +54,11 @@ for (let i = 0; i < args.length; i++) {
   else if (args[i] === '--page'     && args[i+1]) page       = parseInt(args[++i], 10);
   else if (args[i] === '--context')               contextMode = true;
   else if (args[i] === '--output'   && args[i+1]) outputPath = args[++i];
+  else if (args[i] === '--plain')                 plainMode  = true;
 }
 
 if (!selector) {
-  process.stderr.write('Usage: get-examples --selector "<selector>" [--samples 8] [--page 1] [--context] [--output path]\n');
+  process.stderr.write('Usage: get-examples --selector "<selector>" [--samples 8] [--page 1] [--context] [--plain] [--output path]\n');
   process.exit(1);
 }
 
@@ -182,6 +185,16 @@ for (const r of results) delete r._text;
 
 // --- Output ---
 function emit(data) {
+  if (plainMode) {
+    const { selector, totalPages, page: p, results } = data;
+    process.stdout.write(`selector: ${selector} | totalPages: ${totalPages} | page: ${p} | results: ${results.length}\n`);
+    for (let i = 0; i < results.length; i++) {
+      const r = results[i];
+      process.stdout.write(`\n--- ${i + 1}/${results.length} ${r.url} (matchCount:${r.matchCount} duplicates:${r.duplicates} textVaries:${r.textVaries}) ---\n`);
+      process.stdout.write(r.html + '\n');
+    }
+    return;
+  }
   const json = JSON.stringify(data, null, 2);
   if (outputPath) {
     writeFileSync(outputPath, json, 'utf8');
