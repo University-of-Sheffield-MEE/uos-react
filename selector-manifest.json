@@ -477,11 +477,15 @@
     },
     ".section-title": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SectionTitleBanner",
+      "atomicType": "atom"
     },
     ".section-title .section-title-holder": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SectionTitleBanner",
+      "atomicType": "atom"
     },
     ".section-title .section-title-holder h4.off-canv": {
       "pageCount": 26256,
@@ -520,15 +524,21 @@
     },
     ".section-title .off-canv > a": {
       "pageCount": 26249,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SectionTitleBanner",
+      "atomicType": "atom"
     },
     ".section-title .section-title-holder > a": {
       "pageCount": 26249,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SectionTitleBanner",
+      "atomicType": "atom"
     },
     ".section-title .section-title-holder h4.off-canv a": {
       "pageCount": 26249,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SectionTitleBanner",
+      "atomicType": "atom"
     },
     ".region-banner .views-field-field-section-navigation": {
       "pageCount": 26244,
@@ -3954,6 +3964,12 @@
       "status": "done",
       "implementedBy": "FootIcons",
       "atomicType": "organism"
+    },
+    "section-title .section-title-holder h4.off-canv": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "SectionTitleBanner",
+      "atomicType": "atom"
     }
   },
   "components": {
@@ -4172,6 +4188,19 @@
       ],
       "specFile": "specs/CloseButton.json",
       "storyFile": "src/stories/atoms/CloseButton.stories.tsx",
+      "atomicType": "atom"
+    },
+    "SectionTitleBanner": {
+      "selectors": [
+        ".section-title",
+        ".section-title .section-title-holder",
+        "section-title .section-title-holder h4.off-canv",
+        ".section-title .off-canv > a",
+        ".section-title .section-title-holder > a",
+        ".section-title .section-title-holder h4.off-canv a"
+      ],
+      "specFile": "specs/SectionTitleBanner.json",
+      "storyFile": "src/stories/atoms/SectionTitleBanner.stories.tsx",
       "atomicType": "atom"
     }
   }

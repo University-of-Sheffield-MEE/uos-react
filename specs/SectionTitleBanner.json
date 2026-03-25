@@ -1,0 +1,55 @@
+{
+  "componentName": "SectionTitleBanner",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A banner region section title displaying the current site section's name as a linked heading, used in the region-banner navigation area.",
+  "rootElement": "div",
+  "rootClassName": "section-title",
+  "selectorsCovered": [
+    ".section-title",
+    ".section-title .section-title-holder",
+    ".section-title .section-title-holder h4.off-canv",
+    ".section-title .off-canv > a",
+    ".section-title .section-title-holder > a",
+    ".section-title .section-title-holder h4.off-canv a"
+  ],
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h4.off-canv a", "attribute": "innerText" }
+    },
+    {
+      "name": "href",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h4.off-canv a", "attribute": "href" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Management School section title",
+      "props": { "label": "Management School", "href": "/management" }
+    },
+    {
+      "name": "Library",
+      "description": "University Library section title",
+      "props": { "label": "The University Library", "href": "/library" }
+    },
+    {
+      "name": "Undergraduate",
+      "description": "Undergraduate study section title",
+      "props": { "label": "Undergraduate study", "href": "/undergraduate/courses" }
+    }
+  ],
+  "notes": "The root element always has both 'field-content', 'section-title', and 'row' classes in the live DOM. The h4 always carries the 'off-canv' class. The hreflang attribute on the anchor is always 'en' — hardcode it. This component is always rendered inside .region-banner as the section navigation label.",
+  "htmlExamples": [
+    "<div class=\"field-content section-title row\"><div class=\"section-title-holder\"><h4 class=\"off-canv\"><a href=\"/management\" hreflang=\"en\">Management School</a></h4></div></div>",
+    "<div class=\"field-content section-title row\"><div class=\"section-title-holder\"><h4 class=\"off-canv\"><a href=\"/library\" hreflang=\"en\">The University Library</a></h4></div></div>",
+    "<div class=\"field-content section-title row\"><div class=\"section-title-holder\"><h4 class=\"off-canv\"><a href=\"/english\" hreflang=\"en\">School of English</a></h4></div></div>",
+    "<div class=\"field-content section-title row\"><div class=\"section-title-holder\"><h4 class=\"off-canv\"><a href=\"/undergraduate/courses\" hreflang=\"en\">Undergraduate study</a></h4></div></div>"
+  ]
+}
