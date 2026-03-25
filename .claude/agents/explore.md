@@ -1,7 +1,7 @@
 ---
 name: explore
 description: Selects the next pending CSS selector, fetches real DOM fragments, classifies the component (atom/molecule/organism), optionally pivots to spec a missing dependency atom first, and produces a ComponentSpec JSON.
-tools: [Read, Bash]
+tools: [Read, Bash, AskUserQuestion]
 model: sonnet
 permissionMode: default
 maxTurns: 30
@@ -107,7 +107,7 @@ node tools/get-examples.js --selector ".signpost-card" --samples 4 --context
 
 Based on the DOM fragments and the `availableComponents` list, determine `atomicType`:
 
-**Atom** — A self-contained UI primitive. No meaningful sub-regions that would contain other full components. Examples: button, badge, label, avatar, icon, tag, input, pill, link.
+**Atom** — A self-contained UI primitive. No meaningful sub-regions that would contain other full components. Examples: button, heading, badge, label, avatar, icon, tag, input, pill, link.
 
 **Molecule** — Composes or groups atoms in a consistent pattern. Check the DOM: do known atoms appear as children? Examples: card, teaser, form row, action bar, pagination bar.
 
@@ -152,6 +152,24 @@ If this is a molecule/organism and `childComponents` contains a name that is NOT
    - The atom will be built this iteration; the molecule will be picked on a future iteration
 
 For Case B (slot/freeform) children — you may make a judgement as to whether the child is likely to be prominent enough to warrant a pivot. It is always helpful to have a good base of atoms built early on, even if they are not strictly required by the molecule samples.
+
+---
+
+## Step 5b: Check in with the user
+
+Before writing the spec, use `AskUserQuestion` to briefly describe your selection and ask for approval.
+
+Your message should include:
+- The component name and selector you've chosen (or pivoted to)
+- One sentence on why it was selected (e.g. highest pageCount, required dependency for a molecule)
+- A URL from the DOM samples where it can be seen in context
+- The atomic type and a one-line description of what it does
+
+Offer two options:
+1. **Proceed** — continue to Step 6
+2. **Decline** — user provides feedback; restart from Step 1 using that feedback to guide a different selection (skip the declined selector this iteration, do not mark it as skipped in the manifest)
+
+If the user declines, apply their feedback, pick a different candidate, and loop back through Steps 1–5b until you get approval.
 
 ---
 
