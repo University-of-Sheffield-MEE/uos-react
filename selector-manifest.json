@@ -653,11 +653,15 @@
     },
     ".leadintro": {
       "pageCount": 15941,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LeadIntro",
+      "atomicType": "atom"
     },
     "p.leadintro": {
       "pageCount": 14286,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LeadIntro",
+      "atomicType": "atom"
     },
     ".paragraph--type--para-promotion": {
       "pageCount": 13556,
@@ -1037,7 +1041,9 @@
     },
     ".block-field-blocknodestudent-profilefield-stup-intro .leadintro": {
       "pageCount": 1615,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LeadIntro",
+      "atomicType": "atom"
     },
     ".matchheight > .columns > div": {
       "pageCount": 1575,
@@ -4321,6 +4327,16 @@
       "specFile": "specs/OffCanvasWrapper.json",
       "storyFile": "src/stories/layouts/OffCanvasWrapper.stories.tsx",
       "atomicType": "layout"
+    },
+    "LeadIntro": {
+      "selectors": [
+        ".leadintro",
+        "p.leadintro",
+        ".block-field-blocknodestudent-profilefield-stup-intro .leadintro"
+      ],
+      "specFile": "specs/LeadIntro.json",
+      "storyFile": "src/stories/atoms/LeadIntro.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
