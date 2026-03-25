@@ -577,23 +577,33 @@
     },
     ".paragraph--type--para-promotion": {
       "pageCount": 13556,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-promotion h2": {
       "pageCount": 13556,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-promotion p": {
       "pageCount": 13327,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-promotion .promo-link a": {
       "pageCount": 13079,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-promotion .promo-link": {
       "pageCount": 13079,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     "main ul:not(.breadcrumbs):not(.ug-explore-menu):not(.coursemeta):not(.course-features):not(.otherways) li": {
       "pageCount": 12197,
@@ -601,7 +611,9 @@
     },
     ".paragraph--type--para-promotion.blue-bar": {
       "pageCount": 11720,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".block-uos-page-title h1": {
       "pageCount": 8813,
@@ -749,7 +761,9 @@
     },
     ".paragraph--type--para-promotion .media--image--figure": {
       "pageCount": 2744,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     "blockquote.uosquote": {
       "pageCount": 2382,
@@ -1195,15 +1209,21 @@
     },
     ".paragraph--type--para-promotion .promo-links": {
       "pageCount": 646,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-promotion .promo-links a": {
       "pageCount": 646,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-promotion .promo-links br": {
       "pageCount": 646,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaPromotion",
+      "atomicType": "molecule"
     },
     ".block-field-blocknodestudent-profilefield-stup-year": {
       "pageCount": 625,
@@ -3969,6 +3989,23 @@
       ],
       "specFile": "specs/SectionTitle.json",
       "storyFile": "src/stories/molecules/SectionTitle.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "ParaPromotion": {
+      "selectors": [
+        ".paragraph--type--para-promotion",
+        ".paragraph--type--para-promotion h2",
+        ".paragraph--type--para-promotion p",
+        ".paragraph--type--para-promotion .promo-link",
+        ".paragraph--type--para-promotion .promo-link a",
+        ".paragraph--type--para-promotion.blue-bar",
+        ".paragraph--type--para-promotion .promo-links",
+        ".paragraph--type--para-promotion .promo-links a",
+        ".paragraph--type--para-promotion .promo-links br",
+        ".paragraph--type--para-promotion .media--image--figure"
+      ],
+      "specFile": "specs/ParaPromotion.json",
+      "storyFile": "src/stories/molecules/ParaPromotion.stories.tsx",
       "atomicType": "molecule"
     }
   }
