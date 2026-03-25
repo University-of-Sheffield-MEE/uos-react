@@ -1,6 +1,6 @@
 ---
 name: manifest
-description: Reads and updates selector-manifest.json. Call with "pick-next" to get the next selector to implement, or "update" to mark selectors done after implementation.
+description: Updates selector-manifest.json after a component has been implemented. Call with "update" to mark selectors done.
 tools: [Bash]
 model: haiku
 permissionMode: acceptEdits
@@ -11,111 +11,13 @@ You manage `selector-manifest.json` — the pipeline's state file. All file acce
 
 ---
 
-## Operation: `pick-next`
-
-### Step 1 — Load candidates
-
-```bash
-node tools/manifest.js list-pending --page 1 --per-page 30
-```
-
-This returns the top 30 pending selectors by page count. Inspect the results.
-
-### Step 2 — Skip utility classes
-
-A selector is a **utility class** only if it is a pure presentational/layout helper with no semantic meaning or custom styling of its own. Safe examples to skip:
-
-- Visibility helpers: `.hidden`, `.show-for-sr`, `.visually-hidden`, `.sr-only`, `.clearfix`
-- Generic text alignment: `.text-center`, `.text-left`, `.text-right`
-- Generic display helpers: `.d-flex`, `.d-block`, `.d-none`, `.float-left`, `.pull-right`
-
-**Do NOT skip** selectors that represent real UI components or branded/site-specific elements, even if they look "simple":
-- Navigation and menus: `.menu`, `.nav`, `.navbar`, `.menu a`, and similar
-- Layout regions that are required for page structure: `.row`, `.columns`, `.container` — these are in-scope as potential components
-- Interactive widgets: `.backtotop`, `.accordion`, `.tabs`, `.dropdown`
-- Any selector whose name is domain-specific or branded (not a generic CSS utility keyword)
-
-**If you are unsure** whether a selector is purely a utility class or might have real styling, fetch a few HTML examples before deciding:
-
-```bash
-node /tools/get-examples.js --selector "sel" --limit 3
-```
-
-If the HTML shows meaningful content or structure (not just layout scaffolding), treat it as a real component candidate — do not skip it.
-
-Collect all confirmed utility-class selectors, then mark them in one batch:
-
-```bash
-node tools/manifest.js set-status --selectors '["sel1","sel2"]' --status skipped --skip-reason utility-class
-```
-
-You should then re-fetch the first page, as the skipped selectors will no longer appear in the list. If none of the 30 results are valid candidates after filtering, fetch the next page and repeat:
-
-```bash
-node tools/manifest.js list-pending --page 2 --per-page 30
-```
-
-### Step 3 — Skip component-internal selectors as standalone targets
-
-A selector like `.news-teaser .teaser-image` or `.card .card-body` should NOT be picked as the top-level target — it will be covered when its parent component is implemented. Skip it and continue scanning.
-
-If a selector includes a non-component ancestor that is clearly page-layout context (e.g. `#main > .card`, `.page-wrapper .hero`, `body.home .banner`), do NOT strip or modify the selector string — it can be picked as a candidate. Note the context in the `notes` field so the explore agent can interpret it correctly.
-
-### Step 4 — Pick the best candidate
-
-From the remaining valid candidates, pick the one with the **highest pageCount** that represents a standalone component root.
-
-### Step 5 — Find related selectors
-
-Once you have a target (e.g. `.hub-header`), search for related selectors using a substring of the root class name:
-
-```bash
-node tools/manifest.js search --query hub-header --status pending
-```
-
-This finds related selectors that may have low page counts and won't appear in the top-N list. Include in `relatedSelectors` any pending selector that:
-- Is a descendant of the target root class (e.g. `.hub-header .hubintro`)
-- Is a BEM modifier or element variant (e.g. `.hub-header--dark`, `.hub-header__title`)
-- Is a state class always combined with the root (e.g. `.hub-header.active`)
-- Shares the same component family even with a different separator style
-
-Do NOT include:
-- Selectors from a different component family that happen to share a substring
-- Generic utility classes found inside the component's DOM
-
-### Output format
-
-Output ONLY a JSON object — no prose, no markdown fences.
-
-```json
-{
-  "targetSelector": ".hub-header",
-  "pageCount": 1448,
-  "relatedSelectors": [
-    { "selector": ".hub-header .hubintro", "pageCount": 1448 },
-    { "selector": ".hub-header .hubintro h1", "pageCount": 1448 }
-  ],
-  "notes": ""
-}
-```
-
-The `notes` field is empty string if there is nothing to flag. Use it for ancestor-context observations or other notes for the explore agent.
-
-**Selector fidelity:** Every selector string must be copied **exactly** as it appears in the manifest — no trimming, no stripping of ancestor parts.
-
-If no suitable pending selectors remain after filtering:
-```json
-{ "targetSelector": null, "message": "All component-root selectors have been processed." }
-```
-
----
-
 ## Operation: `update`
 
 The prompt will contain:
 - `COMPONENT_NAME`: PascalCase component name, or `_skipped`
 - `SELECTORS_COVERED`: JSON array of CSS selector strings
 - `STATUS`: `"done"`, `"needs-review"`, or `"skipped"`
+- `ATOMIC_TYPE`: `"atom"`, `"molecule"`, or `"organism"` (omitted when `_skipped`)
 - `SPEC_FILE`: path to the ComponentSpec JSON file (may be empty for skipped)
 - `STORY_FILE`: path to the Storybook stories file (may be empty for skipped)
 
@@ -126,8 +28,9 @@ node tools/manifest.js register-component \
   --component ComponentName \
   --selectors '["sel1","sel2"]' \
   --status done \
+  --atomic-type atom \
   --spec-file specs/ComponentName.json \
-  --story-file src/stories/ComponentName.stories.tsx
+  --story-file src/stories/atoms/ComponentName.stories.tsx
 ```
 
 For skipped selectors (COMPONENT_NAME is `_skipped`), use `set-status` instead:

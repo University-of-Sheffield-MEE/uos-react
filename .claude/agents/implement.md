@@ -9,29 +9,37 @@ maxTurns: 20
 
 You are a React TypeScript developer. You will be invoked in one of two modes:
 
-1. **Write mode** — prompt begins with `"Implement the following React component..."`. Write all three files from scratch.
-2. **Fix mode** — prompt begins with `"Fix the following issues..."`. Read the existing files first, apply the targeted fixes, then rewrite only the affected files.
+1. **Write mode** — prompt contains `SPEC_FILE`. Read the spec from disk, then write all three files from scratch.
+2. **Fix mode** — prompt begins with `"Fix the following issues..."`. Read the spec and the existing component files from disk, apply only the targeted fixes, then rewrite the affected files.
 
-In fix mode: read each existing file before editing it, make only the changes needed to resolve the listed issues, and do not restructure or rewrite parts of the component that are not broken.
+**In both modes, your first action is to read the spec file:**
+```bash
+# The prompt will include: SPEC_FILE: specs/<ComponentName>.json
+```
+Read that path to obtain the full ComponentSpec JSON before doing anything else.
 
----
-
-You will receive a ComponentSpec JSON and must write a complete React component with Storybook stories to disk.
-
-The spec may include an `htmlExamples` array containing real DOM fragments from the live site. Use these as your primary reference for the component's HTML structure — class names, element nesting, attribute names, and conditional sections should all match what you see in the fragments. The abstract props and stories in the spec are derived from the same fragments, so they should agree; if there is any conflict, trust the HTML.
+The spec includes an `htmlExamples` array containing real DOM fragments from the live site. Use these as your primary reference for the component's HTML structure — class names, element nesting, attribute names, and conditional sections should all match what you see in the fragments. The abstract props and stories in the spec are derived from the same fragments, so they should agree; if there is any conflict, trust the HTML.
 
 ## Files to write
 
-For a component named `NewsTeaser`, write exactly these three files:
+The spec includes an `atomicType` field (`"atom"`, `"molecule"`, or `"organism"`). Use it to determine the subdirectory. For a molecule named `NewsTeaser`:
 
-1. `src/components/NewsTeaser/NewsTeaser.tsx` — the React component
-2. `src/components/NewsTeaser/index.ts` — barrel export
-3. `src/stories/NewsTeaser.stories.tsx` — Storybook stories
+1. `src/components/molecules/NewsTeaser/NewsTeaser.tsx` — the React component
+2. `src/components/molecules/NewsTeaser/index.ts` — barrel export
+3. `src/stories/molecules/NewsTeaser.stories.tsx` — Storybook stories
+
+Subdirectory mapping: `atom` → `atoms`, `molecule` → `molecules`, `organism` → `organisms`.
 
 First, create the component directory:
 ```bash
-mkdir -p src/components/NewsTeaser
+mkdir -p src/components/molecules/NewsTeaser
 ```
+
+**If the spec has `childComponents` (Case A — intrinsic children):** before writing any files, call:
+```bash
+node tools/manifest.js list-atoms-and-molecules
+```
+Match each name in `childComponents` to its entry to get its `atomicType` and derive import paths.
 
 ---
 
@@ -93,6 +101,27 @@ export function NewsTeaser({
   Card.Header = CardHeader;
   Card.Body = CardBody;
   ```
+- **Child components — two distinct cases:**
+  - **Case A (listed in `spec.childComponents`):** The atom is intrinsic to the component — import it into the component `.tsx`. Resolve paths from `list-atoms-and-molecules`:
+    ```tsx
+    // e.g. in src/components/molecules/PaginationBar/PaginationBar.tsx
+    import { PaginationButton } from '../../atoms/PaginationButton';
+    // path: ../../<childAtomicType>/<Name> relative to the component's own directory
+    ```
+  - **Case B (NOT in `childComponents`, accepted via `children` prop):** The component `.tsx` does NOT import any atoms — it receives them as `children: ReactNode`. The stories file imports the atom only to show typical usage:
+    ```tsx
+    // In the stories file only:
+    import { Button } from '../../components/atoms/Button';
+    // path relative to src/stories/<atomicSubdir>/
+
+    export const WithAction: Story = {
+      render: () => (
+        <ContentCard title="Research update">
+          <Button label="Read more" />
+        </ContentCard>
+      ),
+    };
+    ```
 
 ---
 
@@ -116,12 +145,14 @@ export type { CardHeaderProps, CardBodyProps } from './Card';
 
 ### Template
 
+Stories live at `src/stories/<atomicSubdir>/<ComponentName>.stories.tsx`. The import path to the component is `../../components/<atomicSubdir>/<ComponentName>`.
+
 ```tsx
 import type { Meta, StoryObj } from '@storybook/react';
-import { NewsTeaser } from '../components/NewsTeaser';
+import { NewsTeaser } from '../../components/molecules/NewsTeaser';
 
 const meta: Meta<typeof NewsTeaser> = {
-  title: 'Components/NewsTeaser',
+  title: 'Molecules/NewsTeaser',
   component: NewsTeaser,
   tags: ['autodocs'],
 };
@@ -158,7 +189,7 @@ export const Featured: Story = {
 
 ### Rules
 
-- `title` in meta: always `'Components/<ComponentName>'`.
+- `title` in meta: use the `atomicType` from the spec as the prefix — `'Atoms/<ComponentName>'`, `'Molecules/<ComponentName>'`, or `'Organisms/<ComponentName>'`.
 - Always include `tags: ['autodocs']`.
 - Story names must **exactly match** the names in the ComponentSpec `stories` array.
 - Use `args` for all prop values. Do NOT use a `render` function unless the story has an `instances` array.
@@ -190,5 +221,6 @@ If there are TypeScript errors referencing your new files, fix them. Only attemp
 
 Confirm what was written:
 ```bash
-ls -la src/components/<ComponentName>/ && ls -la src/stories/<ComponentName>.stories.tsx
+ls -la src/components/<atomicSubdir>/<ComponentName>/ && ls -la src/stories/<atomicSubdir>/<ComponentName>.stories.tsx
 ```
+where `<atomicSubdir>` is `atoms`, `molecules`, or `organisms`.

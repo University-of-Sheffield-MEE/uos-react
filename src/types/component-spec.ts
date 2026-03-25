@@ -3,7 +3,7 @@ export interface PropSpec {
   type: 'string' | 'boolean' | 'number' | 'ReactNode' | string;
   required: boolean;
   default?: unknown;
-  mapsTo:
+  mapsTo?:
     | { element: string; attribute: string }
     | { togglesClass: string; on: string };
 }
@@ -23,6 +23,8 @@ export interface StorySpec {
 
 export interface ComponentSpec {
   componentName: string;
+  atomicType: 'atom' | 'molecule' | 'organism';
+  childComponents?: string[];
   description: string;
   rootElement: string;
   rootClassName: string;
@@ -31,4 +33,5 @@ export interface ComponentSpec {
   subcomponents: SubcomponentSpec[];
   stories: StorySpec[];
   notes?: string;
+  htmlExamples?: string[];
 }

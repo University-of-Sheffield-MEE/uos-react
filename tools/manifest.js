@@ -3,22 +3,24 @@
  * manifest.js
  *
  * Low-level CLI for reading and writing selector-manifest.json.
- * Designed for use by the manifest agent to avoid loading the full file into context.
+ * Designed for use by agents to avoid loading the full file into context.
  *
  * Subcommands:
- *   list-pending   -- paginated pending selectors sorted by pageCount desc
- *   set-status     -- batch-set status on a list of selectors
- *   search         -- find selectors by substring
- *   register-component -- mark selectors done and add to components map
- *   list-components    -- list registered components
- *   summary            -- count selectors by status
+ *   list-pending          -- paginated pending selectors sorted by pageCount desc
+ *   set-status            -- batch-set status on a list of selectors
+ *   search                -- find selectors by substring
+ *   register-component    -- mark selectors done and add to components map
+ *   list-components       -- list registered components
+ *   list-atoms-and-molecules -- list registered atoms and molecules
+ *   summary               -- count selectors by status
  *
  * Usage:
  *   node tools/manifest.js list-pending [--page N] [--per-page N] [--manifest path]
  *   node tools/manifest.js set-status --selectors '<json>' --status <s> [--skip-reason <r>] [--manifest path]
  *   node tools/manifest.js search --query <str> [--status <s>] [--manifest path]
- *   node tools/manifest.js register-component --component <Name> --selectors '<json>' --status <s> --spec-file <path> --story-file <path> [--manifest path]
+ *   node tools/manifest.js register-component --component <Name> --selectors '<json>' --status <s> --atomic-type <atom|molecule|organism> --spec-file <path> --story-file <path> [--manifest path]
  *   node tools/manifest.js list-components [--manifest path]
+ *   node tools/manifest.js list-atoms-and-molecules [--manifest path]
  *   node tools/manifest.js summary [--manifest path]
  */
 
@@ -147,13 +149,14 @@ function cmdSearch(args, manifestPath) {
 
 function cmdRegisterComponent(args, manifestPath) {
   if (!args.component || !args.selectors || !args.status) {
-    console.error('Usage: register-component --component <Name> --selectors \'[...]\' --status <status> [--spec-file <path>] [--story-file <path>]');
+    console.error('Usage: register-component --component <Name> --selectors \'[...]\' --status <status> --atomic-type <atom|molecule|organism> [--spec-file <path>] [--story-file <path>]');
     process.exit(1);
   }
 
   const componentName = args.component;
   const selectors = JSON.parse(args.selectors);
   const status = args.status;
+  const atomicType = args['atomic-type'];
   const specFile = args['spec-file'] ?? '';
   const storyFile = args['story-file'] ?? '';
 
@@ -164,8 +167,11 @@ function cmdRegisterComponent(args, manifestPath) {
     if (manifest.selectors[selector]) {
       manifest.selectors[selector].status = status;
       manifest.selectors[selector].implementedBy = componentName;
+      if (atomicType) manifest.selectors[selector].atomicType = atomicType;
     } else {
-      manifest.selectors[selector] = { pageCount: 0, status, implementedBy: componentName };
+      const entry = { pageCount: 0, status, implementedBy: componentName };
+      if (atomicType) entry.atomicType = atomicType;
+      manifest.selectors[selector] = entry;
     }
   }
 
@@ -176,6 +182,7 @@ function cmdRegisterComponent(args, manifestPath) {
       selectors,
       specFile,
       storyFile,
+      ...(atomicType ? { atomicType } : {}),
     };
   }
 
@@ -189,10 +196,34 @@ function cmdListComponents(args, manifestPath) {
 
   const result = Object.entries(components).map(([name, entry]) => ({
     name,
+    atomicType: entry.atomicType ?? null,
     selectorCount: (entry.selectors ?? []).length,
     specFile: entry.specFile,
     storyFile: entry.storyFile,
   }));
+
+  process.stdout.write(JSON.stringify(result, null, 2) + '\n');
+}
+
+function cmdListAtomsAndMolecules(args, manifestPath) {
+  const manifest = loadManifest(manifestPath);
+  const components = manifest.components ?? {};
+
+  const result = Object.entries(components)
+    .filter(([, entry]) => entry.atomicType === 'atom' || entry.atomicType === 'molecule')
+    .sort((a, b) => {
+      // Atoms first, then molecules; alphabetical within each group
+      const typeOrder = { atom: 0, molecule: 1 };
+      const ta = typeOrder[a[1].atomicType] ?? 2;
+      const tb = typeOrder[b[1].atomicType] ?? 2;
+      if (ta !== tb) return ta - tb;
+      return a[0].localeCompare(b[0]);
+    })
+    .map(([name, entry]) => ({
+      name,
+      atomicType: entry.atomicType,
+      primarySelector: (entry.selectors ?? [])[0] ?? null,
+    }));
 
   process.stdout.write(JSON.stringify(result, null, 2) + '\n');
 }
@@ -205,13 +236,21 @@ function cmdSummary(args, manifestPath) {
     counts[entry.status] = (counts[entry.status] ?? 0) + 1;
   }
 
-  const componentCount = Object.keys(manifest.components ?? {}).length;
+  const components = manifest.components ?? {};
+  const componentCount = Object.keys(components).length;
+  const atomCount = Object.values(components).filter(c => c.atomicType === 'atom').length;
+  const moleculeCount = Object.values(components).filter(c => c.atomicType === 'molecule').length;
+  const organismCount = Object.values(components).filter(c => c.atomicType === 'organism').length;
 
   const parts = Object.entries(counts)
     .sort((a, b) => b[1] - a[1])
     .map(([status, n]) => `${n} ${status}`);
 
-  process.stdout.write(parts.join(', ') + `, ${componentCount} component${componentCount === 1 ? '' : 's'} registered\n`);
+  const atomicBreakdown = atomCount + moleculeCount + organismCount > 0
+    ? ` (${atomCount} atoms, ${moleculeCount} molecules, ${organismCount} organisms)`
+    : '';
+
+  process.stdout.write(parts.join(', ') + `, ${componentCount} component${componentCount === 1 ? '' : 's'} registered${atomicBreakdown}\n`);
 }
 
 // --- Main ---
@@ -221,14 +260,15 @@ const args = parseArgs(rest);
 const manifestPath = resolve(args.manifest ?? 'selector-manifest.json');
 
 switch (subcommand) {
-  case 'list-pending':        cmdListPending(args, manifestPath); break;
-  case 'set-status':          cmdSetStatus(args, manifestPath); break;
-  case 'search':              cmdSearch(args, manifestPath); break;
-  case 'register-component':  cmdRegisterComponent(args, manifestPath); break;
-  case 'list-components':     cmdListComponents(args, manifestPath); break;
-  case 'summary':             cmdSummary(args, manifestPath); break;
+  case 'list-pending':            cmdListPending(args, manifestPath); break;
+  case 'set-status':              cmdSetStatus(args, manifestPath); break;
+  case 'search':                  cmdSearch(args, manifestPath); break;
+  case 'register-component':      cmdRegisterComponent(args, manifestPath); break;
+  case 'list-components':         cmdListComponents(args, manifestPath); break;
+  case 'list-atoms-and-molecules': cmdListAtomsAndMolecules(args, manifestPath); break;
+  case 'summary':                 cmdSummary(args, manifestPath); break;
   default:
     console.error(`Unknown subcommand: ${subcommand}`);
-    console.error('Available: list-pending, set-status, search, register-component, list-components, summary');
+    console.error('Available: list-pending, set-status, search, register-component, list-components, list-atoms-and-molecules, summary');
     process.exit(1);
 }
