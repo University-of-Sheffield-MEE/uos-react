@@ -256,7 +256,9 @@
     },
     "header.site-header": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteHeader",
+      "atomicType": "organism"
     },
     ".header": {
       "pageCount": 26276,
@@ -3905,11 +3907,15 @@
     },
     ".site-header .header": {
       "pageCount": 0,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteHeader",
+      "atomicType": "organism"
     },
     ".site-header .logo": {
       "pageCount": 0,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteHeader",
+      "atomicType": "organism"
     },
     ".site-header .meganav": {
       "pageCount": 0,
@@ -3919,11 +3925,15 @@
     },
     ".site-header .block-globalnav": {
       "pageCount": 0,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteHeader",
+      "atomicType": "organism"
     },
     ".site-header .block-uos-globalnav": {
       "pageCount": 0,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteHeader",
+      "atomicType": "organism"
     },
     ".block-globalnav": {
       "pageCount": 0,
@@ -4203,6 +4213,18 @@
       ],
       "specFile": "specs/MegaNav.json",
       "storyFile": "src/stories/organisms/MegaNav.stories.tsx",
+      "atomicType": "organism"
+    },
+    "SiteHeader": {
+      "selectors": [
+        "header.site-header",
+        ".site-header .header",
+        ".site-header .logo",
+        ".site-header .block-globalnav",
+        ".site-header .block-uos-globalnav"
+      ],
+      "specFile": "specs/SiteHeader.json",
+      "storyFile": "src/stories/organisms/SiteHeader.stories.tsx",
       "atomicType": "organism"
     }
   }
