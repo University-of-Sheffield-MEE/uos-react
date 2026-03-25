@@ -39,19 +39,23 @@
     },
     ".menu": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".menu a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".off-canvas-wrapper": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".off-canvas": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".position-left": {
       "pageCount": 26276,
@@ -65,7 +69,8 @@
     },
     ".off-canvas-content": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".hide-for-medium": {
       "pageCount": 26276,
@@ -109,7 +114,9 @@
     },
     ".footicons": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FootIcons",
+      "atomicType": "organism"
     },
     ".footicons .social .embedded-entity": {
       "pageCount": 26276,
@@ -125,19 +132,27 @@
     },
     ".footicons .awards": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FootIcons",
+      "atomicType": "organism"
     },
     ".footicons .awards a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FootIcons",
+      "atomicType": "organism"
     },
     ".footicons .awards a > img": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FootIcons",
+      "atomicType": "organism"
     },
     ".region-footer_last": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FootIcons",
+      "atomicType": "organism"
     },
     ".bottom-bar": {
       "pageCount": 26276,
@@ -255,35 +270,43 @@
     },
     ".meganav": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav > ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav > ul > li > ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav > ul > li > ul > li > a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul > li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav > ul > li > ul > li > ul > li > a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav > ul > li > ul > li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".block-uos-globalnav": {
       "pageCount": 26276,
@@ -407,7 +430,8 @@
     },
     ".off-canvas button": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".button": {
       "pageCount": 26258,
@@ -433,7 +457,8 @@
     },
     ".off-canvas a": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".region-banner a": {
       "pageCount": 26256,
@@ -485,11 +510,13 @@
     },
     ".off-canvas ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".off-canvas li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".region-banner ul": {
       "pageCount": 26243,
@@ -513,7 +540,8 @@
     },
     ".off-canvas li a": {
       "pageCount": 26241,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered by SiteHeader organism"
     },
     ".row .row": {
       "pageCount": 26038,
@@ -3882,6 +3910,12 @@
       "status": "done",
       "implementedBy": "SiteHeader",
       "atomicType": "organism"
+    },
+    ".footicons .social a": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "FootIcons",
+      "atomicType": "organism"
     }
   },
   "components": {
@@ -4061,6 +4095,19 @@
       ],
       "specFile": "specs/SiteHeader.json",
       "storyFile": "src/stories/organisms/SiteHeader.stories.tsx",
+      "atomicType": "organism"
+    },
+    "FootIcons": {
+      "selectors": [
+        ".footicons",
+        ".footicons .awards",
+        ".footicons .awards a",
+        ".footicons .awards a > img",
+        ".footicons .social a",
+        ".region-footer_last"
+      ],
+      "specFile": "specs/FootIcons.json",
+      "storyFile": "src/stories/organisms/FootIcons.stories.tsx",
       "atomicType": "organism"
     }
   }
