@@ -1,0 +1,46 @@
+{
+  "componentName": "JobTitle",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "Inline text element displaying a staff member's job title within a staff profile or teaser.",
+  "rootElement": "span",
+  "rootClassName": "jobtitle",
+  "selectorsCovered": [".jobtitle", ".stap-card .jobtitle"],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": ".jobtitle",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "A typical academic job title",
+      "props": {
+        "title": "Chair of International Politics"
+      }
+    },
+    {
+      "name": "ResearchRole",
+      "description": "A postdoctoral research role title",
+      "props": {
+        "title": "Postdoctoral Research Associate"
+      }
+    },
+    {
+      "name": "LongTitle",
+      "description": "A longer job title as used in research project listings",
+      "props": {
+        "title": "Cross Cutting Chief, Strategic Futures on Resource Sustainability (SCRS)"
+      }
+    }
+  ],
+  "notes": "Always rendered as a <span> with class 'jobtitle'. Text content varies per staff member and is always a single prop. Appears inside .stap-teaser and .stap-card components alongside .deptname.",
+  "htmlExamples": ["3683_9614", "3683_18338"]
+}

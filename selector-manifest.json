@@ -1039,7 +1039,9 @@
     },
     ".jobtitle": {
       "pageCount": 1903,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "JobTitle",
+      "atomicType": "atom"
     },
     ".stap-contact": {
       "pageCount": 1899,
@@ -2707,7 +2709,9 @@
     },
     ".stap-card .jobtitle": {
       "pageCount": 123,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "JobTitle",
+      "atomicType": "atom"
     },
     ".stap-card .profilepic": {
       "pageCount": 122,
@@ -4652,6 +4656,15 @@
       ],
       "specFile": "/home/edward/uos-react/specs/Headline.json",
       "storyFile": "/home/edward/uos-react/src/stories/atoms/Headline.stories.tsx",
+      "atomicType": "atom"
+    },
+    "JobTitle": {
+      "selectors": [
+        ".jobtitle",
+        ".stap-card .jobtitle"
+      ],
+      "specFile": "specs/JobTitle.json",
+      "storyFile": "src/stories/atoms/JobTitle.stories.tsx",
       "atomicType": "atom"
     }
   }
