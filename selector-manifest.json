@@ -646,7 +646,9 @@
     },
     ".uosblock": {
       "pageCount": 4800,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".block-field-blocknodepagefield-b-media": {
       "pageCount": 4266,
@@ -654,7 +656,9 @@
     },
     ".uosblock.grey": {
       "pageCount": 3932,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".profiletext": {
       "pageCount": 3889,
@@ -714,7 +718,9 @@
     },
     ".uosblock a[href]:not(.uosbutton):not(.textbutton)": {
       "pageCount": 2334,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     "blockquote.uosquote .uosquote-name": {
       "pageCount": 2288,
@@ -956,7 +962,9 @@
     },
     ".multicol .uosblock": {
       "pageCount": 1167,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".profile-link-promo": {
       "pageCount": 1165,
@@ -1088,7 +1096,9 @@
     },
     ".uosblock ul li a": {
       "pageCount": 694,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".signpost-card": {
       "pageCount": 661,
@@ -1128,7 +1138,9 @@
     },
     ".uosblock.dark": {
       "pageCount": 653,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-promotion .promo-links": {
       "pageCount": 646,
@@ -1188,7 +1200,9 @@
     },
     ".uosblock.dark h2": {
       "pageCount": 588,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".block-field-blocknodeeventtitle h2": {
       "pageCount": 585,
@@ -1364,7 +1378,9 @@
     },
     ".uosblock.highlight": {
       "pageCount": 284,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".printonly": {
       "pageCount": 283,
@@ -1728,7 +1744,9 @@
     },
     ".uosblock.highlight h2": {
       "pageCount": 235,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".featured-news": {
       "pageCount": 234,
@@ -2574,7 +2592,9 @@
     },
     ".uosblock.highlight h3": {
       "pageCount": 78,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     "blockquote:not(.uosquote)": {
       "pageCount": 77,
@@ -2770,7 +2790,9 @@
     },
     ".uosblock.dark h3": {
       "pageCount": 39,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".staffcardindex > div.col1": {
       "pageCount": 38,
@@ -3136,7 +3158,9 @@
     },
     ".uosblock.dark h4": {
       "pageCount": 11,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     "#main .homecoursesearch .horizontallinks": {
       "pageCount": 10,
@@ -3160,7 +3184,9 @@
     },
     ".uosblock.highlight h4": {
       "pageCount": 10,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     },
     ".uosblock.highlight blockquote": {
       "pageCount": 10,
@@ -3697,6 +3723,18 @@
     "#views-exposed-form-section-events-block-1 input[type=submit]": {
       "pageCount": 1,
       "status": "low-priority"
+    },
+    ".uosblock-content": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
+    },
+    ".uosblock.grey h2": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "UosBlock",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -3740,6 +3778,28 @@
       "specFile": "specs/UosButton.json",
       "storyFile": "src/stories/atoms/UosButton.stories.tsx",
       "atomicType": "atom"
+    },
+    "UosBlock": {
+      "selectors": [
+        ".uosblock",
+        ".uosblock.grey",
+        ".uosblock.dark",
+        ".uosblock.highlight",
+        ".uosblock-content",
+        ".uosblock.grey h2",
+        ".uosblock.dark h2",
+        ".uosblock.highlight h2",
+        ".uosblock.dark h3",
+        ".uosblock.highlight h3",
+        ".uosblock.dark h4",
+        ".uosblock.highlight h4",
+        ".uosblock a[href]:not(.uosbutton):not(.textbutton)",
+        ".uosblock ul li a",
+        ".multicol .uosblock"
+      ],
+      "specFile": "specs/UosBlock.json",
+      "storyFile": "src/stories/molecules/UosBlock.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }

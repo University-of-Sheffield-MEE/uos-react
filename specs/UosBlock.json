@@ -1,0 +1,82 @@
+{
+  "componentName": "UosBlock",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A themed content block that wraps arbitrary CMS-driven content with optional colour variants (grey, dark, highlight) and an optional inner content wrapper.",
+  "rootElement": "div",
+  "rootClassName": "uosblock",
+  "selectorsCovered": [
+    ".uosblock",
+    ".uosblock.grey",
+    ".uosblock.dark",
+    ".uosblock.highlight",
+    ".uosblock-content",
+    ".uosblock.grey h2",
+    ".uosblock.dark h2",
+    ".uosblock.highlight h2",
+    ".uosblock.dark h3",
+    ".uosblock.highlight h3",
+    ".uosblock.dark h4",
+    ".uosblock.highlight h4",
+    ".uosblock a[href]:not(.uosbutton):not(.textbutton)",
+    ".uosblock ul li a",
+    ".multicol .uosblock"
+  ],
+  "props": [
+    {
+      "name": "variant",
+      "type": "'grey' | 'dark' | 'highlight'",
+      "required": false,
+      "mapsTo": {
+        "togglesClass": "grey",
+        "on": "root"
+      }
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Plain uosblock with no colour variant, containing a heading and paragraph",
+      "props": {
+        "children": "<h2>What are the UN sustainable development goals?</h2><p>The global population is growing, placing increasing demand on the world's finite resources and exacerbating the climate crisis.</p>"
+      }
+    },
+    {
+      "name": "Grey",
+      "description": "Grey themed content block with a list of navigation links",
+      "props": {
+        "variant": "grey",
+        "children": "<h2>On this page:</h2><ul><li><a href=\"#description\">Module description</a></li><li><a href=\"#objectives\">Objectives</a></li><li><a href=\"#teaching\">Teaching</a></li></ul>"
+      }
+    },
+    {
+      "name": "Dark",
+      "description": "Dark themed content block with a heading and body text",
+      "props": {
+        "variant": "dark",
+        "children": "<h2>Research strategy</h2><p>New molecules have been detected and studied using microwave and photoelectron spectroscopy techniques.</p>"
+      }
+    },
+    {
+      "name": "Highlight",
+      "description": "Highlighted content block with a heading and list",
+      "props": {
+        "variant": "highlight",
+        "children": "<h2>Main contributions</h2><ul><li>The development of new fields of chemistry</li><li>The discovery of C60 Buckminsterfullerene</li><li>Isolation and characterisation of C60 and C70</li></ul>"
+      }
+    }
+  ],
+  "notes": "Two inner content patterns observed: (1) a direct .uosblock-content div wrapping raw CMS content (older pattern), and (2) multiple .block.block-layout-builder children (newer layout-builder pattern). Both are CMS-driven and should be treated as slot content via children. The variant prop maps to a modifier class on the root div: no class for default, 'grey', 'dark', or 'highlight'. The textbox class also appears on the root but seems to be a layout variant added by the CMS; it is not modelled as a prop here since its role is unclear from the samples.",
+  "htmlExamples": [
+    "<div class=\"uosblock grey\"><div class=\"uosblock-content\"><h2>On this page:</h2><ul><li><a href=\"#description\">Module description</a></li><li><a href=\"#Objectives\">Objectives</a></li><li><a href=\"#Teaching\">Teaching</a></li></ul></div></div>",
+    "<div class=\"uosblock grey textbox\"><div class=\"block block-layout-builder block-field-blockparagraphpara-text-boxfield-tb-title\"><h2 class=\"field-tb-title\">What are the UN sustainable development goals?</h2></div><div class=\"block block-layout-builder block-field-blockparagraphpara-text-boxfield-tb-body\"><p>The global population is growing, placing increasing demand on the world's finite resources and exacerbating the climate crisis.</p></div></div>",
+    "<div class=\"uosblock dark textbox\"><div class=\"block block-layout-builder block-field-blockparagraphpara-text-boxfield-tb-title\"><h2 class=\"field-tb-title\">Research strategy</h2></div><div class=\"block block-layout-builder block-field-blockparagraphpara-text-boxfield-tb-body\"><p>New molecules have been detected and studied using microwave and photoelectron spectroscopy techniques.</p></div></div>",
+    "<div class=\"uosblock highlight\"><h2>Fees and funding</h2><h3>Fees</h3><div class=\"fubar\"><h3>Funding</h3><p><a href=\"/postgraduate/taught/funding\">Funding for postgraduate taught courses</a></p></div></div>"
+  ]
+}
