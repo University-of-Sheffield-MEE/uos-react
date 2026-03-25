@@ -709,11 +709,13 @@
     },
     ".large-4": {
       "pageCount": 18950,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".row.page-body .large-8": {
       "pageCount": 17353,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".leadintro": {
       "pageCount": 15941,
@@ -831,11 +833,15 @@
     },
     "h1.headline": {
       "pageCount": 5887,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Headline",
+      "atomicType": "atom"
     },
     ".headline": {
       "pageCount": 5887,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Headline",
+      "atomicType": "atom"
     },
     ".block-field-blocknodenews-articlefield-n-media": {
       "pageCount": 5760,
@@ -1099,11 +1105,13 @@
     },
     ".matchheight": {
       "pageCount": 1813,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".matchheight > .columns": {
       "pageCount": 1813,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".stap-teaser .profilepic": {
       "pageCount": 1705,
@@ -4636,6 +4644,15 @@
       "specFile": "specs/PublicationsList.json",
       "storyFile": "src/stories/molecules/PublicationsList.stories.tsx",
       "atomicType": "molecule"
+    },
+    "Headline": {
+      "selectors": [
+        ".headline",
+        "h1.headline"
+      ],
+      "specFile": "/home/edward/uos-react/specs/Headline.json",
+      "storyFile": "/home/edward/uos-react/src/stories/atoms/Headline.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }

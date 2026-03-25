@@ -1,0 +1,46 @@
+{
+  "componentName": "Headline",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A styled h1 heading element used as the primary page or article headline.",
+  "rootElement": "h1",
+  "rootClassName": "headline",
+  "selectorsCovered": [".headline", "h1.headline"],
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": "h1",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "A standard article headline",
+      "props": {
+        "text": "Showcasing White Rose University Press: Quality and Innovation in Open Access Publishing"
+      }
+    },
+    {
+      "name": "LongTitle",
+      "description": "A headline with a longer title spanning multiple words",
+      "props": {
+        "text": "Centre for Poetry and Poetics, Sheffield, Presents: Lila Matsumoto, Nat Raha, Nisha Ramayya and Sophie Seita"
+      }
+    },
+    {
+      "name": "ShortTitle",
+      "description": "A brief, concise headline",
+      "props": {
+        "text": "City campaign receives prestigious prize at Times Higher Education Awards 2023"
+      }
+    }
+  ],
+  "notes": "Both h1.headline and .headline refer to the same element — always an h1 tag with the headline class. Text always varies across pages, making it a required string prop.",
+  "htmlExamples": ["2673_15829", "3061_18891", "3061_6535", "3061_18534"]
+}
