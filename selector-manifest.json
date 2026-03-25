@@ -90,27 +90,33 @@
     },
     "footer .large-3": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "footer .footer-heading": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "footer .quicklinks": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "footer .quicklinks a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "footer .quicklinks ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "footer .quicklinks li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".footicons": {
       "pageCount": 26276,
@@ -120,15 +126,18 @@
     },
     ".footicons .social .embedded-entity": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".footicons .social > div": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".footicons .social > div a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".footicons .awards": {
       "pageCount": 26276,
@@ -180,15 +189,18 @@
     },
     ".resp": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".pad": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".embedded-entity": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".site-search": {
       "pageCount": 26276,
@@ -244,7 +256,8 @@
     },
     "body.public": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "header.site-header": {
       "pageCount": 26276,
@@ -262,7 +275,8 @@
     },
     ".header .logo img": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".skip-link": {
       "pageCount": 26276,
@@ -398,7 +412,9 @@
     },
     ".close-button": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CloseButton",
+      "atomicType": "atom"
     },
     ".breadcrumbs": {
       "pageCount": 26274,
@@ -4149,6 +4165,14 @@
       "specFile": "specs/MuseBar.json",
       "storyFile": "src/stories/organisms/MuseBar.stories.tsx",
       "atomicType": "organism"
+    },
+    "CloseButton": {
+      "selectors": [
+        ".close-button"
+      ],
+      "specFile": "specs/CloseButton.json",
+      "storyFile": "src/stories/atoms/CloseButton.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
