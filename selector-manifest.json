@@ -746,7 +746,9 @@
     },
     ".deptname": {
       "pageCount": 8197,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "DeptName",
+      "atomicType": "atom"
     },
     "hr.related": {
       "pageCount": 8146,
@@ -762,7 +764,9 @@
     },
     ".deptname p": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "DeptName",
+      "atomicType": "atom"
     },
     ".mainrole": {
       "pageCount": 6437,
@@ -4391,6 +4395,15 @@
       "specFile": "specs/RegionBanner.json",
       "storyFile": "src/stories/organisms/RegionBanner.stories.tsx",
       "atomicType": "organism"
+    },
+    "DeptName": {
+      "selectors": [
+        ".deptname",
+        ".deptname p"
+      ],
+      "specFile": "specs/DeptName.json",
+      "storyFile": "src/stories/atoms/DeptName.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
