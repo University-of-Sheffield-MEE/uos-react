@@ -120,7 +120,7 @@
     },
     ".footicons": {
       "pageCount": 26276,
-      "status": "pending",
+      "status": "done",
       "implementedBy": "FootIcons",
       "atomicType": "organism"
     },
@@ -141,27 +141,25 @@
     },
     ".footicons .awards": {
       "pageCount": 26276,
-      "status": "pending",
+      "status": "done",
       "implementedBy": "FootIcons",
       "atomicType": "organism"
     },
     ".footicons .awards a": {
       "pageCount": 26276,
-      "status": "pending",
+      "status": "done",
       "implementedBy": "FootIcons",
       "atomicType": "organism"
     },
     ".footicons .awards a > img": {
       "pageCount": 26276,
-      "status": "pending",
+      "status": "done",
       "implementedBy": "FootIcons",
       "atomicType": "organism"
     },
     ".region-footer_last": {
       "pageCount": 26276,
-      "status": "pending",
-      "implementedBy": "FootIcons",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".bottom-bar": {
       "pageCount": 26276,
@@ -3961,15 +3959,19 @@
     },
     ".footicons .social a": {
       "pageCount": 0,
-      "status": "pending",
-      "implementedBy": "FootIcons",
-      "atomicType": "organism"
+      "status": "pending"
     },
     "section-title .section-title-holder h4.off-canv": {
       "pageCount": 0,
       "status": "done",
       "implementedBy": "SectionTitleBanner",
       "atomicType": "atom"
+    },
+    ".footicons .social": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "FootIcons",
+      "atomicType": "organism"
     }
   },
   "components": {
@@ -4189,6 +4191,18 @@
       "specFile": "specs/SectionTitleBanner.json",
       "storyFile": "src/stories/atoms/SectionTitleBanner.stories.tsx",
       "atomicType": "atom"
+    },
+    "FootIcons": {
+      "selectors": [
+        ".footicons",
+        ".footicons .awards",
+        ".footicons .awards a",
+        ".footicons .awards a > img",
+        ".footicons .social"
+      ],
+      "specFile": "specs/FootIcons.json",
+      "storyFile": "src/stories/organisms/FootIcons.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }

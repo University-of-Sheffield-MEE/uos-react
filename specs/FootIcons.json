@@ -1,0 +1,55 @@
+{
+  "componentName": "FootIcons",
+  "atomicType": "organism",
+  "childComponents": [],
+  "description": "Footer icons section displaying university award badges and social media channel links, always rendered with fixed static content.",
+  "rootElement": "div",
+  "rootClassName": "footicons",
+  "selectorsCovered": [
+    ".footicons",
+    ".footicons .awards",
+    ".footicons .awards a",
+    ".footicons .awards a > img",
+    ".footicons .social"
+  ],
+  "props": [
+    {
+      "name": "awards",
+      "type": "Array<{ href: string; src: string; alt: string }>",
+      "required": false,
+      "default": "[{ href: '//www.sheffield.ac.uk/about/rankings', src: '/themes/custom/common/uos/images/WORLD100_stamp_white.png', alt: 'A World Top 100 University' }, { href: '//www.sheffield.ac.uk/about/rankings', src: '/themes/custom/common/uos/images/russell.png', alt: 'Russell Group' }, { href: '//www.sheffield.ac.uk/about/queens-prize', src: '/themes/custom/common/uos/images/QAP.png', alt: \"Five Queen's Anniversary Prizes\" }]",
+      "mapsTo": { "element": ".awards a", "attribute": "href" }
+    },
+    {
+      "name": "socialLinks",
+      "type": "Array<{ href: string; src: string; alt: string }>",
+      "required": false,
+      "default": "[{ href: 'https://instagram.com/theuniversityofsheffield', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-in.png?itok=UpurzD83', alt: 'Instagram logo' }, { href: 'https://www.linkedin.com/school/university-of-sheffield/', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-li.png?itok=pBCn-VE3', alt: 'LinkedIn' }, { href: 'https://www.tiktok.com/@sheffielduni', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-tt.png?itok=G8v7iLhy', alt: 'TikTok' }, { href: 'https://bsky.app/profile/sheffielduni.bsky.social', src: '/sites/default/files/styles/original/public/2025-10/social-icon-bluesky2.png?h=ebc76fda&itok=vfSDiDHf', alt: 'Bluesky butterfly logo' }, { href: 'https://www.threads.com/@theuniversityofsheffield', src: '/sites/default/files/styles/original/public/2025-10/social-icon-threads.png?h=ebc76fda&itok=TswsZn-u', alt: 'Threads logo' }, { href: 'https://www.weibo.com/sheffielduni', src: '//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-wb.png?itok=c0RLZdQP', alt: 'Weibo' }]",
+      "mapsTo": { "element": ".social a", "attribute": "href" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard footer icons section with award badges and social media links as seen across the university site",
+      "props": {
+        "awards": [
+          { "href": "//www.sheffield.ac.uk/about/rankings", "src": "/themes/custom/common/uos/images/WORLD100_stamp_white.png", "alt": "A World Top 100 University" },
+          { "href": "//www.sheffield.ac.uk/about/rankings", "src": "/themes/custom/common/uos/images/russell.png", "alt": "Russell Group" },
+          { "href": "//www.sheffield.ac.uk/about/queens-prize", "src": "/themes/custom/common/uos/images/QAP.png", "alt": "Five Queen's Anniversary Prizes" }
+        ],
+        "socialLinks": [
+          { "href": "https://instagram.com/theuniversityofsheffield", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-in.png?itok=UpurzD83", "alt": "Instagram logo" },
+          { "href": "https://www.linkedin.com/school/university-of-sheffield/", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-li.png?itok=pBCn-VE3", "alt": "LinkedIn" },
+          { "href": "https://www.tiktok.com/@sheffielduni", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-tt.png?itok=G8v7iLhy", "alt": "TikTok" },
+          { "href": "https://bsky.app/profile/sheffielduni.bsky.social", "src": "/sites/default/files/styles/original/public/2025-10/social-icon-bluesky2.png?h=ebc76fda&itok=vfSDiDHf", "alt": "Bluesky butterfly logo" },
+          { "href": "https://www.threads.com/@theuniversityofsheffield", "src": "/sites/default/files/styles/original/public/2025-10/social-icon-threads.png?h=ebc76fda&itok=TswsZn-u", "alt": "Threads logo" },
+          { "href": "https://www.weibo.com/sheffielduni", "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/original/public/2022-10/social-wb.png?itok=c0RLZdQP", "alt": "Weibo" }
+        ]
+      }
+    }
+  ],
+  "notes": "Content is fully static across all 26,276 pages (duplicates:14, textVaries:false — only 1 unique DOM structure observed). The social icons are wrapped in Drupal CMS embed markup (.embedded-entity, .media--image--figure, figure.imgcapt) which should be reproduced faithfully. The social links region also contains Drupal region wrappers: div.region.region-footer_last and div.block.block-layout-builder.block-field-blockblock-contentbasicbody. These Drupal wrapper classes must be preserved in the output.",
+  "htmlExamples": ["2379_16467"]
+}
