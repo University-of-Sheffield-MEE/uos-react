@@ -1,0 +1,34 @@
+{
+  "componentName": "MuseBar",
+  "atomicType": "organism",
+  "childComponents": ["SiteSearch"],
+  "description": "University meta/utility bar containing the MUSE navigation (home icon link) and site search, rendered at the top of every page.",
+  "rootElement": "div",
+  "rootClassName": "muse-bar-container",
+  "selectorsCovered": [
+    ".muse-bar-container",
+    ".muse-bar",
+    ".smooth-criminal",
+    "nav.muse",
+    ".muse-nav",
+    ".muse-nav > li",
+    ".muse-nav > li.switcher-container",
+    ".switcher-container",
+    ".switcher-container .switcher-button",
+    ".muse-bar a",
+    ".muse-bar ul"
+  ],
+  "props": [],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard MUSE bar with home icon and site search",
+      "props": {}
+    }
+  ],
+  "notes": "This component is effectively static — all 26276 sampled pages show identical markup with only a home-icon link in the MUSE nav and the site-search widget. No runtime props are needed. The .smooth-criminal class is always present on .muse-bar and should be hardcoded. The SiteSearch molecule is embedded as an intrinsic child. aria-label on nav is always 'MUSE menu' — hardcode it.",
+  "htmlExamples": [
+    "<div class=\"muse-bar-container\">\n  <div class=\"muse-bar smooth-criminal\">\n    <nav class=\"muse\" aria-label=\"MUSE menu\">\n      <ul class=\"muse-nav\">\n        <li class=\"switcher-container\"><a class=\"switcher-button\" href=\"/\"><i title=\"Home\" class=\"fas fa-home fa-lg\"></i></a>\n        </li>\n      </ul>\n    </nav>\n    <div class=\"site-search\" role=\"search\">\n      <div class=\"site-search-wrapper search-autocomplete\">\n        <form action=\"/find\" method=\"get\">\n          <label for=\"site-search-box\" class=\"show-for-sr\">Search sheffield.ac.uk</label>\n          <div class=\"search-autocomplete__inputs\">\n            <input id=\"site-search-box\" class=\"site-search-input\" type=\"search\" name=\"query\" autocomplete=\"off\" placeholder=\"Search our site\" aria-label=\"Search our site\" aria-autocomplete=\"list\" aria-haspopup=\"true\" required=\"\">\n            <input type=\"hidden\" name=\"f.Tabs|AllDocumentsFill\" value=\"All results\">\n          </div>\n          <button type=\"submit\" aria-label=\"Site search\">\n            <i class=\"fas fa-search\"></i>\n          </button>\n        </form>\n      </div>\n      <button class=\"site-search-toggle hide-for-medium\" type=\"button\" aria-label=\"Open site search dropdown\">\n        <i class=\"fas fa-search\"></i>\n        <i class=\"fas fa-times\"></i>\n      </button>\n    </div>\n  </div>\n</div>"
+  ]
+}

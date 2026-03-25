@@ -238,7 +238,9 @@
     },
     ".smooth-criminal": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     "body.public": {
       "pageCount": 26276,
@@ -320,43 +322,63 @@
     },
     "nav.muse": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".muse-bar-container": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".muse-bar": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".muse-bar a": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".muse-bar ul": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".muse-nav": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".muse-nav > li": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".muse-nav > li.switcher-container": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".switcher-container": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     ".switcher-container .switcher-button": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MuseBar",
+      "atomicType": "organism"
     },
     "body .region-meta_header ~ .nav-overlay": {
       "pageCount": 26276,
@@ -4108,6 +4130,24 @@
       ],
       "specFile": "specs/FootIcons.json",
       "storyFile": "src/stories/organisms/FootIcons.stories.tsx",
+      "atomicType": "organism"
+    },
+    "MuseBar": {
+      "selectors": [
+        ".muse-bar-container",
+        ".muse-bar",
+        ".smooth-criminal",
+        "nav.muse",
+        ".muse-nav",
+        ".muse-nav > li",
+        ".muse-nav > li.switcher-container",
+        ".switcher-container",
+        ".switcher-container .switcher-button",
+        ".muse-bar a",
+        ".muse-bar ul"
+      ],
+      "specFile": "specs/MuseBar.json",
+      "storyFile": "src/stories/organisms/MuseBar.stories.tsx",
       "atomicType": "organism"
     }
   }
