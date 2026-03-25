@@ -815,7 +815,9 @@
     },
     ".news-date": {
       "pageCount": 6175,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsDate",
+      "atomicType": "atom"
     },
     ".contactinfo a:not(.standalone-accordion-toggler)": {
       "pageCount": 6107,
@@ -2183,7 +2185,9 @@
     },
     ".news-teaser .news-date": {
       "pageCount": 191,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsDate",
+      "atomicType": "atom"
     },
     ".eventbutton a": {
       "pageCount": 190,
@@ -4516,6 +4520,15 @@
       "specFile": "specs/OffCanvasSectionNav.json",
       "storyFile": "src/stories/organisms/OffCanvasSectionNav.stories.tsx",
       "atomicType": "organism"
+    },
+    "NewsDate": {
+      "selectors": [
+        ".news-date",
+        ".news-teaser .news-date"
+      ],
+      "specFile": "specs/NewsDate.json",
+      "storyFile": "src/stories/atoms/NewsDate.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
