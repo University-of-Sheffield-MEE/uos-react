@@ -873,15 +873,21 @@
     },
     ".profilepic-modal": {
       "pageCount": 5082,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfilePicModal",
+      "atomicType": "molecule"
     },
     ".profilepic-modal img": {
       "pageCount": 5082,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfilePicModal",
+      "atomicType": "molecule"
     },
     ".profilepic-modal .close": {
       "pageCount": 5082,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfilePicModal",
+      "atomicType": "molecule"
     },
     ".uosblock": {
       "pageCount": 4800,
@@ -4529,6 +4535,16 @@
       "specFile": "specs/NewsDate.json",
       "storyFile": "src/stories/atoms/NewsDate.stories.tsx",
       "atomicType": "atom"
+    },
+    "ProfilePicModal": {
+      "selectors": [
+        ".profilepic-modal",
+        ".profilepic-modal img",
+        ".profilepic-modal .close"
+      ],
+      "specFile": "specs/ProfilePicModal.json",
+      "storyFile": "src/stories/molecules/ProfilePicModal.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
