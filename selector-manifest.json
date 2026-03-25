@@ -997,23 +997,33 @@
     },
     ".publicationsList": {
       "pageCount": 2172,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PublicationsList",
+      "atomicType": "molecule"
     },
     ".publicationsList .author": {
       "pageCount": 2172,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PublicationsList",
+      "atomicType": "molecule"
     },
     ".publicationsList .export-icon": {
       "pageCount": 2172,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PublicationsList",
+      "atomicType": "molecule"
     },
     ".publicationsList a": {
       "pageCount": 2172,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PublicationsList",
+      "atomicType": "molecule"
     },
     ".publicationsList cite": {
       "pageCount": 2168,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PublicationsList",
+      "atomicType": "molecule"
     },
     "blockquote.uosquote .uosquote-attribution": {
       "pageCount": 2151,
@@ -4186,6 +4196,12 @@
       "status": "done",
       "implementedBy": "Button",
       "atomicType": "atom"
+    },
+    ".publicationsList li": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "PublicationsList",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -4606,6 +4622,19 @@
       ],
       "specFile": "specs/ProfileText.json",
       "storyFile": "src/stories/molecules/ProfileText.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "PublicationsList": {
+      "selectors": [
+        ".publicationsList",
+        ".publicationsList li",
+        ".publicationsList .author",
+        ".publicationsList cite",
+        ".publicationsList .export-icon",
+        ".publicationsList a"
+      ],
+      "specFile": "specs/PublicationsList.json",
+      "storyFile": "src/stories/molecules/PublicationsList.stories.tsx",
       "atomicType": "molecule"
     }
   }
