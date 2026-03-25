@@ -9210,7 +9210,7 @@ screen and (min-width:131.25em) {
   cursor: pointer;
   transition: 0.15s ease;
   pointer-events: none;
-  background-image: url(/themes/custom/uos_public/images/accDOWN.png);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/accDOWN.png);
   background-size: contain;
 }
 
@@ -9231,7 +9231,7 @@ screen and (min-width:131.25em) {
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
-  background-image: url(/themes/custom/uos_public/images/accDOWN-white.png);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/accDOWN-white.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px 13px;
@@ -9239,7 +9239,7 @@ screen and (min-width:131.25em) {
 }
 
 .ckeditor-accordion-container.used-outside-of-ckeditor dl dt.standalone-accordion.active .standalone-alternate-accordion-toggle {
-  background-image: url(/themes/custom/uos_public/images/accUP-white.png);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/accUP-white.png);
 }
 
 .ckeditor-accordion-container.used-outside-of-ckeditor dl dt.standalone-accordion a.standalone-accordion-toggler {
@@ -9257,7 +9257,7 @@ screen and (min-width:131.25em) {
 }
 
 .toolbar-icon-views-viewviews-group-list-page-1::before {
-  background-image: url("/themes/custom/common/uosadmin/images/home-icon.svg");
+  background-image: url("https://sheffield.ac.uk/themes/custom/common/uosadmin/images/home-icon.svg");
 }
 
 .toolbar-menu .account,
@@ -10058,7 +10058,7 @@ screen and (min-width:64em) {
 }
 
 .js-iframe-consent--map::before {
-  background-image: url(/themes/custom/uos_public/images/map-blurred.jpg);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/map-blurred.jpg);
 }
 
 .js-iframe-consent--360 {
@@ -10067,7 +10067,7 @@ screen and (min-width:64em) {
 }
 
 .js-iframe-consent--360::before {
-  background-image: url(/themes/custom/uos_public/images/360-blurred.jpg);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/360-blurred.jpg);
 }
 
 .js-iframe-consent--loaded .js-iframe-consent__message,
@@ -15444,7 +15444,7 @@ screen and (min-width:48em) {
   width: 12px;
   height: 12px;
   content: "";
-  background-image: url(/themes/custom/uos_public/images/chevron-right.svg);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/chevron-right.svg);
 }
 
 .responsive-table-wrapper.js-is-overflowing .responsive-table-wrapper__swipe-hint::before {
@@ -15525,91 +15525,91 @@ screen and (min-width:48em) {
 
 @font-face {
   font-family: "Source Sans 3";
-  src: local(""), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-300.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-300.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-300.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-300.woff) format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Sans 3";
-  src: local(""), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-regular.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-regular.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-regular.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Sans 3";
-  src: local(""), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-700.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-700.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-700.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-700.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Sans 3";
-  src: local(""), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-900.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/source-sans-3-v15-latin-900.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-900.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-sans-3-v15-latin-900.woff) format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/SourceSerif4Roman-Regular.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/SourceSerif4Roman-Regular.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4Roman-Regular.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4Roman-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/SourceSerif4-It.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/SourceSerif4-It.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-It.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-It.woff) format("woff");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/SourceSerif4-Semibold.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/SourceSerif4-Semibold.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-Semibold.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-Semibold.woff) format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/SourceSerif4-SemiboldIt.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/SourceSerif4-SemiboldIt.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-SemiboldIt.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-SemiboldIt.woff) format("woff");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/source-serif-4-v8-latin-700.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/source-serif-4-v8-latin-700.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-serif-4-v8-latin-700.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-serif-4-v8-latin-700.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/SourceSerif4-BoldIt.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/SourceSerif4-BoldIt.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-BoldIt.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-BoldIt.woff) format("woff");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/source-serif-4-v8-latin-900.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/source-serif-4-v8-latin-900.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-serif-4-v8-latin-900.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/source-serif-4-v8-latin-900.woff) format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Serif";
-  src: local(""), url(/themes/custom/common/uos/fonts/SourceSerif4-BlackIt.woff2) format("woff2"), url(/themes/custom/common/uos/fonts/SourceSerif4-BlackIt.woff) format("woff");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-BlackIt.woff2) format("woff2"), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/SourceSerif4-BlackIt.woff) format("woff");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Hot Mess";
-  src: local(""), url(/themes/custom/common/uos/fonts/HotMess.ttf) format("truetype");
+  src: local(""), url(https://sheffield.ac.uk/themes/custom/common/uos/fonts/HotMess.ttf) format("truetype");
   font-style: normal;
 }
 
@@ -19238,7 +19238,7 @@ screen and (min-width:48em) {
 .block-uos-globalnav>ul>li>span {
   padding: 0 15px 0 3px;
   cursor: pointer;
-  background-image: url(/themes/custom/uos_public/images/accDOWN.png);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/accDOWN.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 11px;
@@ -19253,7 +19253,7 @@ screen and (min-width:48em) {
 }
 
 .block-uos-globalnav>ul>li.menu-open>span {
-  background-image: url(/themes/custom/uos_public/images/accUP.png);
+  background-image: url(https://sheffield.ac.uk/themes/custom/uos_public/images/accUP.png);
   font-weight: bold;
 }
 
