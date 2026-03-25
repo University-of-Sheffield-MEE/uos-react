@@ -1,0 +1,54 @@
+{
+  "componentName": "SectionTitle",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "Section banner bar displaying the current site section's name as a linked heading alongside a mobile off-canvas menu toggle button.",
+  "rootElement": "div",
+  "rootClassName": "section-title-wrapper",
+  "selectorsCovered": [".section-title-wrapper", ".section-title-wrapper h2.section-title-holder", ".section-title-wrapper .section-title-holder", ".section-title-wrapper .button.menu", ".section-title-burger"],
+  "props": [
+    {
+      "name": "sectionLabel",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h2.section-title-holder a", "attribute": "innerText" }
+    },
+    {
+      "name": "sectionHref",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h2.section-title-holder a", "attribute": "href" }
+    },
+    {
+      "name": "menuTargetId",
+      "type": "string",
+      "required": false,
+      "default": "left-off-canvas-menu",
+      "mapsTo": { "element": "a.button.menu", "attribute": "aria-controls" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Section title wrapper for the Management School section",
+      "props": { "sectionLabel": "Management School", "sectionHref": "/management" }
+    },
+    {
+      "name": "Library",
+      "description": "Section title wrapper for the Library section",
+      "props": { "sectionLabel": "The University Library", "sectionHref": "/library" }
+    },
+    {
+      "name": "Undergraduate",
+      "description": "Section title wrapper for the Undergraduate study section",
+      "props": { "sectionLabel": "Undergraduate study", "sectionHref": "/undergraduate/courses" }
+    }
+  ],
+  "notes": "The menu toggle button always reads 'Menu' with a span.section-title-burger hamburger icon (aria-hidden). The a element has role='button', data-toggle, aria-expanded='false', aria-controls all targeting the same off-canvas menu. The section-title-burger span is decorative with aria-hidden='true'.",
+  "htmlExamples": [
+    "<div class=\"section-title-wrapper\"><h2 class=\"section-title-holder\"><a href=\"/management\" hreflang=\"en\">Management School</a></h2>\n<a class=\"button menu\" role=\"button\" data-toggle=\"left-off-canvas-menu\" aria-expanded=\"false\" aria-controls=\"left-off-canvas-menu\" tabindex=\"0\">Menu <span class=\"section-title-burger\" aria-hidden=\"true\"></span></a></div>",
+    "<div class=\"section-title-wrapper\"><h2 class=\"section-title-holder\"><a href=\"/library\" hreflang=\"en\">The University Library</a></h2>\n<a class=\"button menu\" role=\"button\" data-toggle=\"left-off-canvas-menu\" aria-expanded=\"false\" aria-controls=\"left-off-canvas-menu\" tabindex=\"0\">Menu <span class=\"section-title-burger\" aria-hidden=\"true\"></span></a></div>",
+    "<div class=\"section-title-wrapper\"><h2 class=\"section-title-holder\"><a href=\"/undergraduate/courses\" hreflang=\"en\">Undergraduate study</a></h2>\n<a class=\"button menu\" role=\"button\" data-toggle=\"left-off-canvas-menu\" aria-expanded=\"false\" aria-controls=\"left-off-canvas-menu\" tabindex=\"0\">Menu <span class=\"section-title-burger\" aria-hidden=\"true\"></span></a></div>"
+  ]
+}
