@@ -281,6 +281,15 @@ Apply in priority order:
 8. `aria-label` always same value → hardcode, not a prop
 9. `aria-label` varies → optional `string` prop
 
+### Preserving all classes — including Drupal classes
+
+The goal of this library is to **exactly reproduce** the HTML structure and class names seen in the DOM fragments. Do NOT omit, simplify, or rename any CSS classes:
+
+- **Drupal classes** (`views-row`, `field--name-*`, `node--type-*`, `block--*`, `contextual-region`, etc.) must appear verbatim in the component output.
+- Every class on every element in the fragment should be present in the component's JSX — either hardcoded or toggled via a boolean prop.
+- If a class appears on every sample, hardcode it. If it appears only in some samples, make it a boolean prop with `togglesClass`.
+- Do not invent cleaner class names or strip vendor/framework prefixes.
+
 ### Identifying subcomponents
 
 Use subcomponents only when 2+ structurally distinct, named sections each have their own CSS classes and are consistently present. Not for simple optional sections.

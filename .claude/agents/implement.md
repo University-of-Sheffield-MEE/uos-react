@@ -100,6 +100,7 @@ export function NewsTeaser({
 - **Optional sections**: `{optionalProp && (<element className="...">...</element>)}`.
 - **Text content**: render directly `{title}`, `{summary}`, not `dangerouslySetInnerHTML`.
 - **No CSS modules, no styled-components, no className libraries** — plain className strings only.
+- **Reproduce all classes exactly** — every CSS class seen in the HTML fragments must appear in the JSX. Do NOT drop, rename, or simplify any class, including Drupal-generated classes (`views-row`, `field--name-*`, `node--type-*`, `block--*`, etc.). If a class is always present, hardcode it. If it appears only sometimes, toggle it via a boolean prop. The HTML fragments are the source of truth.
 - **Subcomponents** (when the spec has `subcomponents`): define each as a separate named function in the same file, then attach as properties on the main component:
   ```tsx
   function CardHeader({ children }: CardHeaderProps) { ... }
