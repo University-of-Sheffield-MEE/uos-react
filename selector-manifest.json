@@ -353,15 +353,21 @@
     },
     ".breadcrumbs": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs",
+      "atomicType": "molecule"
     },
     ".breadcrumbs li": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs",
+      "atomicType": "molecule"
     },
     ".breadcrumbs a": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs",
+      "atomicType": "molecule"
     },
     ".hideonmobile": {
       "pageCount": 26274,
@@ -369,19 +375,27 @@
     },
     "ul.breadcrumbs a": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs",
+      "atomicType": "molecule"
     },
     "ul.breadcrumbs": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs",
+      "atomicType": "molecule"
     },
     "ul.breadcrumbs li": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs",
+      "atomicType": "molecule"
     },
     "ul.breadcrumbs li.current": {
       "pageCount": 26274,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Breadcrumbs",
+      "atomicType": "molecule"
     },
     ".region-left_off_canvas .section-navigation": {
       "pageCount": 26274,
@@ -3904,6 +3918,20 @@
       "specFile": "specs/SkipLink.json",
       "storyFile": "src/stories/atoms/SkipLink.stories.tsx",
       "atomicType": "atom"
+    },
+    "Breadcrumbs": {
+      "selectors": [
+        ".breadcrumbs",
+        "ul.breadcrumbs",
+        ".breadcrumbs li",
+        "ul.breadcrumbs li",
+        ".breadcrumbs a",
+        "ul.breadcrumbs a",
+        "ul.breadcrumbs li.current"
+      ],
+      "specFile": "specs/Breadcrumbs.json",
+      "storyFile": "src/stories/molecules/Breadcrumbs.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
