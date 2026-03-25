@@ -2,11 +2,15 @@
   "selectors": {
     ".row": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Grid.Row",
+      "atomicType": "atom"
     },
     ".columns": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Grid.Col",
+      "atomicType": "atom"
     },
     ".columns:last-child:not(:first-child)": {
       "pageCount": 26276,
@@ -814,7 +818,9 @@
     },
     ".multicol": {
       "pageCount": 1683,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Grid",
+      "atomicType": "layout"
     },
     ".multicol .columns": {
       "pageCount": 1683,
@@ -1344,6 +1350,10 @@
       "pageCount": 298,
       "status": "pending"
     },
+    ".uosblock a[href]:not(.uosbutton,.textbutton)": {
+      "pageCount": 294,
+      "status": "pending"
+    },
     "#apply a:not(.uosbutton)": {
       "pageCount": 287,
       "status": "pending"
@@ -1592,6 +1602,10 @@
       "pageCount": 281,
       "status": "pending"
     },
+    "dl dt:not(:first-of-type)": {
+      "pageCount": 279,
+      "status": "pending"
+    },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span.attendance": {
       "pageCount": 277,
       "status": "pending"
@@ -1808,6 +1822,10 @@
       "pageCount": 222,
       "status": "pending"
     },
+    "figure figcaption": {
+      "pageCount": 219,
+      "status": "pending"
+    },
     ".featured-news > div a": {
       "pageCount": 204,
       "status": "pending"
@@ -2008,6 +2026,14 @@
       "pageCount": 148,
       "status": "pending"
     },
+    "h3 strong": {
+      "pageCount": 147,
+      "status": "pending"
+    },
+    "#apply": {
+      "pageCount": 146,
+      "status": "pending"
+    },
     ".uosblock .block-field-blockparagraphpara-text-boxfield-text-box-media": {
       "pageCount": 144,
       "status": "pending"
@@ -2142,6 +2168,18 @@
     },
     "h2.news-index": {
       "pageCount": 133,
+      "status": "pending"
+    },
+    "h2 strong": {
+      "pageCount": 133,
+      "status": "pending"
+    },
+    "#contactus": {
+      "pageCount": 132,
+      "status": "pending"
+    },
+    "#visit": {
+      "pageCount": 131,
       "status": "pending"
     },
     "h1.pgtitle": {
@@ -2432,7 +2470,19 @@
       "pageCount": 96,
       "status": "pending"
     },
+    "#department": {
+      "pageCount": 96,
+      "status": "pending"
+    },
+    "#stats": {
+      "pageCount": 96,
+      "status": "pending"
+    },
     ".node--type-staff-profile-index .atoz-header + div .atoz-list": {
+      "pageCount": 94,
+      "status": "pending"
+    },
+    "#studentprofiles": {
       "pageCount": 94,
       "status": "pending"
     },
@@ -2444,6 +2494,10 @@
       "pageCount": 90,
       "status": "pending"
     },
+    "h2 a strong": {
+      "pageCount": 87,
+      "status": "pending"
+    },
     ".stap-card .profileinitials": {
       "pageCount": 86,
       "status": "pending"
@@ -2452,11 +2506,43 @@
       "pageCount": 82,
       "status": "pending"
     },
+    "#js-course-ereq-panel--standard": {
+      "pageCount": 82,
+      "status": "pending"
+    },
+    "#js-course-ereq-panel--access_sheffield": {
+      "pageCount": 82,
+      "status": "pending"
+    },
     ".newscard h3": {
       "pageCount": 81,
       "status": "pending"
     },
     ".featured-news > div .newscard h3": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    "td": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    "tr": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    "table": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    "tbody": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    "tbody td": {
+      "pageCount": 81,
+      "status": "pending"
+    },
+    "tbody tr:nth-child(odd)": {
       "pageCount": 81,
       "status": "pending"
     },
@@ -2533,6 +2619,22 @@
       "status": "pending"
     },
     ".node--type-course .accreds .accbody": {
+      "pageCount": 62,
+      "status": "pending"
+    },
+    "th": {
+      "pageCount": 62,
+      "status": "pending"
+    },
+    "thead": {
+      "pageCount": 62,
+      "status": "pending"
+    },
+    "thead tr": {
+      "pageCount": 62,
+      "status": "pending"
+    },
+    "thead th": {
       "pageCount": 62,
       "status": "pending"
     },
@@ -2628,12 +2730,24 @@
       "pageCount": 48,
       "status": "pending"
     },
+    "h4 strong": {
+      "pageCount": 48,
+      "status": "pending"
+    },
     ".stap-card .profilepic .imgcapt figcaption": {
       "pageCount": 46,
       "status": "pending"
     },
     ".node--type-hub .paragraph--type--para-media-box h3.field-mb-title": {
       "pageCount": 45,
+      "status": "pending"
+    },
+    "ol": {
+      "pageCount": 41,
+      "status": "pending"
+    },
+    "main ol:not(.breadcrumbs,.a-to-z-rollup-list) li": {
+      "pageCount": 41,
       "status": "pending"
     },
     ".block-field-blocknodenews-indexfield-ni-intro": {
@@ -2660,7 +2774,27 @@
       "pageCount": 37,
       "status": "pending"
     },
+    "td a": {
+      "pageCount": 37,
+      "status": "pending"
+    },
     ".image-gallery figcaption": {
+      "pageCount": 36,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance)": {
+      "pageCount": 36,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).duration": {
+      "pageCount": 36,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).attendance": {
+      "pageCount": 36,
+      "status": "pending"
+    },
+    "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).startdate": {
       "pageCount": 36,
       "status": "pending"
     },
@@ -2712,6 +2846,14 @@
       "pageCount": 31,
       "status": "pending"
     },
+    "main ul:not(.breadcrumbs,.a-to-z-rollup-list) li ul": {
+      "pageCount": 31,
+      "status": "pending"
+    },
+    "#deptdesc": {
+      "pageCount": 30,
+      "status": "pending"
+    },
     ".featured-news > div .newscard .news-src": {
       "pageCount": 29,
       "status": "pending"
@@ -2729,6 +2871,10 @@
       "status": "pending"
     },
     ".homehub-top": {
+      "pageCount": 26,
+      "status": "pending"
+    },
+    "#studentprofile": {
       "pageCount": 26,
       "status": "pending"
     },
@@ -2753,6 +2899,10 @@
       "status": "pending"
     },
     ".coursecard ul.course-features li:not(:last-of-type)": {
+      "pageCount": 22,
+      "status": "pending"
+    },
+    "h3 a strong": {
       "pageCount": 22,
       "status": "pending"
     },
@@ -2884,6 +3034,10 @@
       "pageCount": 15,
       "status": "pending"
     },
+    "sup": {
+      "pageCount": 15,
+      "status": "pending"
+    },
     ".matchheight > .columns > div.paragraph--type--course-card": {
       "pageCount": 14,
       "status": "pending"
@@ -2925,6 +3079,10 @@
       "status": "pending"
     },
     ".homecoursesearch .otherways li": {
+      "pageCount": 14,
+      "status": "pending"
+    },
+    "sub": {
       "pageCount": 14,
       "status": "pending"
     },
@@ -2996,6 +3154,10 @@
       "pageCount": 10,
       "status": "pending"
     },
+    "td a[href^=mailto]": {
+      "pageCount": 10,
+      "status": "pending"
+    },
     ".logos-homehub p": {
       "pageCount": 9,
       "status": "pending"
@@ -3029,6 +3191,14 @@
       "status": "pending"
     },
     ".inline-description-list--contact .inline-description-list__description": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    ".block-uos-public-content ol:not(.breadcrumbs,.ug-explore-menu,.pagination) li a[href]": {
+      "pageCount": 8,
+      "status": "pending"
+    },
+    "main ol:not(.breadcrumbs,.a-to-z-rollup-list) li a:not(.uosbutton)": {
       "pageCount": 8,
       "status": "pending"
     },
@@ -3156,6 +3326,10 @@
       "pageCount": 6,
       "status": "pending"
     },
+    "h5": {
+      "pageCount": 6,
+      "status": "pending"
+    },
     ".event-card-link .ev-time": {
       "pageCount": 5,
       "status": "pending"
@@ -3189,6 +3363,18 @@
       "status": "pending"
     },
     ".node--type-landing .paragraph--type--para-media-box h3": {
+      "pageCount": 4,
+      "status": "pending"
+    },
+    "h5 strong": {
+      "pageCount": 4,
+      "status": "pending"
+    },
+    "h4 a strong": {
+      "pageCount": 4,
+      "status": "pending"
+    },
+    "#facilities": {
       "pageCount": 4,
       "status": "pending"
     },
@@ -3296,6 +3482,18 @@
       "pageCount": 3,
       "status": "pending"
     },
+    "select": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    "select:not([multiple])": {
+      "pageCount": 3,
+      "status": "pending"
+    },
+    "th a": {
+      "pageCount": 3,
+      "status": "pending"
+    },
     ".fullimgblock:not(.promo) .uosblock.highlight": {
       "pageCount": 2,
       "status": "low-priority"
@@ -3361,6 +3559,22 @@
       "status": "low-priority"
     },
     ".uosblock.highlight h5": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    "b": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    "h6": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    "tbody th": {
+      "pageCount": 2,
+      "status": "low-priority"
+    },
+    "#block-homepageh1": {
       "pageCount": 2,
       "status": "low-priority"
     },
@@ -3451,7 +3665,50 @@
     ".uosblock.dark h5": {
       "pageCount": 1,
       "status": "low-priority"
+    },
+    "caption": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    "h6 strong": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    "table caption": {
+      "pageCount": 1,
+      "status": "low-priority"
+    },
+    "#views-exposed-form-section-events-block-1 input[type=submit]": {
+      "pageCount": 1,
+      "status": "low-priority"
     }
   },
-  "components": {}
+  "components": {
+    "Grid": {
+      "selectors": [
+        ".multicol",
+        ".row",
+        ".columns"
+      ],
+      "specFile": "specs/Grid.json",
+      "storyFile": "src/stories/layouts/Grid.stories.tsx",
+      "atomicType": "layout"
+    },
+    "Grid.Row": {
+      "selectors": [
+        ".row"
+      ],
+      "specFile": "specs/Grid.json",
+      "storyFile": "src/stories/layouts/Grid.stories.tsx",
+      "atomicType": "atom"
+    },
+    "Grid.Col": {
+      "selectors": [
+        ".columns"
+      ],
+      "specFile": "specs/Grid.json",
+      "storyFile": "src/stories/layouts/Grid.stories.tsx",
+      "atomicType": "atom"
+    }
+  }
 }

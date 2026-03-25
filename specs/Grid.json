@@ -1,0 +1,101 @@
+{
+  "componentName": "Grid",
+  "atomicType": "layout",
+  "childComponents": [],
+  "description": "Foundation-based multi-column grid layout providing a multicol wrapper, row container, and responsive column cells using named breakpoint span classes.",
+  "rootElement": "div",
+  "rootClassName": "multicol",
+  "selectorsCovered": [".multicol", ".row", ".columns"],
+  "props": [
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true
+    }
+  ],
+  "subcomponents": [
+    {
+      "name": "GridRow",
+      "rootElement": "div",
+      "rootClassName": "row",
+      "props": [
+        {
+          "name": "matchHeight",
+          "type": "boolean",
+          "required": false,
+          "default": false,
+          "mapsTo": { "togglesClass": "matchheight", "on": "root" }
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "GridCol",
+      "rootElement": "div",
+      "rootClassName": "columns",
+      "props": [
+        {
+          "name": "small",
+          "type": "number",
+          "required": false
+        },
+        {
+          "name": "medium",
+          "type": "number",
+          "required": false
+        },
+        {
+          "name": "large",
+          "type": "number",
+          "required": false
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Three equal columns using medium-4 span inside a multicol wrapper",
+      "props": {
+        "children": "Grid.Row > three Grid.Col medium=4 columns"
+      }
+    },
+    {
+      "name": "TwoColumns",
+      "description": "Two equal columns using medium-6 span",
+      "props": {
+        "children": "Grid.Row > two Grid.Col medium=6 columns"
+      }
+    },
+    {
+      "name": "ContentWithSidebar",
+      "description": "Main content column large-8 alongside a sidebar column large-4",
+      "props": {
+        "children": "Grid.Row > Grid.Col large=8 + Grid.Col large=4"
+      }
+    },
+    {
+      "name": "MatchHeight",
+      "description": "Three columns with matchheight enabled to equalise card heights",
+      "props": {
+        "children": "Grid.Row matchHeight=true > three Grid.Col medium=4 columns"
+      }
+    }
+  ],
+  "notes": "This is a Foundation CSS grid system. GridCol accepts breakpoint-specific span numbers (small, medium, large) which are combined into class names like 'medium-4 columns'. The .block class found inside .multicol is a Drupal CMS internal wrapper and is intentionally not modelled as a subcomponent — it wraps arbitrary content and has no standalone UI meaning. Grid.Row and Grid.Col are attached as Grid.Row and Grid.Col on the main Grid component. Pure layout container — accepts arbitrary children.",
+  "htmlExamples": [
+    "<div class=\"multicol\"><div class=\"row matchheight\"><div class=\"medium-4 columns\"><!-- col 1 --></div><div class=\"medium-4 columns\"><!-- col 2 --></div><div class=\"medium-4 columns\"><!-- col 3 --></div></div></div>",
+    "<div class=\"multicol\"><div class=\"row matchheight\"><div class=\"medium-6 columns\"><!-- col 1 --></div><div class=\"medium-6 columns\"><!-- col 2 --></div></div></div>",
+    "<div class=\"multicol\"><div class=\"row page-body\"><div class=\"columns large-8\"><!-- main content --></div></div></div>",
+    "<div class=\"row\"><div class=\"columns large-8\"><h1>Page Title</h1></div></div>"
+  ]
+}
