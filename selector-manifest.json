@@ -907,11 +907,15 @@
     },
     ".profiletext": {
       "pageCount": 3889,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileText",
+      "atomicType": "molecule"
     },
     ".profiletext dd": {
       "pageCount": 3889,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileText",
+      "atomicType": "molecule"
     },
     ".personinfo .profilepic": {
       "pageCount": 3381,
@@ -4593,6 +4597,15 @@
       ],
       "specFile": "specs/StapTeaser.json",
       "storyFile": "src/stories/molecules/StapTeaser.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "ProfileText": {
+      "selectors": [
+        ".profiletext",
+        ".profiletext dd"
+      ],
+      "specFile": "specs/ProfileText.json",
+      "storyFile": "src/stories/molecules/ProfileText.stories.tsx",
       "atomicType": "molecule"
     }
   }
