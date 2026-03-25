@@ -756,11 +756,15 @@
     },
     ".personinfo": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PersonInfo",
+      "atomicType": "molecule"
     },
     ".personinfo h1": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PersonInfo",
+      "atomicType": "molecule"
     },
     ".deptname p": {
       "pageCount": 6437,
@@ -858,19 +862,27 @@
     },
     ".personinfo .profilepic": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PersonInfo",
+      "atomicType": "molecule"
     },
     ".personinfo .profilepic img": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PersonInfo",
+      "atomicType": "molecule"
     },
     ".personinfo .profilepic .enlarge": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PersonInfo",
+      "atomicType": "molecule"
     },
     ".personinfo .profilepic-modal img": {
       "pageCount": 3381,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PersonInfo",
+      "atomicType": "molecule"
     },
     ".uosbutton": {
       "pageCount": 2962,
@@ -2138,7 +2150,9 @@
     },
     ".personinfo .profilepic .imgcapt figcaption": {
       "pageCount": 172,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PersonInfo",
+      "atomicType": "molecule"
     },
     ".featured-news > div .newscard h2": {
       "pageCount": 165,
@@ -4404,6 +4418,20 @@
       "specFile": "specs/DeptName.json",
       "storyFile": "src/stories/atoms/DeptName.stories.tsx",
       "atomicType": "atom"
+    },
+    "PersonInfo": {
+      "selectors": [
+        ".personinfo",
+        ".personinfo h1",
+        ".personinfo .profilepic",
+        ".personinfo .profilepic img",
+        ".personinfo .profilepic .enlarge",
+        ".personinfo .profilepic-modal img",
+        ".personinfo .profilepic .imgcapt figcaption"
+      ],
+      "specFile": "specs/PersonInfo.json",
+      "storyFile": "src/stories/molecules/PersonInfo.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
