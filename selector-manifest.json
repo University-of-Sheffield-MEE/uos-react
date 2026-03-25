@@ -682,11 +682,15 @@
     },
     ".uosbutton": {
       "pageCount": 2962,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     "a.uosbutton": {
       "pageCount": 2953,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     ".paragraph--type--para-promotion .media--image--figure": {
       "pageCount": 2744,
@@ -1488,11 +1492,15 @@
     },
     "#main .ugkeybg .title-box .buttons .uosbutton": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     "#main .ugkeybg .title-box .buttons .uosbutton:last-of-type": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     "#main .ugkeybg .sticky-ctas": {
       "pageCount": 283,
@@ -1732,7 +1740,9 @@
     },
     ".dark .uosbutton": {
       "pageCount": 232,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     ".featured-image .img_descript .link-arrow": {
       "pageCount": 228,
@@ -2248,11 +2258,15 @@
     },
     "#main .pgkeybg .pg-title-box .buttons .uosbutton": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     "#main .pgkeybg .pg-title-box .buttons .uosbutton:last-of-type": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     "#main .pgkeybg .sticky-ctas": {
       "pageCount": 130,
@@ -2892,7 +2906,9 @@
     },
     ".highlight .uosbutton": {
       "pageCount": 23,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosButton",
+      "atomicType": "atom"
     },
     ".logos-homehub .scrollarrows button": {
       "pageCount": 22,
@@ -3708,6 +3724,21 @@
       ],
       "specFile": "specs/Grid.json",
       "storyFile": "src/stories/layouts/Grid.stories.tsx",
+      "atomicType": "atom"
+    },
+    "UosButton": {
+      "selectors": [
+        ".uosbutton",
+        "a.uosbutton",
+        ".dark .uosbutton",
+        ".highlight .uosbutton",
+        "#main .ugkeybg .title-box .buttons .uosbutton",
+        "#main .ugkeybg .title-box .buttons .uosbutton:last-of-type",
+        "#main .pgkeybg .pg-title-box .buttons .uosbutton",
+        "#main .pgkeybg .pg-title-box .buttons .uosbutton:last-of-type"
+      ],
+      "specFile": "specs/UosButton.json",
+      "storyFile": "src/stories/atoms/UosButton.stories.tsx",
       "atomicType": "atom"
     }
   }
