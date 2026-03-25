@@ -49,11 +49,15 @@
     },
     ".off-canvas-wrapper": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper",
+      "atomicType": "layout"
     },
     ".off-canvas": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper",
+      "atomicType": "layout"
     },
     ".position-left": {
       "pageCount": 26276,
@@ -67,7 +71,9 @@
     },
     ".off-canvas-content": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper",
+      "atomicType": "layout"
     },
     ".hide-for-medium": {
       "pageCount": 26276,
@@ -489,7 +495,9 @@
     },
     ".off-canvas a": {
       "pageCount": 26256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper",
+      "atomicType": "layout"
     },
     ".region-banner a": {
       "pageCount": 26256,
@@ -551,11 +559,15 @@
     },
     ".off-canvas ul": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper",
+      "atomicType": "layout"
     },
     ".off-canvas li": {
       "pageCount": 26243,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper",
+      "atomicType": "layout"
     },
     ".region-banner ul": {
       "pageCount": 26243,
@@ -579,7 +591,9 @@
     },
     ".off-canvas li a": {
       "pageCount": 26241,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OffCanvasWrapper",
+      "atomicType": "layout"
     },
     ".row .row": {
       "pageCount": 26038,
@@ -4293,6 +4307,20 @@
       "specFile": "specs/Button.json",
       "storyFile": "src/stories/atoms/Button.stories.tsx",
       "atomicType": "atom"
+    },
+    "OffCanvasWrapper": {
+      "selectors": [
+        ".off-canvas-wrapper",
+        ".off-canvas-content",
+        ".off-canvas",
+        ".off-canvas a",
+        ".off-canvas ul",
+        ".off-canvas li",
+        ".off-canvas li a"
+      ],
+      "specFile": "specs/OffCanvasWrapper.json",
+      "storyFile": "src/stories/layouts/OffCanvasWrapper.stories.tsx",
+      "atomicType": "layout"
     }
   }
 }
