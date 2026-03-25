@@ -193,7 +193,9 @@
     },
     ".site-search input": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SiteSearchInput",
+      "atomicType": "atom"
     },
     ".site-search .site-search-toggle": {
       "pageCount": 26276,
@@ -3754,6 +3756,12 @@
       "status": "done",
       "implementedBy": "UosBlock",
       "atomicType": "molecule"
+    },
+    ".site-search-input": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "SiteSearchInput",
+      "atomicType": "atom"
     }
   },
   "components": {
@@ -3838,6 +3846,15 @@
       "specFile": "specs/BottomBar.json",
       "storyFile": "src/stories/organisms/BottomBar.stories.tsx",
       "atomicType": "organism"
+    },
+    "SiteSearchInput": {
+      "selectors": [
+        ".site-search-input",
+        ".site-search input"
+      ],
+      "specFile": "specs/SiteSearchInput.json",
+      "storyFile": "src/stories/atoms/SiteSearchInput.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }

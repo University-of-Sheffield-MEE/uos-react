@@ -1,0 +1,98 @@
+{
+  "componentName": "SiteSearchInput",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A search text input field used within the site search form, with placeholder, autocomplete, and accessibility attributes.",
+  "rootElement": "input",
+  "rootClassName": "site-search-input",
+  "selectorsCovered": [".site-search-input", ".site-search input"],
+  "props": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "default": "site-search-box",
+      "mapsTo": { "element": "input", "attribute": "id" }
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "default": "query",
+      "mapsTo": { "element": "input", "attribute": "name" }
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "required": false,
+      "default": "Search our site",
+      "mapsTo": { "element": "input", "attribute": "placeholder" }
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "default": "Search our site",
+      "mapsTo": { "element": "input", "attribute": "aria-label" }
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "input", "attribute": "value" }
+    },
+    {
+      "name": "onChange",
+      "type": "(e: React.ChangeEvent<HTMLInputElement>) => void",
+      "required": false
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "mapsTo": { "togglesClass": "required", "on": "input" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Default search input with placeholder text",
+      "props": {
+        "id": "site-search-box",
+        "name": "query",
+        "placeholder": "Search our site",
+        "ariaLabel": "Search our site",
+        "required": true
+      }
+    },
+    {
+      "name": "WithValue",
+      "description": "Search input with a pre-filled value",
+      "props": {
+        "id": "site-search-box",
+        "name": "query",
+        "placeholder": "Search our site",
+        "ariaLabel": "Search our site",
+        "value": "computer science",
+        "required": true
+      }
+    },
+    {
+      "name": "CustomPlaceholder",
+      "description": "Search input with a custom placeholder for a specific search context",
+      "props": {
+        "id": "staff-search-box",
+        "name": "query",
+        "placeholder": "Search staff profiles",
+        "ariaLabel": "Search staff profiles",
+        "required": false
+      }
+    }
+  ],
+  "notes": "The input always has type='search', autocomplete='off', aria-autocomplete='list', and aria-haspopup='true' — these should be hardcoded. The id 'site-search-box' is consistently used and corresponds to the label's for attribute in the parent form. The required attribute appears in all samples and should default to true. The onChange handler enables controlled usage.",
+  "htmlExamples": [
+    "<input id=\"site-search-box\" class=\"site-search-input\" type=\"search\" name=\"query\" autocomplete=\"off\" placeholder=\"Search our site\" aria-label=\"Search our site\" aria-autocomplete=\"list\" aria-haspopup=\"true\" required=\"\">"
+  ]
+}
