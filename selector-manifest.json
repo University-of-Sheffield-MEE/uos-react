@@ -279,7 +279,9 @@
     },
     ".meganav": {
       "pageCount": 26276,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MegaNav",
+      "atomicType": "organism"
     },
     ".block-uos-globalnav > ul": {
       "pageCount": 26276,
@@ -3911,7 +3913,9 @@
     },
     ".site-header .meganav": {
       "pageCount": 0,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MegaNav",
+      "atomicType": "organism"
     },
     ".site-header .block-globalnav": {
       "pageCount": 0,
@@ -3939,6 +3943,36 @@
       "pageCount": 0,
       "status": "done",
       "implementedBy": "FootIcons",
+      "atomicType": "organism"
+    },
+    ".meganav nav.block-uos-globalnav": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "MegaNav",
+      "atomicType": "organism"
+    },
+    ".meganav ul": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "MegaNav",
+      "atomicType": "organism"
+    },
+    ".meganav li": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "MegaNav",
+      "atomicType": "organism"
+    },
+    ".meganav a": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "MegaNav",
+      "atomicType": "organism"
+    },
+    ".meganav a.uoslink": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "MegaNav",
       "atomicType": "organism"
     }
   },
@@ -4155,6 +4189,20 @@
       ],
       "specFile": "specs/FootIcons.json",
       "storyFile": "src/stories/organisms/FootIcons.stories.tsx",
+      "atomicType": "organism"
+    },
+    "MegaNav": {
+      "selectors": [
+        ".meganav",
+        ".site-header .meganav",
+        ".meganav nav.block-uos-globalnav",
+        ".meganav ul",
+        ".meganav li",
+        ".meganav a",
+        ".meganav a.uoslink"
+      ],
+      "specFile": "specs/MegaNav.json",
+      "storyFile": "src/stories/organisms/MegaNav.stories.tsx",
       "atomicType": "organism"
     }
   }
