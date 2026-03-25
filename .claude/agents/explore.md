@@ -163,7 +163,7 @@ For Case B (slot/freeform) children — you may make a judgement as to whether t
 
 ---
 
-## Step 5b: Check in with the user
+## Step 6: Check in with the user
 
 Before writing the spec, use `AskUserQuestion` to briefly describe your selection and ask for approval.
 
@@ -174,14 +174,14 @@ Your message should include:
 - The atomic type and a one-line description of what it does
 
 Offer two options:
-1. **Proceed** — continue to Step 6
+1. **Proceed** — continue to Step 7
 2. **Decline** — user provides feedback; restart from Step 1 using that feedback to guide a different selection (skip the declined selector this iteration, do not mark it as skipped in the manifest)
 
-If the user declines, apply their feedback, pick a different candidate, and loop back through Steps 1–5b until you get approval.
+If the user declines, apply their feedback, pick a different candidate, and loop back through Steps 1–6 until you get approval.
 
 ---
 
-## Step 6: Analyse and produce ComponentSpec
+## Step 7: Analyse and produce ComponentSpec
 
 Once you have the final target, analyse the fragments fully and output a ComponentSpec JSON.
 
