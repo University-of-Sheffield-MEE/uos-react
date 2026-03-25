@@ -259,9 +259,7 @@
     },
     "header.site-header": {
       "pageCount": 26276,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".header": {
       "pageCount": 26276,
@@ -324,9 +322,7 @@
     },
     ".block-uos-globalnav": {
       "pageCount": 26276,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".block-fixed-block-contentglobal-nav": {
       "pageCount": 26276,
@@ -3923,39 +3919,27 @@
     },
     ".site-header .header": {
       "pageCount": 0,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".site-header .logo": {
       "pageCount": 0,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".site-header .meganav": {
       "pageCount": 0,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".site-header .block-globalnav": {
       "pageCount": 0,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".site-header .block-uos-globalnav": {
       "pageCount": 0,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".block-globalnav": {
       "pageCount": 0,
-      "status": "done",
-      "implementedBy": "SiteHeader",
-      "atomicType": "organism"
+      "status": "pending"
     },
     ".footicons .social a": {
       "pageCount": 0,
@@ -4137,21 +4121,6 @@
       "specFile": "specs/ParaPromotion.json",
       "storyFile": "src/stories/molecules/ParaPromotion.stories.tsx",
       "atomicType": "molecule"
-    },
-    "SiteHeader": {
-      "selectors": [
-        "header.site-header",
-        ".site-header .header",
-        ".site-header .logo",
-        ".site-header .meganav",
-        ".site-header .block-globalnav",
-        ".site-header .block-uos-globalnav",
-        ".block-uos-globalnav",
-        ".block-globalnav"
-      ],
-      "specFile": "specs/SiteHeader.json",
-      "storyFile": "src/stories/organisms/SiteHeader.stories.tsx",
-      "atomicType": "organism"
     },
     "MuseBar": {
       "selectors": [
