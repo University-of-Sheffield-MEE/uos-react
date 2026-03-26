@@ -2174,7 +2174,9 @@
     },
     ".course-ug-fee-lookup": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseUgFeeLookup",
+      "atomicType": "atom"
     },
     ".ug-course-search": {
       "pageCount": 283,
@@ -5899,6 +5901,14 @@
       "specFile": "specs/ProfileGallery.json",
       "storyFile": "src/stories/organisms/ProfileGallery.stories.tsx",
       "atomicType": "organism"
+    },
+    "CourseUgFeeLookup": {
+      "selectors": [
+        ".course-ug-fee-lookup"
+      ],
+      "specFile": "specs/CourseUgFeeLookup.json",
+      "storyFile": "src/stories/atoms/CourseUgFeeLookup.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
