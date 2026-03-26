@@ -2424,19 +2424,27 @@
     },
     ".news-teaser-link": {
       "pageCount": 191,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
     },
     ".news-teaser": {
       "pageCount": 191,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
     },
     ".news-teaser .teaser-text": {
       "pageCount": 191,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
     },
     ".news-teaser .teaser-text h2": {
       "pageCount": 191,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
     },
     ".news-teaser .news-date": {
       "pageCount": 191,
@@ -2450,7 +2458,9 @@
     },
     ".news-teaser .teaser-text p": {
       "pageCount": 187,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
     },
     ".matchheight > .columns .block-field-blockparagraphfrom-libraryfield-reusable-paragraph": {
       "pageCount": 182,
@@ -3466,7 +3476,9 @@
     },
     ".news-teaser .news-src": {
       "pageCount": 28,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
     },
     ".accreds .accred-placeholder": {
       "pageCount": 27,
@@ -4499,6 +4511,12 @@
       "status": "done",
       "implementedBy": "PageMediaBlock",
       "atomicType": "molecule"
+    },
+    ".news-teaser .teaser-thumb": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -5236,6 +5254,20 @@
       "specFile": "specs/FieldMultiTitle.json",
       "storyFile": "src/stories/atoms/FieldMultiTitle.stories.tsx",
       "atomicType": "atom"
+    },
+    "NewsTeaser": {
+      "selectors": [
+        ".news-teaser-link",
+        ".news-teaser",
+        ".news-teaser .teaser-thumb",
+        ".news-teaser .teaser-text",
+        ".news-teaser .teaser-text h2",
+        ".news-teaser .teaser-text p",
+        ".news-teaser .news-src"
+      ],
+      "specFile": "specs/NewsTeaser.json",
+      "storyFile": "src/stories/molecules/NewsTeaser.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
