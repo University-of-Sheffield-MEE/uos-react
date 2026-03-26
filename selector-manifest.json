@@ -1200,15 +1200,21 @@
     },
     ".block-field-blocknodestudent-profilefield-stup-name": {
       "pageCount": 1623,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileName",
+      "atomicType": "atom"
     },
     ".block-field-blocknodestudent-profilefield-stup-black-text-sub-header": {
       "pageCount": 1623,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileName",
+      "atomicType": "atom"
     },
     ".block-field-blocknodestudent-profilefield-stup-grey-text-sub-header": {
       "pageCount": 1623,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileName",
+      "atomicType": "atom"
     },
     ".block-field-blocknodestudent-profilefield-stup-profile-image img": {
       "pageCount": 1622,
@@ -1602,7 +1608,9 @@
     },
     ".block-field-blocknodestudent-profilefield-stup-year": {
       "pageCount": 625,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileName",
+      "atomicType": "atom"
     },
     "dd #my-pubs .pubs-tabs": {
       "pageCount": 608,
@@ -5135,6 +5143,17 @@
       ],
       "specFile": "specs/StudentProfileTitle.json",
       "storyFile": "src/stories/atoms/StudentProfileTitle.stories.tsx",
+      "atomicType": "atom"
+    },
+    "StudentProfileName": {
+      "selectors": [
+        ".block-field-blocknodestudent-profilefield-stup-name",
+        ".block-field-blocknodestudent-profilefield-stup-black-text-sub-header",
+        ".block-field-blocknodestudent-profilefield-stup-grey-text-sub-header",
+        ".block-field-blocknodestudent-profilefield-stup-year"
+      ],
+      "specFile": "specs/StudentProfileName.json",
+      "storyFile": "src/stories/atoms/StudentProfileName.stories.tsx",
       "atomicType": "atom"
     }
   }

@@ -1,0 +1,53 @@
+{
+  "componentName": "StudentProfileName",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "Drupal Layout Builder block rendering a single student profile text field, used for the student's display name.",
+  "rootElement": "div",
+  "rootClassName": "block-field-blocknodestudent-profilefield-stup-name",
+  "selectorsCovered": [
+    ".block-field-blocknodestudent-profilefield-stup-name",
+    ".block-field-blocknodestudent-profilefield-stup-black-text-sub-header",
+    ".block-field-blocknodestudent-profilefield-stup-grey-text-sub-header",
+    ".block-field-blocknodestudent-profilefield-stup-year"
+  ],
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".block-field-blocknodestudent-profilefield-stup-name", "attribute": "innerText" }
+    },
+    {
+      "name": "fieldType",
+      "type": "\"name\" | \"black-text-sub-header\" | \"grey-text-sub-header\" | \"year\"",
+      "required": false,
+      "default": "\"name\""
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Name",
+      "description": "Student profile name field block",
+      "props": { "text": "Romesa Khawaja", "fieldType": "name" }
+    },
+    {
+      "name": "BlackTextSubHeader",
+      "description": "Student profile black text sub-header field block, used for role or title",
+      "props": { "text": "President", "fieldType": "black-text-sub-header" }
+    },
+    {
+      "name": "GreyTextSubHeader",
+      "description": "Student profile grey text sub-header field block, used for organisation or course",
+      "props": { "text": "General Engineering Masters Society", "fieldType": "grey-text-sub-header" }
+    },
+    {
+      "name": "Year",
+      "description": "Student profile year field block",
+      "props": { "text": "2023", "fieldType": "year" }
+    }
+  ],
+  "notes": "All four selectors follow the same Drupal block structure: div.block.block-layout-builder with a field-specific BEM class. The fieldType prop drives which BEM modifier class is applied (e.g. block-field-blocknodestudent-profilefield-stup-name). The profile image block is a separate component as its selector targets an img element directly. The intro block is also separate as it wraps a .leadintro child.",
+  "htmlExamples": ["2778_15994", "2779_15994", "2781_15994", "2782_16518"]
+}
