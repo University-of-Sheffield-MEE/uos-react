@@ -1957,7 +1957,8 @@
     },
     ".ug-course-search a": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "sub-selector covered by UgCourseSearch molecule"
     },
     ".footer-course-search-label": {
       "pageCount": 283,
@@ -2681,35 +2682,51 @@
     },
     ".image-gallery": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery__image": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery .imgcapt": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery .media--image--figure": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery img": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery__content": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery__view-all": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery-content": {
       "pageCount": 164,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".profile-gallery": {
       "pageCount": 159,
@@ -3615,7 +3632,9 @@
     },
     ".image-gallery figcaption": {
       "pageCount": 36,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance)": {
       "pageCount": 36,
@@ -3635,11 +3654,15 @@
     },
     ".image-gallery__content h2": {
       "pageCount": 35,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".image-gallery__content .description": {
       "pageCount": 35,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ImageGallery",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-card .field-sc-link": {
       "pageCount": 35,
@@ -5826,6 +5849,24 @@
       ],
       "specFile": "specs/LpHeaderImg.json",
       "storyFile": "src/stories/molecules/LpHeaderImg.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "ImageGallery": {
+      "selectors": [
+        ".image-gallery",
+        ".image-gallery__image",
+        ".image-gallery__content",
+        ".image-gallery__view-all",
+        ".image-gallery figcaption",
+        ".image-gallery__content h2",
+        ".image-gallery__content .description",
+        ".image-gallery .imgcapt",
+        ".image-gallery .media--image--figure",
+        ".image-gallery img",
+        ".image-gallery-content"
+      ],
+      "specFile": "specs/ImageGallery.json",
+      "storyFile": "src/stories/molecules/ImageGallery.stories.tsx",
       "atomicType": "molecule"
     }
   }
