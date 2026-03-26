@@ -2568,11 +2568,15 @@
     },
     ".otherreqstext": {
       "pageCount": 222,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OtherReqsText",
+      "atomicType": "atom"
     },
     ".otherreqstext p:last-of-type": {
       "pageCount": 222,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "OtherReqsText",
+      "atomicType": "atom"
     },
     "figure figcaption": {
       "pageCount": 219,
@@ -6185,6 +6189,15 @@
       "specFile": "specs/PgKeyBg.json",
       "storyFile": "src/stories/organisms/PgKeyBg.stories.tsx",
       "atomicType": "organism"
+    },
+    "OtherReqsText": {
+      "selectors": [
+        ".otherreqstext",
+        ".otherreqstext p:last-of-type"
+      ],
+      "specFile": "specs/OtherReqsText.json",
+      "storyFile": "src/stories/atoms/OtherReqsText.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
