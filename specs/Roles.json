@@ -1,0 +1,46 @@
+{
+  "componentName": "Roles",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A short paragraph displaying a person's role or title within the university.",
+  "rootElement": "p",
+  "rootClassName": "roles",
+  "selectorsCovered": [".roles"],
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": "p.roles",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "A single role displayed as a paragraph",
+      "props": {
+        "text": "Senior Technical Fellow"
+      }
+    },
+    {
+      "name": "StudyAbroadTutor",
+      "description": "Role text for a study abroad tutor",
+      "props": {
+        "text": "Study Abroad Tutor"
+      }
+    },
+    {
+      "name": "DirectorRole",
+      "description": "Role text for a director position",
+      "props": {
+        "text": "Undergraduate Level 1 Director"
+      }
+    }
+  ],
+  "notes": "Simple atom — a paragraph element that renders a staff member's role or administrative title. Text always varies across pages. Appears on staff profile pages.",
+  "htmlExamples": ["3685_17886", "3685_11667", "3685_16964"]
+}

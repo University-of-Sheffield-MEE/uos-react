@@ -1516,7 +1516,9 @@
     },
     ".roles": {
       "pageCount": 845,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Roles",
+      "atomicType": "atom"
     },
     "h2.field-multi-title": {
       "pageCount": 820,
@@ -5203,6 +5205,14 @@
       "specFile": "specs/StudentProfileIntro.json",
       "storyFile": "src/stories/molecules/StudentProfileIntro.stories.tsx",
       "atomicType": "molecule"
+    },
+    "Roles": {
+      "selectors": [
+        ".roles"
+      ],
+      "specFile": "specs/Roles.json",
+      "storyFile": "src/stories/atoms/Roles.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
