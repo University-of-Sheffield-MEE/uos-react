@@ -2260,7 +2260,9 @@
     },
     ".departmentstats": {
       "pageCount": 281,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "DepartmentStats",
+      "atomicType": "molecule"
     },
     ".learningtext": {
       "pageCount": 281,
@@ -4728,6 +4730,18 @@
       "status": "done",
       "implementedBy": "UgCourseRow",
       "atomicType": "layout"
+    },
+    ".departmentstats .paragraph--type--ug-statistic": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "DepartmentStats",
+      "atomicType": "molecule"
+    },
+    ".departmentstats .stat-title": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "DepartmentStats",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -5636,6 +5650,16 @@
       ],
       "specFile": "specs/FeaturedImage.json",
       "storyFile": "src/stories/molecules/FeaturedImage.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "DepartmentStats": {
+      "selectors": [
+        ".departmentstats",
+        ".departmentstats .paragraph--type--ug-statistic",
+        ".departmentstats .stat-title"
+      ],
+      "specFile": "specs/DepartmentStats.json",
+      "storyFile": "src/stories/molecules/DepartmentStats.stories.tsx",
       "atomicType": "molecule"
     }
   }
