@@ -3264,7 +3264,9 @@
     },
     ".pg-course-image img": {
       "pageCount": 129,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgCourseImage",
+      "atomicType": "molecule"
     },
     ".paragraph--type--ug-course-structure-module-block h3": {
       "pageCount": 129,
@@ -3272,7 +3274,9 @@
     },
     ".pg-course-image": {
       "pageCount": 129,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgCourseImage",
+      "atomicType": "molecule"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.features li .fy": {
       "pageCount": 126,
@@ -6247,6 +6251,15 @@
       "specFile": "specs/PgCourseRow.json",
       "storyFile": "src/stories/layouts/PgCourseRow.stories.tsx",
       "atomicType": "layout"
+    },
+    "PgCourseImage": {
+      "selectors": [
+        ".pg-course-image",
+        ".pg-course-image img"
+      ],
+      "specFile": "specs/PgCourseImage.json",
+      "storyFile": "src/stories/molecules/PgCourseImage.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
