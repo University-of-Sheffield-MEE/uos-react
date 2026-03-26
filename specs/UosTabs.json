@@ -1,0 +1,76 @@
+{
+  "componentName": "UosTabs",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A tabbed navigation bar with accessible ARIA roles, used for switching between year or module panels on course pages.",
+  "rootElement": "div",
+  "rootClassName": "tab-gradient",
+  "selectorsCovered": [".tab-gradient", ".uos-tabs .tab-gradient", ".uos-tabs [role=tablist]", ".uos-tabs [role=tab]", ".uos-tabs [role=tab][aria-selected=true]", ".uos-tabs button"],
+  "props": [
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "default": "Years",
+      "mapsTo": { "element": "[role=tablist]", "attribute": "aria-label" }
+    },
+    {
+      "name": "tabs",
+      "type": "Array<{ id: string; label: string; selected?: boolean; tabIndex?: number }>",
+      "required": true,
+      "mapsTo": { "element": "button[role=tab]", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Three-tab navigation for undergraduate course years",
+      "props": {
+        "ariaLabel": "Years",
+        "tabs": [
+          { "id": "ug-tab-1", "label": "First year", "selected": true },
+          { "id": "ug-tab-2", "label": "Second year", "selected": false },
+          { "id": "ug-tab-3", "label": "Third year", "selected": false }
+        ]
+      }
+    },
+    {
+      "name": "FourYears",
+      "description": "Four-tab navigation for a four-year MEng course",
+      "props": {
+        "ariaLabel": "Years",
+        "tabs": [
+          { "id": "ug-tab-1", "label": "First year", "selected": true },
+          { "id": "ug-tab-2", "label": "Second year", "selected": false },
+          { "id": "ug-tab-3", "label": "Third year", "selected": false },
+          { "id": "ug-tab-4", "label": "Fourth year", "selected": false }
+        ]
+      }
+    },
+    {
+      "name": "PostgraduateModules",
+      "description": "Three-tab navigation for a postgraduate course with module pathways",
+      "props": {
+        "ariaLabel": "Years",
+        "tabs": [
+          { "id": "pgt-tab-1", "label": "Core modules", "selected": true },
+          { "id": "pgt-tab-2", "label": "Stem Cell and Regenerative Medicine pathway", "selected": false },
+          { "id": "pgt-tab-3", "label": "Cell Biology and Drug Development pathway", "selected": false }
+        ]
+      }
+    },
+    {
+      "name": "SingleTab",
+      "description": "Single-tab navigation where only one panel of content exists",
+      "props": {
+        "ariaLabel": "Years",
+        "tabs": [
+          { "id": "pgt-tab-1", "label": "Modules", "selected": true }
+        ]
+      }
+    }
+  ],
+  "notes": "The .uos-tabs selector itself returns 0 pages in the DOM index; the observable root element is .tab-gradient which wraps the tablist. The tabpanels (div.yearpanel[role=tabpanel]) are siblings to .tab-gradient inside the .uos-tabs wrapper and contain freeform CMS content — they are not modelled here. Non-selected buttons have tabindex='-1' per ARIA tab pattern. The aria-label on the tablist varies ('Years' for most pages) but is included as a prop for flexibility.",
+  "htmlExamples": ["3998_1950", "3998_1949", "3998_655", "3369_661"]
+}

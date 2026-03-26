@@ -1612,19 +1612,27 @@
     },
     ".uos-tabs .tab-gradient": {
       "pageCount": 604,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosTabs",
+      "atomicType": "molecule"
     },
     ".uos-tabs [role=tablist]": {
       "pageCount": 604,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosTabs",
+      "atomicType": "molecule"
     },
     ".uos-tabs [role=tab]": {
       "pageCount": 604,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosTabs",
+      "atomicType": "molecule"
     },
     ".uos-tabs [role=tab][aria-selected=true]": {
       "pageCount": 604,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosTabs",
+      "atomicType": "molecule"
     },
     ".uos-tabs [role=tabpanel]": {
       "pageCount": 604,
@@ -1632,11 +1640,15 @@
     },
     ".tab-gradient": {
       "pageCount": 604,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosTabs",
+      "atomicType": "molecule"
     },
     ".uos-tabs button": {
       "pageCount": 604,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UosTabs",
+      "atomicType": "molecule"
     },
     ".uosblock.dark h2": {
       "pageCount": 588,
@@ -5076,6 +5088,19 @@
       ],
       "specFile": "specs/PageMediaBlock.json",
       "storyFile": "src/stories/molecules/PageMediaBlock.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "UosTabs": {
+      "selectors": [
+        ".tab-gradient",
+        ".uos-tabs .tab-gradient",
+        ".uos-tabs [role=tablist]",
+        ".uos-tabs [role=tab]",
+        ".uos-tabs [role=tab][aria-selected=true]",
+        ".uos-tabs button"
+      ],
+      "specFile": "specs/UosTabs.json",
+      "storyFile": "src/stories/molecules/UosTabs.stories.tsx",
       "atomicType": "molecule"
     }
   }
