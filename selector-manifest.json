@@ -2238,15 +2238,16 @@
     },
     ".large-12": {
       "pageCount": 282,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".course-ereq-panel": {
       "pageCount": 282,
-      "status": "pending"
+      "status": "done"
     },
     ".course-ereq-panel .grades": {
       "pageCount": 282,
-      "status": "pending"
+      "status": "done"
     },
     ".grades": {
       "pageCount": 282,
@@ -2418,7 +2419,9 @@
     },
     ".lpheaderimg": {
       "pageCount": 236,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LpHeaderImg",
+      "atomicType": "molecule"
     },
     ".nlpheader .lpheaderimg .media--image--figure": {
       "pageCount": 235,
@@ -2428,7 +2431,9 @@
     },
     ".nlpheader .lpheaderimg .media--image--figure .imgcapt picture img": {
       "pageCount": 235,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LpHeaderImg",
+      "atomicType": "molecule"
     },
     ".uosblock.highlight h2": {
       "pageCount": 235,
@@ -2532,19 +2537,19 @@
     },
     ".course-ereq-panel .inline-description-list": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done"
     },
     ".course-ereq-panel .inline-description-list__term": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done"
     },
     ".course-ereq-panel .inline-description-list__description": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done"
     },
     ".course-ereq-panel .inline-description-list__term:not(:first-of-type)": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done"
     },
     ".otherreqstext": {
       "pageCount": 222,
@@ -3316,11 +3321,11 @@
     },
     "#js-course-ereq-panel--standard": {
       "pageCount": 82,
-      "status": "pending"
+      "status": "done"
     },
     "#js-course-ereq-panel--access_sheffield": {
       "pageCount": 82,
-      "status": "pending"
+      "status": "done"
     },
     ".newscard h3": {
       "pageCount": 81,
@@ -3470,7 +3475,7 @@
     },
     ".course-ereq-panel--no-access": {
       "pageCount": 58,
-      "status": "pending"
+      "status": "done"
     },
     ".event2-date-times ul": {
       "pageCount": 56,
@@ -5812,6 +5817,15 @@
       ],
       "specFile": "specs/LearningText.json",
       "storyFile": "src/stories/molecules/LearningText.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "LpHeaderImg": {
+      "selectors": [
+        ".lpheaderimg",
+        ".nlpheader .lpheaderimg .media--image--figure .imgcapt picture img"
+      ],
+      "specFile": "specs/LpHeaderImg.json",
+      "storyFile": "src/stories/molecules/LpHeaderImg.stories.tsx",
       "atomicType": "molecule"
     }
   }
