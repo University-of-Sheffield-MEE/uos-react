@@ -12,7 +12,7 @@ type Story = StoryObj<typeof FeaturedVideo>;
 
 export const Default: Story = {
   args: {
-    videoThumbnailSrc: 'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/PCuj9wuPRpI.jpg',
+    videoThumbnailSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/PCuj9wuPRpI.jpg',
     videoTitle: 'Student Success - Sulaiman',
     heading: "Sulaiman's story",
     description: "Sulaiman is the first in his family to come to university. Without the financial support that his donor-funded scholarship offers, he'd never have been able to pursue his dream of becoming a doctor.",
@@ -22,7 +22,7 @@ export const Default: Story = {
 export const WithSectionTitle: Story = {
   args: {
     sectionTitle: 'Charity Leadership',
-    videoThumbnailSrc: 'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/1_8qqep5aq.jpg',
+    videoThumbnailSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/1_8qqep5aq.jpg',
     videoTitle: 'The Boardroom 24: Charity Leadership',
     heading: 'Session 1',
     description: 'Hear the experiences, challenges and opportunities of three respected professionals working in the charity sector.',
@@ -31,7 +31,7 @@ export const WithSectionTitle: Story = {
 
 export const WithLink: Story = {
   args: {
-    videoThumbnailSrc: 'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/1_du4zqtpm.jpg',
+    videoThumbnailSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/1_du4zqtpm.jpg',
     videoTitle: "At Sheffield we're makers",
     heading: 'Making our mark on the world',
     description: "We're curious about the world and know our vital role in creating positive change within it.",
@@ -42,7 +42,7 @@ export const WithLink: Story = {
 
 export const WithFigureCaption: Story = {
   args: {
-    videoThumbnailSrc: 'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/8kpDsEn8em0.jpg',
+    videoThumbnailSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/8kpDsEn8em0.jpg',
     videoTitle: 'Magnomatics: Placing talent within industry',
     figureCaption: 'Magnomatics: Placing talent within industry',
     heading: 'Magnomatics: Placing Talent Within Industry',
