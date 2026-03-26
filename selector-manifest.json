@@ -2522,23 +2522,33 @@
     },
     ".course-ereq-tabs": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseEreqTabs",
+      "atomicType": "molecule"
     },
     ".course-ereq-tabslist": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseEreqTabs",
+      "atomicType": "molecule"
     },
     "#main .course-ereq-tabslist": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseEreqTabs",
+      "atomicType": "molecule"
     },
     "#main .course-ereq-tabslist li": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseEreqTabs",
+      "atomicType": "molecule"
     },
     ".course-ereq-tabslist button": {
       "pageCount": 224,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseEreqTabs",
+      "atomicType": "molecule"
     },
     ".course-ereq-panel .inline-description-list": {
       "pageCount": 224,
@@ -5919,6 +5929,18 @@
       "specFile": "specs/ModuleDisclaimer.json",
       "storyFile": "src/stories/atoms/ModuleDisclaimer.stories.tsx",
       "atomicType": "atom"
+    },
+    "CourseEreqTabs": {
+      "selectors": [
+        ".course-ereq-tabs",
+        ".course-ereq-tabslist",
+        "#main .course-ereq-tabslist",
+        "#main .course-ereq-tabslist li",
+        ".course-ereq-tabslist button"
+      ],
+      "specFile": "specs/CourseEreqTabs.json",
+      "storyFile": "src/stories/molecules/CourseEreqTabs.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
