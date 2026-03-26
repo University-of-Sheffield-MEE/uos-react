@@ -18,9 +18,9 @@ export const Default: Story = {
     jobTitle: 'Professor of Dermatology',
     department: 'School of Medicine and Population Health',
     email: 'M.J.Cork@sheffield.ac.uk',
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2024-07/Michael%20Cork.png?h=0d2bc03d&itok=8uh0C1JU',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2024-07/Michael%20Cork.png?h=0d2bc03d&itok=8uh0C1JU',
     imageAlt: 'Michael Cork',
-    modalImageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2024-07/Michael%20Cork.png?h=0d2bc03d&itok=WOAkhTQm',
+    modalImageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2024-07/Michael%20Cork.png?h=0d2bc03d&itok=WOAkhTQm',
     photoAriaLabel: 'Photo of Michael J Cork',
   },
 };
@@ -33,9 +33,9 @@ export const WithPhone: Story = {
     department: 'Marketing, Admissions, Recruitment and Communications',
     email: 'h.postles@sheffield.ac.uk',
     phone: '+44 7557 815009',
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2022-10/Hannah%20Postles.jpg?h=3f3c9371&itok=aK79gOYo',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2022-10/Hannah%20Postles.jpg?h=3f3c9371&itok=aK79gOYo',
     imageAlt: 'Hannah Postles',
-    modalImageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2022-10/Hannah%20Postles.jpg?h=3f3c9371&itok=bAWMj_vm',
+    modalImageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2022-10/Hannah%20Postles.jpg?h=3f3c9371&itok=bAWMj_vm',
     photoAriaLabel: 'Photo of Hannah Postles',
   },
 };
@@ -48,9 +48,9 @@ export const WithExtraText: Story = {
     department: 'Management School',
     email: 'hli176@sheffield.ac.uk',
     extraText: 'Thesis title: How Does Exposure to Organic Food Products Affects Consumer Responses? Exploring the Moderating Role of Consumer Impulsiveness',
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2024-07/Huaiyu%20Li%20headshot.jpg?h=3594b42f&itok=3G35dyYR',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2024-07/Huaiyu%20Li%20headshot.jpg?h=3594b42f&itok=3G35dyYR',
     imageAlt: 'Huaiyu Li wearing a white shirt and light blue blazer.',
-    modalImageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2024-07/Huaiyu%20Li%20headshot.jpg?h=3594b42f&itok=BZyhSt76',
+    modalImageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2024-07/Huaiyu%20Li%20headshot.jpg?h=3594b42f&itok=BZyhSt76',
     photoAriaLabel: 'Photo of Huaiyu Li',
   },
 };
@@ -76,9 +76,9 @@ export const Group: Story = {
         jobTitle="Chair of International Politics"
         department="School of Sociological Studies, Politics and International Relations"
         email="r.v.duffy@sheffield.ac.uk"
-        imageSrc="https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2022-07/Rosaleen%202.jpg?h=7abcc742&itok=e08Lfz9z"
+        imageSrc="https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2022-07/Rosaleen%202.jpg?h=7abcc742&itok=e08Lfz9z"
         imageAlt="Headshot of Rosaleen Duffy"
-        modalImageSrc="https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2022-07/Rosaleen%202.jpg?h=7abcc742&itok=ATC7VmLY"
+        modalImageSrc="https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2022-07/Rosaleen%202.jpg?h=7abcc742&itok=ATC7VmLY"
         photoAriaLabel="Photo of Rosaleen Duffy"
       />
       <StapTeaser
@@ -88,9 +88,9 @@ export const Group: Story = {
         department="Marketing, Admissions, Recruitment and Communications"
         email="r.l.ferguson@sheffield.ac.uk"
         phone="+44 7710 025896"
-        imageSrc="https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2025-11/1000015701.jpg?h=ad6bce4b&itok=99rr4Kxo"
+        imageSrc="https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2025-11/1000015701.jpg?h=ad6bce4b&itok=99rr4Kxo"
         imageAlt="Rebecca Ferguson"
-        modalImageSrc="https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2025-11/1000015701.jpg?h=ad6bce4b&itok=B5b6l9QH"
+        modalImageSrc="https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2025-11/1000015701.jpg?h=ad6bce4b&itok=B5b6l9QH"
         photoAriaLabel="Photo of Rebecca  Ferguson"
       />
       <StapTeaser
@@ -100,9 +100,9 @@ export const Group: Story = {
         department="Management School"
         email="h.boneham@sheffield.ac.uk"
         extraText="Thesis title: Leadership and wellbeing: Focus on the self-other perception gap"
-        imageSrc="https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2021-06/Profile%20Picture%20-%20Hannah%20JE%20Boneham.png?h=6d44a4da&itok=T8E-iGF0"
+        imageSrc="https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2021-06/Profile%20Picture%20-%20Hannah%20JE%20Boneham.png?h=6d44a4da&itok=T8E-iGF0"
         imageAlt="Hannah Boneham"
-        modalImageSrc="https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2021-06/Profile%20Picture%20-%20Hannah%20JE%20Boneham.png?h=6d44a4da&itok=yo0wr77j"
+        modalImageSrc="https://cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2021-06/Profile%20Picture%20-%20Hannah%20JE%20Boneham.png?h=6d44a4da&itok=yo0wr77j"
         photoAriaLabel="Photo of Hannah Boneham"
       />
     </div>

@@ -36,7 +36,7 @@ export const WithImage: Story = {
     heading: 'Experience Sheffield for yourself',
     body: 'The best way to find out what studying at Sheffield is like is to visit us. You\'ll get a feel for the atmosphere, the people, the campus and the city.',
     links: [{ label: 'Visit us', href: '/visit-us/home' }],
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2025-05/39718.jpg',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2025-05/39718.jpg',
     imageAlt: 'Numerous people walking around inside a bright white spacious building (The Wave).',
     blueBar: false,
   },

@@ -17,7 +17,7 @@ export const Default: Story = {
     featuredCard: {
       href: '/english/news/school-english-linguist-recognised-international-tesol-research-award',
       ariaLabel: 'School of English linguist recognised with international TESOL research award',
-      imageSrc: 'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-03/1N4A3468-2.jpg',
+      imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-03/1N4A3468-2.jpg',
       imageAlt: 'Beatriz Gonzalez-Fernandez staff photo',
       title: 'School of English linguist recognised with international TESOL research award',
       description:
@@ -31,7 +31,7 @@ export const Default: Story = {
         ariaLabel:
           'Multispecies Mutualisms project launches with interdisciplinary workshop at Sheffield',
         imageSrc:
-          'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2025-04/IMG_1935.jpeg.jpg',
+          'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2025-04/IMG_1935.jpeg.jpg',
         imageAlt: 'Four people stood smiling for the camera',
         title:
           'Multispecies Mutualisms project launches with interdisciplinary workshop at Sheffield',
@@ -44,7 +44,7 @@ export const Default: Story = {
         href: 'https://sheffield.ac.uk/news/ey-ai-landmark-study-helps-ai-better-understand-accents-and-dialects',
         ariaLabel: 'Ey up, AI! Landmark study helps AI better understand accents and dialects',
         imageSrc:
-          'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-02/GettyImages-2253332749.jpg',
+          'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-02/GettyImages-2253332749.jpg',
         imageAlt: 'A close up shot of a man in a suit holding his phone',
         title: 'Ey up, AI! Landmark study helps AI better understand accents and dialects',
         description:
@@ -57,7 +57,7 @@ export const Default: Story = {
         ariaLabel:
           'Report led by Prof. Joanna Gavins discovers language barrier stalling UK sustainability efforts',
         imageSrc:
-          'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-01/AdobeStock_220990134.jpeg.jpg',
+          'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-01/AdobeStock_220990134.jpeg.jpg',
         imageAlt: 'a large pile of crushed up water bottles',
         title:
           'Report led by Prof. Joanna Gavins discovers language barrier stalling UK sustainability efforts',
@@ -79,7 +79,7 @@ export const RecentMode: Story = {
       ariaLabel:
         'University of Sheffield to lead £12.5m national centre for next-generation semiconductor systems',
       imageSrc:
-        'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2023-05/AdobeStock_51490712.jpeg.jpg',
+        'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2023-05/AdobeStock_51490712.jpeg.jpg',
       imageAlt: 'Stock image representing semiconductor technology',
       title:
         'University of Sheffield to lead £12.5m national centre for next-generation semiconductor systems',
@@ -94,7 +94,7 @@ export const RecentMode: Story = {
         ariaLabel:
           'Advanced virtual simulations set to reshape care for patients with multiple long-term conditions',
         imageSrc:
-          'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-03/AdobeStock_1543183611.jpeg.jpg',
+          'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-03/AdobeStock_1543183611.jpeg.jpg',
         imageAlt: 'Man struggling with a long term health condition',
         title:
           'Advanced virtual simulations set to reshape care for patients with multiple long-term conditions',
@@ -106,7 +106,7 @@ export const RecentMode: Story = {
         ariaLabel:
           "Watch a home built in 10 days as Sheffield's factory-in-a-box demonstrates a solution",
         imageSrc:
-          'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-02/3D9A9841.jpg',
+          'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-02/3D9A9841.jpg',
         imageAlt: 'Factory-in-a-box Industrialised Construction demonstrator',
         title:
           "Watch a home built in 10 days as Sheffield's 'factory-in-a-box' demonstrates a solution to the housing crisis",
@@ -117,7 +117,7 @@ export const RecentMode: Story = {
         href: '/engineering/news/university-sheffield-appoints-chair-fusion-technology',
         ariaLabel: 'University of Sheffield appoints Chair of Fusion Technology',
         imageSrc:
-          'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-03/Shuisheng_057.jpg',
+          'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-03/Shuisheng_057.jpg',
         imageAlt: 'Professor Shuisheng He',
         title: 'University of Sheffield appoints Chair of Fusion Technology',
         date: '2 March 2026',

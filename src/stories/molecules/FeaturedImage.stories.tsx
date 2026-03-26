@@ -12,7 +12,7 @@ type Story = StoryObj<typeof FeaturedImage>;
 
 export const Default: Story = {
   args: {
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2023-11/pexels-alex-green-5699418.jpg',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2023-11/pexels-alex-green-5699418.jpg',
     imageAlt: 'Image of two people sitting on sofas in therapy setting',
     imageWidth: 375,
     imageHeight: 211,
@@ -25,7 +25,7 @@ export const Default: Story = {
 
 export const WithFigcaption: Story = {
   args: {
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-01/Adult%20flies.jpg',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-01/Adult%20flies.jpg',
     imageAlt: 'Two sedated adult Drosophila, one male and one female.',
     imageWidth: 375,
     imageHeight: 211,
@@ -39,7 +39,7 @@ export const WithFigcaption: Story = {
 
 export const MinimalDescription: Story = {
   args: {
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2022-07/EPS8%20gene%20therapy.png.jpg',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2022-07/EPS8%20gene%20therapy.png.jpg',
     imageAlt: 'EPS8',
     imageWidth: 375,
     imageHeight: 211,
@@ -50,7 +50,7 @@ export const MinimalDescription: Story = {
 
 export const NoArrow: Story = {
   args: {
-    imageSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-06/laura%20reduced.jpg',
+    imageSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-06/laura%20reduced.jpg',
     imageAlt: 'Laura Corns',
     imageWidth: 375,
     imageHeight: 211,

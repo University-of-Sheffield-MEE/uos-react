@@ -12,7 +12,7 @@ type Story = StoryObj<typeof VideoEmbedLazy>;
 
 export const Default: Story = {
   args: {
-    thumbnailSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/P0Tcvqte6iU.jpg?itok=LPhRMbxi',
+    thumbnailSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/P0Tcvqte6iU.jpg?itok=LPhRMbxi',
     thumbnailAlt: '',
     thumbnailWidth: 752,
     thumbnailHeight: 423,
@@ -22,7 +22,7 @@ export const Default: Story = {
 
 export const Kaltura: Story = {
   args: {
-    thumbnailSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/1_dbi9g1s2.jpg?itok=tBL-PT9-',
+    thumbnailSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/1_dbi9g1s2.jpg?itok=tBL-PT9-',
     thumbnailAlt: '',
     thumbnailWidth: 752,
     thumbnailHeight: 423,
@@ -32,7 +32,7 @@ export const Kaltura: Story = {
 
 export const WithAltText: Story = {
   args: {
-    thumbnailSrc: 'https://sheffield.ac.uk//cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/UMjoBfveiaw.jpg?itok=hcaMyAtX',
+    thumbnailSrc: 'https://cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/UMjoBfveiaw.jpg?itok=hcaMyAtX',
     thumbnailAlt: 'The big city vibe that feels like home. Sheffield has lots to discover.',
     thumbnailWidth: 752,
     thumbnailHeight: 423,

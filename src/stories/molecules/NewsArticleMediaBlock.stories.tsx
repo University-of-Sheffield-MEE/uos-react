@@ -21,7 +21,7 @@ export const Default: Story = {
     srcMobile1x:
       'https://sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=v19Gdj2D 375w, https://sheffield.ac.uk/sites/default/files/styles/mobile_single_column_2x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=Okk6MjNd 750w',
     imgSrc:
-      'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=v19Gdj2D',
+      'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=v19Gdj2D',
     imgAlt: 'Rice and spoon',
   },
 };
@@ -37,7 +37,7 @@ export const WithCaption: Story = {
     srcMobile1x:
       'https://sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=rgwmzWgB 375w, https://sheffield.ac.uk/sites/default/files/styles/mobile_single_column_2x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=NNOoUH8n 750w',
     imgSrc:
-      'https://sheffield.ac.uk/cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=rgwmzWgB',
+      'https://cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=rgwmzWgB',
     imgAlt: 'Soldier',
     caption: 'Image by Amber Clay from Pixabay',
   },
