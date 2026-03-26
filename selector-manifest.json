@@ -2338,35 +2338,51 @@
     },
     ".paragraph--type--featured-image": {
       "pageCount": 263,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image": {
       "pageCount": 263,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_container": {
       "pageCount": 263,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_container img": {
       "pageCount": 263,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_container picture": {
       "pageCount": 263,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_descript": {
       "pageCount": 263,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_descript .descripttext": {
       "pageCount": 263,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_descript h3": {
       "pageCount": 256,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".module-disclaimer": {
       "pageCount": 255,
@@ -2426,19 +2442,27 @@
     },
     ".featured-image .img_descript .link-arrow": {
       "pageCount": 228,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_descript .link-arrow .fmarrow": {
       "pageCount": 228,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_descript p": {
       "pageCount": 228,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".featured-image .img_descript .feat-title": {
       "pageCount": 228,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedImage",
+      "atomicType": "molecule"
     },
     ".uosblock.highlight a[href]:not(.uosbutton):not(.textbutton)": {
       "pageCount": 228,
@@ -5594,6 +5618,25 @@
       "specFile": "specs/UgCourseRow.json",
       "storyFile": "src/stories/layouts/UgCourseRow.stories.tsx",
       "atomicType": "layout"
+    },
+    "FeaturedImage": {
+      "selectors": [
+        ".featured-image",
+        ".paragraph--type--featured-image",
+        ".featured-image .img_container",
+        ".featured-image .img_container img",
+        ".featured-image .img_container picture",
+        ".featured-image .img_descript",
+        ".featured-image .img_descript .descripttext",
+        ".featured-image .img_descript h3",
+        ".featured-image .img_descript .link-arrow",
+        ".featured-image .img_descript .link-arrow .fmarrow",
+        ".featured-image .img_descript p",
+        ".featured-image .img_descript .feat-title"
+      ],
+      "specFile": "specs/FeaturedImage.json",
+      "storyFile": "src/stories/molecules/FeaturedImage.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
