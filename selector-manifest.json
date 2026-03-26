@@ -2402,11 +2402,15 @@
     },
     ".accreds": {
       "pageCount": 240,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Accreds",
+      "atomicType": "molecule"
     },
     ".accreds .accbody": {
       "pageCount": 240,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Accreds",
+      "atomicType": "molecule"
     },
     ".lpheaderimg": {
       "pageCount": 236,
@@ -2492,11 +2496,15 @@
     },
     ".accreds .accbody figure": {
       "pageCount": 227,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Accreds",
+      "atomicType": "molecule"
     },
     ".accreds .accbody img": {
       "pageCount": 227,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Accreds",
+      "atomicType": "molecule"
     },
     ".course-ereq-tabs": {
       "pageCount": 224,
@@ -3422,7 +3430,9 @@
     },
     ".node--type-course .accreds": {
       "pageCount": 62,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Accreds",
+      "atomicType": "molecule"
     },
     ".node--type-course .accreds .accbody": {
       "pageCount": 62,
@@ -3482,7 +3492,9 @@
     },
     ".accreds .accbody:nth-of-type(3n)": {
       "pageCount": 53,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Accreds",
+      "atomicType": "molecule"
     },
     ".event-teaser": {
       "pageCount": 52,
@@ -3704,7 +3716,9 @@
     },
     ".accreds .accred-placeholder": {
       "pageCount": 27,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Accreds",
+      "atomicType": "molecule"
     },
     ".homehub-top": {
       "pageCount": 26,
@@ -5740,6 +5754,20 @@
       "specFile": "specs/FeaturedNews.json",
       "storyFile": "src/stories/organisms/FeaturedNews.stories.tsx",
       "atomicType": "organism"
+    },
+    "Accreds": {
+      "selectors": [
+        ".accreds",
+        ".accreds .accbody",
+        ".accreds .accbody figure",
+        ".accreds .accbody img",
+        ".node--type-course .accreds",
+        ".accreds .accbody:nth-of-type(3n)",
+        ".accreds .accred-placeholder"
+      ],
+      "specFile": "specs/Accreds.json",
+      "storyFile": "src/stories/molecules/Accreds.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }

@@ -1,0 +1,87 @@
+{
+  "componentName": "Accreds",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A list of professional body accreditation logos with links, each showing a responsive image and the accrediting body name.",
+  "rootElement": "div",
+  "rootClassName": "accreds",
+  "selectorsCovered": [
+    ".accreds",
+    ".accreds .accbody",
+    ".accreds .accbody figure",
+    ".accreds .accbody img",
+    ".node--type-course .accreds",
+    ".accreds .accbody:nth-of-type(3n)",
+    ".accreds .accred-placeholder"
+  ],
+  "props": [
+    {
+      "name": "items",
+      "type": "Array<{ href: string; imgSrc: string; imgAlt: string; label: string }>",
+      "required": true,
+      "mapsTo": {
+        "element": ".accbody",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Single accreditation body",
+      "props": {
+        "items": [
+          {
+            "href": "https://www.rsc.org",
+            "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2020-10/rsc_logo_a_d_a4-zone.jpg",
+            "imgAlt": "Royal Society of Chemistry logo",
+            "label": "Royal Society of Chemistry (RSC)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MultipleAccreditations",
+      "description": "Multiple accreditation bodies shown side by side",
+      "props": {
+        "items": [
+          {
+            "href": "https://www.theiet.org/",
+            "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2020-09/IET%20Accreditation%20Logo.jpg",
+            "imgAlt": "IET Accreditation Logo 2020",
+            "label": "Institution of Engineering and Technology (IET)"
+          },
+          {
+            "href": "https://www.instmc.org",
+            "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2020-09/InstMC.jpg",
+            "imgAlt": "InstMC Accreditation Logo 2020",
+            "label": "Institute of Measurement and Control (InstMC)"
+          },
+          {
+            "href": "https://www.engc.org.uk/",
+            "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2020-09/Engineering%20Council%20Accreditation-01.png.jpg",
+            "imgAlt": "Engineering Council Accreditation Logo 2020",
+            "label": "Engineering Council"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IMechE",
+      "description": "Institution of Mechanical Engineers accreditation",
+      "props": {
+        "items": [
+          {
+            "href": "https://www.imeche.org/",
+            "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2021-08/IMechE-01.png.jpg",
+            "imgAlt": "IMechE Logo",
+            "label": "Institution of Mechanical Engineers (IMechE)"
+          }
+        ]
+      }
+    }
+  ],
+  "notes": "Each accreditation item (.accbody) is an anchor tag wrapping a figure element (with class imgcapt inside media--image--figure) containing an img and a span with the accrediting body name. Render as a simple img tag. The .accred-placeholder class appears on empty placeholder divs used for grid alignment when the count is not a multiple of 3 — add a placeholder div after the items if needed (not modelled as a prop; emit nothing for now).",
+  "htmlExamples": ["3935_1945", "3935_1425", "3935_1781"]
+}
