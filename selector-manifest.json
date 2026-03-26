@@ -2892,23 +2892,33 @@
     },
     ".paragraph--type--featured-video": {
       "pageCount": 141,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".featured-video": {
       "pageCount": 141,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".featured-video > div": {
       "pageCount": 141,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".featured-video .vid_descript": {
       "pageCount": 141,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".featured-video .vid_descript .descripttext": {
       "pageCount": 141,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".pagination": {
       "pageCount": 140,
@@ -2984,7 +2994,9 @@
     },
     ".featured-video .vid_descript h3": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".sp-teaser h3 a": {
       "pageCount": 136,
@@ -3574,7 +3586,9 @@
     },
     ".paragraph--type--featured-video .feat-vid-link": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".featured-video .vid_descript .descripttext .feat-title": {
       "pageCount": 52,
@@ -3582,15 +3596,21 @@
     },
     ".featured-video .vid_descript .link-arrow": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".featured-video .vid_descript .link-arrow .fmarrow": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".featured-video .vid_descript p": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     },
     ".event-teaser .teaser-text .event-details.ev-venue span": {
       "pageCount": 52,
@@ -4880,6 +4900,12 @@
       "status": "done",
       "implementedBy": "CourseEreqPanel",
       "atomicType": "molecule"
+    },
+    ".featured-video .vid_descript .feat-title": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "FeaturedVideo",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -5956,6 +5982,24 @@
       ],
       "specFile": "specs/CourseFull.json",
       "storyFile": "src/stories/molecules/CourseFull.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "FeaturedVideo": {
+      "selectors": [
+        ".paragraph--type--featured-video",
+        ".paragraph--type--featured-video .feat-vid-link",
+        ".featured-video",
+        ".featured-video > div",
+        ".featured-video .vid_descript",
+        ".featured-video .vid_descript .descripttext",
+        ".featured-video .vid_descript h3",
+        ".featured-video .vid_descript .feat-title",
+        ".featured-video .vid_descript .link-arrow",
+        ".featured-video .vid_descript .link-arrow .fmarrow",
+        ".featured-video .vid_descript p"
+      ],
+      "specFile": "specs/FeaturedVideo.json",
+      "storyFile": "src/stories/molecules/FeaturedVideo.stories.tsx",
       "atomicType": "molecule"
     }
   }
