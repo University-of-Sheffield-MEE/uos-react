@@ -1472,19 +1472,27 @@
     },
     ".accred-banner": {
       "pageCount": 846,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AccredBanner",
+      "atomicType": "molecule"
     },
     ".accred-banner .mgmt-logos": {
       "pageCount": 846,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AccredBanner",
+      "atomicType": "molecule"
     },
     ".accred-banner .mgmt-logos div": {
       "pageCount": 846,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AccredBanner",
+      "atomicType": "molecule"
     },
     ".accred-banner .mgmt-logos div.aacsb": {
       "pageCount": 846,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AccredBanner",
+      "atomicType": "molecule"
     },
     ".roles": {
       "pageCount": 845,
@@ -5002,6 +5010,17 @@
       ],
       "specFile": "specs/LogosHomehub.json",
       "storyFile": "src/stories/molecules/LogosHomehub.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "AccredBanner": {
+      "selectors": [
+        ".accred-banner",
+        ".accred-banner .mgmt-logos",
+        ".accred-banner .mgmt-logos div",
+        ".accred-banner .mgmt-logos div.aacsb"
+      ],
+      "specFile": "specs/AccredBanner.json",
+      "storyFile": "src/stories/molecules/AccredBanner.stories.tsx",
       "atomicType": "molecule"
     }
   }

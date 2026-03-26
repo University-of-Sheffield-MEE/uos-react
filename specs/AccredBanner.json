@@ -1,0 +1,25 @@
+{
+  "componentName": "AccredBanner",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "Triple Crown accreditation banner for the Management School, displaying a fixed tagline and the three accreditation body logos (AMBA, AACSB, Equis).",
+  "rootElement": "div",
+  "rootClassName": "accred-banner",
+  "selectorsCovered": [
+    ".accred-banner",
+    ".accred-banner .mgmt-logos",
+    ".accred-banner .mgmt-logos div",
+    ".accred-banner .mgmt-logos div.aacsb"
+  ],
+  "props": [],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard accreditation banner as seen on Management School pages",
+      "props": {}
+    }
+  ],
+  "notes": "All content (text and image URLs) is identical across all 846 pages — no props needed. The component is entirely hardcoded. The .aacsb class on the second logo div is always present. Image paths reference the Drupal theme: /themes/custom/uos_public/images/mgmt/. Since this is a pure static display component with no variable content, props array is empty.",
+  "htmlExamples": ["2400_16467", "2400_17936"]
+}
