@@ -2990,27 +2990,39 @@
     },
     ".sp-teaser": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SpTeaser",
+      "atomicType": "molecule"
     },
     ".sp-teaser .student-profile-name": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SpTeaser",
+      "atomicType": "molecule"
     },
     ".sp-teaser .student-profile-course": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SpTeaser",
+      "atomicType": "molecule"
     },
     ".sp-teaser .teaser-text": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SpTeaser",
+      "atomicType": "molecule"
     },
     ".sp-teaser .teaser-text h3": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SpTeaser",
+      "atomicType": "molecule"
     },
     ".sp-teaser .teaser-text p": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SpTeaser",
+      "atomicType": "molecule"
     },
     ".featured-video .vid_descript h3": {
       "pageCount": 136,
@@ -3020,7 +3032,9 @@
     },
     ".sp-teaser h3 a": {
       "pageCount": 136,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SpTeaser",
+      "atomicType": "molecule"
     },
     ".block-views-blocksection-news-block-1 .views-exposed-form": {
       "pageCount": 133,
@@ -6040,6 +6054,20 @@
       ],
       "specFile": "specs/Pagination.json",
       "storyFile": "src/stories/molecules/Pagination.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "SpTeaser": {
+      "selectors": [
+        ".sp-teaser",
+        ".sp-teaser .student-profile-name",
+        ".sp-teaser .student-profile-course",
+        ".sp-teaser .teaser-text",
+        ".sp-teaser .teaser-text h3",
+        ".sp-teaser .teaser-text p",
+        ".sp-teaser h3 a"
+      ],
+      "specFile": "specs/SpTeaser.json",
+      "storyFile": "src/stories/molecules/SpTeaser.stories.tsx",
       "atomicType": "molecule"
     }
   }
