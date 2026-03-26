@@ -2792,15 +2792,21 @@
     },
     ".course-full": {
       "pageCount": 158,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseFull",
+      "atomicType": "molecule"
     },
     ".course-full p": {
       "pageCount": 158,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseFull",
+      "atomicType": "molecule"
     },
     ".course-full a": {
       "pageCount": 158,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseFull",
+      "atomicType": "molecule"
     },
     ".featured-news > div .newscard.mainfeat": {
       "pageCount": 154,
@@ -5940,6 +5946,16 @@
       ],
       "specFile": "specs/CourseEreqTabs.json",
       "storyFile": "src/stories/molecules/CourseEreqTabs.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "CourseFull": {
+      "selectors": [
+        ".course-full",
+        ".course-full p",
+        ".course-full a"
+      ],
+      "specFile": "specs/CourseFull.json",
+      "storyFile": "src/stories/molecules/CourseFull.stories.tsx",
       "atomicType": "molecule"
     }
   }
