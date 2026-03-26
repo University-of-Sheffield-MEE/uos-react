@@ -1,0 +1,57 @@
+{
+  "componentName": "ProfileLinkPromo",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A profile page section that lists external links for a person, with a fixed 'Links' heading and one or more anchor elements.",
+  "rootElement": "div",
+  "rootClassName": "profile-link-promo",
+  "selectorsCovered": [
+    ".profile-link-promo",
+    ".profile-link-promo a",
+    ".profile-link-promo a:last-of-type",
+    ".profile-link-promo span",
+    ".profile-link-promo span:last-of-type"
+  ],
+  "props": [
+    {
+      "name": "links",
+      "type": "Array<{ label: string; href: string }>",
+      "required": true,
+      "mapsTo": { "element": "p a", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Single external link",
+      "props": {
+        "links": [
+          { "label": "Personal Website", "href": "https://sites.google.com/site/alonzivony/c-v" }
+        ]
+      }
+    },
+    {
+      "name": "MultipleLinks",
+      "description": "Several external links as commonly seen on staff profiles",
+      "props": {
+        "links": [
+          { "label": "Personal website", "href": "https://olyah.com/" },
+          { "label": "Hesam Olya's ResearchGate", "href": "https://www.researchgate.net/profile/Hesam-Olya" },
+          { "label": "News: Keynotes, training, media presence and engagement with policy makers", "href": "https://olyah.com/news" }
+        ]
+      }
+    },
+    {
+      "name": "InternalLink",
+      "description": "A single internal site link",
+      "props": {
+        "links": [
+          { "label": "Semiconductor and Quantum Technologies", "href": "/eee/research/themes/semiconductor-and-quantum-technologies" }
+        ]
+      }
+    }
+  ],
+  "notes": "The heading 'Links' is always the same — hardcode it as an h2. Each link is followed by a span containing a non-breaking space (&nbsp;) as a separator — this should be hardcoded in the render loop. The links prop drives all anchor elements inside the single p element.",
+  "htmlExamples": ["3702_18317", "3702_6750", "3702_13081", "3702_279"]
+}

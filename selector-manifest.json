@@ -1322,23 +1322,33 @@
     },
     ".profile-link-promo": {
       "pageCount": 1165,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileLinkPromo",
+      "atomicType": "molecule"
     },
     ".profile-link-promo a": {
       "pageCount": 1165,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileLinkPromo",
+      "atomicType": "molecule"
     },
     ".profile-link-promo a:last-of-type": {
       "pageCount": 1165,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileLinkPromo",
+      "atomicType": "molecule"
     },
     ".profile-link-promo span": {
       "pageCount": 1165,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileLinkPromo",
+      "atomicType": "molecule"
     },
     ".profile-link-promo span:last-of-type": {
       "pageCount": 1165,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileLinkPromo",
+      "atomicType": "molecule"
     },
     ".logos-homehub": {
       "pageCount": 1037,
@@ -4796,6 +4806,18 @@
       "specFile": "specs/EventDetails.json",
       "storyFile": "src/stories/atoms/EventDetails.stories.tsx",
       "atomicType": "atom"
+    },
+    "ProfileLinkPromo": {
+      "selectors": [
+        ".profile-link-promo",
+        ".profile-link-promo a",
+        ".profile-link-promo a:last-of-type",
+        ".profile-link-promo span",
+        ".profile-link-promo span:last-of-type"
+      ],
+      "specFile": "specs/ProfileLinkPromo.json",
+      "storyFile": "src/stories/molecules/ProfileLinkPromo.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
