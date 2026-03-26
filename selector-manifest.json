@@ -1965,7 +1965,9 @@
     },
     ".coursestats": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseStats",
+      "atomicType": "molecule"
     },
     "#main .ugkeybg": {
       "pageCount": 283,
@@ -2149,7 +2151,9 @@
     },
     "h4.stat-title": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseStats",
+      "atomicType": "molecule"
     },
     ".course-ug-fee-lookup": {
       "pageCount": 283,
@@ -5518,6 +5522,15 @@
       "specFile": "specs/NlpHeader.json",
       "storyFile": "src/stories/organisms/NlpHeader.stories.tsx",
       "atomicType": "organism"
+    },
+    "CourseStats": {
+      "selectors": [
+        ".coursestats",
+        "h4.stat-title"
+      ],
+      "specFile": "specs/CourseStats.json",
+      "storyFile": "src/stories/molecules/CourseStats.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }

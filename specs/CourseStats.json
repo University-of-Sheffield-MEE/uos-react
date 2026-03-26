@@ -1,0 +1,82 @@
+{
+  "componentName": "CourseStats",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A section displaying a collection of course highlight statistics or selling points, each with a title and description paragraph.",
+  "rootElement": "div",
+  "rootClassName": "coursestats",
+  "selectorsCovered": [".coursestats", "h4.stat-title"],
+  "props": [
+    {
+      "name": "heading",
+      "type": "string",
+      "required": false,
+      "default": "Why study this course?",
+      "mapsTo": { "element": "h3", "attribute": "innerText" }
+    },
+    {
+      "name": "stats",
+      "type": "Array<{ iconClass: string; title: string; description: string }>",
+      "required": true,
+      "mapsTo": { "element": ".paragraph--type--ug-statistic", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Course stats section with multiple highlight items",
+      "props": {
+        "heading": "Why study this course?",
+        "stats": [
+          {
+            "iconClass": "fas fa-star",
+            "title": "Top 20 in the UK for Chemistry",
+            "description": "The Times and Sunday Times Good University Guide 2026"
+          },
+          {
+            "iconClass": "fas fa-star",
+            "title": "1st in the Russell Group for learning opportunities, student voice, and assessment and feedback in chemistry",
+            "description": "National Student Survey 2025"
+          },
+          {
+            "iconClass": "fas fa-star",
+            "title": "Royal Society of Chemistry (RSC) accredited course",
+            "description": "This course is accredited by the RSC for fully meeting the academic criteria for Chartered Chemist (CChem)."
+          },
+          {
+            "iconClass": "fas fa-star",
+            "title": "Opt to spend a full year on an industrial work placement",
+            "description": "Test out a career path, build up your CV and grow your network of contacts."
+          }
+        ]
+      }
+    },
+    {
+      "name": "LongDescriptions",
+      "description": "Course stats with longer narrative descriptions rather than short stat lines",
+      "props": {
+        "heading": "Why study this course?",
+        "stats": [
+          {
+            "iconClass": "fas fa-star",
+            "title": "Learn from experts in the field",
+            "description": "You'll be taught by academics who are at the forefront of their fields, contributing to cutting-edge research that shapes the future of chemical engineering."
+          },
+          {
+            "iconClass": "fas fa-star",
+            "title": "World-class facilities, practical training",
+            "description": "Gain invaluable experience using industrial-scale equipment in energy, pharmaceutical, and biological engineering."
+          },
+          {
+            "iconClass": "fas fa-star",
+            "title": "Our graduates work in leading chemical engineering roles",
+            "description": "Our course is designed with your future in mind, with employability embedded at every stage."
+          }
+        ]
+      }
+    }
+  ],
+  "notes": "Each stat item is a Drupal paragraph entity with classes 'paragraph paragraph--type--ug-statistic paragraph--view-mode--default'. The stat-title h4 always contains a Font Awesome icon (i.fas.fa-star) followed by the title text. The icon class is always fa-star in all observed samples but is modelled as a prop for flexibility. The heading h3 is always present and always reads 'Why study this course?' but is modelled as an optional prop with that default. All Drupal paragraph wrapper classes must be preserved verbatim in the rendered output.",
+  "htmlExamples": ["3829_1950", "3829_1781"]
+}
