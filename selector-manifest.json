@@ -1533,7 +1533,8 @@
     },
     ".multicol .columns > a": {
       "pageCount": 747,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".uosblock ul li a": {
       "pageCount": 694,
@@ -1958,91 +1959,135 @@
     },
     "#main .ugkeybg": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .startyr": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box h1": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .text": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span.alevels": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span.ucascode": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span.duration": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span.startdate": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.features": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.features li": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.features li a": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .topdetail": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .topdetail h1": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .topdetail .award-type": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .topdetail div": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .summary": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .buttons": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .title-box .buttons .uosbutton": {
       "pageCount": 283,
@@ -2058,27 +2103,39 @@
     },
     "#main .ugkeybg .sticky-ctas": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .sticky-ctas .ugbuttons": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .sticky-ctas .shrinkctas": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .sticky-ctas .ugbuttons .stickybutton": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .sticky-ctas .stickybutton": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "#main .ugkeybg .sticky-ctas.on-load": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     "h4.stat-title": {
       "pageCount": 283,
@@ -2170,7 +2227,9 @@
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span.attendance": {
       "pageCount": 277,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     ".stap-teaser .profileinitials": {
       "pageCount": 272,
@@ -2260,7 +2319,9 @@
     },
     "#main .ugkeybg .title-box .altentry a": {
       "pageCount": 251,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     ".accreds": {
       "pageCount": 240,
@@ -2898,7 +2959,9 @@
     },
     "#main .ugkeybg .title-box .left .keydetails ul.features li .fy": {
       "pageCount": 126,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgKeyBg",
+      "atomicType": "organism"
     },
     ".ug-course-teaching": {
       "pageCount": 125,
@@ -5323,6 +5386,44 @@
       "specFile": "specs/RelLink.json",
       "storyFile": "src/stories/atoms/RelLink.stories.tsx",
       "atomicType": "atom"
+    },
+    "UgKeyBg": {
+      "selectors": [
+        "#main .ugkeybg",
+        "#main .ugkeybg .title-box",
+        "#main .ugkeybg .title-box .startyr",
+        "#main .ugkeybg .title-box h1",
+        "#main .ugkeybg .title-box .left",
+        "#main .ugkeybg .title-box .left .text",
+        "#main .ugkeybg .title-box .left .keydetails ul.details",
+        "#main .ugkeybg .title-box .left .keydetails ul.details > li",
+        "#main .ugkeybg .title-box .left .keydetails ul.details > li span",
+        "#main .ugkeybg .title-box .left .keydetails ul.details > li span.alevels",
+        "#main .ugkeybg .title-box .left .keydetails ul.details > li span.ucascode",
+        "#main .ugkeybg .title-box .left .keydetails ul.details > li span.duration",
+        "#main .ugkeybg .title-box .left .keydetails ul.details > li span.startdate",
+        "#main .ugkeybg .title-box .left .keydetails ul.details > li span.attendance",
+        "#main .ugkeybg .title-box .left .keydetails ul.features",
+        "#main .ugkeybg .title-box .left .keydetails ul.features li",
+        "#main .ugkeybg .title-box .left .keydetails ul.features li a",
+        "#main .ugkeybg .title-box .topdetail",
+        "#main .ugkeybg .title-box .topdetail h1",
+        "#main .ugkeybg .title-box .topdetail .award-type",
+        "#main .ugkeybg .title-box .topdetail div",
+        "#main .ugkeybg .title-box .summary",
+        "#main .ugkeybg .title-box .buttons",
+        "#main .ugkeybg .sticky-ctas",
+        "#main .ugkeybg .sticky-ctas .ugbuttons",
+        "#main .ugkeybg .sticky-ctas .shrinkctas",
+        "#main .ugkeybg .sticky-ctas .ugbuttons .stickybutton",
+        "#main .ugkeybg .sticky-ctas .stickybutton",
+        "#main .ugkeybg .sticky-ctas.on-load",
+        "#main .ugkeybg .title-box .altentry a",
+        "#main .ugkeybg .title-box .left .keydetails ul.features li .fy"
+      ],
+      "specFile": "specs/UgKeyBg.json",
+      "storyFile": "src/stories/organisms/UgKeyBg.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
