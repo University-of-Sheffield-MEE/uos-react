@@ -1,0 +1,37 @@
+{
+  "componentName": "FieldMultiTitle",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A section heading rendered as an h2 element with the field-multi-title class, used as a multi-value field title on content pages.",
+  "rootElement": "h2",
+  "rootClassName": "field-multi-title",
+  "selectorsCovered": ["h2.field-multi-title"],
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h2", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard field multi title heading",
+      "props": { "text": "Other information" }
+    },
+    {
+      "name": "StudyingWithUs",
+      "description": "Heading used on a department study page",
+      "props": { "text": "Studying with us" }
+    },
+    {
+      "name": "InternationalEvents",
+      "description": "Heading used on an events listing page",
+      "props": { "text": "International in-person events" }
+    }
+  ],
+  "notes": "Simple h2 heading atom. Text always varies across pages — treat as a required string prop. The class is a Drupal field-level class and must be preserved verbatim.",
+  "htmlExamples": ["3060_7213", "3060_19", "3060_16856"]
+}

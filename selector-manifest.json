@@ -1522,7 +1522,9 @@
     },
     "h2.field-multi-title": {
       "pageCount": 820,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FieldMultiTitle",
+      "atomicType": "atom"
     },
     ".multicol .columns > a": {
       "pageCount": 747,
@@ -5226,6 +5228,14 @@
       "specFile": "specs/ExploreItem.json",
       "storyFile": "src/stories/layouts/ExploreItem.stories.tsx",
       "atomicType": "layout"
+    },
+    "FieldMultiTitle": {
+      "selectors": [
+        "h2.field-multi-title"
+      ],
+      "specFile": "specs/FieldMultiTitle.json",
+      "storyFile": "src/stories/atoms/FieldMultiTitle.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
