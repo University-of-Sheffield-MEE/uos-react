@@ -1970,7 +1970,9 @@
     },
     ".ugcourserow": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseRow",
+      "atomicType": "layout"
     },
     ".ugcourserow .ug-course-structure + .block-fixed-block-contentugp-modules-disclaimer": {
       "pageCount": 283,
@@ -2220,7 +2222,9 @@
     },
     ".ugcourserow .columns.large-4": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseRow",
+      "atomicType": "layout"
     },
     ".ugcourserow #coursedescription .media--image--figure": {
       "pageCount": 283,
@@ -4694,6 +4698,12 @@
       "status": "done",
       "implementedBy": "NlpHeader",
       "atomicType": "organism"
+    },
+    ".ugcourserow .columns.large-8": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "UgCourseRow",
+      "atomicType": "layout"
     }
   },
   "components": {
@@ -5574,6 +5584,16 @@
       "specFile": "specs/UgCourseSearch.json",
       "storyFile": "src/stories/molecules/UgCourseSearch.stories.tsx",
       "atomicType": "molecule"
+    },
+    "UgCourseRow": {
+      "selectors": [
+        ".ugcourserow",
+        ".ugcourserow .columns.large-4",
+        ".ugcourserow .columns.large-8"
+      ],
+      "specFile": "specs/UgCourseRow.json",
+      "storyFile": "src/stories/layouts/UgCourseRow.stories.tsx",
+      "atomicType": "layout"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "componentName": "UgCourseRow",
+  "atomicType": "layout",
+  "childComponents": [],
+  "description": "Two-column layout wrapper for undergraduate course detail pages, with a sidebar navigation column (4 units wide) and a main content column (8 units wide).",
+  "rootElement": "div",
+  "rootClassName": "ugcourserow",
+  "selectorsCovered": [".ugcourserow", ".ugcourserow .columns.large-4", ".ugcourserow .columns.large-8"],
+  "props": [
+    {
+      "name": "sidebar",
+      "type": "ReactNode",
+      "required": true
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard two-column course layout with sidebar and main content",
+      "props": {}
+    }
+  ],
+  "notes": "Pure two-column layout container for UG course detail pages. The left column uses Foundation grid class 'columns large-4' and the right uses 'columns large-8'. The root element also carries the Foundation 'row' class. Inner content is entirely Drupal-generated and varies per course — both columns accept arbitrary ReactNode children via 'sidebar' and 'children' props respectively.",
+  "htmlExamples": ["3826_1950", "3826_1738", "3826_1806"]
+}
