@@ -1218,7 +1218,9 @@
     },
     ".block-field-blocknodestudent-profilefield-stup-profile-image img": {
       "pageCount": 1622,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileImage",
+      "atomicType": "atom"
     },
     ".block-field-blocknodestudent-profilefield-stup-intro": {
       "pageCount": 1615,
@@ -5154,6 +5156,14 @@
       ],
       "specFile": "specs/StudentProfileName.json",
       "storyFile": "src/stories/atoms/StudentProfileName.stories.tsx",
+      "atomicType": "atom"
+    },
+    "StudentProfileImage": {
+      "selectors": [
+        ".block-field-blocknodestudent-profilefield-stup-profile-image img"
+      ],
+      "specFile": "specs/StudentProfileImage.json",
+      "storyFile": "src/stories/atoms/StudentProfileImage.stories.tsx",
       "atomicType": "atom"
     }
   }

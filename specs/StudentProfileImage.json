@@ -1,0 +1,44 @@
+{
+  "componentName": "StudentProfileImage",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "Student profile photo atom rendered as an 80x80 image inside a Drupal layout builder block wrapper.",
+  "rootElement": "div",
+  "rootClassName": "block-field-blocknodestudent-profilefield-stup-profile-image",
+  "selectorsCovered": [".block-field-blocknodestudent-profilefield-stup-profile-image img"],
+  "props": [
+    {
+      "name": "src",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "src" }
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "alt" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Student profile photo with name as alt text",
+      "props": {
+        "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_1x/public/2023-04/Romesa.jpg?h=43fa0a89&itok=ICOFrNMI",
+        "alt": "Romesa Khawaja"
+      }
+    },
+    {
+      "name": "PhDCandidate",
+      "description": "Student profile photo for a PhD candidate",
+      "props": {
+        "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_1x/public/2023-11/Holly%20K%20Rooke%202.png?h=8e7569e2&itok=4LTKKSk7",
+        "alt": "Holly Rooke profile photo"
+      }
+    }
+  ],
+  "notes": "The img is always rendered at width=80 height=80 with loading=eager. The root div should carry classes 'block block-layout-builder block-field-blocknodestudent-profilefield-stup-profile-image' following the same Drupal block wrapper pattern used in StudentProfileName. The selector in the manifest targets the img child, but the component wraps it in the block div.",
+  "htmlExamples": ["2775_15994", "2775_10964", "2775_16518", "2775_15412"]
+}
