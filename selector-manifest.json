@@ -2730,35 +2730,51 @@
     },
     ".profile-gallery": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".profile-gallery > *": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".profile-gallery .profilecard": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".profile-gallery .profilecard .name": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".profile-gallery .profilecard .subhead": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".profile-gallery .profilecard .subhead2": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".profile-gallery .profilecard p": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".profile-gallery .profilecard img": {
       "pageCount": 159,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileGallery",
+      "atomicType": "organism"
     },
     ".course-full": {
       "pageCount": 158,
@@ -5868,6 +5884,21 @@
       "specFile": "specs/ImageGallery.json",
       "storyFile": "src/stories/molecules/ImageGallery.stories.tsx",
       "atomicType": "molecule"
+    },
+    "ProfileGallery": {
+      "selectors": [
+        ".profile-gallery",
+        ".profile-gallery > *",
+        ".profile-gallery .profilecard",
+        ".profile-gallery .profilecard .name",
+        ".profile-gallery .profilecard .subhead",
+        ".profile-gallery .profilecard .subhead2",
+        ".profile-gallery .profilecard p",
+        ".profile-gallery .profilecard img"
+      ],
+      "specFile": "specs/ProfileGallery.json",
+      "storyFile": "src/stories/organisms/ProfileGallery.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
