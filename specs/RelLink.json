@@ -1,0 +1,77 @@
+{
+  "componentName": "RelLink",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A styled anchor link with a text label and a right-arrow icon, used within quicklinks grids.",
+  "rootElement": "a",
+  "rootClassName": "rellink",
+  "selectorsCovered": [".quicklinks .rellink", ".quicklinks .rellink .linktext", ".quicklinks .rellink .arrow"],
+  "props": [
+    {
+      "name": "href",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a", "attribute": "href" }
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "a", "attribute": "title" }
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".linktext", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "A single rellink with label and arrow",
+      "props": {
+        "href": "/alumni/boardroom-masterclass",
+        "title": "Boardroom home",
+        "label": "Boardroom home"
+      }
+    },
+    {
+      "name": "LongLabel",
+      "description": "A rellink with a longer label text",
+      "props": {
+        "href": "/alumni/boardroom-masterclass/speakers-2020",
+        "title": "Watch the 2020 series of Boardroom masterclasses",
+        "label": "Watch the 2020 series of Boardroom masterclasses"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Three rellinks in a quicklinks grid as typically rendered",
+      "container": {
+        "element": "div",
+        "className": "quicklinks"
+      },
+      "instances": [
+        {
+          "href": "/alumni/boardroom-masterclass",
+          "title": "Boardroom home",
+          "label": "Boardroom home"
+        },
+        {
+          "href": "/alumni/boardroom-masterclass/speakers-2021",
+          "title": "Watch the 2021 series of Boardroom masterclasses",
+          "label": "Watch the 2021 series of Boardroom masterclasses"
+        },
+        {
+          "href": "/alumni/boardroom-masterclass/speakers-2020",
+          "title": "Watch the 2020 series of Boardroom masterclasses",
+          "label": "Watch the 2020 series of Boardroom masterclasses"
+        }
+      ]
+    }
+  ],
+  "notes": "The arrow icon inside `.arrow` is always `<i class=\"fas fa-arrow-right\"></i>` — hardcode it. The `title` attribute mirrors the label in most cases but can differ; make it an optional prop. This atom is typically rendered inside `.quicklinks .multicol .row.matchheight .medium-4.columns`.",
+  "htmlExamples": ["3090_19661", "3090_10403", "3090_8187", "3090_2200"]
+}

@@ -3040,15 +3040,21 @@
     },
     ".quicklinks .rellink": {
       "pageCount": 103,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RelLink",
+      "atomicType": "atom"
     },
     ".quicklinks .rellink .linktext": {
       "pageCount": 103,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RelLink",
+      "atomicType": "atom"
     },
     ".quicklinks .rellink .arrow": {
       "pageCount": 103,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "RelLink",
+      "atomicType": "atom"
     },
     ".block-field-blocknodeeventfield-ev-location h2": {
       "pageCount": 98,
@@ -5306,6 +5312,16 @@
       ],
       "specFile": "specs/StaffPronouns.json",
       "storyFile": "src/stories/atoms/StaffPronouns.stories.tsx",
+      "atomicType": "atom"
+    },
+    "RelLink": {
+      "selectors": [
+        ".quicklinks .rellink",
+        ".quicklinks .rellink .linktext",
+        ".quicklinks .rellink .arrow"
+      ],
+      "specFile": "specs/RelLink.json",
+      "storyFile": "src/stories/atoms/RelLink.stories.tsx",
       "atomicType": "atom"
     }
   }
