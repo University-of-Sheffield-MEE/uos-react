@@ -1,0 +1,200 @@
+{
+  "componentName": "CourseCard",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A course promotion card displaying a course title, award, level, metadata (dates, duration, attendance), and a short description with an arrow link indicator.",
+  "rootElement": "div",
+  "rootClassName": "coursecard",
+  "selectorsCovered": [
+    ".coursecard",
+    ".coursecard .coursecardcontent",
+    ".coursecard .link-arrow",
+    ".coursecard .link-arrow .ccarrow",
+    ".coursecard h3",
+    ".coursecard .award",
+    ".coursecard .level",
+    ".coursecard p",
+    ".coursecard ul.course-features",
+    ".coursecard ul.coursemeta",
+    ".coursecard ul.coursemeta li",
+    ".coursecard ul.coursemeta li:not(:last-of-type)",
+    ".coursecard__heading",
+    ".coursecard ul.coursemeta li .year-suffix",
+    ".ugcoursecard h3",
+    ".ugcoursecard .details",
+    ".ugcoursecard .details div",
+    ".ugcoursecard .details div.stmnthmarg",
+    ".ugcoursecard .award",
+    ".coursecard ul.course-features li",
+    ".coursecard ul.course-features li:not(:last-of-type)",
+    ".multicol .coursecard",
+    ".coursecard h2"
+  ],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h3", "attribute": "innerText" }
+    },
+    {
+      "name": "award",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".award", "attribute": "innerText" }
+    },
+    {
+      "name": "level",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".level", "attribute": "innerText" }
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".coursecardcontent p", "attribute": "innerText" }
+    },
+    {
+      "name": "isUndergraduate",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "mapsTo": { "togglesClass": "ugcoursecard", "on": "root" }
+    },
+    {
+      "name": "metaItems",
+      "type": "Array<{ icon: string; text: string }>",
+      "required": false,
+      "mapsTo": { "element": "ul.coursemeta li", "attribute": "innerText" }
+    },
+    {
+      "name": "details",
+      "type": "ReactNode",
+      "required": false
+    },
+    {
+      "name": "features",
+      "type": "Array<string>",
+      "required": false,
+      "mapsTo": { "element": "ul.course-features li", "attribute": "innerText" }
+    },
+    {
+      "name": "isAccredited",
+      "type": "boolean",
+      "required": false,
+      "default": false
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Postgraduate taught course card with coursemeta list",
+      "props": {
+        "title": "Health Economics and Decision Modelling",
+        "award": "MSc",
+        "level": "Postgraduate taught",
+        "description": "Develop analytical skills for a career in health economics. Learn to measure, model, and evaluate healthcare interventions to inform public health decisions.",
+        "metaItems": [
+          { "icon": "fa-calendar-alt", "text": "September 2026 start" },
+          { "icon": "fa-clock", "text": "1 year Full-time" }
+        ],
+        "isAccredited": false,
+        "isUndergraduate": false
+      }
+    },
+    {
+      "name": "Accredited",
+      "description": "Postgraduate taught course card with accreditation badge",
+      "props": {
+        "title": "Architecture",
+        "award": "MArch",
+        "level": "Postgraduate taught",
+        "description": "This course will enable you to make sophisticated architectural propositions. You will discover the benefits of socially engaged design through research-led design studios and our acclaimed live projects programme.",
+        "metaItems": [
+          { "icon": "fa-calendar-alt", "text": "September 2026 start" },
+          { "icon": "fa-clock", "text": "2 years Full-time" }
+        ],
+        "isAccredited": true,
+        "isUndergraduate": false
+      }
+    },
+    {
+      "name": "MultipleDurations",
+      "description": "Course card with multiple study durations and attendance modes",
+      "props": {
+        "title": "Clinical Research",
+        "award": "MSc",
+        "level": "Postgraduate taught",
+        "description": "Our Clinical Research course prepares students with the skills to critically evaluate research and handle the practical and regulatory challenges of designing and conducting clinical and health research projects.",
+        "metaItems": [
+          { "icon": "fa-calendar-alt", "text": "September 2026 start" },
+          { "icon": "fa-clock", "text": "1 year / 2 years / 3 years Full-time / Part-time" }
+        ],
+        "isAccredited": false,
+        "isUndergraduate": false
+      }
+    },
+    {
+      "name": "Undergraduate",
+      "description": "Undergraduate course card with ugcoursecard variant and details block",
+      "props": {
+        "title": "Nursing (Adult)",
+        "award": "BMedSci",
+        "level": "Undergraduate",
+        "description": "Become an adult nurse and make a difference every day. Equip yourself with the clinical skills, knowledge and confidence you need to register with the Nursing and Midwifery Council (NMC) and deliver exceptional care to patients.",
+        "isAccredited": true,
+        "isUndergraduate": true
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple course cards as typically rendered in a listing",
+      "container": {
+        "element": "div",
+        "className": "course-cards-list"
+      },
+      "instances": [
+        {
+          "title": "Urban Design and Planning",
+          "award": "MSc",
+          "level": "Postgraduate taught",
+          "description": "Gain specialist skills and understanding of urban design and planning, engage with critical challenges facing cities internationally.",
+          "metaItems": [
+            { "icon": "fa-calendar-alt", "text": "September 2026 start" },
+            { "icon": "fa-clock", "text": "1 year Full-time" }
+          ],
+          "isAccredited": true,
+          "isUndergraduate": false
+        },
+        {
+          "title": "Health Economics and Decision Modelling",
+          "award": "MSc",
+          "level": "Postgraduate taught",
+          "description": "Develop analytical skills for a career in health economics.",
+          "metaItems": [
+            { "icon": "fa-calendar-alt", "text": "September 2026 start" },
+            { "icon": "fa-clock", "text": "1 year Full-time" }
+          ],
+          "isAccredited": false,
+          "isUndergraduate": false
+        },
+        {
+          "title": "Architecture",
+          "award": "MArch",
+          "level": "Postgraduate taught",
+          "description": "This course will enable you to make sophisticated architectural propositions.",
+          "metaItems": [
+            { "icon": "fa-calendar-alt", "text": "September 2026 start" },
+            { "icon": "fa-clock", "text": "2 years Full-time" }
+          ],
+          "isAccredited": true,
+          "isUndergraduate": false
+        }
+      ]
+    }
+  ],
+  "notes": "Two structural variants exist: the standard postgraduate variant uses a .coursecard__heading wrapper with a .coursemeta ul, while the undergraduate variant (.ugcoursecard) places .level above h3 and uses a .details div instead of .coursemeta ul. The link-arrow / ccarrow section with a Font Awesome arrow icon is always present and hardcoded. The isAccredited prop controls whether an 'Accredited' li item appears in the coursemeta list. Font Awesome classes (fas, fa-*) are used for icons and should be hardcoded per their role.",
+  "htmlExamples": ["3242_3376", "3242_16518", "3242_18747", "3242_21438"]
+}

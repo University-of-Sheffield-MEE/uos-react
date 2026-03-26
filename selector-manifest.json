@@ -1163,11 +1163,13 @@
     },
     ".multicol .columns": {
       "pageCount": 1683,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".multicol .row": {
       "pageCount": 1683,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".bottomlogos": {
       "pageCount": 1674,
@@ -1236,7 +1238,8 @@
     },
     ".multicol .paragraph": {
       "pageCount": 1457,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "body.node--type-hub": {
       "pageCount": 1451,
@@ -1306,7 +1309,8 @@
     },
     ".multicol p": {
       "pageCount": 1172,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".fullcontact .social a": {
       "pageCount": 1172,
@@ -1406,35 +1410,51 @@
     },
     ".coursecard": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard .coursecardcontent": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard .link-arrow": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard .link-arrow .ccarrow": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard h3": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard .award": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard .level": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard p": {
       "pageCount": 896,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".header .logo.mgmt-logo img": {
       "pageCount": 848,
@@ -1608,7 +1628,9 @@
     },
     ".coursecard ul.course-features": {
       "pageCount": 547,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".event2-date-times": {
       "pageCount": 543,
@@ -1636,23 +1658,33 @@
     },
     ".coursecard ul.coursemeta": {
       "pageCount": 458,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard ul.coursemeta li": {
       "pageCount": 458,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard ul.coursemeta li:not(:last-of-type)": {
       "pageCount": 458,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard__heading": {
       "pageCount": 455,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".coursecard ul.coursemeta li .year-suffix": {
       "pageCount": 455,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".multicol .medium-4 .field-sc-title": {
       "pageCount": 453,
@@ -1660,23 +1692,33 @@
     },
     ".ugcoursecard h3": {
       "pageCount": 451,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".ugcoursecard .details": {
       "pageCount": 451,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".ugcoursecard .details div": {
       "pageCount": 451,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".ugcoursecard .details div.stmnthmarg": {
       "pageCount": 451,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".ugcoursecard .award": {
       "pageCount": 451,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".ug-explore-menu": {
       "pageCount": 413,
@@ -2850,7 +2892,9 @@
     },
     ".coursecard ul.course-features li": {
       "pageCount": 109,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".atoz-list": {
       "pageCount": 108,
@@ -3360,7 +3404,9 @@
     },
     ".coursecard ul.course-features li:not(:last-of-type)": {
       "pageCount": 22,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     "h3 a strong": {
       "pageCount": 22,
@@ -3508,7 +3554,9 @@
     },
     ".multicol .coursecard": {
       "pageCount": 14,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".course-form label": {
       "pageCount": 14,
@@ -3936,7 +3984,9 @@
     },
     ".coursecard h2": {
       "pageCount": 3,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CourseCard",
+      "atomicType": "molecule"
     },
     ".block-field-blocknodemodules-multiple-coursesfield-mmc-media": {
       "pageCount": 3,
@@ -4860,6 +4910,36 @@
       ],
       "specFile": "specs/ParaSignpostBox.json",
       "storyFile": "src/stories/molecules/ParaSignpostBox.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "CourseCard": {
+      "selectors": [
+        ".coursecard",
+        ".coursecard .coursecardcontent",
+        ".coursecard .link-arrow",
+        ".coursecard .link-arrow .ccarrow",
+        ".coursecard h3",
+        ".coursecard .award",
+        ".coursecard .level",
+        ".coursecard p",
+        ".coursecard ul.course-features",
+        ".coursecard ul.coursemeta",
+        ".coursecard ul.coursemeta li",
+        ".coursecard ul.coursemeta li:not(:last-of-type)",
+        ".coursecard__heading",
+        ".coursecard ul.coursemeta li .year-suffix",
+        ".ugcoursecard h3",
+        ".ugcoursecard .details",
+        ".ugcoursecard .details div",
+        ".ugcoursecard .details div.stmnthmarg",
+        ".ugcoursecard .award",
+        ".coursecard ul.course-features li",
+        ".coursecard ul.course-features li:not(:last-of-type)",
+        ".multicol .coursecard",
+        ".coursecard h2"
+      ],
+      "specFile": "specs/CourseCard.json",
+      "storyFile": "src/stories/molecules/CourseCard.stories.tsx",
       "atomicType": "molecule"
     }
   }
