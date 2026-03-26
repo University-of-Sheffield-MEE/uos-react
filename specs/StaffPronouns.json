@@ -1,0 +1,37 @@
+{
+  "componentName": "StaffPronouns",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "Displays a staff member's personal pronouns in parentheses as an inline span.",
+  "rootElement": "span",
+  "rootClassName": "staff-pronouns",
+  "selectorsCovered": [".staff-pronouns"],
+  "props": [
+    {
+      "name": "pronouns",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".staff-pronouns", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Staff member with he/him pronouns",
+      "props": { "pronouns": "(he/him)" }
+    },
+    {
+      "name": "SheHer",
+      "description": "Staff member with she/her pronouns",
+      "props": { "pronouns": "(she/her)" }
+    },
+    {
+      "name": "TheyThem",
+      "description": "Staff member with they/them pronouns",
+      "props": { "pronouns": "(they/them)" }
+    }
+  ],
+  "notes": "Simple inline atom used on staff profile pages to display pronouns. The pronouns text in the DOM already includes parentheses (e.g. '(he/him)') — the component renders the value as-is.",
+  "htmlExamples": ["3778_6418"]
+}

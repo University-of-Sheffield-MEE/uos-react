@@ -1263,19 +1263,23 @@
     },
     "body.node--type-hub": {
       "pageCount": 1451,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "body.node--type-hub .breadcrumbs a": {
       "pageCount": 1451,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "body.node--type-hub .breadcrumbs li": {
       "pageCount": 1451,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "body.node--type-hub .region-banner .section-navigation": {
       "pageCount": 1449,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".hub-header": {
       "pageCount": 1448,
@@ -1303,7 +1307,8 @@
     },
     "body.node--type-hub .region-banner .views-field-field-section-navigation": {
       "pageCount": 1447,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".medium-6": {
       "pageCount": 1353,
@@ -1880,11 +1885,14 @@
     },
     ".staff-pronouns": {
       "pageCount": 354,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffPronouns",
+      "atomicType": "atom"
     },
     "body.node--type-hub .uosblock.grey": {
       "pageCount": 315,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".event-details.ev-ticket-details span": {
       "pageCount": 311,
@@ -5290,6 +5298,14 @@
       ],
       "specFile": "specs/TeaserThumb.json",
       "storyFile": "src/stories/atoms/TeaserThumb.stories.tsx",
+      "atomicType": "atom"
+    },
+    "StaffPronouns": {
+      "selectors": [
+        ".staff-pronouns"
+      ],
+      "specFile": "specs/StaffPronouns.json",
+      "storyFile": "src/stories/atoms/StaffPronouns.stories.tsx",
       "atomicType": "atom"
     }
   }
