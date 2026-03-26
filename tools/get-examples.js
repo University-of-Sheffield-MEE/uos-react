@@ -40,6 +40,7 @@ import { createReadStream, writeFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import * as cheerio from 'cheerio';
+import { prettify } from 'htmlfy';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -139,7 +140,7 @@ if (getSampleId) {
     process.stderr.write(`Selector '${sel}' not found on page\n`);
     process.exit(1);
   }
-  process.stdout.write(extracted.html + '\n');
+  process.stdout.write(prettify(extracted.html) + '\n');
   process.exit(0);
 }
 
@@ -217,8 +218,11 @@ for (const pageObj of candidates) {
   }
 }
 
-// Remove internal field before output
-for (const r of results) delete r._text;
+// Remove internal field before output; prettify HTML
+for (const r of results) {
+  delete r._text;
+  r.html = prettify(r.html);
+}
 
 // --- Output ---
 function emit(data) {
