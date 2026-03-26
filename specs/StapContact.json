@@ -1,0 +1,61 @@
+{
+  "componentName": "StapContact",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A contact details list displaying a staff member's email address and optional telephone number as a definition list.",
+  "rootElement": "dl",
+  "rootClassName": "stap-contact",
+  "selectorsCovered": [
+    ".stap-contact",
+    ".stap-contact dd",
+    ".stap-contact dd a",
+    ".stap-contact dd .telnum a"
+  ],
+  "props": [
+    {
+      "name": "email",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "dd strong a[href^='mailto:']", "attribute": "innerText" }
+    },
+    {
+      "name": "telephone",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "dd strong.telnum a[href^='tel:']", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "EmailOnly",
+      "description": "Contact block with email address only",
+      "props": {
+        "email": "r.v.duffy@sheffield.ac.uk"
+      }
+    },
+    {
+      "name": "EmailAndTelephone",
+      "description": "Contact block with both email and telephone number",
+      "props": {
+        "email": "r.l.ferguson@sheffield.ac.uk",
+        "telephone": "+44 7710 025896"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple contact blocks as typically seen on a staff listing page",
+      "container": {
+        "element": "div",
+        "className": "stap-contact-group"
+      },
+      "instances": [
+        { "email": "m.essat@sheffield.ac.uk", "telephone": "+44 114 222 0860" },
+        { "email": "e.a.williams@sheffield.ac.uk", "telephone": "+44 114 215 9065" },
+        { "email": "h.boneham@sheffield.ac.uk" }
+      ]
+    }
+  ],
+  "notes": "Email is always present. Telephone is optional — rendered only when provided. The dt elements use class 'sr-only' (screen-reader only label) and are hardcoded as 'Email' and 'Telephone'. The telephone strong element uses class 'telnum'.",
+  "htmlExamples": ["3729_24030", "3729_3376", "3729_9614", "3729_6750"]
+}

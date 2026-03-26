@@ -1045,15 +1045,21 @@
     },
     ".stap-contact": {
       "pageCount": 1899,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapContact",
+      "atomicType": "molecule"
     },
     ".stap-contact dd": {
       "pageCount": 1893,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapContact",
+      "atomicType": "molecule"
     },
     ".stap-contact dd a": {
       "pageCount": 1893,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapContact",
+      "atomicType": "molecule"
     },
     ".video-embed-field-lazy-play": {
       "pageCount": 1862,
@@ -1205,7 +1211,9 @@
     },
     ".stap-contact dd .telnum a": {
       "pageCount": 1494,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapContact",
+      "atomicType": "molecule"
     },
     ".postnom": {
       "pageCount": 1485,
@@ -4666,6 +4674,17 @@
       "specFile": "specs/JobTitle.json",
       "storyFile": "src/stories/atoms/JobTitle.stories.tsx",
       "atomicType": "atom"
+    },
+    "StapContact": {
+      "selectors": [
+        ".stap-contact",
+        ".stap-contact dd",
+        ".stap-contact dd a",
+        ".stap-contact dd .telnum a"
+      ],
+      "specFile": "specs/StapContact.json",
+      "storyFile": "src/stories/molecules/StapContact.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
