@@ -2922,27 +2922,39 @@
     },
     ".pagination": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination li": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination li:last-child": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination li:first-child": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination a": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination .current": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pager__item--last [aria-hidden=true]": {
       "pageCount": 140,
@@ -2954,19 +2966,27 @@
     },
     ".pagination li.pager__item": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination li.pager__item a": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination li.pager__item.current": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".pagination li.pager__item.current a": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".sp-teaser": {
       "pageCount": 136,
@@ -3618,7 +3638,9 @@
     },
     ".pagination li.pager__item--ellipsis": {
       "pageCount": 49,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Pagination",
+      "atomicType": "molecule"
     },
     ".profile-sliders": {
       "pageCount": 49,
@@ -6000,6 +6022,24 @@
       ],
       "specFile": "specs/FeaturedVideo.json",
       "storyFile": "src/stories/molecules/FeaturedVideo.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "Pagination": {
+      "selectors": [
+        ".pagination",
+        ".pagination li",
+        ".pagination li:last-child",
+        ".pagination li:first-child",
+        ".pagination a",
+        ".pagination .current",
+        ".pagination li.pager__item",
+        ".pagination li.pager__item a",
+        ".pagination li.pager__item.current",
+        ".pagination li.pager__item.current a",
+        ".pagination li.pager__item--ellipsis"
+      ],
+      "specFile": "specs/Pagination.json",
+      "storyFile": "src/stories/molecules/Pagination.stories.tsx",
       "atomicType": "molecule"
     }
   }
