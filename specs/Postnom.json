@@ -1,0 +1,46 @@
+{
+  "componentName": "Postnom",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "Displays a person's post-nominal letters or academic qualifications as a styled paragraph.",
+  "rootElement": "p",
+  "rootClassName": "postnom",
+  "selectorsCovered": [".postnom"],
+  "props": [
+    {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": "p.postnom",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Post-nominal letters for an academic staff member",
+      "props": {
+        "text": "BEng, SFHEA, PhD"
+      }
+    },
+    {
+      "name": "ShortPostnom",
+      "description": "Simple qualification abbreviations",
+      "props": {
+        "text": "BSc, MSc"
+      }
+    },
+    {
+      "name": "LongPostnom",
+      "description": "Multiple qualifications and fellowships",
+      "props": {
+        "text": "BA (Hons), MA, PhD, FRSA, FHEA, CEng"
+      }
+    }
+  ],
+  "notes": "Appears on staff profile pages to display academic qualifications and post-nominal letters. Text varies across pages — modelled as a required string prop.",
+  "htmlExamples": ["3686_15342"]
+}

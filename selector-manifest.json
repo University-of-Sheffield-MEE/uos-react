@@ -772,11 +772,13 @@
     },
     ".block-uos-page-title h1": {
       "pageCount": 8813,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".block-field-blocknodepagefield-show-onpage-anchors": {
       "pageCount": 8400,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".deptname": {
       "pageCount": 8197,
@@ -786,7 +788,8 @@
     },
     "hr.related": {
       "pageCount": 8146,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".personinfo": {
       "pageCount": 6437,
@@ -1164,7 +1167,8 @@
     },
     ".bottomlogos": {
       "pageCount": 1674,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".node--type-student-profile ul.breadcrumbs li:last-child": {
       "pageCount": 1623,
@@ -1206,11 +1210,13 @@
     },
     ".matchheight > .columns > div": {
       "pageCount": 1575,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".full-width": {
       "pageCount": 1575,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".stap-contact dd .telnum a": {
       "pageCount": 1494,
@@ -1220,7 +1226,9 @@
     },
     ".postnom": {
       "pageCount": 1485,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Postnom",
+      "atomicType": "atom"
     },
     ".multicol .paragraph": {
       "pageCount": 1457,
@@ -1272,11 +1280,13 @@
     },
     ".medium-6": {
       "pageCount": 1353,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".medium-4": {
       "pageCount": 1289,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".event-details": {
       "pageCount": 1196,
@@ -4715,6 +4725,14 @@
       "specFile": "specs/HubHeader.json",
       "storyFile": "src/stories/molecules/HubHeader.stories.tsx",
       "atomicType": "molecule"
+    },
+    "Postnom": {
+      "selectors": [
+        ".postnom"
+      ],
+      "specFile": "specs/Postnom.json",
+      "storyFile": "src/stories/atoms/Postnom.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
