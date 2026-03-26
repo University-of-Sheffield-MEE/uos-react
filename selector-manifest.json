@@ -851,7 +851,9 @@
     },
     ".block-field-blocknodenews-articlefield-n-media": {
       "pageCount": 5760,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsArticleMediaBlock",
+      "atomicType": "molecule"
     },
     ".showfull": {
       "pageCount": 5375,
@@ -4405,6 +4407,18 @@
       "status": "done",
       "implementedBy": "EventDetails",
       "atomicType": "atom"
+    },
+    ".block-field-blocknodenews-articlefield-n-media .media--image--figure": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "NewsArticleMediaBlock",
+      "atomicType": "molecule"
+    },
+    ".block-field-blocknodenews-articlefield-n-media figure.imgcapt": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "NewsArticleMediaBlock",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -5021,6 +5035,16 @@
       ],
       "specFile": "specs/AccredBanner.json",
       "storyFile": "src/stories/molecules/AccredBanner.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "NewsArticleMediaBlock": {
+      "selectors": [
+        ".block-field-blocknodenews-articlefield-n-media",
+        ".block-field-blocknodenews-articlefield-n-media .media--image--figure",
+        ".block-field-blocknodenews-articlefield-n-media figure.imgcapt"
+      ],
+      "specFile": "specs/NewsArticleMediaBlock.json",
+      "storyFile": "src/stories/molecules/NewsArticleMediaBlock.stories.tsx",
       "atomicType": "molecule"
     }
   }

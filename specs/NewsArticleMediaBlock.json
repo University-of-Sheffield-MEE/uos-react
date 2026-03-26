@@ -1,0 +1,87 @@
+{
+  "componentName": "NewsArticleMediaBlock",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "Drupal layout builder block that renders a responsive hero/featured image for a news article, with an optional caption.",
+  "rootElement": "section",
+  "rootClassName": "block-field-blocknodenews-articlefield-n-media",
+  "selectorsCovered": [
+    ".block-field-blocknodenews-articlefield-n-media",
+    ".block-field-blocknodenews-articlefield-n-media .media--image--figure",
+    ".block-field-blocknodenews-articlefield-n-media figure.imgcapt"
+  ],
+  "props": [
+    {
+      "name": "srcMobile1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:last-of-type", "attribute": "srcset" }
+    },
+    {
+      "name": "srcTablet1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-of-type(3)", "attribute": "srcset" }
+    },
+    {
+      "name": "srcDesktop1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-of-type(2)", "attribute": "srcset" }
+    },
+    {
+      "name": "srcWide1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:first-of-type", "attribute": "srcset" }
+    },
+    {
+      "name": "imgSrc",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "src" }
+    },
+    {
+      "name": "imgAlt",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "alt" }
+    },
+    {
+      "name": "caption",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "figcaption", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "News article media block with a responsive image and no caption",
+      "props": {
+        "srcWide1x": "/sites/default/files/styles/two_thirds_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=1W49wkCS 752w, /sites/default/files/styles/two_thirds_2x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=FlUD7eSg 1504w",
+        "srcDesktop1x": "/sites/default/files/styles/desktop_full_width_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=F3P8GJj6 1280w",
+        "srcTablet1x": "/sites/default/files/styles/tablet_two_thirds_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=RVaF3FyO 592w, /sites/default/files/styles/tablet_two_thirds_2x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=8hgbaEAc 1184w",
+        "srcMobile1x": "/sites/default/files/styles/mobile_single_column_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=v19Gdj2D 375w, /sites/default/files/styles/mobile_single_column_2x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=Okk6MjNd 750w",
+        "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2020-10/GettyImages-1194457168.jpg?h=18c9bec3&itok=v19Gdj2D",
+        "imgAlt": "Rice and spoon"
+      }
+    },
+    {
+      "name": "WithCaption",
+      "description": "News article media block with a responsive image and a visible caption",
+      "props": {
+        "srcWide1x": "/sites/default/files/styles/two_thirds_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=KIdYN3zx 752w, /sites/default/files/styles/two_thirds_2x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=8cBEICWq 1504w",
+        "srcDesktop1x": "/sites/default/files/styles/desktop_full_width_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=tybVDJPQ 1280w",
+        "srcTablet1x": "/sites/default/files/styles/tablet_two_thirds_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=C7z_2mfS 592w, /sites/default/files/styles/tablet_two_thirds_2x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=0yj4P67B 1184w",
+        "srcMobile1x": "/sites/default/files/styles/mobile_single_column_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=rgwmzWgB 375w, /sites/default/files/styles/mobile_single_column_2x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=NNOoUH8n 750w",
+        "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2021-01/soldier-60762_1920.jpg?h=d7a94c23&itok=rgwmzWgB",
+        "imgAlt": "Soldier",
+        "caption": "Image by Amber Clay from Pixabay"
+      }
+    }
+  ],
+  "notes": "Root element has three classes: 'block', 'block-layout-builder', and 'block-field-blocknodenews-articlefield-n-media' — all must be present. The picture element uses four source elements for responsive breakpoints: wide (min-width: 1280px), desktop (min-width: 1024px), tablet (min-width: 768px), and mobile (default). The img element always uses loading='eager', width='375', height='211' (mobile fallback dimensions). The figcaption is present only when a caption is provided. A companion selector .block-field-blocknodepagefield-b-media follows the same structure for page nodes.",
+  "htmlExamples": ["2671_15829", "2671_18891", "2671_5526", "2671_24030"]
+}
