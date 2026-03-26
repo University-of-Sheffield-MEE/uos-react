@@ -1,0 +1,87 @@
+{
+  "componentName": "EventMediaBlock",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "Drupal layout builder block that renders a responsive hero/featured image for an event node, with an optional caption.",
+  "rootElement": "div",
+  "rootClassName": "block-field-blocknodeeventfield-ev-media",
+  "selectorsCovered": [
+    ".block-field-blocknodeeventfield-ev-media",
+    ".block-field-blocknodeeventfield-ev-media .media--image--figure",
+    ".block-field-blocknodeeventfield-ev-media figure.imgcapt"
+  ],
+  "props": [
+    {
+      "name": "srcWide1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:first-of-type", "attribute": "srcset" }
+    },
+    {
+      "name": "srcDesktop1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-of-type(2)", "attribute": "srcset" }
+    },
+    {
+      "name": "srcTablet1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-of-type(3)", "attribute": "srcset" }
+    },
+    {
+      "name": "srcMobile1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:last-of-type", "attribute": "srcset" }
+    },
+    {
+      "name": "imgSrc",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "src" }
+    },
+    {
+      "name": "imgAlt",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "alt" }
+    },
+    {
+      "name": "caption",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "figcaption", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Event media block with a responsive image and no caption",
+      "props": {
+        "srcWide1x": "/sites/default/files/styles/two_thirds_1x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=rcpkzctO 752w, /sites/default/files/styles/two_thirds_2x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=GLoWWKLp 1504w",
+        "srcDesktop1x": "/sites/default/files/styles/desktop_full_width_1x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=Kzt0eR8x 1280w, //cdn.sheffield.ac.uk/sites/default/files/styles/desktop_full_width_2x/public/2019-09/2T5A5748.jpg.jpeg?itok=peRKTmMJ 2560w",
+        "srcTablet1x": "/sites/default/files/styles/tablet_two_thirds_1x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=AUi-L7Et 592w, /sites/default/files/styles/tablet_two_thirds_2x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=hByGmz4z 1184w",
+        "srcMobile1x": "/sites/default/files/styles/mobile_single_column_1x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=_JLFXM8l 375w, /sites/default/files/styles/mobile_single_column_2x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=z3X3NGrG 750w",
+        "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-09/2T5A5748.jpg?h=425c5a8e&itok=_JLFXM8l",
+        "imgAlt": "Dental School building"
+      }
+    },
+    {
+      "name": "WithCaption",
+      "description": "Event media block with a responsive image and a visible caption",
+      "props": {
+        "srcWide1x": "/sites/default/files/styles/two_thirds_1x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=BpSMUffM 752w, /sites/default/files/styles/two_thirds_2x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=GCq4rvdM 1504w",
+        "srcDesktop1x": "/sites/default/files/styles/desktop_full_width_1x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=d-RGrHvD 1280w, //cdn.sheffield.ac.uk/sites/default/files/styles/desktop_full_width_2x/public/2021-04/panel%20right%20size2.jpg.jpeg?itok=Ej241iKU 2560w",
+        "srcTablet1x": "/sites/default/files/styles/tablet_two_thirds_1x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=rsHCEGoY 592w, /sites/default/files/styles/tablet_two_thirds_2x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=oqxace-Z 1184w",
+        "srcMobile1x": "/sites/default/files/styles/mobile_single_column_1x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=T93ELuED 375w, /sites/default/files/styles/mobile_single_column_2x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=EEvu5buE 750w",
+        "imgSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2021-04/panel%20right%20size2.jpg?h=f8a59649&itok=T93ELuED",
+        "imgAlt": "post-pandemic panel",
+        "caption": "Image from the post-pandemic panel event"
+      }
+    }
+  ],
+  "notes": "Root element is a div with three classes: 'block', 'block-layout-builder', and 'block-field-blocknodeeventfield-ev-media' — all must be present. The picture element uses four source elements for responsive breakpoints: wide (min-width: 1280px), desktop (min-width: 1024px), tablet (min-width: 768px), and mobile (default). The img element always uses loading='eager', width='375', height='211' (mobile fallback dimensions). The figcaption is present only when a caption is provided. Structurally identical to NewsArticleMediaBlock and PageMediaBlock — only the root class name differs.",
+  "htmlExamples": ["2234_18101", "2234_14169", "2234_23152", "2234_15741"]
+}

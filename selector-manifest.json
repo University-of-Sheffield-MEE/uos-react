@@ -1664,7 +1664,8 @@
     },
     ".uos-tabs [role=tabpanel]": {
       "pageCount": 604,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered-by-UosTabs"
     },
     ".tab-gradient": {
       "pageCount": 604,
@@ -1690,11 +1691,14 @@
     },
     ".block-field-blocknodeeventfield-ev-media": {
       "pageCount": 585,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventMediaBlock",
+      "atomicType": "molecule"
     },
     ".multicol .medium-4 > a": {
       "pageCount": 556,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered-by-SignpostCard-or-RelLink"
     },
     ".coursecard ul.course-features": {
       "pageCount": 547,
@@ -1762,7 +1766,8 @@
     },
     ".multicol .medium-4 .field-sc-title": {
       "pageCount": 453,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered-by-SignpostCard-or-RelLink"
     },
     ".ugcoursecard h3": {
       "pageCount": 451,
@@ -1796,19 +1801,23 @@
     },
     ".ug-explore-menu": {
       "pageCount": 413,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "empty-element-no-content"
     },
     ".block-uos-public-content .explore-box": {
       "pageCount": 413,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "empty-element-no-content"
     },
     ".block-uos-public-content .explore-box h3": {
       "pageCount": 413,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "empty-element-no-content"
     },
     ".block-uos-public-content .explore-box ul": {
       "pageCount": 413,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "empty-element-no-content"
     },
     ".explore-item:not(.explore-unstyled)": {
       "pageCount": 413,
@@ -1882,7 +1891,8 @@
     },
     ".multicol .medium-6 .field-sc-title": {
       "pageCount": 355,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered-by-SignpostCard-or-RelLink"
     },
     ".staff-pronouns": {
       "pageCount": 354,
@@ -4586,7 +4596,7 @@
     "figure.imgcapt": {
       "pageCount": 0,
       "status": "done",
-      "implementedBy": "PageMediaBlock",
+      "implementedBy": "EventMediaBlock",
       "atomicType": "molecule"
     },
     ".block-field-blocknodepagefield-b-media figcaption": {
@@ -4599,6 +4609,27 @@
       "pageCount": 0,
       "status": "done",
       "implementedBy": "NewsTeaser",
+      "atomicType": "molecule"
+    },
+    "#my-pubs .pubs-tabs": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "no-dom-match"
+    },
+    "#my-pubs .pubs-tabs.fave-link": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "no-dom-match"
+    },
+    "#my-pubs .pubs-tabs.all-link": {
+      "pageCount": 0,
+      "status": "skipped",
+      "skipReason": "no-dom-match"
+    },
+    ".block-field-blocknodeeventfield-ev-media .media--image--figure": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventMediaBlock",
       "atomicType": "molecule"
     }
   },
@@ -5424,6 +5455,16 @@
       "specFile": "specs/UgKeyBg.json",
       "storyFile": "src/stories/organisms/UgKeyBg.stories.tsx",
       "atomicType": "organism"
+    },
+    "EventMediaBlock": {
+      "selectors": [
+        ".block-field-blocknodeeventfield-ev-media",
+        ".block-field-blocknodeeventfield-ev-media .media--image--figure",
+        "figure.imgcapt"
+      ],
+      "specFile": "specs/EventMediaBlock.json",
+      "storyFile": "src/stories/molecules/EventMediaBlock.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
