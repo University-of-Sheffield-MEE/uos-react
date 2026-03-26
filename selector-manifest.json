@@ -2396,7 +2396,9 @@
     },
     ".module-disclaimer": {
       "pageCount": 255,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ModuleDisclaimer",
+      "atomicType": "atom"
     },
     ".node--type-modules-single-course h1": {
       "pageCount": 252,
@@ -5908,6 +5910,14 @@
       ],
       "specFile": "specs/CourseUgFeeLookup.json",
       "storyFile": "src/stories/atoms/CourseUgFeeLookup.stories.tsx",
+      "atomicType": "atom"
+    },
+    "ModuleDisclaimer": {
+      "selectors": [
+        ".module-disclaimer"
+      ],
+      "specFile": "specs/ModuleDisclaimer.json",
+      "storyFile": "src/stories/atoms/ModuleDisclaimer.stories.tsx",
       "atomicType": "atom"
     }
   }
