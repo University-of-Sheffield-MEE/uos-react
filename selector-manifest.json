@@ -1930,7 +1930,8 @@
     },
     "#apply a:not(.uosbutton)": {
       "pageCount": 287,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".uosblock.highlight": {
       "pageCount": 284,
@@ -2232,7 +2233,8 @@
     },
     ".moduletab-label": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".large-12": {
       "pageCount": 282,
@@ -2266,7 +2268,9 @@
     },
     ".learningtext": {
       "pageCount": 281,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LearningText",
+      "atomicType": "molecule"
     },
     "dl dt:not(:first-of-type)": {
       "pageCount": 279,
@@ -2812,7 +2816,8 @@
     },
     "#apply": {
       "pageCount": 146,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".uosblock .block-field-blockparagraphpara-text-boxfield-text-box-media": {
       "pageCount": 144,
@@ -2824,7 +2829,8 @@
     },
     ".apply-button": {
       "pageCount": 142,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".paragraph--type--featured-video": {
       "pageCount": 141,
@@ -5798,6 +5804,14 @@
       ],
       "specFile": "specs/CourseEreqPanel.json",
       "storyFile": "src/stories/molecules/CourseEreqPanel.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "LearningText": {
+      "selectors": [
+        ".learningtext"
+      ],
+      "specFile": "specs/LearningText.json",
+      "storyFile": "src/stories/molecules/LearningText.stories.tsx",
       "atomicType": "molecule"
     }
   }
