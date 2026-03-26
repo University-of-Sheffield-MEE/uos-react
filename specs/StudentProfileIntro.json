@@ -1,0 +1,43 @@
+{
+  "componentName": "StudentProfileIntro",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "Drupal layout builder block displaying a student profile introductory paragraph as part of a student profile page.",
+  "rootElement": "div",
+  "rootClassName": "block-field-blocknodestudent-profilefield-stup-intro",
+  "selectorsCovered": [".block-field-blocknodestudent-profilefield-stup-intro"],
+  "props": [
+    {
+      "name": "intro",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".leadintro", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Short student intro text",
+      "props": {
+        "intro": "Isobel is a dual honours undergraduate student, studying Politics and Modern Languages and Cultures"
+      }
+    },
+    {
+      "name": "LongIntro",
+      "description": "Longer multi-sentence student intro text",
+      "props": {
+        "intro": "Bradley is a third-year chemical engineering undergraduate student currently spending a year in design & product development at ITM Power as part of his degree - gaining real-world chemical engineering experience."
+      }
+    },
+    {
+      "name": "WithLineBreaks",
+      "description": "Intro text that spans multiple sentences about a student profile",
+      "props": {
+        "intro": "We have many student societies to choose from. We had a chat with the President of the General Engineering Society – Romesa Khawaja – about why they should be your first choice."
+      }
+    }
+  ],
+  "notes": "The outer div carries Drupal block classes: block, block-layout-builder, and block-field-blocknodestudent-profilefield-stup-intro. The inner element is a div with class leadintro (note: the LeadIntro atom uses a p tag, but the DOM here shows a div). This component hardcodes the block and block-layout-builder classes on the root element.",
+  "htmlExamples": ["2776_16992", "2776_10964", "2776_16987"]
+}

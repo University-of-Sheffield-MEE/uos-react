@@ -1224,7 +1224,9 @@
     },
     ".block-field-blocknodestudent-profilefield-stup-intro": {
       "pageCount": 1615,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileIntro",
+      "atomicType": "molecule"
     },
     ".block-field-blocknodestudent-profilefield-stup-intro .leadintro": {
       "pageCount": 1615,
@@ -5192,6 +5194,14 @@
       ],
       "specFile": "specs/ProfileCard.json",
       "storyFile": "src/stories/molecules/ProfileCard.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "StudentProfileIntro": {
+      "selectors": [
+        ".block-field-blocknodestudent-profilefield-stup-intro"
+      ],
+      "specFile": "specs/StudentProfileIntro.json",
+      "storyFile": "src/stories/molecules/StudentProfileIntro.stories.tsx",
       "atomicType": "molecule"
     }
   }
