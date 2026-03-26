@@ -1,0 +1,52 @@
+{
+  "componentName": "MainRole",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A paragraph displaying a person's primary role or job title on staff profile pages.",
+  "rootElement": "p",
+  "rootClassName": "mainrole",
+  "selectorsCovered": [".mainrole"],
+  "props": [
+    {
+      "name": "role",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": "p",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "A standard main role display",
+      "props": {
+        "role": "Research Associate"
+      }
+    },
+    {
+      "name": "LongTitle",
+      "description": "A role with a longer, compound title",
+      "props": {
+        "role": "Senior Technician: Instrumentation"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple main roles shown together as they appear on a staff listing",
+      "container": {
+        "element": "div",
+        "className": "personinfo"
+      },
+      "instances": [
+        { "role": "Professor" },
+        { "role": "Research Associate" },
+        { "role": "Senior Lecturer in Computer Science" }
+      ]
+    }
+  ],
+  "notes": "Appears on staff profile pages to display the person's primary job role. Text always varies across pages. Structurally identical to existing atoms DeptName and JobTitle but with the .mainrole class.",
+  "htmlExamples": ["3684_12848", "3684_8101"]
+}

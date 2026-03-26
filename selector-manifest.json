@@ -761,7 +761,8 @@
     },
     "main ul:not(.breadcrumbs):not(.ug-explore-menu):not(.coursemeta):not(.course-features):not(.otherways) li": {
       "pageCount": 12197,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".paragraph--type--para-promotion.blue-bar": {
       "pageCount": 11720,
@@ -807,7 +808,9 @@
     },
     ".mainrole": {
       "pageCount": 6437,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "MainRole",
+      "atomicType": "atom"
     },
     ".contactinfo": {
       "pageCount": 6437,
@@ -4685,6 +4688,14 @@
       "specFile": "specs/StapContact.json",
       "storyFile": "src/stories/molecules/StapContact.stories.tsx",
       "atomicType": "molecule"
+    },
+    "MainRole": {
+      "selectors": [
+        ".mainrole"
+      ],
+      "specFile": "specs/MainRole.json",
+      "storyFile": "src/stories/atoms/MainRole.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
