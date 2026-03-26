@@ -1500,27 +1500,39 @@
     },
     ".signpost-card": {
       "pageCount": 661,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-card": {
       "pageCount": 660,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-card p": {
       "pageCount": 660,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-card .link-arrow": {
       "pageCount": 660,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-card .link-arrow .scarrow": {
       "pageCount": 660,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-card .field-sc-title": {
       "pageCount": 659,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".multicol .medium-4 .paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
       "pageCount": 656,
@@ -3310,15 +3322,21 @@
     },
     ".paragraph--type--para-signpost-card .field-sc-link": {
       "pageCount": 35,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".signpost-card .paragraph--type--para-signpost-card .field-sc-link": {
       "pageCount": 35,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".signpost-card .field-sc-link": {
       "pageCount": 35,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "SignpostCard",
+      "atomicType": "molecule"
     },
     ".logos-homehub .row-width .logo-container .home-hub-logos": {
       "pageCount": 33,
@@ -4940,6 +4958,22 @@
       ],
       "specFile": "specs/CourseCard.json",
       "storyFile": "src/stories/molecules/CourseCard.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "SignpostCard": {
+      "selectors": [
+        ".signpost-card",
+        ".paragraph--type--para-signpost-card",
+        ".paragraph--type--para-signpost-card p",
+        ".paragraph--type--para-signpost-card .link-arrow",
+        ".paragraph--type--para-signpost-card .link-arrow .scarrow",
+        ".paragraph--type--para-signpost-card .field-sc-title",
+        ".paragraph--type--para-signpost-card .field-sc-link",
+        ".signpost-card .field-sc-link",
+        ".signpost-card .paragraph--type--para-signpost-card .field-sc-link"
+      ],
+      "specFile": "specs/SignpostCard.json",
+      "storyFile": "src/stories/molecules/SignpostCard.stories.tsx",
       "atomicType": "molecule"
     }
   }

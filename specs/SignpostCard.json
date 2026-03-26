@@ -1,0 +1,140 @@
+{
+  "componentName": "SignpostCard",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A clickable signpost card linking to a related page, containing a responsive image, title, descriptive text, and an arrow link indicator.",
+  "rootElement": "a",
+  "rootClassName": "signpost-card",
+  "selectorsCovered": [
+    ".signpost-card",
+    ".paragraph--type--para-signpost-card",
+    ".paragraph--type--para-signpost-card p",
+    ".paragraph--type--para-signpost-card .link-arrow",
+    ".paragraph--type--para-signpost-card .link-arrow .scarrow",
+    ".paragraph--type--para-signpost-card .field-sc-title",
+    ".paragraph--type--para-signpost-card .field-sc-link",
+    ".signpost-card .field-sc-link",
+    ".signpost-card .paragraph--type--para-signpost-card .field-sc-link"
+  ],
+  "props": [
+    {
+      "name": "href",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a.signpost-card", "attribute": "href" }
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a.signpost-card", "attribute": "aria-label" }
+    },
+    {
+      "name": "imageSrc",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".media--image--figure img", "attribute": "src" }
+    },
+    {
+      "name": "imageAlt",
+      "type": "string",
+      "required": false,
+      "default": "",
+      "mapsTo": { "element": ".media--image--figure img", "attribute": "alt" }
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h3.field-sc-title", "attribute": "innerText" }
+    },
+    {
+      "name": "body",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "p", "attribute": "innerText" }
+    },
+    {
+      "name": "linkText",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "p.field-sc-link", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard signpost card with image, title, body text and arrow",
+      "props": {
+        "href": "/international/meet-our-students/europe-and-central-asia",
+        "ariaLabel": "Student profiles",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-09/2T5A3417.jpg?h=ace41556&itok=cm5ASOKS",
+        "imageAlt": "A group of students stood in Weston park",
+        "title": "Student profiles",
+        "body": "Current students tell us about their time in Sheffield."
+      }
+    },
+    {
+      "name": "LongTitle",
+      "description": "Signpost card with a longer title and body text",
+      "props": {
+        "href": "/research/features/uniting-experts-address-infertility-gambia-and-beyond",
+        "ariaLabel": "Uniting experts to address infertility in The Gambia and beyond",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2022-12/3header-image-template%20%281%29.png.jpg?itok=yfpPHfbx",
+        "imageAlt": "signs at an infertility awareness event in The Gambia",
+        "title": "Uniting experts to address infertility in The Gambia and beyond",
+        "body": "Societal expectations of becoming a parent soon after marriage are high in The Gambia, but thousands of couples face involuntary childlessness, or infertility. Our international research collaboration is improving fertility awareness, guiding policy and transforming practice."
+      }
+    },
+    {
+      "name": "WithLinkText",
+      "description": "Signpost card with an optional link text label above the arrow",
+      "props": {
+        "href": "/parents/home",
+        "ariaLabel": "Join the mailing list",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-09/2T5A3417.jpg?h=ace41556&itok=cm5ASOKS",
+        "imageAlt": "Students at the university",
+        "title": "Join our mailing list",
+        "body": "Stay up to date with news and events from the University of Sheffield.",
+        "linkText": "Join the mailing list"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple signpost cards displayed in a grid row as typically seen on the website",
+      "container": {
+        "element": "div",
+        "className": "row"
+      },
+      "instances": [
+        {
+          "href": "/international/meet-our-students/europe-and-central-asia",
+          "ariaLabel": "Student profiles",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-09/2T5A3417.jpg?h=ace41556&itok=cm5ASOKS",
+          "imageAlt": "A group of students stood in Weston park",
+          "title": "Student profiles",
+          "body": "Current students tell us about their time in Sheffield."
+        },
+        {
+          "href": "/grantham-centre/policy",
+          "ariaLabel": "Policy",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2025-07/seminar%20-%20landscape.png.jpg?itok=BaEBrkEk",
+          "imageAlt": "graphic depicting a seminar, a leaf and a cloud",
+          "title": "Policy",
+          "body": "Policy change is vital for a sustainable future and is a core area of our work."
+        },
+        {
+          "href": "/crafic/research/carbon-legitimacy-and-disclosure",
+          "ariaLabel": "Carbon legitimacy and disclosure",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2021-02/veeterzy-UwBrS-qRMHo-unsplash.jpg?h=8b8cac2c&itok=miQslM6G",
+          "imageAlt": "Smoke emerging from a red and white painted factory chimney",
+          "title": "Carbon legitimacy and disclosure",
+          "body": "This project explores the relationships between carbon disclosure, carbon performance, carbon legitimacy and economic performance."
+        }
+      ]
+    }
+  ],
+  "notes": "The root element is an <a> tag. The inner wrapper carries the Drupal classes 'uosblock paragraph paragraph--type--para-signpost-card paragraph--view-mode--default' and must be reproduced verbatim. The image is wrapped in a .media--image--figure > figure.imgcapt > picture structure. The .link-arrow div always contains a .scarrow div with a Font Awesome right arrow icon. The optional field-sc-link appears in ~5% of instances as a <p class=\"field-sc-link\"> above the .link-arrow. The aria-label on the <a> matches the title text in most cases but is a separate prop as they can differ.",
+  "htmlExamples": ["2960_4930", "2960_17675", "2960_9366", "2960_480"]
+}
