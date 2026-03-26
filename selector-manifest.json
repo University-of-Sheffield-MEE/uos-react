@@ -3116,7 +3116,9 @@
     },
     ".pgcourserow": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgCourseRow",
+      "atomicType": "layout"
     },
     "#main .pgkeybg": {
       "pageCount": 130,
@@ -3250,11 +3252,15 @@
     },
     ".pgcourserow .large-4": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgCourseRow",
+      "atomicType": "layout"
     },
     ".pgcourserow .large-8": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgCourseRow",
+      "atomicType": "layout"
     },
     ".pg-course-image img": {
       "pageCount": 129,
@@ -6231,6 +6237,16 @@
       "specFile": "specs/EventButton.json",
       "storyFile": "src/stories/atoms/EventButton.stories.tsx",
       "atomicType": "atom"
+    },
+    "PgCourseRow": {
+      "selectors": [
+        ".pgcourserow",
+        ".pgcourserow .large-4",
+        ".pgcourserow .large-8"
+      ],
+      "specFile": "specs/PgCourseRow.json",
+      "storyFile": "src/stories/layouts/PgCourseRow.stories.tsx",
+      "atomicType": "layout"
     }
   }
 }

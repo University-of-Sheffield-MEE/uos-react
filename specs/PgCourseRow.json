@@ -1,0 +1,34 @@
+{
+  "componentName": "PgCourseRow",
+  "atomicType": "layout",
+  "childComponents": [],
+  "description": "Two-column layout wrapper for postgraduate course detail pages, with a sidebar navigation column (4 units wide) and a main content column (8 units wide).",
+  "rootElement": "div",
+  "rootClassName": "pgcourserow",
+  "selectorsCovered": [".pgcourserow", ".pgcourserow .large-4", ".pgcourserow .large-8"],
+  "props": [
+    {
+      "name": "sidebar",
+      "type": "ReactNode",
+      "required": true
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard two-column PG course layout with sidebar and main content",
+      "props": {
+        "sidebar": "Sidebar navigation content",
+        "children": "Main course content"
+      }
+    }
+  ],
+  "notes": "Pure two-column layout container for PG (postgraduate) course detail pages. Structurally identical to UgCourseRow but uses the 'pgcourserow' class. The root element carries both 'row' and 'pgcourserow' classes. The left column uses Foundation grid classes 'columns large-4' and the right uses 'columns large-8'. Inner content is entirely Drupal-generated and varies per course — both columns accept arbitrary ReactNode children.",
+  "htmlExamples": ["3310_655"]
+}
