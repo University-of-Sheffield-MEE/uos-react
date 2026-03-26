@@ -2580,7 +2580,9 @@
     },
     "figure figcaption": {
       "pageCount": 219,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FigCaption",
+      "atomicType": "atom"
     },
     ".featured-news > div a": {
       "pageCount": 204,
@@ -3480,7 +3482,9 @@
     },
     ".newscard figure.imgcapt figcaption": {
       "pageCount": 82,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FigCaption",
+      "atomicType": "atom"
     },
     "#js-course-ereq-panel--standard": {
       "pageCount": 82,
@@ -3742,7 +3746,9 @@
     },
     ".stap-card .profilepic .imgcapt figcaption": {
       "pageCount": 46,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FigCaption",
+      "atomicType": "atom"
     },
     ".node--type-hub .paragraph--type--para-media-box h3.field-mb-title": {
       "pageCount": 45,
@@ -6197,6 +6203,16 @@
       ],
       "specFile": "specs/OtherReqsText.json",
       "storyFile": "src/stories/atoms/OtherReqsText.stories.tsx",
+      "atomicType": "atom"
+    },
+    "FigCaption": {
+      "selectors": [
+        "figure figcaption",
+        ".newscard figure.imgcapt figcaption",
+        ".stap-card .profilepic .imgcapt figcaption"
+      ],
+      "specFile": "specs/FigCaption.json",
+      "storyFile": "src/stories/atoms/FigCaption.stories.tsx",
       "atomicType": "atom"
     }
   }
