@@ -11,6 +11,7 @@ export default meta;
 type Story = StoryObj<typeof UgCourseSearch>;
 
 export const Default: Story = {
+  render: (args) => <main id="main"><UgCourseSearch {...args} /></main>,
   args: {
     similarCoursesHref: '/courses/subjects/computer-science',
     similarCoursesLabel: 'Similar courses you might be interested in',
@@ -22,6 +23,7 @@ export const Default: Story = {
 };
 
 export const DifferentSubject: Story = {
+  render: (args) => <main id="main"><UgCourseSearch {...args} /></main>,
   args: {
     similarCoursesHref: '/courses/subjects/chemistry',
     similarCoursesLabel: 'Similar courses you might be interested in',

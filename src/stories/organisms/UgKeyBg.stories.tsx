@@ -11,6 +11,7 @@ export default meta;
 type Story = StoryObj<typeof UgKeyBg>;
 
 export const Default: Story = {
+  render: (args) => <main id="main"><UgKeyBg {...args} /></main>,
   args: {
     startYear: '2026-27 entry',
     altEntryLabel: 'View 2027-28 entry',
@@ -51,6 +52,7 @@ export const Default: Story = {
 };
 
 export const RegisterForUpdates: Story = {
+  render: (args) => <main id="main"><UgKeyBg {...args} /></main>,
   args: {
     startYear: '2027-28 entry',
     altEntryLabel: 'View 2026-27 entry',
@@ -93,6 +95,7 @@ export const RegisterForUpdates: Story = {
 };
 
 export const WithStudyAbroad: Story = {
+  render: (args) => <main id="main"><UgKeyBg {...args} /></main>,
   args: {
     startYear: '2027-28 entry',
     altEntryLabel: 'View 2026-27 entry',
