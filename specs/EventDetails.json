@@ -1,0 +1,112 @@
+{
+  "componentName": "EventDetails",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A single event metadata detail item consisting of a Font Awesome icon and a text label, with variant modifier classes for date, venue, time, and ticket information.",
+  "rootElement": "div",
+  "rootClassName": "event-details",
+  "selectorsCovered": [
+    ".event-details",
+    ".event-details.ev-date",
+    ".event-details.ev-venue",
+    ".event-details.ev-time",
+    ".event-details.ev-ticket-details",
+    ".event-details.ev-venue span",
+    ".event-details.ev-date span",
+    ".event-details.ev-time span",
+    ".event-details.ev-ticket-details span"
+  ],
+  "props": [
+    {
+      "name": "variant",
+      "type": "\"ev-date\" | \"ev-venue\" | \"ev-time\" | \"ev-ticket-details\" | null",
+      "required": false,
+      "default": "null",
+      "mapsTo": {
+        "togglesClass": "ev-date",
+        "on": "root"
+      }
+    },
+    {
+      "name": "iconClass",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": "i",
+        "attribute": "className"
+      }
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": "span",
+        "attribute": "innerText"
+      }
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "mapsTo": {
+        "element": "root",
+        "attribute": "aria-label"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Date",
+      "description": "Event date detail with calendar icon",
+      "props": {
+        "variant": "ev-date",
+        "iconClass": "fas fa-calendar-alt",
+        "text": "Wednesday 11 March 2026, 1:30pm"
+      }
+    },
+    {
+      "name": "DateRange",
+      "description": "Event date range detail",
+      "props": {
+        "variant": "ev-date",
+        "iconClass": "fas fa-calendar-alt",
+        "text": "25 - 27 June 2024"
+      }
+    },
+    {
+      "name": "Venue",
+      "description": "Event venue detail with location icon and aria-label",
+      "props": {
+        "variant": "ev-venue",
+        "iconClass": "fas fa-map-marker-alt",
+        "text": "University of Sheffield | Broad Lane Black, Lecture Theatre 8",
+        "ariaLabel": "Event Venue"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple event details shown together as typically rendered on an event page",
+      "container": {
+        "element": "div",
+        "className": "event-meta"
+      },
+      "instances": [
+        {
+          "variant": "ev-date",
+          "iconClass": "fas fa-calendar-alt",
+          "text": "Wednesday 11 March 2026, 1:30pm"
+        },
+        {
+          "variant": "ev-venue",
+          "iconClass": "fas fa-map-marker-alt",
+          "text": "University of Sheffield | Broad Lane Black, Lecture Theatre 8",
+          "ariaLabel": "Event Venue"
+        }
+      ]
+    }
+  ],
+  "notes": "The variant prop maps to a modifier class appended to the root element (e.g. 'ev-date', 'ev-venue'). The iconClass prop is the full Font Awesome class string applied to the <i> element. The icon is aria-hidden='true' in some samples — hardcode aria-hidden='true' on the icon element. ariaLabel is only present on ev-venue variants in the observed samples. The first sample shows a variant with no modifier class and inner Drupal views markup — this is a CMS-rendered variant not worth modelling as a prop.",
+  "htmlExamples": ["2236_18101", "2236_15030", "2236_1434"]
+}

@@ -1294,11 +1294,15 @@
     },
     ".event-details": {
       "pageCount": 1196,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
     },
     ".event-details.ev-venue span": {
       "pageCount": 1196,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
     },
     ".multicol p": {
       "pageCount": 1172,
@@ -1484,7 +1488,9 @@
     },
     ".event-details.ev-date span": {
       "pageCount": 653,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
     },
     ".uosblock.dark": {
       "pageCount": 653,
@@ -1596,7 +1602,9 @@
     },
     ".event-details.ev-time span": {
       "pageCount": 526,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
     },
     ".coursecard ul.coursemeta": {
       "pageCount": 458,
@@ -1720,7 +1728,9 @@
     },
     ".event-details.ev-ticket-details span": {
       "pageCount": 311,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
     },
     ".button.primary": {
       "pageCount": 298,
@@ -4247,6 +4257,30 @@
       "status": "done",
       "implementedBy": "PublicationsList",
       "atomicType": "molecule"
+    },
+    ".event-details.ev-date": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
+    },
+    ".event-details.ev-venue": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
+    },
+    ".event-details.ev-time": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
+    },
+    ".event-details.ev-ticket-details": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventDetails",
+      "atomicType": "atom"
     }
   },
   "components": {
@@ -4746,6 +4780,22 @@
       "specFile": "specs/VideoEmbedLazy.json",
       "storyFile": "src/stories/molecules/VideoEmbedLazy.stories.tsx",
       "atomicType": "molecule"
+    },
+    "EventDetails": {
+      "selectors": [
+        ".event-details",
+        ".event-details.ev-date",
+        ".event-details.ev-venue",
+        ".event-details.ev-time",
+        ".event-details.ev-ticket-details",
+        ".event-details.ev-venue span",
+        ".event-details.ev-date span",
+        ".event-details.ev-time span",
+        ".event-details.ev-ticket-details span"
+      ],
+      "specFile": "specs/EventDetails.json",
+      "storyFile": "src/stories/atoms/EventDetails.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
