@@ -1870,7 +1870,9 @@
     },
     ".teaser-thumb": {
       "pageCount": 375,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "TeaserThumb",
+      "atomicType": "atom"
     },
     ".multicol .medium-6 .field-sc-title": {
       "pageCount": 355,
@@ -3562,7 +3564,9 @@
     },
     ".teaser-thumb figure.imgcapt figcaption": {
       "pageCount": 16,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "TeaserThumb",
+      "atomicType": "atom"
     },
     ".block-views-blocksection-events-block-1 input": {
       "pageCount": 15,
@@ -5277,6 +5281,15 @@
       ],
       "specFile": "specs/UgCredits.json",
       "storyFile": "src/stories/atoms/UgCredits.stories.tsx",
+      "atomicType": "atom"
+    },
+    "TeaserThumb": {
+      "selectors": [
+        ".teaser-thumb",
+        ".teaser-thumb figure.imgcapt figcaption"
+      ],
+      "specFile": "specs/TeaserThumb.json",
+      "storyFile": "src/stories/atoms/TeaserThumb.stories.tsx",
       "atomicType": "atom"
     }
   }

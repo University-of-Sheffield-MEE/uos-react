@@ -1,0 +1,116 @@
+{
+  "componentName": "TeaserThumb",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A thumbnail image container used within teaser components, accepting either a simple image or a responsive picture element.",
+  "rootElement": "div",
+  "rootClassName": "teaser-thumb",
+  "selectorsCovered": [".teaser-thumb", ".teaser-thumb figure.imgcapt figcaption"],
+  "props": [
+    {
+      "name": "src",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "src" }
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "alt" }
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "required": false,
+      "default": 256,
+      "mapsTo": { "element": "img", "attribute": "width" }
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "required": false,
+      "default": 144,
+      "mapsTo": { "element": "img", "attribute": "height" }
+    },
+    {
+      "name": "loading",
+      "type": "string",
+      "required": false,
+      "default": "lazy",
+      "mapsTo": { "element": "img", "attribute": "loading" }
+    },
+    {
+      "name": "figcaption",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "figure.imgcapt figcaption", "attribute": "innerText" }
+    },
+    {
+      "name": "usePicture",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "mapsTo": { "togglesClass": "media--image--figure", "on": ".teaser-thumb > div" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Simple thumbnail image as seen on most news/profile teaser pages",
+      "props": {
+        "src": "/sites/default/files/styles/responsive_thumbnail_256px_x_144px_/public/2019-04/29415.jpg",
+        "alt": "PhD students working together at computer",
+        "width": 256,
+        "height": 144,
+        "loading": "lazy"
+      }
+    },
+    {
+      "name": "WithFigure",
+      "description": "Thumbnail with responsive picture element and media--image--figure wrapper",
+      "props": {
+        "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2026-01/SMbio.png.jpg",
+        "alt": "Event poster",
+        "width": 375,
+        "height": 211,
+        "loading": "eager",
+        "usePicture": true
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple thumbnails as seen in a listing page",
+      "container": {
+        "element": "div",
+        "className": "views-element-container"
+      },
+      "instances": [
+        {
+          "src": "/sites/default/files/styles/responsive_thumbnail_256px_x_144px_/public/2026-01/CJR_Damian-Shepherd_03-Edit%20-%20Damian%20Shepherd.jpg",
+          "alt": "Student Damian Shepherd in front of a blurred building",
+          "width": 256,
+          "height": 144,
+          "loading": "lazy"
+        },
+        {
+          "src": "/sites/default/files/styles/responsive_thumbnail_256px_x_144px_/public/2026-01/c1f2c23a-7e65-4445-b205-d5f1ea8fcd22.JPG.jpg",
+          "alt": "An general engineering alumnus is standing on the rail with his Network Rail uniform",
+          "width": 256,
+          "height": 144,
+          "loading": "lazy"
+        },
+        {
+          "src": "/sites/default/files/styles/responsive_thumbnail_256px_x_144px_/public/2024-12/2509_6028bda06741893.jpg",
+          "alt": "Women walking outside by the canal",
+          "width": 256,
+          "height": 144,
+          "loading": "lazy"
+        }
+      ]
+    }
+  ],
+  "notes": "Most instances (samples 2-10) use a bare img tag directly inside .teaser-thumb. Sample 1 shows a more complex variant with .media--image--figure > figure.imgcapt > picture > img. The usePicture prop controls rendering the picture/figure variant. The figcaption is only present in 16 pages (teaser-thumb figure.imgcapt figcaption). When usePicture is false, render a plain img tag. When true, render the full .media--image--figure > figure.imgcapt > picture > img structure.",
+  "htmlExamples": ["2265_8502", "2265_12320", "2265_14580", "2265_16593"]
+}
