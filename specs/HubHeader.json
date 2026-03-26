@@ -1,0 +1,75 @@
+{
+  "componentName": "HubHeader",
+  "atomicType": "molecule",
+  "childComponents": ["LeadIntro"],
+  "description": "A hub page header banner containing a page title and a lead introduction paragraph.",
+  "rootElement": "div",
+  "rootClassName": "hub-header",
+  "selectorsCovered": [
+    ".hub-header",
+    ".hub-header .hubintro",
+    ".hub-header .hubintro h1",
+    ".hub-header .hubintro p"
+  ],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".hubintro h1", "attribute": "innerText" }
+    },
+    {
+      "name": "intro",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".hubintro p.leadintro", "attribute": "innerText" }
+    },
+    {
+      "name": "fullWidth",
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "mapsTo": { "togglesClass": "full-width", "on": "root" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Hub header with title and lead intro paragraph",
+      "props": {
+        "title": "Undergraduate",
+        "intro": "What happens after you apply for undergraduate study.",
+        "fullWidth": true
+      }
+    },
+    {
+      "name": "LongIntro",
+      "description": "Hub header with a longer introductory paragraph",
+      "props": {
+        "title": "Our careers and employability support",
+        "intro": "You will be supported by our dedicated employability team from the day you arrive in Sheffield as a student, through your degree, and into your future career as you become part of our alumni community. We will be here to support you for as long as you need us.",
+        "fullWidth": true
+      }
+    },
+    {
+      "name": "NoIntro",
+      "description": "Hub header with title only, no lead intro",
+      "props": {
+        "title": "Healthcare apprenticeships",
+        "fullWidth": true
+      }
+    },
+    {
+      "name": "WithoutFullWidth",
+      "description": "Hub header without the full-width modifier",
+      "props": {
+        "title": "Thesis preparation",
+        "intro": "Key guidance and protocols to follow when preparing your doctoral thesis.",
+        "fullWidth": false
+      }
+    }
+  ],
+  "notes": "The full-width class appears on all sampled instances and should default to true. The hubintro div always wraps the h1 and optional p.leadintro. The LeadIntro atom (atom LeadIntro .leadintro) should be used for the intro paragraph child.",
+  "htmlExamples": ["2549_7213", "2549_17642", "2549_480", "2549_2836"]
+}

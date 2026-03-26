@@ -1244,19 +1244,27 @@
     },
     ".hub-header": {
       "pageCount": 1448,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "HubHeader",
+      "atomicType": "molecule"
     },
     ".hub-header .hubintro": {
       "pageCount": 1448,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "HubHeader",
+      "atomicType": "molecule"
     },
     ".hub-header .hubintro p": {
       "pageCount": 1448,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "HubHeader",
+      "atomicType": "molecule"
     },
     ".hub-header .hubintro h1": {
       "pageCount": 1448,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "HubHeader",
+      "atomicType": "molecule"
     },
     "body.node--type-hub .region-banner .views-field-field-section-navigation": {
       "pageCount": 1447,
@@ -4696,6 +4704,17 @@
       "specFile": "specs/MainRole.json",
       "storyFile": "src/stories/atoms/MainRole.stories.tsx",
       "atomicType": "atom"
+    },
+    "HubHeader": {
+      "selectors": [
+        ".hub-header",
+        ".hub-header .hubintro",
+        ".hub-header .hubintro h1",
+        ".hub-header .hubintro p"
+      ],
+      "specFile": "specs/HubHeader.json",
+      "storyFile": "src/stories/molecules/HubHeader.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
