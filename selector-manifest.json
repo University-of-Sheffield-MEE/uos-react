@@ -1188,11 +1188,15 @@
     },
     ".block-field-blocknodestudent-profiletitle": {
       "pageCount": 1623,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileTitle",
+      "atomicType": "atom"
     },
     ".block-field-blocknodestudent-profiletitle h1": {
       "pageCount": 1623,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StudentProfileTitle",
+      "atomicType": "atom"
     },
     ".block-field-blocknodestudent-profilefield-stup-name": {
       "pageCount": 1623,
@@ -5123,6 +5127,15 @@
       "specFile": "specs/Event2DateTimes.json",
       "storyFile": "src/stories/molecules/Event2DateTimes.stories.tsx",
       "atomicType": "molecule"
+    },
+    "StudentProfileTitle": {
+      "selectors": [
+        ".block-field-blocknodestudent-profiletitle",
+        ".block-field-blocknodestudent-profiletitle h1"
+      ],
+      "specFile": "specs/StudentProfileTitle.json",
+      "storyFile": "src/stories/atoms/StudentProfileTitle.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }

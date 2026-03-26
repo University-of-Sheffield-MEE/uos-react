@@ -1,0 +1,39 @@
+{
+  "componentName": "StudentProfileTitle",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "Drupal layout builder field block displaying a student profile headline quote as an h1 element.",
+  "rootElement": "div",
+  "rootClassName": "block-field-blocknodestudent-profiletitle",
+  "selectorsCovered": [
+    ".block-field-blocknodestudent-profiletitle",
+    ".block-field-blocknodestudent-profiletitle h1"
+  ],
+  "props": [
+    {
+      "name": "quote",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h1", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Student profile title with a motivational quote",
+      "props": {
+        "quote": "Your time at Sheffield will go by so quickly – so have fun!"
+      }
+    },
+    {
+      "name": "LongQuote",
+      "description": "Student profile title with a longer inspirational message",
+      "props": {
+        "quote": "Having studied geography at undergraduate level I had covered areas of urban planning and always wanted to explore it further"
+      }
+    }
+  ],
+  "notes": "This is a Drupal layout builder field block. The root div always carries the classes 'block block-layout-builder block-field-blocknodestudent-profiletitle'. The h1 contains the student's featured quote or headline, which varies per student. Related student profile field blocks (.block-field-blocknodestudent-profilefield-stup-name, .block-field-blocknodestudent-profilefield-stup-black-text-sub-header, .block-field-blocknodestudent-profilefield-stup-grey-text-sub-header, .block-field-blocknodestudent-profilefield-stup-intro, .block-field-blocknodestudent-profilefield-stup-profile-image img, .block-field-blocknodestudent-profilefield-stup-year) are separate independent Drupal blocks rendered as siblings on the same student profile page — they are not children of this block.",
+  "htmlExamples": ["2773_15994"]
+}
