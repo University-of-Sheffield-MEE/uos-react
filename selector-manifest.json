@@ -1356,15 +1356,21 @@
     },
     ".logos-homehub": {
       "pageCount": 1037,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LogosHomehub",
+      "atomicType": "molecule"
     },
     ".logos-homehub .row-width": {
       "pageCount": 1037,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LogosHomehub",
+      "atomicType": "molecule"
     },
     ".logos-homehub .row-width .logo-container": {
       "pageCount": 1037,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LogosHomehub",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box": {
       "pageCount": 977,
@@ -3340,11 +3346,15 @@
     },
     ".logos-homehub .row-width .logo-container .home-hub-logos": {
       "pageCount": 33,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LogosHomehub",
+      "atomicType": "molecule"
     },
     ".logos-homehub .row-width .logo-container img": {
       "pageCount": 33,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LogosHomehub",
+      "atomicType": "molecule"
     },
     ".nohead .nlpheader .lpaspect": {
       "pageCount": 31,
@@ -3418,7 +3428,9 @@
     },
     ".logos-homehub .scrollarrows button": {
       "pageCount": 22,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LogosHomehub",
+      "atomicType": "molecule"
     },
     ".coursecard ul.course-features li:not(:last-of-type)": {
       "pageCount": 22,
@@ -3690,7 +3702,9 @@
     },
     ".logos-homehub p": {
       "pageCount": 9,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "LogosHomehub",
+      "atomicType": "molecule"
     },
     ".featured-news .newscard .video-embed-field-lazy": {
       "pageCount": 8,
@@ -4974,6 +4988,20 @@
       ],
       "specFile": "specs/SignpostCard.json",
       "storyFile": "src/stories/molecules/SignpostCard.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "LogosHomehub": {
+      "selectors": [
+        ".logos-homehub",
+        ".logos-homehub .row-width",
+        ".logos-homehub .row-width .logo-container",
+        ".logos-homehub .row-width .logo-container .home-hub-logos",
+        ".logos-homehub .row-width .logo-container img",
+        ".logos-homehub .scrollarrows button",
+        ".logos-homehub p"
+      ],
+      "specFile": "specs/LogosHomehub.json",
+      "storyFile": "src/stories/molecules/LogosHomehub.stories.tsx",
       "atomicType": "molecule"
     }
   }

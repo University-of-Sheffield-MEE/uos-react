@@ -1,0 +1,78 @@
+{
+  "componentName": "LogosHomehub",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A full-width scrollable row of partner or sponsor logos, optionally with a descriptive paragraph, used on hub pages.",
+  "rootElement": "div",
+  "rootClassName": "logos-homehub",
+  "selectorsCovered": [
+    ".logos-homehub",
+    ".logos-homehub .row-width",
+    ".logos-homehub .row-width .logo-container",
+    ".logos-homehub .row-width .logo-container .home-hub-logos",
+    ".logos-homehub .row-width .logo-container img",
+    ".logos-homehub .scrollarrows button",
+    ".logos-homehub p"
+  ],
+  "props": [
+    {
+      "name": "description",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".row-width p", "attribute": "innerText" }
+    },
+    {
+      "name": "logos",
+      "type": "Array<{ src: string; alt: string; href?: string; ariaLabel?: string }>",
+      "required": true,
+      "mapsTo": { "element": ".logo-container .home-hub-logos", "attribute": "innerText" }
+    },
+    {
+      "name": "showScrollArrows",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "mapsTo": { "togglesClass": "scrollarrows", "on": ".row-width" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Logo row with three sponsor logos, no description",
+      "props": {
+        "logos": [
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2022-11/UOSLogo_Primary_Violet_RGB.jpg", "alt": "The University of Sheffield logo", "href": "https://www.sheffield.ac.uk", "ariaLabel": "The University of Sheffield" },
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2021-06/EPSRC%20logo.jpg", "alt": "EPSRC logo", "href": "https://www.ukri.org/", "ariaLabel": "EPSRC" },
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2024-04/nhs-logo-880x4951.jpeg.jpg", "alt": "NHS logo" }
+        ]
+      }
+    },
+    {
+      "name": "WithDescription",
+      "description": "Logo row with a descriptive paragraph above",
+      "props": {
+        "description": "Make it Grow is a Knowledge Exchange project for the Institute for Sustainable Food, University of Sheffield, supported by the UKRI's Economic and Social Research Council.",
+        "logos": [
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2021-09/Copy%20of%20MiG%20Logo%20crop.jpg", "alt": "Make it Grow logo" },
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2021-07/advocatelogo.jpg", "alt": "The ADVOCATE project logo", "href": "http://www.sheffield.ac.uk/advocate-eu", "ariaLabel": "ADVOCATE Project" }
+        ]
+      }
+    },
+    {
+      "name": "WithScrollArrows",
+      "description": "Logo row with scroll navigation arrows for overflow",
+      "props": {
+        "showScrollArrows": true,
+        "logos": [
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2024-04/Buck_logo_tagline_period.png.jpg", "alt": "Logo for Buck, with the tagline \"Live better longer.\"", "href": "https://www.buckinstitute.org/", "ariaLabel": "The Buck Institute" },
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2022-11/UOSLogo_Primary_Violet_RGB.jpg", "alt": "The University of Sheffield logo", "href": "https://www.sheffield.ac.uk", "ariaLabel": "The University of Sheffield" },
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2021-06/EPSRC%20logo.jpg", "alt": "EPSRC logo", "href": "https://www.ukri.org/", "ariaLabel": "EPSRC" },
+          { "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/responsive_thumbnail_128px_x_288px_/public/2025-02/Ofsted_Good_GP_Colour2_1.png.jpg", "alt": "Ofsted Good Provider logo" }
+        ]
+      }
+    }
+  ],
+  "notes": "Root element has classes 'logos logos-homehub full-width' — all three must be hardcoded. Each logo item renders as an <a> when href is provided, otherwise as a <span>. The .home-hub-logos element wraps a div.media--image--figure containing a figure.imgcapt with a picture element. Scroll arrows (when shown) are rendered as a div.scrollarrows with button.left (aria-label='Scroll left') and button.right (aria-label='Scroll right') containing Font Awesome icons. The logo-container content is often dynamically populated in production — the component renders whatever logos are passed as props. The 'full-width' class appears on all observed instances.",
+  "htmlExamples": ["2554_4930", "2558_480", "2558_11322", "2558_19075"]
+}
