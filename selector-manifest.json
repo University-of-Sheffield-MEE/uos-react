@@ -2261,31 +2261,45 @@
     },
     ".nlpheader": {
       "pageCount": 266,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nlpheader .lpaspect": {
       "pageCount": 266,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nlpheader .lpaspect .lpcontent": {
       "pageCount": 266,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nlpheader .lpaspect .lpcontent p": {
       "pageCount": 266,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nlpheader .lpaspect .lpcontent h1": {
       "pageCount": 266,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nlpheader .lpaspect .lpcontent .arrow": {
       "pageCount": 265,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nlpheader .lpaspect .lpcontent .arrow button": {
       "pageCount": 265,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".paragraph--type--featured-image": {
       "pageCount": 263,
@@ -2347,7 +2361,9 @@
     },
     ".nlpheader .lpheaderimg .media--image--figure": {
       "pageCount": 235,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nlpheader .lpheaderimg .media--image--figure .imgcapt picture img": {
       "pageCount": 235,
@@ -3531,23 +3547,33 @@
     },
     ".nohead .nlpheader .lpaspect": {
       "pageCount": 31,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nohead .nlpheader .lpaspect .lpcontent": {
       "pageCount": 31,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nohead .nlpheader .lpaspect .lpcontent p": {
       "pageCount": 31,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nohead .nlpheader .lpaspect .lpcontent h1": {
       "pageCount": 31,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     ".nohead .nlpheader": {
       "pageCount": 31,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     },
     "main ul:not(.breadcrumbs,.a-to-z-rollup-list) li ul": {
       "pageCount": 31,
@@ -4631,6 +4657,12 @@
       "status": "done",
       "implementedBy": "EventMediaBlock",
       "atomicType": "molecule"
+    },
+    ".nlpheader .lpheaderimg": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "NlpHeader",
+      "atomicType": "organism"
     }
   },
   "components": {
@@ -5465,6 +5497,27 @@
       "specFile": "specs/EventMediaBlock.json",
       "storyFile": "src/stories/molecules/EventMediaBlock.stories.tsx",
       "atomicType": "molecule"
+    },
+    "NlpHeader": {
+      "selectors": [
+        ".nlpheader",
+        ".nlpheader .lpaspect",
+        ".nlpheader .lpheaderimg",
+        ".nlpheader .lpheaderimg .media--image--figure",
+        ".nlpheader .lpaspect .lpcontent",
+        ".nlpheader .lpaspect .lpcontent p",
+        ".nlpheader .lpaspect .lpcontent h1",
+        ".nlpheader .lpaspect .lpcontent .arrow",
+        ".nlpheader .lpaspect .lpcontent .arrow button",
+        ".nohead .nlpheader .lpaspect",
+        ".nohead .nlpheader .lpaspect .lpcontent",
+        ".nohead .nlpheader .lpaspect .lpcontent p",
+        ".nohead .nlpheader .lpaspect .lpcontent h1",
+        ".nohead .nlpheader"
+      ],
+      "specFile": "specs/NlpHeader.json",
+      "storyFile": "src/stories/organisms/NlpHeader.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }

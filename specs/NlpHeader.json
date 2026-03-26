@@ -1,0 +1,94 @@
+{
+  "componentName": "NlpHeader",
+  "atomicType": "organism",
+  "childComponents": [],
+  "description": "Full-width landing page hero header with a responsive banner image, a heading, a description paragraph, and a scroll-down arrow button.",
+  "rootElement": "div",
+  "rootClassName": "nlpheader",
+  "selectorsCovered": [
+    ".nlpheader",
+    ".nlpheader .lpaspect",
+    ".nlpheader .lpheaderimg",
+    ".nlpheader .lpheaderimg .media--image--figure",
+    ".nlpheader .lpaspect .lpcontent",
+    ".nlpheader .lpaspect .lpcontent p",
+    ".nlpheader .lpaspect .lpcontent h1",
+    ".nlpheader .lpaspect .lpcontent .arrow",
+    ".nlpheader .lpaspect .lpcontent .arrow button",
+    ".nohead .nlpheader .lpaspect",
+    ".nohead .nlpheader .lpaspect .lpcontent",
+    ".nohead .nlpheader .lpaspect .lpcontent p",
+    ".nohead .nlpheader .lpaspect .lpcontent h1",
+    ".nohead .nlpheader"
+  ],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".lpcontent h1", "attribute": "innerText" }
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".lpcontent p", "attribute": "innerText" }
+    },
+    {
+      "name": "imageSrc",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".lpheaderimg img", "attribute": "src" }
+    },
+    {
+      "name": "imageAlt",
+      "type": "string",
+      "required": false,
+      "default": "",
+      "mapsTo": { "element": ".lpheaderimg img", "attribute": "alt" }
+    },
+    {
+      "name": "scrollTarget",
+      "type": "string",
+      "required": false,
+      "default": ".region.region-breadcrumbs",
+      "mapsTo": { "element": ".arrow button", "attribute": "data-scrollto" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Hero header with banner image, title, and description",
+      "props": {
+        "title": "School of English",
+        "description": "We are an interdisciplinary school, forming a community that truly brings together and sits at the interface of literature, language and linguistics.",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/full_width_banner_mobile_1x/public/2019-03/31602.jpg?h=f7a0e3ff&itok=ktss9_3N",
+        "imageAlt": "The Jessop West building",
+        "scrollTarget": ".region.region-breadcrumbs"
+      }
+    },
+    {
+      "name": "NoImage",
+      "description": "Hero header without banner image (nohead variant — lpheaderimg is omitted)",
+      "props": {
+        "title": "PD-AGE",
+        "description": "International network for Parkinson's Disease modelling and AGEing. We are pioneering a global collaboration exploring the impact of ageing on Parkinson's disease.",
+        "scrollTarget": ".region.region-breadcrumbs"
+      }
+    },
+    {
+      "name": "ShortDescription",
+      "description": "Hero header with a brief one-line description",
+      "props": {
+        "title": "Facilities",
+        "description": "We're home to world-class facilities that support research both within the University of Sheffield and in collaboration with a wide variety of partners.",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/full_width_banner_mobile_1x/public/2020-01/DSC09731.jpg?h=e3382044&itok=Lw7z9b5Y",
+        "imageAlt": "The Diamond Pilot Plant",
+        "scrollTarget": ".region.region-breadcrumbs"
+      }
+    }
+  ],
+  "notes": "The image block (.lpheaderimg) is absent when the parent page has the .nohead body class; model imageSrc as optional and conditionally render the .lpheaderimg div. The arrow button always has aria-label='Scroll to content' and class 'js-scroll-to'; the data-scrollto attribute defaults to '.region.region-breadcrumbs'. For simplicity the component renders only the fallback img tag, as the responsive sources are CMS-generated.",
+  "htmlExamples": ["2568_7698", "2568_8719", "2568_3795", "2590_11322"]
+}
