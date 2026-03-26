@@ -1864,7 +1864,9 @@
     },
     ".ugcredits": {
       "pageCount": 403,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCredits",
+      "atomicType": "atom"
     },
     ".teaser-thumb": {
       "pageCount": 375,
@@ -5268,6 +5270,14 @@
       "specFile": "specs/NewsTeaser.json",
       "storyFile": "src/stories/molecules/NewsTeaser.stories.tsx",
       "atomicType": "molecule"
+    },
+    "UgCredits": {
+      "selectors": [
+        ".ugcredits"
+      ],
+      "specFile": "specs/UgCredits.json",
+      "storyFile": "src/stories/atoms/UgCredits.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }

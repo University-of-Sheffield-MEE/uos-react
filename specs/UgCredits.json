@@ -1,0 +1,53 @@
+{
+  "componentName": "UgCredits",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A bold inline label displaying a university module's credit count, used within course module descriptions on undergraduate course pages.",
+  "rootElement": "strong",
+  "rootClassName": "ugcredits",
+  "selectorsCovered": [".ugcredits"],
+  "props": [
+    {
+      "name": "credits",
+      "type": "string",
+      "required": true,
+      "mapsTo": {
+        "element": "strong.ugcredits",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard 20 credit module label",
+      "props": {
+        "credits": "20 credits"
+      }
+    },
+    {
+      "name": "FortyCredits",
+      "description": "A larger 40 credit module label",
+      "props": {
+        "credits": "40 credits"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple credit labels as they appear in a course module listing",
+      "container": {
+        "element": "div",
+        "className": "ugtext"
+      },
+      "instances": [
+        { "credits": "20 credits" },
+        { "credits": "40 credits" },
+        { "credits": "20 credits" },
+        { "credits": "10 credits" }
+      ]
+    }
+  ],
+  "notes": "Always renders as a <strong> element. The text content is always in the format '{number} credits' — treat the whole string as a single prop rather than separating number and unit.",
+  "htmlExamples": ["3384_1950", "3384_1945"]
+}
