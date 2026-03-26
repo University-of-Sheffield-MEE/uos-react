@@ -3090,15 +3090,21 @@
     },
     "h1.pgtitle": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     ".deptfac": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     ".pg-course-introd": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     ".pgcourserow": {
       "pageCount": 130,
@@ -3106,51 +3112,75 @@
     },
     "#main .pgkeybg": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box .startyear": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box h1": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box h1 .award-type": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box .deptfac": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.details": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.details > li": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.features": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.features li": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.features li a": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box .buttons": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box .buttons .uosbutton": {
       "pageCount": 130,
@@ -3166,27 +3196,39 @@
     },
     "#main .pgkeybg .sticky-ctas": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .sticky-ctas .ugbuttons": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .sticky-ctas .shrinkctas": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .sticky-ctas .ugbuttons .stickybutton": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .sticky-ctas .stickybutton": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .sticky-ctas.on-load": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     ".grouppromoPG": {
       "pageCount": 130,
@@ -3194,7 +3236,9 @@
     },
     ".startyear": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     ".pgcourserow .large-4": {
       "pageCount": 130,
@@ -3746,19 +3790,27 @@
     },
     "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance)": {
       "pageCount": 36,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).duration": {
       "pageCount": 36,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).attendance": {
       "pageCount": 36,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).startdate": {
       "pageCount": 36,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PgKeyBg",
+      "atomicType": "organism"
     },
     ".image-gallery__content h2": {
       "pageCount": 35,
@@ -6100,6 +6152,39 @@
       "specFile": "specs/ViewsExposedForm.json",
       "storyFile": "src/stories/molecules/ViewsExposedForm.stories.tsx",
       "atomicType": "molecule"
+    },
+    "PgKeyBg": {
+      "selectors": [
+        "#main .pgkeybg",
+        "#main .pgkeybg .pg-title-box",
+        "#main .pgkeybg .pg-title-box .startyear",
+        "#main .pgkeybg .pg-title-box h1",
+        "#main .pgkeybg .pg-title-box h1 .award-type",
+        "#main .pgkeybg .pg-title-box .deptfac",
+        "#main .pgkeybg .pg-title-box ul.details",
+        "#main .pgkeybg .pg-title-box ul.details > li",
+        "#main .pgkeybg .pg-title-box ul.features",
+        "#main .pgkeybg .pg-title-box ul.features li",
+        "#main .pgkeybg .pg-title-box ul.features li a",
+        "#main .pgkeybg .pg-title-box .buttons",
+        "#main .pgkeybg .sticky-ctas",
+        "#main .pgkeybg .sticky-ctas .ugbuttons",
+        "#main .pgkeybg .sticky-ctas .shrinkctas",
+        "#main .pgkeybg .sticky-ctas .ugbuttons .stickybutton",
+        "#main .pgkeybg .sticky-ctas .stickybutton",
+        "#main .pgkeybg .sticky-ctas.on-load",
+        "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance)",
+        "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).duration",
+        "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).attendance",
+        "#main .pgkeybg .pg-title-box ul.details > li span:not(.pgduration,.pgattendance).startdate",
+        ".startyear",
+        ".deptfac",
+        ".pg-course-introd",
+        "h1.pgtitle"
+      ],
+      "specFile": "specs/PgKeyBg.json",
+      "storyFile": "src/stories/organisms/PgKeyBg.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
