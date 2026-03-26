@@ -1,0 +1,49 @@
+{
+  "componentName": "ExploreItem",
+  "atomicType": "layout",
+  "childComponents": [],
+  "description": "A named, anchor-linked page section used on course pages, containing an h2 heading and freeform body content.",
+  "rootElement": "div",
+  "rootClassName": "explore-item",
+  "selectorsCovered": [".explore-item:not(.explore-unstyled)", ".explore-item:not(.explore-unstyled):not(#studentprofiles) h2"],
+  "props": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "div.explore-item", "attribute": "id" }
+    },
+    {
+      "name": "heading",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "h2", "attribute": "innerText" }
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Course description section with freeform body content",
+      "props": {
+        "id": "coursedescription",
+        "heading": "Course description"
+      }
+    },
+    {
+      "name": "EntryRequirements",
+      "description": "Entry requirements section",
+      "props": {
+        "id": "entryrequirements",
+        "heading": "Entry requirements"
+      }
+    }
+  ],
+  "notes": "Pure layout container for named, anchor-linked page sections. The id attribute drives in-page navigation via .ug-explore-menu. The explore-unstyled modifier variant is excluded from this spec. Children are always freeform CMS-rendered content.",
+  "htmlExamples": ["3926_1950", "3926_655", "3926_1781"]
+}

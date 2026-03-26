@@ -1804,11 +1804,15 @@
     },
     ".explore-item:not(.explore-unstyled)": {
       "pageCount": 413,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ExploreItem",
+      "atomicType": "layout"
     },
     ".explore-item:not(.explore-unstyled):not(#studentprofiles) h2": {
       "pageCount": 413,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ExploreItem",
+      "atomicType": "layout"
     },
     ".paragraph figure.imgcapt figcaption": {
       "pageCount": 407,
@@ -5213,6 +5217,15 @@
       "specFile": "specs/Roles.json",
       "storyFile": "src/stories/atoms/Roles.stories.tsx",
       "atomicType": "atom"
+    },
+    "ExploreItem": {
+      "selectors": [
+        ".explore-item:not(.explore-unstyled)",
+        ".explore-item:not(.explore-unstyled):not(#studentprofiles) h2"
+      ],
+      "specFile": "specs/ExploreItem.json",
+      "storyFile": "src/stories/layouts/ExploreItem.stories.tsx",
+      "atomicType": "layout"
     }
   }
 }
