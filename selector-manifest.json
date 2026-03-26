@@ -1628,15 +1628,18 @@
     },
     "dd #my-pubs .pubs-tabs": {
       "pageCount": 608,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "dd #my-pubs .pubs-tabs.fave-link": {
       "pageCount": 608,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "dd #my-pubs .pubs-tabs.all-link": {
       "pageCount": 608,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".uos-tabs .tab-gradient": {
       "pageCount": 604,
@@ -1687,7 +1690,8 @@
     },
     ".block-field-blocknodeeventtitle h2": {
       "pageCount": 585,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".block-field-blocknodeeventfield-ev-media": {
       "pageCount": 585,
@@ -1726,7 +1730,8 @@
     },
     ".uosblock.dark a[href]:not(.uosbutton):not(.textbutton)": {
       "pageCount": 527,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".event-details.ev-time span": {
       "pageCount": 526,
@@ -1833,7 +1838,8 @@
     },
     ".paragraph figure.imgcapt figcaption": {
       "pageCount": 407,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".profilecard": {
       "pageCount": 405,
@@ -1919,7 +1925,8 @@
     },
     ".uosblock a[href]:not(.uosbutton,.textbutton)": {
       "pageCount": 294,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#apply a:not(.uosbutton)": {
       "pageCount": 287,
@@ -1933,15 +1940,19 @@
     },
     ".printonly": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".padbot": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".ug-course-form button.primary": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".ug-course-search a": {
       "pageCount": 283,
@@ -1949,7 +1960,9 @@
     },
     ".footer-course-search-label": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     "body.node--type-ug-course .ug-course-structure .additional-info": {
       "pageCount": 283,
@@ -2161,35 +2174,49 @@
     },
     ".ug-course-search": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".ug-course-search a:first-of-type": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".ug-course-search .ug-course-form": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".ug-course-search .ug-course-form input": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".ug-course-search .ug-course-form button": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".ug-course-search strong.sim-courses-pipe": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".ug-course-search br.sim-courses-link-break": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "UgCourseSearch",
+      "atomicType": "molecule"
     },
     ".title-box": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "done"
     },
     ".ugcourserow .columns.large-4": {
       "pageCount": 283,
@@ -5530,6 +5557,22 @@
       ],
       "specFile": "specs/CourseStats.json",
       "storyFile": "src/stories/molecules/CourseStats.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "UgCourseSearch": {
+      "selectors": [
+        ".ug-course-search",
+        ".ug-course-search .ug-course-form",
+        ".ug-course-search .ug-course-form input",
+        ".ug-course-search .ug-course-form button",
+        ".ug-course-search a:first-of-type",
+        ".ug-course-search strong.sim-courses-pipe",
+        ".ug-course-search br.sim-courses-link-break",
+        ".footer-course-search-label",
+        ".ug-course-form button.primary"
+      ],
+      "specFile": "specs/UgCourseSearch.json",
+      "storyFile": "src/stories/molecules/UgCourseSearch.stories.tsx",
       "atomicType": "molecule"
     }
   }

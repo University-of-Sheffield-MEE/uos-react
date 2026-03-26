@@ -1,0 +1,69 @@
+{
+  "componentName": "UgCourseSearch",
+  "atomicType": "molecule",
+  "childComponents": ["Button"],
+  "description": "Undergraduate course search widget displayed in the course page footer area, with a keyword input, search button, similar-courses link, and A-Z listing links.",
+  "rootElement": "div",
+  "rootClassName": "ug-course-search",
+  "selectorsCovered": [
+    ".ug-course-search",
+    ".ug-course-search .ug-course-form",
+    ".ug-course-search .ug-course-form input",
+    ".ug-course-search .ug-course-form button",
+    ".ug-course-search a:first-of-type",
+    ".ug-course-search strong.sim-courses-pipe",
+    ".ug-course-search br.sim-courses-link-break",
+    ".footer-course-search-label",
+    ".ug-course-form button.primary"
+  ],
+  "props": [
+    {
+      "name": "similarCoursesHref",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a:first-of-type", "attribute": "href" }
+    },
+    {
+      "name": "similarCoursesLabel",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a:first-of-type", "attribute": "innerText" }
+    },
+    {
+      "name": "azLinks",
+      "type": "Array<{ label: string; href: string }>",
+      "required": false,
+      "default": "[]",
+      "mapsTo": { "element": ".ug-course-search .row .columns a.uoslink", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Course search widget with a similar courses link and two A-Z entry links",
+      "props": {
+        "similarCoursesHref": "/courses/subjects/computer-science",
+        "similarCoursesLabel": "Similar courses you might be interested in",
+        "azLinks": [
+          { "label": "2027-28 A-Z", "href": "/undergraduate/courses/2027" },
+          { "label": "2026-27 A-Z", "href": "/undergraduate/courses/2026" }
+        ]
+      }
+    },
+    {
+      "name": "DifferentSubject",
+      "description": "Course search widget for a chemistry-related course",
+      "props": {
+        "similarCoursesHref": "/courses/subjects/chemistry",
+        "similarCoursesLabel": "Similar courses you might be interested in",
+        "azLinks": [
+          { "label": "2027-28 A-Z", "href": "/undergraduate/courses/2027" },
+          { "label": "2026-27 A-Z", "href": "/undergraduate/courses/2026" }
+        ]
+      }
+    }
+  ],
+  "notes": "The form hidden inputs contain Funnelback search parameters and are hardcoded. The label text 'Find an undergraduate course', the placeholder 'Course title or keyword', and the button text 'Search' are always the same across all samples and should be hardcoded. The similar-courses link href and label vary per course. The A-Z links are modelled as a prop for flexibility. The pipe separator (strong.sim-courses-pipe) and line break (br.sim-courses-link-break) between the similar-courses link and A-Z links are structural and should be hardcoded. The Button atom is imported and used for the search button with as='button' and primary={true}.",
+  "htmlExamples": ["3978_1950", "3978_1738", "3978_1945"]
+}
