@@ -911,7 +911,9 @@
     },
     ".block-field-blocknodepagefield-b-media": {
       "pageCount": 4266,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "PageMediaBlock",
+      "atomicType": "molecule"
     },
     ".uosblock.grey": {
       "pageCount": 3932,
@@ -4419,6 +4421,24 @@
       "status": "done",
       "implementedBy": "NewsArticleMediaBlock",
       "atomicType": "molecule"
+    },
+    ".block-field-blocknodepagefield-b-media .media--image--figure": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "PageMediaBlock",
+      "atomicType": "molecule"
+    },
+    "figure.imgcapt": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "PageMediaBlock",
+      "atomicType": "molecule"
+    },
+    ".block-field-blocknodepagefield-b-media figcaption": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "PageMediaBlock",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -5045,6 +5065,17 @@
       ],
       "specFile": "specs/NewsArticleMediaBlock.json",
       "storyFile": "src/stories/molecules/NewsArticleMediaBlock.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "PageMediaBlock": {
+      "selectors": [
+        ".block-field-blocknodepagefield-b-media",
+        ".block-field-blocknodepagefield-b-media .media--image--figure",
+        "figure.imgcapt",
+        ".block-field-blocknodepagefield-b-media figcaption"
+      ],
+      "specFile": "specs/PageMediaBlock.json",
+      "storyFile": "src/stories/molecules/PageMediaBlock.stories.tsx",
       "atomicType": "molecule"
     }
   }

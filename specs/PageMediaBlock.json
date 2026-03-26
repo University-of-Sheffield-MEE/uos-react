@@ -1,0 +1,120 @@
+{
+  "componentName": "PageMediaBlock",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "Drupal Layout Builder block that renders a responsive page hero/feature image with an optional caption, using a picture element with multiple responsive sources.",
+  "rootElement": "div",
+  "rootClassName": "block block-layout-builder block-field-blocknodepagefield-b-media",
+  "selectorsCovered": [
+    ".block-field-blocknodepagefield-b-media",
+    ".block-field-blocknodepagefield-b-media .media--image--figure",
+    ".block-field-blocknodepagefield-b-media figure.imgcapt",
+    ".block-field-blocknodepagefield-b-media figcaption"
+  ],
+  "props": [
+    {
+      "name": "twoThirds1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(1)", "attribute": "srcset" }
+    },
+    {
+      "name": "twoThirds2x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(1)", "attribute": "srcset" }
+    },
+    {
+      "name": "desktopFull1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(2)", "attribute": "srcset" }
+    },
+    {
+      "name": "desktopFull2x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(2)", "attribute": "srcset" }
+    },
+    {
+      "name": "tabletTwoThirds1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(3)", "attribute": "srcset" }
+    },
+    {
+      "name": "tabletTwoThirds2x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(3)", "attribute": "srcset" }
+    },
+    {
+      "name": "mobile1x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(4)", "attribute": "srcset" }
+    },
+    {
+      "name": "mobile2x",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "source:nth-child(4)", "attribute": "srcset" }
+    },
+    {
+      "name": "src",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "src" }
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "alt" }
+    },
+    {
+      "name": "caption",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": "figcaption", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard page media block without caption",
+      "props": {
+        "twoThirds1x": "/sites/default/files/styles/two_thirds_1x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=rmJWRdwJ 752w",
+        "twoThirds2x": "/sites/default/files/styles/two_thirds_2x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=WI6OMzhp 1504w",
+        "desktopFull1x": "/sites/default/files/styles/desktop_full_width_1x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=LH22D_-9 1280w",
+        "desktopFull2x": "//cdn.sheffield.ac.uk/sites/default/files/styles/desktop_full_width_2x/public/2019-05/Germanic%20buildings.jpg.jpeg?itok=2hNTbEQo 2560w",
+        "tabletTwoThirds1x": "/sites/default/files/styles/tablet_two_thirds_1x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=9p5TA0K0 592w",
+        "tabletTwoThirds2x": "/sites/default/files/styles/tablet_two_thirds_2x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=-xdhd77y 1184w",
+        "mobile1x": "/sites/default/files/styles/mobile_single_column_1x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=ZOJGjUDu 375w",
+        "mobile2x": "/sites/default/files/styles/mobile_single_column_2x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=7i_hdizC 750w",
+        "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-05/Germanic%20buildings.jpg?h=33e35e56&itok=ZOJGjUDu",
+        "alt": "Buildings in Germany."
+      }
+    },
+    {
+      "name": "WithCaption",
+      "description": "Page media block with an optional figcaption",
+      "props": {
+        "twoThirds1x": "/sites/default/files/styles/two_thirds_1x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=iire1_e5 752w",
+        "twoThirds2x": "/sites/default/files/styles/two_thirds_2x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=JsBAekHD 1504w",
+        "desktopFull1x": "/sites/default/files/styles/desktop_full_width_1x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=ArlJFWAg 1280w",
+        "desktopFull2x": "//cdn.sheffield.ac.uk/sites/default/files/styles/desktop_full_width_2x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg.jpeg?itok=vSeB4pYY 2560w",
+        "tabletTwoThirds1x": "/sites/default/files/styles/tablet_two_thirds_1x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=NUHMxHAu 592w",
+        "tabletTwoThirds2x": "/sites/default/files/styles/tablet_two_thirds_2x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=mDfEHH21 1184w",
+        "mobile1x": "/sites/default/files/styles/mobile_single_column_1x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=QBzvSUct 375w",
+        "mobile2x": "/sites/default/files/styles/mobile_single_column_2x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=bzCvYeFr 750w",
+        "src": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2022-01/conscious-design-3D43SBDDkAc-unsplash.jpg?h=da7ed82d&itok=QBzvSUct",
+        "alt": "Person cooking with frying pan",
+        "caption": "Photo by Conscious Design on Unsplash"
+      }
+    }
+  ],
+  "notes": "This is a Drupal Layout Builder block for page-level media. The picture element always has exactly four source elements targeting: (1) large desktop (min-width:1280px) two-thirds width, (2) desktop full width (min-width:1024px), (3) tablet two-thirds (min-width:768px), and (4) mobile fallback. Each source has a 1x and 2x srcset entry. The figcaption is optional — only present in a minority of samples. The root element carries Drupal block classes: 'block block-layout-builder block-field-blocknodepagefield-b-media'. The img uses loading='eager' and fixed width/height of 375x211 for mobile.",
+  "htmlExamples": ["2124_16467", "2124_15474", "2124_16650", "2124_13774"]
+}
