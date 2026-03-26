@@ -2430,11 +2430,15 @@
     },
     ".featured-news": {
       "pageCount": 234,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div": {
       "pageCount": 234,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".dark .uosbutton": {
       "pageCount": 232,
@@ -2544,43 +2548,63 @@
     },
     ".featured-news > div a": {
       "pageCount": 204,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard .card-content": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard a": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard a p": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard .bottomrow": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard .bottomrow .link-arrow": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard .bottomrow .link-arrow .ncarrow": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard p": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard:last-of-type": {
       "pageCount": 202,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".news-teaser-link": {
       "pageCount": 191,
@@ -2634,7 +2658,9 @@
     },
     ".featured-news > div .newscard h2": {
       "pageCount": 165,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".image-gallery": {
       "pageCount": 164,
@@ -2714,23 +2740,33 @@
     },
     ".featured-news > div .newscard.mainfeat": {
       "pageCount": 154,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard.mainfeat .thumb img": {
       "pageCount": 154,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard.mainfeat a .thumb": {
       "pageCount": 154,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard.mainfeat a": {
       "pageCount": 154,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news > div .newscard.mainfeat .bottomrow": {
       "pageCount": 154,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".button.success": {
       "pageCount": 148,
@@ -2740,7 +2776,9 @@
     },
     ".featured-news > div .newscard.mainfeat p": {
       "pageCount": 148,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".views-exposed-form": {
       "pageCount": 148,
@@ -3216,7 +3254,9 @@
     },
     ".featured-news .featured-news-view-all-link": {
       "pageCount": 96,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     "dd #my-pubs .backToTop": {
       "pageCount": 96,
@@ -3274,7 +3314,9 @@
     },
     ".featured-news > div .newscard h3": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     "td": {
       "pageCount": 81,
@@ -3646,7 +3688,9 @@
     },
     ".featured-news > div .newscard .news-src": {
       "pageCount": 29,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".ugcoursebold": {
       "pageCount": 29,
@@ -3972,11 +4016,15 @@
     },
     ".featured-news .newscard .video-embed-field-lazy": {
       "pageCount": 8,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".featured-news .newscard .video-embed-field-lazy-play": {
       "pageCount": 8,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "FeaturedNews",
+      "atomicType": "organism"
     },
     ".event-index .views-row": {
       "pageCount": 8,
@@ -5661,6 +5709,37 @@
       "specFile": "specs/DepartmentStats.json",
       "storyFile": "src/stories/molecules/DepartmentStats.stories.tsx",
       "atomicType": "molecule"
+    },
+    "FeaturedNews": {
+      "selectors": [
+        ".featured-news",
+        ".featured-news > div",
+        ".featured-news > div .newscard",
+        ".featured-news > div .newscard.mainfeat",
+        ".featured-news > div .newscard a",
+        ".featured-news > div .newscard a p",
+        ".featured-news > div .newscard .card-content",
+        ".featured-news > div .newscard .bottomrow",
+        ".featured-news > div .newscard .bottomrow .link-arrow",
+        ".featured-news > div .newscard .bottomrow .link-arrow .ncarrow",
+        ".featured-news > div .newscard p",
+        ".featured-news > div .newscard h2",
+        ".featured-news > div .newscard h3",
+        ".featured-news > div .newscard:last-of-type",
+        ".featured-news > div .newscard.mainfeat .thumb img",
+        ".featured-news > div .newscard.mainfeat a .thumb",
+        ".featured-news > div .newscard.mainfeat a",
+        ".featured-news > div .newscard.mainfeat .bottomrow",
+        ".featured-news > div .newscard.mainfeat p",
+        ".featured-news > div a",
+        ".featured-news > div .newscard .news-src",
+        ".featured-news .featured-news-view-all-link",
+        ".featured-news .newscard .video-embed-field-lazy",
+        ".featured-news .newscard .video-embed-field-lazy-play"
+      ],
+      "specFile": "specs/FeaturedNews.json",
+      "storyFile": "src/stories/organisms/FeaturedNews.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
