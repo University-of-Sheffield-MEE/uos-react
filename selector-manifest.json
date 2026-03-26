@@ -1364,31 +1364,45 @@
     },
     ".paragraph--type--para-signpost-box": {
       "pageCount": 977,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box > a": {
       "pageCount": 977,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
       "pageCount": 977,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbtitle": {
       "pageCount": 977,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow": {
       "pageCount": 977,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box.dark .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
       "pageCount": 937,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box.dark": {
       "pageCount": 937,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".coursecard": {
       "pageCount": 896,
@@ -1490,11 +1504,15 @@
     },
     ".multicol .medium-4 .paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
       "pageCount": 656,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".multicol .medium-4 .paragraph--type--para-signpost-box": {
       "pageCount": 656,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".event-details.ev-date span": {
       "pageCount": 653,
@@ -2976,15 +2994,21 @@
     },
     ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
       "pageCount": 80,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow": {
       "pageCount": 80,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".paragraph--type--para-signpost-box.highlight": {
       "pageCount": 80,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaSignpostBox",
+      "atomicType": "molecule"
     },
     ".uosblock.highlight h3": {
       "pageCount": 78,
@@ -4817,6 +4841,25 @@
       ],
       "specFile": "specs/ProfileLinkPromo.json",
       "storyFile": "src/stories/molecules/ProfileLinkPromo.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "ParaSignpostBox": {
+      "selectors": [
+        ".paragraph--type--para-signpost-box",
+        ".paragraph--type--para-signpost-box > a",
+        ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title",
+        ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbtitle",
+        ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow",
+        ".paragraph--type--para-signpost-box.dark",
+        ".paragraph--type--para-signpost-box.dark .block-field-blockparagraphpara-signpost-boxfield-sb-title",
+        ".paragraph--type--para-signpost-box.highlight",
+        ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title",
+        ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow",
+        ".multicol .medium-4 .paragraph--type--para-signpost-box",
+        ".multicol .medium-4 .paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title"
+      ],
+      "specFile": "specs/ParaSignpostBox.json",
+      "storyFile": "src/stories/molecules/ParaSignpostBox.stories.tsx",
       "atomicType": "molecule"
     }
   }

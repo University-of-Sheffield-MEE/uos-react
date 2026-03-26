@@ -1,0 +1,143 @@
+{
+  "componentName": "ParaSignpostBox",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A Drupal paragraph signpost box component that renders a clickable card with an image and a titled arrow link, used to navigate users to related content.",
+  "rootElement": "div",
+  "rootClassName": "paragraph--type--para-signpost-box",
+  "selectorsCovered": [
+    ".paragraph--type--para-signpost-box",
+    ".paragraph--type--para-signpost-box > a",
+    ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title",
+    ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbtitle",
+    ".paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow",
+    ".paragraph--type--para-signpost-box.dark",
+    ".paragraph--type--para-signpost-box.dark .block-field-blockparagraphpara-signpost-boxfield-sb-title",
+    ".paragraph--type--para-signpost-box.highlight",
+    ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title",
+    ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title .sbarrow",
+    ".multicol .medium-4 .paragraph--type--para-signpost-box",
+    ".multicol .medium-4 .paragraph--type--para-signpost-box .block-field-blockparagraphpara-signpost-boxfield-sb-title"
+  ],
+  "props": [
+    {
+      "name": "href",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a", "attribute": "href" }
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a", "attribute": "aria-label" }
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".sbtitle", "attribute": "innerText" }
+    },
+    {
+      "name": "imageSrc",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "src" }
+    },
+    {
+      "name": "imageAlt",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "alt" }
+    },
+    {
+      "name": "dark",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "mapsTo": { "togglesClass": "dark", "on": "root" }
+    },
+    {
+      "name": "highlight",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "mapsTo": { "togglesClass": "highlight", "on": "root" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Standard dark signpost box with image and arrow title",
+      "props": {
+        "href": "/international/after-you-apply/undergraduate",
+        "ariaLabel": "Track your application",
+        "title": "Track your application",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2024-08/29993.jpg?h=c043925e&itok=osAZvTg6",
+        "imageAlt": "Firth Court",
+        "dark": true
+      }
+    },
+    {
+      "name": "Dark",
+      "description": "Signpost box with dark theme modifier",
+      "props": {
+        "href": "/english/undergraduate",
+        "ariaLabel": "Undergraduate study",
+        "title": "Undergraduate study",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-04/18183.jpg?h=9c9a052d&itok=PsRPiFCR",
+        "imageAlt": "A student takes notes and listens during a group discussion",
+        "dark": true
+      }
+    },
+    {
+      "name": "Highlight",
+      "description": "Signpost box with highlight theme modifier",
+      "props": {
+        "href": "/feastandfamine/overabundance-and-defectivity",
+        "ariaLabel": "Overabundance and defectivity",
+        "title": "Overabundance and defectivity",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2020-10/26408.jpg?h=cef4c4d5&itok=5KLeLbFh",
+        "imageAlt": "Library shelf",
+        "highlight": true
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple signpost boxes as typically rendered in a multicol grid",
+      "container": {
+        "element": "div",
+        "className": "multicol"
+      },
+      "instances": [
+        {
+          "href": "/international/entry-requirements/germany",
+          "ariaLabel": "Entry requirements",
+          "title": "Entry requirements",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2019-09/_DB_8660.jpg?h=eb69096e&itok=8D0hRBLd",
+          "imageAlt": "a group of students in a lecture theatre",
+          "dark": true
+        },
+        {
+          "href": "/social-sciences/research/health-and-wellbeing/health-informatics",
+          "ariaLabel": "Health Informatics",
+          "title": "Health Informatics",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2021-06/pexels-thirdman-5327920.jpg?h=0e43a09f&itok=iHUjEQNv",
+          "imageAlt": "A stethoscope and an iPad with data",
+          "dark": true
+        },
+        {
+          "href": "/social-sciences/our-people/faculty-leadership",
+          "ariaLabel": "Faculty leadership",
+          "title": "Faculty leadership",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/mobile_single_column_1x/public/2024-10/39142.jpg?h=8c73ad80&itok=GdbZ-Asx",
+          "imageAlt": "An exterior close up view of the Wave",
+          "dark": true
+        }
+      ]
+    }
+  ],
+  "notes": "The root div always carries 'paragraph' and 'paragraph--view-mode--default' classes in addition to 'paragraph--type--para-signpost-box'. The 'dark' and 'highlight' modifiers are mutually exclusive in practice. The image block uses a responsive picture element but the component stores a single src for the fallback img tag. The title block always contains a .sbtitle div and a .sbarrow div with a Font Awesome arrow icon — both are always rendered. The aria-label on the anchor mirrors the title text in all observed samples.",
+  "htmlExamples": ["2944_7213", "2944_4930", "2944_17535", "2944_20473"]
+}
