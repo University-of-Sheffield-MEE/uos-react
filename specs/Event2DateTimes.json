@@ -1,0 +1,137 @@
+{
+  "componentName": "Event2DateTimes",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "Event date and time details block showing event schedule, add-to-calendar controls, and optional registration link for a university event page.",
+  "rootElement": "div",
+  "rootClassName": "event2-date-times",
+  "selectorsCovered": [
+    ".event2-date-times",
+    ".event2-date-times h2",
+    ".event2-date-times ul",
+    ".event2-date-times ul li"
+  ],
+  "props": [
+    {
+      "name": "isEventListing",
+      "type": "boolean",
+      "required": false,
+      "default": "true",
+      "mapsTo": {
+        "togglesClass": "event2-date-times--event-listing",
+        "on": "root"
+      }
+    },
+    {
+      "name": "hasTakenPlace",
+      "type": "boolean",
+      "required": false,
+      "default": "false"
+    },
+    {
+      "name": "dateTimeText",
+      "type": "string",
+      "required": false,
+      "mapsTo": {
+        "element": ".ev-singledate",
+        "attribute": "innerText"
+      }
+    },
+    {
+      "name": "isEventToday",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "mapsTo": {
+        "togglesClass": "event-today",
+        "on": "li.event-time"
+      }
+    },
+    {
+      "name": "registrationHref",
+      "type": "string",
+      "required": false,
+      "mapsTo": {
+        "element": ".ev-link a",
+        "attribute": "href"
+      }
+    },
+    {
+      "name": "registrationLabel",
+      "type": "string",
+      "required": false,
+      "mapsTo": {
+        "element": ".ev-link a",
+        "attribute": "innerText"
+      }
+    },
+    {
+      "name": "googleCalendarHref",
+      "type": "string",
+      "required": false,
+      "mapsTo": {
+        "element": ".calendar-buttons a:first-child",
+        "attribute": "href"
+      }
+    },
+    {
+      "name": "appleCalendarHref",
+      "type": "string",
+      "required": false,
+      "mapsTo": {
+        "element": ".calendar-buttons a:nth-child(2)",
+        "attribute": "href"
+      }
+    },
+    {
+      "name": "outlookCalendarHref",
+      "type": "string",
+      "required": false,
+      "mapsTo": {
+        "element": ".calendar-buttons a:nth-child(3)",
+        "attribute": "href"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Upcoming event with date, time, and calendar links",
+      "props": {
+        "isEventListing": true,
+        "hasTakenPlace": false,
+        "dateTimeText": "Thursday 7 May 2026 - 6:30pm to 8:30pm",
+        "isEventToday": true,
+        "googleCalendarHref": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Example+Event",
+        "appleCalendarHref": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR",
+        "outlookCalendarHref": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR"
+      }
+    },
+    {
+      "name": "WithRegistrationLink",
+      "description": "Upcoming event with a registration link",
+      "props": {
+        "isEventListing": true,
+        "hasTakenPlace": false,
+        "dateTimeText": "Monday 20 April 2026 - 12:00pm to 3:00pm",
+        "isEventToday": true,
+        "registrationHref": "https://www.tickettailor.com/events/universityofsheffield2/2021956",
+        "registrationLabel": "Register here",
+        "googleCalendarHref": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Example+Event",
+        "appleCalendarHref": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR",
+        "outlookCalendarHref": "data:text/calendar;charset=utf8,BEGIN:VCALENDAR"
+      }
+    },
+    {
+      "name": "PastEvent",
+      "description": "An event that has already taken place",
+      "props": {
+        "isEventListing": true,
+        "hasTakenPlace": true
+      }
+    }
+  ],
+  "notes": "The h2 'Event details' is always hardcoded. When hasTakenPlace is true, a paragraph 'This event has taken place.' is shown instead of the event list. The add-to-cal button inside ev-singledate always says 'Add to calendar' and toggles class 'event-today' matching the li. Calendar href values are data URIs for iCal format for Apple and Outlook. The ev-singledate text includes a Font Awesome calendar icon (fa-calendar) rendered as <i class='fas fa-sm fa-calendar'></i> before the date text.",
+  "htmlExamples": ["2237_15030", "2237_1999", "2237_2417"]
+}

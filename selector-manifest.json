@@ -835,7 +835,8 @@
     },
     ".node--type-news-article ul.breadcrumbs li:last-child": {
       "pageCount": 5887,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "sub-selector covered by Breadcrumbs molecule"
     },
     "h1.headline": {
       "pageCount": 5887,
@@ -1182,7 +1183,8 @@
     },
     ".node--type-student-profile ul.breadcrumbs li:last-child": {
       "pageCount": 1623,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "sub-selector covered by Breadcrumbs molecule"
     },
     ".block-field-blocknodestudent-profiletitle": {
       "pageCount": 1623,
@@ -1676,11 +1678,15 @@
     },
     ".event2-date-times": {
       "pageCount": 543,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Event2DateTimes",
+      "atomicType": "molecule"
     },
     ".event2-date-times h2": {
       "pageCount": 543,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Event2DateTimes",
+      "atomicType": "molecule"
     },
     ".stap-teaser p": {
       "pageCount": 530,
@@ -3194,11 +3200,15 @@
     },
     ".event2-date-times ul": {
       "pageCount": 56,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Event2DateTimes",
+      "atomicType": "molecule"
     },
     ".event2-date-times ul li": {
       "pageCount": 56,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Event2DateTimes",
+      "atomicType": "molecule"
     },
     ".event-time": {
       "pageCount": 56,
@@ -5101,6 +5111,17 @@
       ],
       "specFile": "specs/UosTabs.json",
       "storyFile": "src/stories/molecules/UosTabs.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "Event2DateTimes": {
+      "selectors": [
+        ".event2-date-times",
+        ".event2-date-times h2",
+        ".event2-date-times ul",
+        ".event2-date-times ul li"
+      ],
+      "specFile": "specs/Event2DateTimes.json",
+      "storyFile": "src/stories/molecules/Event2DateTimes.stories.tsx",
       "atomicType": "molecule"
     }
   }
