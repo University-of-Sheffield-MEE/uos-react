@@ -12,6 +12,14 @@ The source material is an existing university website. The agents analyse its gl
 
 The question the experiment asks is: **how far can a sufficiently structured agentic system get on a non-trivial, open-ended frontend engineering task before meaningful human intervention is required?**
 
+## Generated components
+
+The latest generated components live on the [`components-attempt-3`](https://github.com/University-of-Sheffield-MEE/uos-react/tree/components-attempt-3) branch. `main` contains only the pipeline tooling and agent configuration.
+
+A Storybook instance built from that branch is deployed to GitHub Pages:
+
+**[https://university-of-sheffield-mee.github.io/uos-react/](https://university-of-sheffield-mee.github.io/uos-react/)**
+
 ---
 
 ## How the pipeline works
@@ -110,11 +118,10 @@ logs/orchestrator.log         one JSON line per completed pipeline iteration
 
 ---
 
-## Running Storybook
+## Running Storybook locally
 
 ```bash
+git checkout components-attempt-3
 npm install
 npm run storybook
 ```
-
-The Storybook instance shows all generated components. It is useful for reviewing agent output, not for using the components.

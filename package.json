@@ -14,6 +14,7 @@
     "tools:init-manifest": "node tools/init-manifest.js"
   },
   "dependencies": {
+    "htmlfy": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

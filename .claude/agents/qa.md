@@ -29,7 +29,7 @@ Output ONLY a single valid JSON object. No prose, no explanation, no markdown fe
   "issues": [
     {
       "severity": "error | warning | info",
-      "check": "structural-match | class-coverage | props-completeness | story-quality | typescript | html-example-reproducibility",
+      "check": "structural-match | class-coverage | props-completeness | story-quality | typescript | selector-story-coverage | html-example-reproducibility",
       "story": "StoryName or null if not story-specific",
       "message": "Human-readable description of the issue"
     }
@@ -100,7 +100,17 @@ Visual scan only — do not run a compiler:
 - No explicit `any` types (warn only — does not block pass)
 - Return type is valid JSX (function returns JSX element, not undefined)
 
-### 6. HTML example reproducibility
+### 6. Selector story coverage
+
+**Check: `selector-story-coverage`**
+
+For each selector in `selectorsCovered`, inspect whether it contains an ancestor context (e.g. `#main .the-component-class`, `.page-wrapper .item`). If a selector has an ancestor part that is outside the component's root element, the storybook stories should render the component inside that ancestor.
+
+Flag as **`error`** if: a css selector in `selectorsCovered` includes an ancestor context that is required for styles to apply, but the stories do not all render the component within that context.
+
+Example error: `selectorsCovered` contains `#main .news-teaser`, and the story's render function is `render: () => <NewsTeaser />`. The `#main` wrapper is required for styles to apply — this is a QA failure. Correct implementation would be `render: () => <div id="main"><NewsTeaser /></div>`.
+
+### 7. HTML example reproducibility
 
 The spec's `htmlExamples` array contains sample IDs. Fetch each one before performing this check:
 ```bash
