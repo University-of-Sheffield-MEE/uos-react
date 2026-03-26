@@ -201,7 +201,7 @@ export const Featured: Story = {
 - Always include `tags: ['autodocs']`.
 - Story names must **exactly match** the names in the ComponentSpec `stories` array.
 - Use `args` for all prop values. Do NOT use a `render` function unless the story has an `instances` array.
-- **URLS**: when inclduing URLs from your html snippets, in components or stories (e.g. logos), prefix them with `https://sheffield.ac.uk/`.
+- **URLS**: when inclduing URLs from your html snippets, in components or stories (e.g. logos), prefix any URLs without a domain with `https://sheffield.ac.uk/`. (e.g. "/images/report.jpg" → "https://sheffield.ac.uk/images/report.jpg"). Any URLs that already include a domain should be left as-is (e.g. "https://cdn.sheffield.ac.uk/sites/default/files/..." should not be changed).
 - **Group story** — identified by an `instances` array in the spec rather than a `props` object. Render each entry in `instances` as a separate component instance. Use the exact prop values from `instances`; do not invent placeholder content. Wrap the instances in the `container` element from the spec (using its `className` if present); if no `container` is specified, fall back to `<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>`.
   ```tsx
   // container: { element: "ul", className: "news-list" }
