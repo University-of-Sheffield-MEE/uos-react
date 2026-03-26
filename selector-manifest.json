@@ -1812,31 +1812,45 @@
     },
     ".profilecard": {
       "pageCount": 405,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileCard",
+      "atomicType": "molecule"
     },
     ".profilecard p": {
       "pageCount": 405,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileCard",
+      "atomicType": "molecule"
     },
     ".profilecard .name": {
       "pageCount": 405,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileCard",
+      "atomicType": "molecule"
     },
     ".profilecard .subhead": {
       "pageCount": 405,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileCard",
+      "atomicType": "molecule"
     },
     ".profilecard .subhead2": {
       "pageCount": 405,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileCard",
+      "atomicType": "molecule"
     },
     ".profilecard img": {
       "pageCount": 405,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileCard",
+      "atomicType": "molecule"
     },
     "a.profilecard .name": {
       "pageCount": 403,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileCard",
+      "atomicType": "molecule"
     },
     ".ugcredits": {
       "pageCount": 403,
@@ -5165,6 +5179,20 @@
       "specFile": "specs/StudentProfileImage.json",
       "storyFile": "src/stories/atoms/StudentProfileImage.stories.tsx",
       "atomicType": "atom"
+    },
+    "ProfileCard": {
+      "selectors": [
+        ".profilecard",
+        ".profilecard p",
+        ".profilecard .name",
+        ".profilecard .subhead",
+        ".profilecard .subhead2",
+        ".profilecard img",
+        "a.profilecard .name"
+      ],
+      "specFile": "specs/ProfileCard.json",
+      "storyFile": "src/stories/molecules/ProfileCard.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }

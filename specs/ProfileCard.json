@@ -1,0 +1,122 @@
+{
+  "componentName": "ProfileCard",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A student profile card linking to a profile page, displaying a thumbnail photo, a quote, the person's name, their current role, and their course.",
+  "rootElement": "a",
+  "rootClassName": "profilecard",
+  "selectorsCovered": [".profilecard", ".profilecard p", ".profilecard .name", ".profilecard .subhead", ".profilecard .subhead2", ".profilecard img", "a.profilecard .name"],
+  "props": [
+    {
+      "name": "href",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a.profilecard", "attribute": "href" }
+    },
+    {
+      "name": "imageSrc",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".thumb img", "attribute": "src" }
+    },
+    {
+      "name": "imageAlt",
+      "type": "string",
+      "required": false,
+      "default": "",
+      "mapsTo": { "element": ".thumb img", "attribute": "alt" }
+    },
+    {
+      "name": "quote",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "p:first-of-type", "attribute": "innerText" }
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".name", "attribute": "innerText" }
+    },
+    {
+      "name": "subhead",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".subhead", "attribute": "innerText" }
+    },
+    {
+      "name": "subhead2",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".subhead2", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "A single profile card for a chemical engineering student.",
+      "props": {
+        "href": "/cmbe/undergraduate/profiles/lucy",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_1x/public/2020-02/CF3_6866.jpg?h=ab4e4061&itok=nLRbID95",
+        "imageAlt": "Lucy Sherburn",
+        "quote": "Take advantage of everything the University and department have to offer",
+        "name": "Lucy Sherburn",
+        "subhead": "Graduate Engineer,",
+        "subhead2": "MEng Chemical Engineering"
+      }
+    },
+    {
+      "name": "PostgraduateProfile",
+      "description": "A profile card for a postgraduate student.",
+      "props": {
+        "href": "/biosciences/postgraduate/student-profiles/sruthi-kannel-suresh",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_1x/public/2024-08/Sruthi%20Kannel%20Suresh%20crop.png?h=cff5c2f3&itok=qAOsGbXq",
+        "imageAlt": "Photo of Sruthi Kannel Suresh",
+        "quote": "My experience on the MSc has inspired me to pursue a PhD",
+        "name": "Sruthi Kannel Suresh",
+        "subhead": "Research project: Molecular characterisation of TOP1A mutants in zebrafish linked to DNA damage,",
+        "subhead2": "MSc Biomedical Science"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple profile cards as typically displayed in a grid on a course page.",
+      "container": {
+        "element": "div",
+        "className": "multicol"
+      },
+      "instances": [
+        {
+          "href": "/cmbe/undergraduate/profiles/daniel",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_1x/public/2020-01/270A3036.JPG?h=5b3d15af&itok=BZGllgSr",
+          "imageAlt": "Graduate Dan Smith",
+          "quote": "Your career aspirations won't just be given to you – you have to make important decisions yourself and find out what makes you tick",
+          "name": "Daniel Smith",
+          "subhead": "Process Engineering Assistant,",
+          "subhead2": "MEng Chemical Engineering with Biotechnology"
+        },
+        {
+          "href": "/eee/undergraduate/profiles/thomas",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_1x/public/2023-03/Page%208%20-%20Tom%20Searle%20%283%29.png?h=b9da2d5a&itok=eJkmSWGe",
+          "imageAlt": "Photograph of alumni Thomas Searle",
+          "quote": "The course content is really varied - you learn a lot of really interesting things and there's a lot of avenues that you can go down",
+          "name": "Thomas Searle",
+          "subhead": "Systems Engineer, Sagentia Innovation,",
+          "subhead2": "MEng Electrical and Electronic Engineering with a Year in Industry"
+        },
+        {
+          "href": "/mps/undergraduate/chemistry-student-profiles/chris-atkinson",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_1x/public/2025-09/Chris%20Atkinson%20IMG_9643_0.JPG?h=5ed08b62&itok=LzKwahXI",
+          "imageAlt": "Photo of Chris Atkinson",
+          "quote": "The teaching is brilliant and the support provided is exceptionally helpful",
+          "name": "Chris Atkinson",
+          "subhead": "Undergraduate research experience,",
+          "subhead2": "MChem Chemistry"
+        }
+      ]
+    }
+  ],
+  "notes": "The root element is an anchor tag — the entire card is a link. The thumbnail image is wrapped in Drupal classes: .thumb > .media--image--figure > figure.imgcapt > picture > img. The picture element contains multiple source elements for responsive images; the component should render a picture element with appropriate source elements or simplify to a single img. The subhead and subhead2 are wrapped in a single p element together with a br between them. The .profilecard p selector covers both the quote paragraph and the subhead container paragraph.",
+  "htmlExamples": ["2790_1950", "2790_655", "2790_661", "2790_1945"]
+}
