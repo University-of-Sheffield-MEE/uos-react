@@ -2852,15 +2852,21 @@
     },
     ".views-exposed-form": {
       "pageCount": 148,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     ".views-exposed-form label": {
       "pageCount": 148,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     ".views-exposed-form div": {
       "pageCount": 148,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     ".views-exposed-form .button": {
       "pageCount": 148,
@@ -3038,23 +3044,33 @@
     },
     ".block-views-blocksection-news-block-1 .views-exposed-form": {
       "pageCount": 133,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     ".block-views-blocksection-news-block-1 .views-exposed-form div": {
       "pageCount": 133,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     ".block-views-blocksection-news-block-1 .views-exposed-form div label": {
       "pageCount": 133,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     ".block-views-blocksection-news-block-1 .views-exposed-form input": {
       "pageCount": 133,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     ".block-views-blocksection-news-block-1 .views-exposed-form .button": {
       "pageCount": 133,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ViewsExposedForm",
+      "atomicType": "molecule"
     },
     "h2.news-index": {
       "pageCount": 133,
@@ -6068,6 +6084,21 @@
       ],
       "specFile": "specs/SpTeaser.json",
       "storyFile": "src/stories/molecules/SpTeaser.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "ViewsExposedForm": {
+      "selectors": [
+        ".views-exposed-form",
+        ".views-exposed-form label",
+        ".views-exposed-form div",
+        ".block-views-blocksection-news-block-1 .views-exposed-form",
+        ".block-views-blocksection-news-block-1 .views-exposed-form div",
+        ".block-views-blocksection-news-block-1 .views-exposed-form div label",
+        ".block-views-blocksection-news-block-1 .views-exposed-form input",
+        ".block-views-blocksection-news-block-1 .views-exposed-form .button"
+      ],
+      "specFile": "specs/ViewsExposedForm.json",
+      "storyFile": "src/stories/molecules/ViewsExposedForm.stories.tsx",
       "atomicType": "molecule"
     }
   }
