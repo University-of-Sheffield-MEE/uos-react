@@ -4804,6 +4804,12 @@
       "status": "done",
       "implementedBy": "DepartmentStats",
       "atomicType": "molecule"
+    },
+    ".course-ereq-panel,.course-ereq-panel.standard,.course-ereq-panel.access_sheffield,.course-ereq-panel--no-access,#js-course-ereq-panel--standard,#js-course-ereq-panel--access_sheffield,.offer-headers,.grades,.inline-description-list__term,.inline-description-list__term:not(:first-of-type),.inline-description-list__description,.inline-description-list dd,.course-ereq-panel .inline-description-list,.course-ereq-panel .inline-description-list__term,.course-ereq-panel .inline-description-list__description,.course-ereq-panel .ugp-mature-students-text": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "CourseEreqPanel",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -5767,6 +5773,31 @@
       ],
       "specFile": "specs/Accreds.json",
       "storyFile": "src/stories/molecules/Accreds.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "CourseEreqPanel": {
+      "selectors": [
+        [
+          ".course-ereq-panel",
+          ".course-ereq-panel.standard",
+          ".course-ereq-panel.access_sheffield",
+          ".course-ereq-panel--no-access",
+          "#js-course-ereq-panel--standard",
+          "#js-course-ereq-panel--access_sheffield",
+          ".offer-headers",
+          ".grades",
+          ".inline-description-list__term",
+          ".inline-description-list__term:not(:first-of-type)",
+          ".inline-description-list__description",
+          ".inline-description-list dd",
+          ".course-ereq-panel .inline-description-list",
+          ".course-ereq-panel .inline-description-list__term",
+          ".course-ereq-panel .inline-description-list__description",
+          ".course-ereq-panel .ugp-mature-students-text"
+        ]
+      ],
+      "specFile": "specs/CourseEreqPanel.json",
+      "storyFile": "src/stories/molecules/CourseEreqPanel.stories.tsx",
       "atomicType": "molecule"
     }
   }
