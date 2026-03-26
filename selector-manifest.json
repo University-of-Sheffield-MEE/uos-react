@@ -1069,11 +1069,15 @@
     },
     ".video-embed-field-lazy-play": {
       "pageCount": 1862,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "VideoEmbedLazy",
+      "atomicType": "molecule"
     },
     ".video-embed-field-lazy": {
       "pageCount": 1862,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "VideoEmbedLazy",
+      "atomicType": "molecule"
     },
     ".stap-teaser": {
       "pageCount": 1827,
@@ -4733,6 +4737,15 @@
       "specFile": "specs/Postnom.json",
       "storyFile": "src/stories/atoms/Postnom.stories.tsx",
       "atomicType": "atom"
+    },
+    "VideoEmbedLazy": {
+      "selectors": [
+        ".video-embed-field-lazy",
+        ".video-embed-field-lazy-play"
+      ],
+      "specFile": "specs/VideoEmbedLazy.json",
+      "storyFile": "src/stories/molecules/VideoEmbedLazy.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }

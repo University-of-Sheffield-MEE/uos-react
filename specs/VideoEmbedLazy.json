@@ -1,0 +1,85 @@
+{
+  "componentName": "VideoEmbedLazy",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "A lazy-loaded video embed that shows a thumbnail image and play button; clicking loads the embedded iframe from a data attribute.",
+  "rootElement": "div",
+  "rootClassName": "video-embed-field-lazy",
+  "selectorsCovered": [
+    ".video-embed-field-lazy",
+    ".video-embed-field-lazy-play"
+  ],
+  "props": [
+    {
+      "name": "thumbnailSrc",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "img", "attribute": "src" }
+    },
+    {
+      "name": "thumbnailAlt",
+      "type": "string",
+      "required": false,
+      "default": "",
+      "mapsTo": { "element": "img", "attribute": "alt" }
+    },
+    {
+      "name": "thumbnailWidth",
+      "type": "number",
+      "required": false,
+      "default": 752,
+      "mapsTo": { "element": "img", "attribute": "width" }
+    },
+    {
+      "name": "thumbnailHeight",
+      "type": "number",
+      "required": false,
+      "default": 423,
+      "mapsTo": { "element": "img", "attribute": "height" }
+    },
+    {
+      "name": "embedHtml",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "div.video-embed-field-lazy", "attribute": "data-video-embed-field-lazy" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "YouTube video with lazy-loaded thumbnail and play button",
+      "props": {
+        "thumbnailSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/P0Tcvqte6iU.jpg?itok=LPhRMbxi",
+        "thumbnailAlt": "",
+        "thumbnailWidth": 752,
+        "thumbnailHeight": 423,
+        "embedHtml": "<div class=\"video-embed-field-provider-YouTube video-embed-field-responsive-video\"><iframe width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" allow=\"autoplay\" title=\"Civ Eng Our Centenary, Our Research\" src=\"https://www.youtube-nocookie.com/embed/P0Tcvqte6iU?autoplay=1&start=0&rel=0\"></iframe></div>"
+      }
+    },
+    {
+      "name": "Kaltura",
+      "description": "Kaltura video provider with lazy-loaded thumbnail and play button",
+      "props": {
+        "thumbnailSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/1_dbi9g1s2.jpg?itok=tBL-PT9-",
+        "thumbnailAlt": "",
+        "thumbnailWidth": 752,
+        "thumbnailHeight": 423,
+        "embedHtml": "<div class=\"video-embed-field-provider-kaltura video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" title=\"Chemical Engineering at Sheffield\" src=\"https://cdnapisec.kaltura.com/p/2103181/sp/210318100/embedIframeJs/uiconf_id/38838661/partner_id/2103181?iframeembed=true&playerId=kaltura_player&entry_id=1_dbi9g1s2&wid=1_kzcxrhqg&autoplay=1\"></iframe></div>"
+      }
+    },
+    {
+      "name": "WithAltText",
+      "description": "Video embed with descriptive alt text on the thumbnail",
+      "props": {
+        "thumbnailSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/two_thirds_1x/public/video_thumbnails/UMjoBfveiaw.jpg?itok=hcaMyAtX",
+        "thumbnailAlt": "The big city vibe that feels like home. Sheffield has lots to discover.",
+        "thumbnailWidth": 752,
+        "thumbnailHeight": 423,
+        "embedHtml": "<div class=\"video-embed-field-provider-YouTube video-embed-field-responsive-video\"><iframe width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" allow=\"autoplay\" title=\"Welcome to your university city\" src=\"https://www.youtube-nocookie.com/embed/UMjoBfveiaw?autoplay=1&start=0&rel=0\"></iframe></div>"
+      }
+    }
+  ],
+  "notes": "The data-video-embed-field-lazy attribute contains raw HTML (an iframe wrapped in a responsive div) that is injected into the DOM when the play button is clicked. The play button (.video-embed-field-lazy-play) is an empty button styled via CSS to show a play icon overlay. The thumbnail image always has loading='lazy'. In the React component, the embedHtml prop should be set as the data-video-embed-field-lazy attribute value on the root div. The actual play/swap behaviour is handled by a Drupal JS library and is outside the scope of this component.",
+  "htmlExamples": ["3995_7671", "3995_1950", "3995_18534", "3995_5984"]
+}
