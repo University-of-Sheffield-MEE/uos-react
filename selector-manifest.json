@@ -2676,7 +2676,9 @@
     },
     ".eventbutton a": {
       "pageCount": 190,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventButton",
+      "atomicType": "atom"
     },
     ".news-teaser .teaser-text p": {
       "pageCount": 187,
@@ -5020,6 +5022,12 @@
       "status": "done",
       "implementedBy": "FeaturedVideo",
       "atomicType": "molecule"
+    },
+    ".eventbutton": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventButton",
+      "atomicType": "atom"
     }
   },
   "components": {
@@ -6213,6 +6221,15 @@
       ],
       "specFile": "specs/FigCaption.json",
       "storyFile": "src/stories/atoms/FigCaption.stories.tsx",
+      "atomicType": "atom"
+    },
+    "EventButton": {
+      "selectors": [
+        ".eventbutton a",
+        ".eventbutton"
+      ],
+      "specFile": "specs/EventButton.json",
+      "storyFile": "src/stories/atoms/EventButton.stories.tsx",
       "atomicType": "atom"
     }
   }
