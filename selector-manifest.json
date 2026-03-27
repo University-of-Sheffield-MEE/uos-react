@@ -3787,11 +3787,15 @@
     },
     ".event-time": {
       "pageCount": 56,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventTime",
+      "atomicType": "molecule"
     },
     ".event-time .add-to-cal": {
       "pageCount": 53,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventTime",
+      "atomicType": "molecule"
     },
     ".calendar-buttons": {
       "pageCount": 53,
@@ -6515,6 +6519,15 @@
       "specFile": "specs/BlockQuote.json",
       "storyFile": "src/stories/layouts/BlockQuote.stories.tsx",
       "atomicType": "layout"
+    },
+    "EventTime": {
+      "selectors": [
+        ".event-time",
+        ".event-time .add-to-cal"
+      ],
+      "specFile": "specs/EventTime.json",
+      "storyFile": "src/stories/molecules/EventTime.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
