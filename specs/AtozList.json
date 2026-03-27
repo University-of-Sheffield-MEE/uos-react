@@ -1,0 +1,91 @@
+{
+  "componentName": "AtozList",
+  "atomicType": "molecule",
+  "childComponents": [],
+  "description": "An A-Z alphabetical navigation bar used on staff listing pages, rendering a series of anchor links to jump to letter sections on the page.",
+  "rootElement": "div",
+  "rootClassName": "atoz-list",
+  "selectorsCovered": [".atoz-list", ".atoz-list span", ".atoz-list span a", ".atoz-list a", ".node--type-staff-profile-index .atoz-header + div .atoz-list"],
+  "props": [
+    {
+      "name": "items",
+      "type": "Array<{ label: string; href: string }>",
+      "required": true,
+      "mapsTo": {
+        "element": "span a",
+        "attribute": "innerText"
+      }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "A-Z list with a typical set of letters for a staff listing page",
+      "props": {
+        "items": [
+          { "label": "A", "href": "#A" },
+          { "label": "B", "href": "#B" },
+          { "label": "C", "href": "#C" },
+          { "label": "D", "href": "#D" },
+          { "label": "E", "href": "#E" },
+          { "label": "G", "href": "#G" },
+          { "label": "H", "href": "#H" },
+          { "label": "J", "href": "#J" },
+          { "label": "K", "href": "#K" },
+          { "label": "M", "href": "#M" },
+          { "label": "N", "href": "#N" },
+          { "label": "P", "href": "#P" },
+          { "label": "R", "href": "#R" },
+          { "label": "S", "href": "#S" },
+          { "label": "T", "href": "#T" },
+          { "label": "V", "href": "#V" },
+          { "label": "W", "href": "#W" },
+          { "label": "Z", "href": "#Z" }
+        ]
+      }
+    },
+    {
+      "name": "FewLetters",
+      "description": "A-Z list with only a small number of letters present",
+      "props": {
+        "items": [
+          { "label": "F", "href": "#F" },
+          { "label": "G", "href": "#G" }
+        ]
+      }
+    },
+    {
+      "name": "FullAlphabet",
+      "description": "A-Z list with a full set of letters for a large staff listing page",
+      "props": {
+        "items": [
+          { "label": "A", "href": "#A" },
+          { "label": "B", "href": "#B" },
+          { "label": "C", "href": "#C" },
+          { "label": "D", "href": "#D" },
+          { "label": "E", "href": "#E" },
+          { "label": "F", "href": "#F" },
+          { "label": "G", "href": "#G" },
+          { "label": "H", "href": "#H" },
+          { "label": "I", "href": "#I" },
+          { "label": "J", "href": "#J" },
+          { "label": "K", "href": "#K" },
+          { "label": "L", "href": "#L" },
+          { "label": "M", "href": "#M" },
+          { "label": "N", "href": "#N" },
+          { "label": "O", "href": "#O" },
+          { "label": "P", "href": "#P" },
+          { "label": "R", "href": "#R" },
+          { "label": "S", "href": "#S" },
+          { "label": "T", "href": "#T" },
+          { "label": "W", "href": "#W" },
+          { "label": "Y", "href": "#Y" },
+          { "label": "Z", "href": "#Z" }
+        ]
+      }
+    }
+  ],
+  "notes": "Each letter link is wrapped in a span. The href values are anchor links pointing to id-based letter section headings on the same page. One sample shows an empty anchor href='#' with empty label — this is a data artefact and not modelled as a prop. The selector '.node--type-staff-profile-index .atoz-header + div .atoz-list' describes the contextual placement of this component on staff profile index pages and is covered by this component.",
+  "htmlExamples": ["2592_16870", "2592_11261", "2592_2169", "2592_13848"]
+}

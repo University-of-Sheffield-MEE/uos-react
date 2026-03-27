@@ -3426,19 +3426,27 @@
     },
     ".atoz-list": {
       "pageCount": 108,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AtozList",
+      "atomicType": "molecule"
     },
     ".atoz-list span": {
       "pageCount": 108,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AtozList",
+      "atomicType": "molecule"
     },
     ".atoz-list span a": {
       "pageCount": 108,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AtozList",
+      "atomicType": "molecule"
     },
     ".atoz-list a": {
       "pageCount": 108,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AtozList",
+      "atomicType": "molecule"
     },
     ".field-paragraph--field-mb-media-item": {
       "pageCount": 107,
@@ -3504,7 +3512,9 @@
     },
     ".node--type-staff-profile-index .atoz-header + div .atoz-list": {
       "pageCount": 94,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "AtozList",
+      "atomicType": "molecule"
     },
     "#studentprofiles": {
       "pageCount": 94,
@@ -6344,6 +6354,18 @@
       "specFile": "specs/StaffCardIndex.json",
       "storyFile": "src/stories/organisms/StaffCardIndex.stories.tsx",
       "atomicType": "organism"
+    },
+    "AtozList": {
+      "selectors": [
+        ".atoz-list",
+        ".atoz-list span",
+        ".atoz-list span a",
+        ".atoz-list a",
+        ".node--type-staff-profile-index .atoz-header + div .atoz-list"
+      ],
+      "specFile": "specs/AtozList.json",
+      "storyFile": "src/stories/molecules/AtozList.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
