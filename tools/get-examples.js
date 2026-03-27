@@ -140,6 +140,7 @@ if (getSampleId) {
     process.stderr.write(`Selector '${sel}' not found on page\n`);
     process.exit(1);
   }
+  process.stdout.write(`url: ${url}\n\n`);
   process.stdout.write(prettify(extracted.html) + '\n');
   process.exit(0);
 }
