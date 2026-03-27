@@ -1,0 +1,51 @@
+{
+  "componentName": "Callout",
+  "atomicType": "atom",
+  "childComponents": [],
+  "description": "A Foundation CSS callout box used to display alert or informational messages, supporting colour-scheme variants such as secondary.",
+  "rootElement": "div",
+  "rootClassName": "callout",
+  "selectorsCovered": [".callout", ".callout.secondary"],
+  "props": [
+    {
+      "name": "variant",
+      "type": "\"secondary\" | \"primary\" | \"success\" | \"warning\" | \"alert\"",
+      "required": false,
+      "default": "\"secondary\""
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Secondary callout with an error message paragraph",
+      "props": {
+        "variant": "secondary",
+        "children": "<p>There has been a problem showing this information. Please try again later.</p>"
+      }
+    },
+    {
+      "name": "Primary",
+      "description": "Primary callout variant",
+      "props": {
+        "variant": "primary",
+        "children": "<p>This is a primary callout message.</p>"
+      }
+    },
+    {
+      "name": "Warning",
+      "description": "Warning callout variant",
+      "props": {
+        "variant": "warning",
+        "children": "<p>Please be aware this page content may change.</p>"
+      }
+    }
+  ],
+  "notes": "Foundation CSS callout component. All observed samples use the .secondary modifier. The variant prop appends the corresponding class to the root element alongside the base .callout class (e.g. class=\"callout secondary\"). Content is free-form via children.",
+  "htmlExamples": ["1423_12766", "1423_10134"]
+}

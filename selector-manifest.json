@@ -1968,7 +1968,8 @@
     },
     "body.node--type-ug-course .ug-course-structure .additional-info": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".ugcourserow": {
       "pageCount": 283,
@@ -1978,7 +1979,8 @@
     },
     ".ugcourserow .ug-course-structure + .block-fixed-block-contentugp-modules-disclaimer": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".coursestats": {
       "pageCount": 283,
@@ -2232,7 +2234,8 @@
     },
     ".ugcourserow #coursedescription .media--image--figure": {
       "pageCount": 283,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".moduletab-label": {
       "pageCount": 283,
@@ -2254,15 +2257,18 @@
     },
     ".grades": {
       "pageCount": 282,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".offer-headers": {
       "pageCount": 282,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".paragraph--type--ug-course-structure-module-block h4": {
       "pageCount": 281,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".departmentstats": {
       "pageCount": 281,
@@ -2278,7 +2284,8 @@
     },
     "dl dt:not(:first-of-type)": {
       "pageCount": 279,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#main .ugkeybg .title-box .left .keydetails ul.details > li span.attendance": {
       "pageCount": 277,
@@ -2294,15 +2301,18 @@
     },
     "body.node--type-landing": {
       "pageCount": 267,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "body.node--type-landing .breadcrumbs a": {
       "pageCount": 267,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "body.node--type-landing .breadcrumbs li": {
       "pageCount": 267,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".nlpheader": {
       "pageCount": 266,
@@ -2402,7 +2412,8 @@
     },
     ".node--type-modules-single-course h1": {
       "pageCount": 252,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#main .ugkeybg .title-box .altentry a": {
       "pageCount": 251,
@@ -2490,23 +2501,28 @@
     },
     ".uosblock.highlight a[href]:not(.uosbutton):not(.textbutton)": {
       "pageCount": 228,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".inline-description-list__term": {
       "pageCount": 227,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".inline-description-list__term:not(:first-of-type)": {
       "pageCount": 227,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".inline-description-list__description": {
       "pageCount": 227,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".inline-description-list dd": {
       "pageCount": 227,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".accreds .accbody figure": {
       "pageCount": 227,
@@ -2688,7 +2704,8 @@
     },
     ".matchheight > .columns .block-field-blockparagraphfrom-libraryfield-reusable-paragraph": {
       "pageCount": 182,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".personinfo .profilepic .imgcapt figcaption": {
       "pageCount": 172,
@@ -2884,7 +2901,8 @@
     },
     "h3 strong": {
       "pageCount": 147,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#apply": {
       "pageCount": 146,
@@ -2893,11 +2911,13 @@
     },
     ".uosblock .block-field-blockparagraphpara-text-boxfield-text-box-media": {
       "pageCount": 144,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".uosblock .block-field-blockparagraphpara-text-boxfield-text-box-media img": {
       "pageCount": 144,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".apply-button": {
       "pageCount": 142,
@@ -2972,11 +2992,13 @@
     },
     ".pager__item--last [aria-hidden=true]": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".pager__item--next [aria-hidden=true]": {
       "pageCount": 140,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".pagination li.pager__item": {
       "pageCount": 140,
@@ -3088,15 +3110,18 @@
     },
     "h2 strong": {
       "pageCount": 133,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#contactus": {
       "pageCount": 132,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#visit": {
       "pageCount": 131,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "h1.pgtitle": {
       "pageCount": 130,
@@ -3244,7 +3269,8 @@
     },
     ".grouppromoPG": {
       "pageCount": 130,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".startyear": {
       "pageCount": 130,
@@ -3272,7 +3298,8 @@
     },
     ".paragraph--type--ug-course-structure-module-block h3": {
       "pageCount": 129,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".pg-course-image": {
       "pageCount": 129,
@@ -3288,11 +3315,13 @@
     },
     ".ug-course-teaching": {
       "pageCount": 125,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "main .multicol ul li": {
       "pageCount": 124,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".stap-card__info": {
       "pageCount": 123,
@@ -3404,19 +3433,25 @@
     },
     ".callout": {
       "pageCount": 109,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Callout",
+      "atomicType": "atom"
     },
     ".callout > :first-child": {
       "pageCount": 109,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".callout > :last-child": {
       "pageCount": 109,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".callout.secondary": {
       "pageCount": 109,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "Callout",
+      "atomicType": "atom"
     },
     ".coursecard ul.course-features li": {
       "pageCount": 109,
@@ -3450,11 +3485,13 @@
     },
     ".field-paragraph--field-mb-media-item": {
       "pageCount": 107,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".field-paragraph--field-mb-media-item img": {
       "pageCount": 107,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".uosblock.grey .uosquote": {
       "pageCount": 103,
@@ -3464,7 +3501,8 @@
     },
     ".quicklinks .matchheight": {
       "pageCount": 103,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".quicklinks .rellink": {
       "pageCount": 103,
@@ -3486,7 +3524,8 @@
     },
     ".block-field-blocknodeeventfield-ev-location h2": {
       "pageCount": 98,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".node--type-hub .paragraph--type--para-media-box": {
       "pageCount": 97,
@@ -3500,15 +3539,18 @@
     },
     "dd #my-pubs .backToTop": {
       "pageCount": 96,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#department": {
       "pageCount": 96,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#stats": {
       "pageCount": 96,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".node--type-staff-profile-index .atoz-header + div .atoz-list": {
       "pageCount": 94,
@@ -3518,7 +3560,8 @@
     },
     "#studentprofiles": {
       "pageCount": 94,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".stap-teaser .profilepic .imgcapt figcaption": {
       "pageCount": 92,
@@ -3534,7 +3577,8 @@
     },
     "h2 a strong": {
       "pageCount": 87,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".stap-card .profileinitials": {
       "pageCount": 86,
@@ -3558,7 +3602,8 @@
     },
     ".newscard h3": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".featured-news > div .newscard h3": {
       "pageCount": 81,
@@ -3568,27 +3613,33 @@
     },
     "td": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "tr": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "table": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "tbody": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "tbody td": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "tbody tr:nth-child(odd)": {
       "pageCount": 81,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".paragraph--type--para-signpost-box.highlight .block-field-blockparagraphpara-signpost-boxfield-sb-title": {
       "pageCount": 80,
@@ -3644,11 +3695,13 @@
     },
     ".medium-12": {
       "pageCount": 67,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "body.node--type-landing .uosblock.grey": {
       "pageCount": 66,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".node--type-staff-profile-index .tablesaw-stack.staff-profile-list-block": {
       "pageCount": 63,
@@ -6366,6 +6419,15 @@
       "specFile": "specs/AtozList.json",
       "storyFile": "src/stories/molecules/AtozList.stories.tsx",
       "atomicType": "molecule"
+    },
+    "Callout": {
+      "selectors": [
+        ".callout",
+        ".callout.secondary"
+      ],
+      "specFile": "specs/Callout.json",
+      "storyFile": "src/stories/atoms/Callout.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
