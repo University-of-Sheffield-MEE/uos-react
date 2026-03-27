@@ -3082,7 +3082,9 @@
     },
     "h2.news-index": {
       "pageCount": 133,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "NewsIndexHeading",
+      "atomicType": "atom"
     },
     "h2 strong": {
       "pageCount": 133,
@@ -6260,6 +6262,14 @@
       "specFile": "specs/PgCourseImage.json",
       "storyFile": "src/stories/molecules/PgCourseImage.stories.tsx",
       "atomicType": "molecule"
+    },
+    "NewsIndexHeading": {
+      "selectors": [
+        "h2.news-index"
+      ],
+      "specFile": "specs/NewsIndexHeading.json",
+      "storyFile": "src/stories/atoms/NewsIndexHeading.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
