@@ -3669,7 +3669,9 @@
     },
     "blockquote:not(.uosquote)": {
       "pageCount": 77,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BlockQuote",
+      "atomicType": "layout"
     },
     ".quicklinks h3": {
       "pageCount": 73,
@@ -3689,11 +3691,15 @@
     },
     "blockquote:not(.uosquote) p": {
       "pageCount": 70,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BlockQuote",
+      "atomicType": "layout"
     },
     "blockquote:not(.uosquote) p:first-of-type": {
       "pageCount": 70,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "BlockQuote",
+      "atomicType": "layout"
     },
     ".medium-12": {
       "pageCount": 67,
@@ -6499,6 +6505,16 @@
       "specFile": "specs/EventTeaser.json",
       "storyFile": "src/stories/molecules/EventTeaser.stories.tsx",
       "atomicType": "molecule"
+    },
+    "BlockQuote": {
+      "selectors": [
+        "blockquote:not(.uosquote)",
+        "blockquote:not(.uosquote) p",
+        "blockquote:not(.uosquote) p:first-of-type"
+      ],
+      "specFile": "specs/BlockQuote.json",
+      "storyFile": "src/stories/layouts/BlockQuote.stories.tsx",
+      "atomicType": "layout"
     }
   }
 }
