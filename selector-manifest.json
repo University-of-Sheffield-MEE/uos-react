@@ -3529,7 +3529,9 @@
     },
     ".node--type-hub .paragraph--type--para-media-box": {
       "pageCount": 97,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaMediaBox",
+      "atomicType": "molecule"
     },
     ".featured-news .featured-news-view-all-link": {
       "pageCount": 96,
@@ -3751,11 +3753,15 @@
     },
     ".node--type-hub .paragraph--type--para-media-box p": {
       "pageCount": 61,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaMediaBox",
+      "atomicType": "molecule"
     },
     ".node--type-hub .paragraph--type--para-media-box h3": {
       "pageCount": 59,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaMediaBox",
+      "atomicType": "molecule"
     },
     ".course-ereq-panel--no-access": {
       "pageCount": 58,
@@ -3869,7 +3875,9 @@
     },
     ".node--type-hub .paragraph--type--para-media-box h3.field-mb-title": {
       "pageCount": 45,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaMediaBox",
+      "atomicType": "molecule"
     },
     "ol": {
       "pageCount": 41,
@@ -4367,7 +4375,9 @@
     },
     ".node--type-landing .paragraph--type--para-media-box": {
       "pageCount": 8,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaMediaBox",
+      "atomicType": "molecule"
     },
     ".inline-description-list--contact .inline-description-list__description a": {
       "pageCount": 8,
@@ -4527,7 +4537,9 @@
     },
     ".node--type-landing .paragraph--type--para-media-box p": {
       "pageCount": 5,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaMediaBox",
+      "atomicType": "molecule"
     },
     ".media-360-embed--cloudpano .video-embed-field-lazy img": {
       "pageCount": 5,
@@ -4555,7 +4567,9 @@
     },
     ".node--type-landing .paragraph--type--para-media-box h3": {
       "pageCount": 4,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ParaMediaBox",
+      "atomicType": "molecule"
     },
     "h5 strong": {
       "pageCount": 4,
@@ -6428,6 +6442,20 @@
       "specFile": "specs/Callout.json",
       "storyFile": "src/stories/atoms/Callout.stories.tsx",
       "atomicType": "atom"
+    },
+    "ParaMediaBox": {
+      "selectors": [
+        ".node--type-hub .paragraph--type--para-media-box",
+        ".node--type-hub .paragraph--type--para-media-box h3",
+        ".node--type-hub .paragraph--type--para-media-box p",
+        ".node--type-hub .paragraph--type--para-media-box h3.field-mb-title",
+        ".node--type-landing .paragraph--type--para-media-box",
+        ".node--type-landing .paragraph--type--para-media-box p",
+        ".node--type-landing .paragraph--type--para-media-box h3"
+      ],
+      "specFile": "specs/ParaMediaBox.json",
+      "storyFile": "src/stories/molecules/ParaMediaBox.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
