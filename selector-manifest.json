@@ -3675,7 +3675,9 @@
     },
     ".quicklinks h3": {
       "pageCount": 73,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "QuickLinks",
+      "atomicType": "molecule"
     },
     ".contactinfo .officehours": {
       "pageCount": 72,
@@ -5203,6 +5205,12 @@
       "status": "done",
       "implementedBy": "CalendarButtons",
       "atomicType": "molecule"
+    },
+    ".quicklinks": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "QuickLinks",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -6544,6 +6552,15 @@
       ],
       "specFile": "specs/CalendarButtons.json",
       "storyFile": "src/stories/molecules/CalendarButtons.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "QuickLinks": {
+      "selectors": [
+        ".quicklinks",
+        ".quicklinks h3"
+      ],
+      "specFile": "specs/QuickLinks.json",
+      "storyFile": "src/stories/molecules/QuickLinks.stories.tsx",
       "atomicType": "molecule"
     }
   }
