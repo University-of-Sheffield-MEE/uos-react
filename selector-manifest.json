@@ -3799,15 +3799,21 @@
     },
     ".event-teaser": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
     },
     ".event-teaser .teaser-text h2": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
     },
     ".event-teaser .event-details.ev-venue span": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
     },
     ".paragraph--type--featured-video .feat-vid-link": {
       "pageCount": 52,
@@ -3839,7 +3845,9 @@
     },
     ".event-teaser .teaser-text .event-details.ev-venue span": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
     },
     ".pagination li.pager__item--ellipsis": {
       "pageCount": 49,
@@ -3907,7 +3915,9 @@
     },
     ".event-teaser .teaser-text__title a": {
       "pageCount": 37,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
     },
     ".staffcardindex > div.col3": {
       "pageCount": 37,
@@ -5157,6 +5167,24 @@
       "status": "done",
       "implementedBy": "EventButton",
       "atomicType": "atom"
+    },
+    ".event-teaser .teaser-text": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
+    },
+    ".event-teaser .teaser-text__title": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
+    },
+    ".event-teaser .teaser-text__info": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "EventTeaser",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -6455,6 +6483,21 @@
       ],
       "specFile": "specs/ParaMediaBox.json",
       "storyFile": "src/stories/molecules/ParaMediaBox.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "EventTeaser": {
+      "selectors": [
+        ".event-teaser",
+        ".event-teaser .teaser-text",
+        ".event-teaser .teaser-text h2",
+        ".event-teaser .teaser-text__title",
+        ".event-teaser .teaser-text__title a",
+        ".event-teaser .teaser-text__info",
+        ".event-teaser .event-details.ev-venue span",
+        ".event-teaser .teaser-text .event-details.ev-venue span"
+      ],
+      "specFile": "specs/EventTeaser.json",
+      "storyFile": "src/stories/molecules/EventTeaser.stories.tsx",
       "atomicType": "molecule"
     }
   }
