@@ -3715,23 +3715,33 @@
     },
     ".node--type-staff-profile-index .tablesaw-stack.staff-profile-list-block": {
       "pageCount": 63,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffProfileListBlock",
+      "atomicType": "organism"
     },
     ".node--type-staff-profile-index .tablesaw-stack td.views-field-field-stap-show-telephone": {
       "pageCount": 63,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffProfileListBlock",
+      "atomicType": "organism"
     },
     ".node--type-staff-profile-index .tablesaw-stack td[colspan=\"6\"]": {
       "pageCount": 63,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffProfileListBlock",
+      "atomicType": "organism"
     },
     ".staff-profile-list-block table th.views-field-field-stap-surname-2": {
       "pageCount": 63,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffProfileListBlock",
+      "atomicType": "organism"
     },
     ".staff-profile-list-block table td.views-field-field-stap-surname-2": {
       "pageCount": 63,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffProfileListBlock",
+      "atomicType": "organism"
     },
     ".node--type-course .accreds": {
       "pageCount": 62,
@@ -6562,6 +6572,18 @@
       "specFile": "specs/QuickLinks.json",
       "storyFile": "src/stories/molecules/QuickLinks.stories.tsx",
       "atomicType": "molecule"
+    },
+    "StaffProfileListBlock": {
+      "selectors": [
+        ".node--type-staff-profile-index .tablesaw-stack.staff-profile-list-block",
+        ".staff-profile-list-block table th.views-field-field-stap-surname-2",
+        ".staff-profile-list-block table td.views-field-field-stap-surname-2",
+        ".node--type-staff-profile-index .tablesaw-stack td.views-field-field-stap-show-telephone",
+        ".node--type-staff-profile-index .tablesaw-stack td[colspan=\"6\"]"
+      ],
+      "specFile": "specs/StaffProfileListBlock.json",
+      "storyFile": "src/stories/organisms/StaffProfileListBlock.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
