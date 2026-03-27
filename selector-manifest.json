@@ -3751,23 +3751,28 @@
     },
     ".node--type-course .accreds .accbody": {
       "pageCount": 62,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered-by-Accreds-molecule"
     },
     "th": {
       "pageCount": 62,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "thead": {
       "pageCount": 62,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "thead tr": {
       "pageCount": 62,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "thead th": {
       "pageCount": 62,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".node--type-hub .paragraph--type--para-media-box p": {
       "pageCount": 61,
@@ -3847,7 +3852,8 @@
     },
     ".featured-video .vid_descript .descripttext .feat-title": {
       "pageCount": 52,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "covered-by-FeaturedVideo-molecule"
     },
     ".featured-video .vid_descript .link-arrow": {
       "pageCount": 52,
@@ -3899,11 +3905,13 @@
     },
     ".multicol .profilecard": {
       "pageCount": 48,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "h4 strong": {
       "pageCount": 48,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".stap-card .profilepic .imgcapt figcaption": {
       "pageCount": 46,
@@ -3919,11 +3927,13 @@
     },
     "ol": {
       "pageCount": 41,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "main ol:not(.breadcrumbs,.a-to-z-rollup-list) li": {
       "pageCount": 41,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".block-field-blocknodenews-indexfield-ni-intro": {
       "pageCount": 40,
@@ -3955,7 +3965,8 @@
     },
     "td a": {
       "pageCount": 37,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".image-gallery figcaption": {
       "pageCount": 36,
@@ -4061,7 +4072,8 @@
     },
     "main ul:not(.breadcrumbs,.a-to-z-rollup-list) li ul": {
       "pageCount": 31,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     "#deptdesc": {
       "pageCount": 30,
@@ -4091,7 +4103,9 @@
     },
     ".homehub-top": {
       "pageCount": 26,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "HomehubTop",
+      "atomicType": "molecule"
     },
     "#studentprofile": {
       "pageCount": 26,
@@ -4129,7 +4143,8 @@
     },
     "h3 a strong": {
       "pageCount": 22,
-      "status": "pending"
+      "status": "skipped",
+      "skipReason": "utility-class"
     },
     ".event-card-link": {
       "pageCount": 20,
@@ -6630,6 +6645,14 @@
       ],
       "specFile": "specs/EventCardLink.json",
       "storyFile": "src/stories/molecules/EventCardLink.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "HomehubTop": {
+      "selectors": [
+        ".homehub-top"
+      ],
+      "specFile": "specs/HomehubTop.json",
+      "storyFile": "src/stories/molecules/HomehubTop.stories.tsx",
       "atomicType": "molecule"
     }
   }
