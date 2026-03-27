@@ -3881,15 +3881,21 @@
     },
     ".profile-sliders": {
       "pageCount": 49,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileSliders",
+      "atomicType": "molecule"
     },
     ".profile-sliders > div": {
       "pageCount": 49,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileSliders",
+      "atomicType": "molecule"
     },
     ".profile-sliders > div.inactive": {
       "pageCount": 49,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "ProfileSliders",
+      "atomicType": "molecule"
     },
     ".multicol .profilecard": {
       "pageCount": 48,
@@ -6584,6 +6590,16 @@
       "specFile": "specs/StaffProfileListBlock.json",
       "storyFile": "src/stories/organisms/StaffProfileListBlock.stories.tsx",
       "atomicType": "organism"
+    },
+    "ProfileSliders": {
+      "selectors": [
+        ".profile-sliders",
+        ".profile-sliders > div",
+        ".profile-sliders > div.inactive"
+      ],
+      "specFile": "specs/ProfileSliders.json",
+      "storyFile": "src/stories/molecules/ProfileSliders.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
