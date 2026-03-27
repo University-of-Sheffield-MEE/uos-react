@@ -3799,7 +3799,9 @@
     },
     ".calendar-buttons": {
       "pageCount": 53,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "CalendarButtons",
+      "atomicType": "molecule"
     },
     ".accreds .accbody:nth-of-type(3n)": {
       "pageCount": 53,
@@ -5195,6 +5197,12 @@
       "status": "done",
       "implementedBy": "EventTeaser",
       "atomicType": "molecule"
+    },
+    ".calendar-buttons a": {
+      "pageCount": 0,
+      "status": "done",
+      "implementedBy": "CalendarButtons",
+      "atomicType": "molecule"
     }
   },
   "components": {
@@ -6527,6 +6535,15 @@
       ],
       "specFile": "specs/EventTime.json",
       "storyFile": "src/stories/molecules/EventTime.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "CalendarButtons": {
+      "selectors": [
+        ".calendar-buttons",
+        ".calendar-buttons a"
+      ],
+      "specFile": "specs/CalendarButtons.json",
+      "storyFile": "src/stories/molecules/CalendarButtons.stories.tsx",
       "atomicType": "molecule"
     }
   }
