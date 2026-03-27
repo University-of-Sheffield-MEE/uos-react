@@ -5,6 +5,13 @@ const meta: Meta<typeof LpHeaderImg> = {
   title: 'Molecules/LpHeaderImg',
   component: LpHeaderImg,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Full-width landing page header banner image wrapper containing a responsive picture element with multiple breakpoint sources.\n\n[Example page](https://sheffield.ac.uk/english/home)',
+      },
+    },
+  },
 };
 
 export default meta;

@@ -5,6 +5,13 @@ const meta: Meta<typeof StapContact> = {
   title: 'Molecules/StapContact',
   component: StapContact,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A contact details list displaying a staff member\'s email address and optional telephone number as a definition list.\n\n[Example page](https://sheffield.ac.uk/news/scientists-and-food-historians-collaborate-revive-and-grow-extinct-varieties-rice)',
+      },
+    },
+  },
 };
 
 export default meta;

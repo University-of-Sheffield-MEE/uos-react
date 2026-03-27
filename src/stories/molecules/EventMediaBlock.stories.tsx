@@ -5,6 +5,13 @@ const meta: Meta<typeof EventMediaBlock> = {
   title: 'Molecules/EventMediaBlock',
   component: EventMediaBlock,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Drupal layout builder block that renders a responsive hero/featured image for an event node, with an optional caption.\n\n[Example page](https://sheffield.ac.uk/dentalschool/summer-school)',
+      },
+    },
+  },
 };
 
 export default meta;

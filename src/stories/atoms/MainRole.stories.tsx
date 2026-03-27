@@ -5,6 +5,13 @@ const meta: Meta<typeof MainRole> = {
   title: 'Atoms/MainRole',
   component: MainRole,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: "A paragraph displaying a person's primary role or job title on staff profile pages.\n\n[Example page](https://sheffield.ac.uk/mps/people/research-staff/bradley-westwater)",
+      },
+    },
+  },
 };
 
 export default meta;

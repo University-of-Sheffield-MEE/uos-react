@@ -5,6 +5,13 @@ const meta: Meta<typeof ContactInfo> = {
   title: 'Molecules/ContactInfo',
   component: ContactInfo,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Staff contact information block showing email, optional phone, location, and an expandable full address section used on university staff profile pages.\n\n[Example page](https://sheffield.ac.uk/mps/people/research-staff/bradley-westwater)',
+      },
+    },
+  },
 };
 
 export default meta;

@@ -5,6 +5,13 @@ const meta: Meta<typeof UgCourseRow> = {
   title: 'Layouts/UgCourseRow',
   component: UgCourseRow,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Two-column layout wrapper for undergraduate course detail pages, with a sidebar navigation column (4 units wide) and a main content column (8 units wide).\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

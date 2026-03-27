@@ -5,6 +5,13 @@ const meta: Meta<typeof Button> = {
   title: 'Atoms/Button',
   component: Button,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A polymorphic Foundation CSS button element that can render as an anchor, button, or input, with optional style modifiers including primary, success, menu, and radius variants.',
+      },
+    },
+  },
 };
 
 export default meta;

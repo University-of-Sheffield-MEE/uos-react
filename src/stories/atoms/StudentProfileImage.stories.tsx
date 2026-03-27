@@ -5,6 +5,13 @@ const meta: Meta<typeof StudentProfileImage> = {
   title: 'Atoms/StudentProfileImage',
   component: StudentProfileImage,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Student profile photo atom rendered as an 80x80 image inside a Drupal layout builder block wrapper.\n\n[Example page](https://sheffield.ac.uk/eee/undergraduate/profiles/romesa)',
+      },
+    },
+  },
 };
 
 export default meta;

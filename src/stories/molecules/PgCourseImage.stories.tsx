@@ -5,6 +5,13 @@ const meta: Meta<typeof PgCourseImage> = {
   title: 'Molecules/PgCourseImage',
   component: PgCourseImage,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Responsive course image block used on postgraduate course pages, containing a picture element with multiple breakpoint-specific source sets.\n\n[Example page](https://sheffield.ac.uk/postgraduate/taught/courses/2026/human-bioarchaeology-and-osteology-msc)',
+      },
+    },
+  },
 };
 
 export default meta;

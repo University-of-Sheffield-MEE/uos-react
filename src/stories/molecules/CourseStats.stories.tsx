@@ -5,6 +5,13 @@ const meta: Meta<typeof CourseStats> = {
   title: 'Molecules/CourseStats',
   component: CourseStats,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A section displaying a collection of course highlight statistics or selling points, each with a title and description paragraph.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

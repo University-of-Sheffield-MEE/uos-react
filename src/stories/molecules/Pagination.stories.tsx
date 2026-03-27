@@ -5,6 +5,13 @@ const meta: Meta<typeof Pagination> = {
   title: 'Molecules/Pagination',
   component: Pagination,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Drupal pager navigation component rendering a list of page number links with optional next, last, and ellipsis items.\n\n[Example page](https://sheffield.ac.uk/ijc/postgraduate/meet-our-postgraduate-students)',
+      },
+    },
+  },
 };
 
 export default meta;

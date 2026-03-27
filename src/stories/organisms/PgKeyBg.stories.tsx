@@ -5,6 +5,13 @@ const meta: Meta<typeof PgKeyBg> = {
   title: 'Organisms/PgKeyBg',
   component: PgKeyBg,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Postgraduate course hero banner displaying the course title, award type, department, key details (start date, duration, attendance), feature badges, action buttons, and a sticky CTA bar.\n\n[Example page](https://sheffield.ac.uk/postgraduate/taught/courses/2026/human-bioarchaeology-and-osteology-msc)',
+      },
+    },
+  },
 };
 
 export default meta;

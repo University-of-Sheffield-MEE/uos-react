@@ -5,6 +5,13 @@ const meta: Meta<typeof NewsDate> = {
   title: 'Atoms/NewsDate',
   component: NewsDate,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Displays a news article publication date using a semantic time element with a machine-readable datetime attribute.\n\n[Example page](https://sheffield.ac.uk/library/news/showcasing-white-rose-university-press-quality-and-innovation-open-access-publishing)',
+      },
+    },
+  },
 };
 
 export default meta;

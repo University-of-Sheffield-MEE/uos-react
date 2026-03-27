@@ -5,6 +5,13 @@ const meta: Meta<typeof StaffCardIndex> = {
   title: 'Organisms/StaffCardIndex',
   component: StaffCardIndex,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A grid listing of staff profile cards, rendering a collection of StapCard molecules in a responsive 3-column layout.\n\n[Example page](https://sheffield.ac.uk/dermatology/university-staff)',
+      },
+    },
+  },
 };
 
 export default meta;

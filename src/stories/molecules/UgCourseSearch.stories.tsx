@@ -5,6 +5,13 @@ const meta: Meta<typeof UgCourseSearch> = {
   title: 'Molecules/UgCourseSearch',
   component: UgCourseSearch,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Undergraduate course search widget displayed in the course page footer area, with a keyword input, search button, similar-courses link, and A-Z listing links.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

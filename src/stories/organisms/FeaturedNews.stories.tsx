@@ -5,6 +5,13 @@ const meta: Meta<typeof FeaturedNews> = {
   title: 'Organisms/FeaturedNews',
   component: FeaturedNews,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A featured news block displaying a grid of news cards with one prominent main feature and several secondary cards, optionally preceded by a section heading and followed by a view-all link.\n\n[Example page](https://sheffield.ac.uk/english/home)',
+      },
+    },
+  },
 };
 
 export default meta;

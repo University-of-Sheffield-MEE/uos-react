@@ -5,6 +5,13 @@ const meta: Meta<typeof NewsArticleMediaBlock> = {
   title: 'Molecules/NewsArticleMediaBlock',
   component: NewsArticleMediaBlock,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Drupal layout builder block that renders a responsive hero/featured image for a news article, with an optional caption.\n\n[Example page](https://sheffield.ac.uk/library/news/showcasing-white-rose-university-press-quality-and-innovation-open-access-publishing)',
+      },
+    },
+  },
 };
 
 export default meta;

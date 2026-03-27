@@ -5,6 +5,13 @@ const meta: Meta<typeof Roles> = {
   title: 'Atoms/Roles',
   component: Roles,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A short paragraph displaying a person\'s role or title within the university.\n\n[Example page](https://sheffield.ac.uk/amrc/amrc-research-staff/kevin-kerrigan)',
+      },
+    },
+  },
 };
 
 export default meta;

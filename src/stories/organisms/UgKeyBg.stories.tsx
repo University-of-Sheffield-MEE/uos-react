@@ -5,6 +5,13 @@ const meta: Meta<typeof UgKeyBg> = {
   title: 'Organisms/UgKeyBg',
   component: UgKeyBg,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Undergraduate course key details banner displaying course title, award type, department, entry requirements, key feature tags, and call-to-action buttons — present on every UG course page.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

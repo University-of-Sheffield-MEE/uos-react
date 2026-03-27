@@ -5,6 +5,13 @@ const meta: Meta<typeof SkipLink> = {
   title: 'Atoms/SkipLink',
   component: SkipLink,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A visually-hidden, focusable accessibility link that allows keyboard users to skip to the main content area.',
+      },
+    },
+  },
 };
 
 export default meta;

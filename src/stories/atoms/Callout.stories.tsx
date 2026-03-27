@@ -5,6 +5,13 @@ const meta: Meta<typeof Callout> = {
   title: 'Atoms/Callout',
   component: Callout,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A Foundation CSS callout box used to display alert or informational messages, supporting colour-scheme variants such as secondary.\n\n[Example page](https://sheffield.ac.uk/mps/people/honorary/sarah-staniland)',
+      },
+    },
+  },
 };
 
 export default meta;

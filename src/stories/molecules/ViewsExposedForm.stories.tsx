@@ -5,6 +5,13 @@ const meta: Meta<typeof ViewsExposedForm> = {
   title: 'Molecules/ViewsExposedForm',
   component: ViewsExposedForm,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Drupal Views exposed filter form used on news and events listing pages, providing a text search input and optional date filter with a submit button.\n\n[Example page](https://sheffield.ac.uk/cmbe/school/events)',
+      },
+    },
+  },
 };
 
 export default meta;

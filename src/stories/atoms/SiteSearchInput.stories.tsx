@@ -5,6 +5,13 @@ const meta: Meta<typeof SiteSearchInput> = {
   title: 'Atoms/SiteSearchInput',
   component: SiteSearchInput,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A search text input field used within the site search form, with placeholder, autocomplete, and accessibility attributes.',
+      },
+    },
+  },
 };
 
 export default meta;

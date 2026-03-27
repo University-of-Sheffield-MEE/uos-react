@@ -5,6 +5,13 @@ const meta: Meta<typeof LearningText> = {
   title: 'Molecules/LearningText',
   component: LearningText,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A course learning description block with a fixed \'Learning\' heading and rich body content.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

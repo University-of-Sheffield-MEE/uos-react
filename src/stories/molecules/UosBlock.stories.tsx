@@ -5,6 +5,13 @@ const meta: Meta<typeof UosBlock> = {
   title: 'Molecules/UosBlock',
   component: UosBlock,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A themed content block that wraps arbitrary CMS-driven content with optional colour variants (grey, dark, highlight) and an optional inner content wrapper.',
+      },
+    },
+  },
 };
 
 export default meta;

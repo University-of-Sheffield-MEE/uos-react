@@ -5,6 +5,13 @@ const meta: Meta<typeof SpTeaser> = {
   title: 'Molecules/SpTeaser',
   component: SpTeaser,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Student profile teaser card displaying a thumbnail image, quote/title link, student name, course, and short description.\n\n[Example page](https://sheffield.ac.uk/ijc/postgraduate/meet-our-postgraduate-students)',
+      },
+    },
+  },
 };
 
 export default meta;

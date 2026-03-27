@@ -5,6 +5,13 @@ const meta: Meta<typeof StapCard> = {
   title: 'Molecules/StapCard',
   component: StapCard,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Staff profile card displaying a staff member\'s photo (or initials placeholder), name, job title, department, optional description, and contact details.\n\n[Example page](https://sheffield.ac.uk/dermatology/university-staff)',
+      },
+    },
+  },
 };
 
 export default meta;

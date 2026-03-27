@@ -5,6 +5,13 @@ const meta: Meta<typeof LogosHomehub> = {
   title: 'Molecules/LogosHomehub',
   component: LogosHomehub,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A full-width scrollable row of partner or sponsor logos, optionally with a descriptive paragraph, used on hub pages.\n\n[Example page](https://sheffield.ac.uk/international/germany)',
+      },
+    },
+  },
 };
 
 export default meta;

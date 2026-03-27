@@ -5,6 +5,13 @@ const meta: Meta<typeof FeaturedImage> = {
   title: 'Molecules/FeaturedImage',
   component: FeaturedImage,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A featured image block combining a responsive picture element with a descriptive text panel containing a heading, body text, a label title, and an optional arrow link indicator.\n\n[Example page](https://sheffield.ac.uk/undergraduate/visit/offer-holder/guide)',
+      },
+    },
+  },
 };
 
 export default meta;

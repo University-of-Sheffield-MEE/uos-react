@@ -5,6 +5,13 @@ const meta: Meta<typeof Grid> = {
   title: 'Layouts/Grid',
   component: Grid,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Foundation-based multi-column grid layout providing a multicol wrapper, row container, and responsive column cells using named breakpoint span classes.',
+      },
+    },
+  },
 };
 
 export default meta;

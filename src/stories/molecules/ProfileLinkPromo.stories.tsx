@@ -5,6 +5,13 @@ const meta: Meta<typeof ProfileLinkPromo> = {
   title: 'Molecules/ProfileLinkPromo',
   component: ProfileLinkPromo,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A profile page section that lists external links for a person, with a fixed \'Links\' heading and one or more anchor elements.\n\n[Example page](https://sheffield.ac.uk/psychology/people/academic/alon-zivony)',
+      },
+    },
+  },
 };
 
 export default meta;

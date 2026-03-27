@@ -5,6 +5,13 @@ const meta: Meta<typeof StaffPronouns> = {
   title: 'Atoms/StaffPronouns',
   component: StaffPronouns,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Displays a staff member\'s personal pronouns in parentheses as an inline span.\n\n[Example page](https://sheffield.ac.uk/architecture-landscape/people/academic/matthew-bradshaw)',
+      },
+    },
+  },
 };
 
 export default meta;

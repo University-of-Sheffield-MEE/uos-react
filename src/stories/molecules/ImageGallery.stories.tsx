@@ -5,6 +5,13 @@ const meta: Meta<typeof ImageGallery> = {
   title: 'Molecules/ImageGallery',
   component: ImageGallery,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'An image gallery block showing a featured image with a button to view all images in the set, and an optional title and description.\n\n[Example page](https://sheffield.ac.uk/news/universitys-relationship-her-majesty-queen-elizabeth-ii)',
+      },
+    },
+  },
 };
 
 export default meta;

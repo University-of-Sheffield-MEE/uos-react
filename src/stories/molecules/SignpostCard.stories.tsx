@@ -5,6 +5,13 @@ const meta: Meta<typeof SignpostCard> = {
   title: 'Molecules/SignpostCard',
   component: SignpostCard,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A clickable signpost card linking to a related page, containing a responsive image, title, descriptive text, and an arrow link indicator.\n\n[Example page](https://sheffield.ac.uk/international/germany)',
+      },
+    },
+  },
 };
 
 export default meta;

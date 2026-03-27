@@ -5,6 +5,13 @@ const meta: Meta<typeof UosQuote> = {
   title: 'Atoms/UosQuote',
   component: UosQuote,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A styled pull-quote blockquote with an optional speaker name and attribution line, used throughout news and content pages.\n\n[Example page](https://sheffield.ac.uk/biosciences/news/new-insights-plant-defence-and-adaptation)',
+      },
+    },
+  },
 };
 
 export default meta;

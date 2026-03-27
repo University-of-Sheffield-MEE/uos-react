@@ -5,6 +5,13 @@ const meta: Meta<typeof VideoEmbedLazy> = {
   title: 'Molecules/VideoEmbedLazy',
   component: VideoEmbedLazy,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A lazy-loaded video embed that shows a thumbnail image and play button; clicking loads the embedded iframe from a data attribute.\n\n[Example page](https://sheffield.ac.uk/mac/research/groups/structural-engineering)',
+      },
+    },
+  },
 };
 
 export default meta;

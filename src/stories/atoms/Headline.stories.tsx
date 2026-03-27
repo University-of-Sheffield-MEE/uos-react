@@ -5,6 +5,13 @@ const meta: Meta<typeof Headline> = {
   title: 'Atoms/Headline',
   component: Headline,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A styled h1 heading element used as the primary page or article headline.\n\n[Example page](https://sheffield.ac.uk/library/news/showcasing-white-rose-university-press-quality-and-innovation-open-access-publishing)',
+      },
+    },
+  },
 };
 
 export default meta;

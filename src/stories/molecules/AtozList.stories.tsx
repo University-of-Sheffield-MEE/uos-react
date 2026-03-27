@@ -5,6 +5,13 @@ const meta: Meta<typeof AtozList> = {
   title: 'Molecules/AtozList',
   component: AtozList,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'An A-Z alphabetical navigation bar used on staff listing pages, rendering a series of anchor links to jump to letter sections on the page.\n\n[Example page](https://sheffield.ac.uk/cmbe/people/cbe-academic-staff)',
+      },
+    },
+  },
 };
 
 export default meta;

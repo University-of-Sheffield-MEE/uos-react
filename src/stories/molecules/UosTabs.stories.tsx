@@ -5,6 +5,13 @@ const meta: Meta<typeof UosTabs> = {
   title: 'Molecules/UosTabs',
   component: UosTabs,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A tabbed navigation bar with accessible ARIA roles, used for switching between year or module panels on course pages.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

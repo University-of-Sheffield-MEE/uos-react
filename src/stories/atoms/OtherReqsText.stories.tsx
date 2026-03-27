@@ -5,6 +5,13 @@ const meta: Meta<typeof OtherReqsText> = {
   title: 'Atoms/OtherReqsText',
   component: OtherReqsText,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A text container for supplementary \'other requirements\' notes within undergraduate course entry requirement panels.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

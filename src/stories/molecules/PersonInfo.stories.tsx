@@ -5,6 +5,13 @@ const meta: Meta<typeof PersonInfo> = {
   title: 'Molecules/PersonInfo',
   component: PersonInfo,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Staff or student profile header displaying name, title, department, role, optional post-nominal letters, and an optional profile picture with modal enlarge functionality.\n\n[Example page](https://sheffield.ac.uk/mps/people/research-staff/bradley-westwater)',
+      },
+    },
+  },
 };
 
 export default meta;

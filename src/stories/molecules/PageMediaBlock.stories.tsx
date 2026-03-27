@@ -5,6 +5,13 @@ const meta: Meta<typeof PageMediaBlock> = {
   title: 'Molecules/PageMediaBlock',
   component: PageMediaBlock,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Drupal Layout Builder block that renders a responsive page hero/feature image with an optional caption, using a picture element with multiple responsive sources.\n\n[Example page](https://sheffield.ac.uk/management/mba/student-and-alumni-insight/mba-blog-archive/mbas-journey-industry-40-key-takeaways-germanys-tech-leaders)',
+      },
+    },
+  },
 };
 
 export default meta;

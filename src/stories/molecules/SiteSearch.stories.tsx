@@ -5,6 +5,13 @@ const meta: Meta<typeof SiteSearch> = {
   title: 'Molecules/SiteSearch',
   component: SiteSearch,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Global site search widget containing a search form with text input and submit button, plus a mobile toggle button to open and close the search dropdown.',
+      },
+    },
+  },
 };
 
 export default meta;

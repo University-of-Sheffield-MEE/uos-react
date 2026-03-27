@@ -5,6 +5,13 @@ const meta: Meta<typeof RegionBanner> = {
   title: 'Organisms/RegionBanner',
   component: RegionBanner,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Site section banner region containing the section title bar and hierarchical desktop section navigation for the current section of the university website.\n\n[Example page](https://sheffield.ac.uk/management/mba/student-and-alumni-insight/mba-blog-archive/mbas-journey-industry-40-key-takeaways-germanys-tech-leaders)',
+      },
+    },
+  },
 };
 
 export default meta;

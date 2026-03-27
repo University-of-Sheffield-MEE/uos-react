@@ -5,6 +5,13 @@ const meta: Meta<typeof FootIcons> = {
   title: 'Organisms/FootIcons',
   component: FootIcons,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Footer icons section displaying university award badges and social media channel links, always rendered with fixed static content.\n\n[Example page](https://sheffield.ac.uk/management/mba/student-and-alumni-insight/mba-blog-archive/mbas-journey-industry-40-key-takeaways-germanys-tech-leaders)',
+      },
+    },
+  },
 };
 
 export default meta;

@@ -5,6 +5,13 @@ const meta: Meta<typeof Event2DateTimes> = {
   title: 'Molecules/Event2DateTimes',
   component: Event2DateTimes,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Event date and time details block showing event schedule, add-to-calendar controls, and optional registration link for a university event page.\n\n[Example page](https://sheffield.ac.uk/migration-research-group/events-archive/phd-workshop-exploring-critical-alternatives-migration-research)',
+      },
+    },
+  },
 };
 
 export default meta;

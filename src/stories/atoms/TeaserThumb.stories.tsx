@@ -5,6 +5,13 @@ const meta: Meta<typeof TeaserThumb> = {
   title: 'Atoms/TeaserThumb',
   component: TeaserThumb,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A thumbnail image container used within teaser components, accepting either a simple image or a responsive picture element.\n\n[Example page](https://sheffield.ac.uk/english/news)',
+      },
+    },
+  },
 };
 
 export default meta;

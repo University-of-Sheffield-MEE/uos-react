@@ -5,6 +5,13 @@ const meta: Meta<typeof BackToTop> = {
   title: 'Atoms/BackToTop',
   component: BackToTop,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A button that scrolls the user back to the top of the page, displayed as an icon button with an upward chevron.',
+      },
+    },
+  },
 };
 
 export default meta;

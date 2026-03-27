@@ -5,6 +5,13 @@ const meta: Meta<typeof ParaPromotion> = {
   title: 'Molecules/ParaPromotion',
   component: ParaPromotion,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A promotional callout block with a heading, optional body text, optional image, and one or more call-to-action links; typically rendered as a blue-bar sidebar aside or an image-led promotion panel.\n\n[Example page](https://sheffield.ac.uk/library/news/showcasing-white-rose-university-press-quality-and-innovation-open-access-publishing)',
+      },
+    },
+  },
 };
 
 export default meta;

@@ -5,6 +5,13 @@ const meta: Meta<typeof Accreds> = {
   title: 'Molecules/Accreds',
   component: Accreds,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A list of professional body accreditation logos with links, each showing a responsive image and the accrediting body name.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/computer-systems-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

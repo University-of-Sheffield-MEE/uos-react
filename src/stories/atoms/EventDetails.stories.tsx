@@ -5,6 +5,13 @@ const meta: Meta<typeof EventDetails> = {
   title: 'Atoms/EventDetails',
   component: EventDetails,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A single event metadata detail item consisting of a Font Awesome icon and a text label, with variant modifier classes for date, venue, time, and ticket information.\n\n[Example page](https://sheffield.ac.uk/dentalschool/summer-school)',
+      },
+    },
+  },
 };
 
 export default meta;

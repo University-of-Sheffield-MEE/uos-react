@@ -5,6 +5,13 @@ const meta: Meta<typeof SiteHeader> = {
   title: 'Organisms/SiteHeader',
   component: SiteHeader,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'The global site header containing the institution logo and primary mega-navigation, rendered as a banner landmark.\n\n[Example page](https://sheffield.ac.uk/management/mba/student-and-alumni-insight/mba-blog-archive/mbas-journey-industry-40-key-takeaways-germanys-tech-leaders)',
+      },
+    },
+  },
 };
 
 export default meta;

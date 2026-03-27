@@ -5,6 +5,13 @@ const meta: Meta<typeof FigCaption> = {
   title: 'Atoms/FigCaption',
   component: FigCaption,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'An image caption rendered as a figcaption element inside a figure.imgcapt, displaying descriptive text below an image.\n\n[Example page](https://sheffield.ac.uk/flyfacility/drosophila)',
+      },
+    },
+  },
 };
 
 export default meta;

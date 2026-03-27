@@ -5,6 +5,13 @@ const meta: Meta<typeof FeaturedVideo> = {
   title: 'Molecules/FeaturedVideo',
   component: FeaturedVideo,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A featured video block combining a lazy-loaded video embed with a descriptive text panel, optionally wrapped in a link with an arrow indicator.\n\n[Example page](https://sheffield.ac.uk/about/impact)',
+      },
+    },
+  },
 };
 
 export default meta;

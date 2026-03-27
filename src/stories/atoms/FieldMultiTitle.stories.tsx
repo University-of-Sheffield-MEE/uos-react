@@ -5,6 +5,13 @@ const meta: Meta<typeof FieldMultiTitle> = {
   title: 'Atoms/FieldMultiTitle',
   component: FieldMultiTitle,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A section heading rendered as an h2 element with the field-multi-title class, used as a multi-value field title on content pages.\n\n[Example page](https://sheffield.ac.uk/international/after-you-apply/undergraduate)',
+      },
+    },
+  },
 };
 
 export default meta;

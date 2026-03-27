@@ -5,6 +5,13 @@ const meta: Meta<typeof CourseEreqPanel> = {
   title: 'Molecules/CourseEreqPanel',
   component: CourseEreqPanel,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A tabpanel section displaying university course entry requirements, including A-level grades, qualification alternatives list, optional mature students link, and optional other requirements.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

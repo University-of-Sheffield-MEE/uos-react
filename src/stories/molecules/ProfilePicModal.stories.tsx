@@ -5,6 +5,13 @@ const meta: Meta<typeof ProfilePicModal> = {
   title: 'Molecules/ProfilePicModal',
   component: ProfilePicModal,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A modal overlay displaying a staff profile picture at full size with a close button.\n\n[Example page](https://sheffield.ac.uk/psychology/people/academic/alon-zivony)',
+      },
+    },
+  },
 };
 
 export default meta;

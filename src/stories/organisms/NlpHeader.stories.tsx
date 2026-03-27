@@ -5,6 +5,13 @@ const meta: Meta<typeof NlpHeader> = {
   title: 'Organisms/NlpHeader',
   component: NlpHeader,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Full-width landing page hero header with a responsive banner image, a heading, a description paragraph, and a scroll-down arrow button.\n\n[Example page](https://sheffield.ac.uk/english/home)',
+      },
+    },
+  },
 };
 
 export default meta;

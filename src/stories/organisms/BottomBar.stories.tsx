@@ -5,6 +5,13 @@ const meta: Meta<typeof BottomBar> = {
   title: 'Organisms/BottomBar',
   component: BottomBar,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Site footer bottom bar displaying a policy navigation menu and copyright notice.',
+      },
+    },
+  },
 };
 
 export default meta;

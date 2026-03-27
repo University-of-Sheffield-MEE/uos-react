@@ -5,6 +5,13 @@ const meta: Meta<typeof ProfileCard> = {
   title: 'Molecules/ProfileCard',
   component: ProfileCard,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A student profile card linking to a profile page, displaying a thumbnail photo, a quote, the person\'s name, their current role, and their course.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

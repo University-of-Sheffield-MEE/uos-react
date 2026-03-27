@@ -5,6 +5,13 @@ const meta: Meta<typeof SearchSubmitButton> = {
   title: 'Atoms/SearchSubmitButton',
   component: SearchSubmitButton,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A submit button for the site search form containing a Font Awesome search icon, used inside the .site-search form.',
+      },
+    },
+  },
 };
 
 export default meta;

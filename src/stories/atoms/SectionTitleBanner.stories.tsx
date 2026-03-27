@@ -5,6 +5,13 @@ const meta: Meta<typeof SectionTitleBanner> = {
   title: 'Atoms/SectionTitleBanner',
   component: SectionTitleBanner,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A banner region section title displaying the current site section\'s name as a linked heading, used in the region-banner navigation area.',
+      },
+    },
+  },
 };
 
 export default meta;

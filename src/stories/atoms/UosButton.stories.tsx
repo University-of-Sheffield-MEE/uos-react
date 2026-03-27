@@ -5,6 +5,13 @@ const meta: Meta<typeof UosButton> = {
   title: 'Atoms/UosButton',
   component: UosButton,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A styled call-to-action link button used site-wide for primary actions and navigation.',
+      },
+    },
+  },
 };
 
 export default meta;

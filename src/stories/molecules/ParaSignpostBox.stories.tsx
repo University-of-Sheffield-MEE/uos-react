@@ -5,6 +5,13 @@ const meta: Meta<typeof ParaSignpostBox> = {
   title: 'Molecules/ParaSignpostBox',
   component: ParaSignpostBox,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A Drupal paragraph signpost box component that renders a clickable card with an image and a titled arrow link, used to navigate users to related content.\n\n[Example page](https://sheffield.ac.uk/international/after-you-apply/undergraduate)',
+      },
+    },
+  },
 };
 
 export default meta;

@@ -5,6 +5,13 @@ const meta: Meta<typeof PublicationsList> = {
   title: 'Molecules/PublicationsList',
   component: PublicationsList,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A list of academic publications, each with author details, a title link, journal citation, optional repository link, and export download icons for RIS and BibTeX formats.\n\n[Example page](https://sheffield.ac.uk/mps/people/research-staff/bradley-westwater)',
+      },
+    },
+  },
 };
 
 export default meta;

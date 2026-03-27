@@ -5,6 +5,13 @@ const meta: Meta<typeof NewsIndexHeading> = {
   title: 'Atoms/NewsIndexHeading',
   component: NewsIndexHeading,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A styled h2 heading used on news index pages, always displaying \'News stories\'.\n\n[Example page](https://sheffield.ac.uk/english/news)',
+      },
+    },
+  },
 };
 
 export default meta;

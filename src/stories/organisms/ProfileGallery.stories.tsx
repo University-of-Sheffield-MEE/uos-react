@@ -5,6 +5,13 @@ const meta: Meta<typeof ProfileGallery> = {
   title: 'Organisms/ProfileGallery',
   component: ProfileGallery,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A gallery container displaying a grid of profile cards, each linking to a staff or student profile page.\n\n[Example page](https://sheffield.ac.uk/undergraduate/courses/2026/chemical-engineering-beng)',
+      },
+    },
+  },
 };
 
 export default meta;

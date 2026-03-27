@@ -5,6 +5,13 @@ const meta: Meta<typeof Postnom> = {
   title: 'Atoms/Postnom',
   component: Postnom,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Displays a person\'s post-nominal letters or academic qualifications as a styled paragraph.\n\n[Example page](https://sheffield.ac.uk/mac/people/aerospace-academic-staff/rob-howell)',
+      },
+    },
+  },
 };
 
 export default meta;

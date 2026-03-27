@@ -5,6 +5,13 @@ const meta: Meta<typeof HubHeader> = {
   title: 'Molecules/HubHeader',
   component: HubHeader,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A hub page header banner containing a page title and a lead introduction paragraph.\n\n[Example page](https://sheffield.ac.uk/international/after-you-apply/undergraduate)',
+      },
+    },
+  },
 };
 
 export default meta;

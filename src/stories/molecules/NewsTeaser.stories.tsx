@@ -5,6 +5,13 @@ const meta: Meta<typeof NewsTeaser> = {
   title: 'Molecules/NewsTeaser',
   component: NewsTeaser,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A clickable news article teaser card showing a thumbnail image, headline, summary text, publication date, and optional news source attribution.\n\n[Example page](https://sheffield.ac.uk/healthy-lifespan/research/developing-interventions/healthy-people-healthy-places)',
+      },
+    },
+  },
 };
 
 export default meta;

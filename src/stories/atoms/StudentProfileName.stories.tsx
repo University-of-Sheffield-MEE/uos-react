@@ -5,6 +5,13 @@ const meta: Meta<typeof StudentProfileName> = {
   title: 'Atoms/StudentProfileName',
   component: StudentProfileName,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Drupal Layout Builder block rendering a single student profile text field, used for the student\'s display name.\n\n[Example page](https://sheffield.ac.uk/eee/undergraduate/profiles/romesa)',
+      },
+    },
+  },
 };
 
 export default meta;

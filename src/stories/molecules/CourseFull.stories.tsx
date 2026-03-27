@@ -5,6 +5,13 @@ const meta: Meta<typeof CourseFull> = {
   title: 'Molecules/CourseFull',
   component: CourseFull,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'An info notice banner shown on course pages featuring a leading info icon and variable body content such as a course-full message or custom alert.\n\n[Example page](https://sheffield.ac.uk/postgraduate/taught/courses/2026/human-bioarchaeology-and-osteology-msc)',
+      },
+    },
+  },
 };
 
 export default meta;

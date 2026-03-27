@@ -5,6 +5,13 @@ const meta: Meta<typeof CloseButton> = {
   title: 'Atoms/CloseButton',
   component: CloseButton,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A close/dismiss button for the off-canvas navigation menu, displaying a text label with a multiplication sign.',
+      },
+    },
+  },
 };
 
 export default meta;

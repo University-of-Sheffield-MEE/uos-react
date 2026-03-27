@@ -5,6 +5,13 @@ const meta: Meta<typeof RelLink> = {
   title: 'Atoms/RelLink',
   component: RelLink,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A styled anchor link with a text label and a right-arrow icon, used within quicklinks grids.\n\n[Example page](https://sheffield.ac.uk/alumni/boardroom-masterclass/speakers-2021)',
+      },
+    },
+  },
 };
 
 export default meta;

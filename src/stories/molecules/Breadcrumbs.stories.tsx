@@ -5,6 +5,13 @@ const meta: Meta<typeof Breadcrumbs> = {
   title: 'Molecules/Breadcrumbs',
   component: Breadcrumbs,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Site navigation breadcrumb trail rendered as an ordered list of links showing the current page\'s position in the site hierarchy.',
+      },
+    },
+  },
 };
 
 export default meta;

@@ -5,6 +5,13 @@ const meta: Meta<typeof CourseCard> = {
   title: 'Molecules/CourseCard',
   component: CourseCard,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A course promotion card displaying a course title, award, level, metadata (dates, duration, attendance), and a short description with an arrow link indicator.\n\n[Example page](https://sheffield.ac.uk/smph/modules/smp4154-study-design-and-systematic-review-methods)',
+      },
+    },
+  },
 };
 
 export default meta;

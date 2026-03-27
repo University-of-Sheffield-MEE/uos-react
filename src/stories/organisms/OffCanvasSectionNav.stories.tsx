@@ -5,6 +5,13 @@ const meta: Meta<typeof OffCanvasSectionNav> = {
   title: 'Organisms/OffCanvasSectionNav',
   component: OffCanvasSectionNav,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Left off-canvas section navigation panel showing a section heading and multi-level navigation tree for the current site section.\n\n[Example page](https://sheffield.ac.uk/management/mba/student-and-alumni-insight/mba-blog-archive/mbas-journey-industry-40-key-takeaways-germanys-tech-leaders)',
+      },
+    },
+  },
 };
 
 export default meta;

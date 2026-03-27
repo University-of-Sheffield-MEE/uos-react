@@ -5,6 +5,13 @@ const meta: Meta<typeof EventButton> = {
   title: 'Atoms/EventButton',
   component: EventButton,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'A call-to-action anchor link used on event pages for registration or booking, styled via the .eventbutton container.\n\n[Example page](https://sheffield.ac.uk/ccr/events/ccr-seminar-series-intersecting-trauma-and-justice-violence-against-women-and-families)',
+      },
+    },
+  },
 };
 
 export default meta;

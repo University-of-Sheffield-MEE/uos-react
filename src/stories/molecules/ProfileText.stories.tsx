@@ -5,6 +5,13 @@ const meta: Meta<typeof ProfileText> = {
   title: 'Molecules/ProfileText',
   component: ProfileText,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'An accordion-style definition list that displays a staff member\'s profile text, collapsible via the standalone-accordion pattern.\n\n[Example page](https://sheffield.ac.uk/psychology/people/academic/alon-zivony)',
+      },
+    },
+  },
 };
 
 export default meta;

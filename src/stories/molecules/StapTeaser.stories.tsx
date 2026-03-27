@@ -5,6 +5,13 @@ const meta: Meta<typeof StapTeaser> = {
   title: 'Molecules/StapTeaser',
   component: StapTeaser,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Staff profile teaser card displaying a person\'s name, title, job title, department, contact details, and a linked profile picture with an enlarge-to-modal button.\n\n[Example page](https://sheffield.ac.uk/spir/research/projects)',
+      },
+    },
+  },
 };
 
 export default meta;

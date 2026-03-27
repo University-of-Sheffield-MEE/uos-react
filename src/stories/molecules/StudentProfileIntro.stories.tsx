@@ -5,6 +5,13 @@ const meta: Meta<typeof StudentProfileIntro> = {
   title: 'Molecules/StudentProfileIntro',
   component: StudentProfileIntro,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Drupal layout builder block displaying a student profile introductory paragraph as part of a student profile page.\n\n[Example page](https://sheffield.ac.uk/cmbe/undergraduate/profiles/bradley)',
+      },
+    },
+  },
 };
 
 export default meta;

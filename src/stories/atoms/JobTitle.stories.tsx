@@ -5,6 +5,13 @@ const meta: Meta<typeof JobTitle> = {
   title: 'Atoms/JobTitle',
   component: JobTitle,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Inline text element displaying a staff member\'s job title within a staff profile or teaser.\n\n[Example page](https://sheffield.ac.uk/spir/research/projects)',
+      },
+    },
+  },
 };
 
 export default meta;
