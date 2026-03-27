@@ -3356,7 +3356,9 @@
     },
     ".staffcardindex": {
       "pageCount": 121,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffCardIndex",
+      "atomicType": "organism"
     },
     ".stap-card .deptname": {
       "pageCount": 119,
@@ -3366,7 +3368,9 @@
     },
     ".staffcardindex > div": {
       "pageCount": 114,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffCardIndex",
+      "atomicType": "organism"
     },
     ".staffcardindex > div .stap-card": {
       "pageCount": 113,
@@ -3616,7 +3620,9 @@
     },
     ".staffcardindex.manual > div:nth-of-type(3n)": {
       "pageCount": 72,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StaffCardIndex",
+      "atomicType": "organism"
     },
     "blockquote:not(.uosquote) p": {
       "pageCount": 70,
@@ -6328,6 +6334,16 @@
       "specFile": "specs/StapCard.json",
       "storyFile": "src/stories/molecules/StapCard.stories.tsx",
       "atomicType": "molecule"
+    },
+    "StaffCardIndex": {
+      "selectors": [
+        ".staffcardindex",
+        ".staffcardindex > div",
+        ".staffcardindex.manual > div:nth-of-type(3n)"
+      ],
+      "specFile": "specs/StaffCardIndex.json",
+      "storyFile": "src/stories/organisms/StaffCardIndex.stories.tsx",
+      "atomicType": "organism"
     }
   }
 }
