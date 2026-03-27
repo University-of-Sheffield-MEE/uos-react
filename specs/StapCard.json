@@ -1,0 +1,199 @@
+{
+  "componentName": "StapCard",
+  "atomicType": "molecule",
+  "childComponents": ["StapContact", "ProfilePicModal"],
+  "description": "Staff profile card displaying a staff member's photo (or initials placeholder), name, job title, department, optional description, and contact details.",
+  "rootElement": "div",
+  "rootClassName": "stap-card",
+  "selectorsCovered": [
+    ".stap-card",
+    ".stap-card__info",
+    ".stap-card .summary-text",
+    ".stap-card .summary-text h3",
+    ".stap-card .summary-text a",
+    ".stap-card .profilepic",
+    ".stap-card .profilepic img",
+    ".stap-card .enlarge",
+    ".stap-card .profilepic-modal",
+    ".stap-card .deptname",
+    ".stap-card p",
+    ".stap-card .profileinitials",
+    ".staffcardindex > div .stap-card",
+    ".staffcardindex > div .stap-card a[href^=\"mailto:\"]",
+    ".staffcardindex > div .stap-card .enlarge",
+    ".staffcardindex > div .stap-card .close",
+    ".staffcardindex > div .stap-card .profilepic-modal"
+  ],
+  "props": [
+    {
+      "name": "href",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "a.stretched-link", "attribute": "href" }
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": "> a", "attribute": "aria-label" }
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".stap-card__info h3 a", "attribute": "innerText" }
+    },
+    {
+      "name": "jobTitle",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".jobtitle", "attribute": "innerText" }
+    },
+    {
+      "name": "deptName",
+      "type": "string",
+      "required": true,
+      "mapsTo": { "element": ".deptname", "attribute": "innerText" }
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".stap-card__info a > p", "attribute": "innerText" }
+    },
+    {
+      "name": "imageSrc",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".profilepic img", "attribute": "src" }
+    },
+    {
+      "name": "imageAlt",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".profilepic img", "attribute": "alt" }
+    },
+    {
+      "name": "modalImageSrc",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".profilepic-modal img", "attribute": "src" }
+    },
+    {
+      "name": "profileInitials",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".profileinitials", "attribute": "innerText" }
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".stap-contact dd a[href^=\"mailto:\"]", "attribute": "innerText" }
+    },
+    {
+      "name": "phone",
+      "type": "string",
+      "required": false,
+      "mapsTo": { "element": ".stap-contact .telnum", "attribute": "innerText" }
+    }
+  ],
+  "subcomponents": [],
+  "stories": [
+    {
+      "name": "Default",
+      "description": "Staff card with photo, job title, department, email and phone",
+      "props": {
+        "href": "/smph/people/academic/clinical-medicine/paul-andrew",
+        "ariaLabel": "Profile for Mr Paul Andrew",
+        "name": "Mr Paul Andrew",
+        "jobTitle": "Senior Skin Research Technician",
+        "deptName": "School of Medicine and Population Health",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2024-07/Paul%20Andrew.png?h=81747824&itok=omRu4DmN",
+        "imageAlt": "Paul Andrew",
+        "modalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2024-07/Paul%20Andrew.png?h=81747824&itok=Sjr0jsFr",
+        "email": "Paul.Andrew@sheffield.ac.uk",
+        "phone": "+44 114 215 9539"
+      }
+    },
+    {
+      "name": "WithDescription",
+      "description": "Staff card with an additional research description paragraph",
+      "props": {
+        "href": "/cmbe/people/cbe-academic-staff/stephen-allum",
+        "ariaLabel": "Profile for Mr Stephen Allum",
+        "name": "Mr Stephen Allum",
+        "jobTitle": "Senior University Teacher",
+        "deptName": "School of Chemical, Materials and Biological Engineering",
+        "description": "Process safety | Risk management",
+        "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2019-02/CF3_9479.JPG?h=13e19ea1&itok=2HMsoHS1",
+        "imageAlt": "Steve Allum",
+        "modalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2019-02/CF3_9479.JPG?h=13e19ea1&itok=7nl7atJR",
+        "email": "s.allum@sheffield.ac.uk",
+        "phone": "+44 114 222 9606"
+      }
+    },
+    {
+      "name": "WithInitials",
+      "description": "Staff card where no photo is available and initials are shown instead",
+      "props": {
+        "href": "/staff/r-brown",
+        "ariaLabel": "Profile for R Brown",
+        "name": "R Brown",
+        "jobTitle": "Research Associate",
+        "deptName": "School of Medicine and Population Health",
+        "profileInitials": "R B",
+        "email": "r.brown@sheffield.ac.uk"
+      }
+    },
+    {
+      "name": "Group",
+      "description": "Multiple staff cards in a staffcardindex grid",
+      "container": {
+        "element": "div",
+        "className": "staffcardindex"
+      },
+      "instances": [
+        {
+          "href": "/management/people/academic-staff/mcci/panayiota-alevizou",
+          "ariaLabel": "Profile for Dr Panayiota Alevizou",
+          "name": "Dr Panayiota Alevizou",
+          "jobTitle": "Lecturer in Marketing",
+          "deptName": "Management School",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2023-07/image2%20%281%29.jpeg?h=81f0f1f5&itok=aPZrq_rL",
+          "imageAlt": "Julie Alevizou",
+          "modalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2023-07/image2%20%281%29.jpeg?h=81f0f1f5&itok=MeJ5Wbgo",
+          "email": "P.J.Alevizou@Sheffield.ac.uk",
+          "phone": "+44 114 222 3423"
+        },
+        {
+          "href": "/management/people/academic-staff/omds/erica-ballantyne",
+          "ariaLabel": "Profile for Dr Erica Ballantyne",
+          "name": "Dr Erica Ballantyne",
+          "jobTitle": "Senior Lecturer in Operations and Supply Chain Management",
+          "deptName": "Management School",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2024-12/DSC08446%20%281%29.jpg?h=509e7191&itok=wutf6gfz",
+          "imageAlt": "Erica Ballantyne.",
+          "modalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2024-12/DSC08446%20%281%29.jpg?h=509e7191&itok=PSV2MJyF",
+          "email": "e.e.ballantyne@sheffield.ac.uk",
+          "phone": "+44 114 222 3378"
+        },
+        {
+          "href": "/geography-planning/people/academic-research/dorothea-kleine",
+          "ariaLabel": "Profile for Professor Dorothea Kleine",
+          "name": "Professor Dorothea Kleine",
+          "jobTitle": "Professor of Human Geography and Director of the Institute for Global Sustainable Development",
+          "deptName": "School of Geography and Planning",
+          "description": "Institute of Global Sustainable Development (IGSD) Research Theme Lead: Data and Digital Innovation",
+          "imageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_square_lg_1x/public/2020-05/Kleine_photo_final.jpg?h=cc0a0d2d&itok=vkKxFpaV",
+          "imageAlt": "Dorothea Kleine portrait smiling into camera",
+          "modalImageSrc": "//cdn.sheffield.ac.uk/sites/default/files/styles/profile_modal/public/2020-05/Kleine_photo_final.jpg?h=cc0a0d2d&itok=Gu8pU7tH",
+          "email": "D.J.Kleine@sheffield.ac.uk",
+          "phone": "+44 114 222 7954"
+        }
+      ]
+    }
+  ],
+  "notes": "The profilepic section uses a responsive picture element with multiple source breakpoints. When no photo is available, a div.profileinitials replaces the media--image--figure element, showing the staff member's initials. The enlarge button opens the profilepic-modal; ProfilePicModal handles the modal display. StapContact handles the contact dl. The inner info anchor (linking name to profile) duplicates the outer wrapping anchor — both share the same href. The stretched-link class on the h3 anchor extends the clickable area. The stap-contact dl is always present when contact info exists.",
+  "htmlExamples": ["3742_16723", "3742_4918", "3742_16870", "3742_19243"]
+}

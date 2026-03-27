@@ -3296,23 +3296,33 @@
     },
     ".stap-card__info": {
       "pageCount": 123,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card .summary-text": {
       "pageCount": 123,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card": {
       "pageCount": 123,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card .summary-text h3": {
       "pageCount": 123,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card .summary-text a": {
       "pageCount": 123,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card .jobtitle": {
       "pageCount": 123,
@@ -3322,19 +3332,27 @@
     },
     ".stap-card .profilepic": {
       "pageCount": 122,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card .profilepic img": {
       "pageCount": 122,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card .enlarge": {
       "pageCount": 122,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".stap-card .profilepic-modal": {
       "pageCount": 122,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".staffcardindex": {
       "pageCount": 121,
@@ -3342,7 +3360,9 @@
     },
     ".stap-card .deptname": {
       "pageCount": 119,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".staffcardindex > div": {
       "pageCount": 114,
@@ -3350,23 +3370,33 @@
     },
     ".staffcardindex > div .stap-card": {
       "pageCount": 113,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".staffcardindex > div .stap-card a[href^=\"mailto:\"]": {
       "pageCount": 113,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".staffcardindex > div .stap-card .enlarge": {
       "pageCount": 112,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".staffcardindex > div .stap-card .close": {
       "pageCount": 112,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".staffcardindex > div .stap-card .profilepic-modal": {
       "pageCount": 112,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".callout": {
       "pageCount": 109,
@@ -3484,7 +3514,9 @@
     },
     ".stap-card p": {
       "pageCount": 90,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     "h2 a strong": {
       "pageCount": 87,
@@ -3492,7 +3524,9 @@
     },
     ".stap-card .profileinitials": {
       "pageCount": 86,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "StapCard",
+      "atomicType": "molecule"
     },
     ".newscard figure.imgcapt figcaption": {
       "pageCount": 82,
@@ -6270,6 +6304,30 @@
       "specFile": "specs/NewsIndexHeading.json",
       "storyFile": "src/stories/atoms/NewsIndexHeading.stories.tsx",
       "atomicType": "atom"
+    },
+    "StapCard": {
+      "selectors": [
+        ".stap-card",
+        ".stap-card__info",
+        ".stap-card .summary-text",
+        ".stap-card .summary-text h3",
+        ".stap-card .summary-text a",
+        ".stap-card .profilepic",
+        ".stap-card .profilepic img",
+        ".stap-card .enlarge",
+        ".stap-card .profilepic-modal",
+        ".stap-card .deptname",
+        ".stap-card p",
+        ".stap-card .profileinitials",
+        ".staffcardindex > div .stap-card",
+        ".staffcardindex > div .stap-card a[href^=\"mailto:\"]",
+        ".staffcardindex > div .stap-card .enlarge",
+        ".staffcardindex > div .stap-card .close",
+        ".staffcardindex > div .stap-card .profilepic-modal"
+      ],
+      "specFile": "specs/StapCard.json",
+      "storyFile": "src/stories/molecules/StapCard.stories.tsx",
+      "atomicType": "molecule"
     }
   }
 }
