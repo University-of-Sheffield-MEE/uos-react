@@ -4133,31 +4133,45 @@
     },
     ".event-card-link": {
       "pageCount": 20,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".event-card-link h2 a": {
       "pageCount": 20,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".event-card-link .details": {
       "pageCount": 20,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".event-card-link .field-ev-title": {
       "pageCount": 20,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".event-card-link .event-details": {
       "pageCount": 20,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".event-card-link .link-arrow": {
       "pageCount": 20,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".event-card-link .link-arrow .scarrow": {
       "pageCount": 20,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".groupPubsPublist #my-pubs h3": {
       "pageCount": 17,
@@ -4573,7 +4587,9 @@
     },
     ".event-card-link .ev-time": {
       "pageCount": 5,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EventCardLink",
+      "atomicType": "molecule"
     },
     ".node--type-landing .paragraph--type--para-media-box p": {
       "pageCount": 5,
@@ -6599,6 +6615,21 @@
       ],
       "specFile": "specs/ProfileSliders.json",
       "storyFile": "src/stories/molecules/ProfileSliders.stories.tsx",
+      "atomicType": "molecule"
+    },
+    "EventCardLink": {
+      "selectors": [
+        ".event-card-link",
+        ".event-card-link h2 a",
+        ".event-card-link .details",
+        ".event-card-link .field-ev-title",
+        ".event-card-link .event-details",
+        ".event-card-link .link-arrow",
+        ".event-card-link .link-arrow .scarrow",
+        ".event-card-link .ev-time"
+      ],
+      "specFile": "specs/EventCardLink.json",
+      "storyFile": "src/stories/molecules/EventCardLink.stories.tsx",
       "atomicType": "molecule"
     }
   }
