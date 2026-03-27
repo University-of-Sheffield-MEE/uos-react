@@ -4113,11 +4113,15 @@
     },
     ".ev-link": {
       "pageCount": 25,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EvLink",
+      "atomicType": "atom"
     },
     ".ev-link a": {
       "pageCount": 25,
-      "status": "pending"
+      "status": "done",
+      "implementedBy": "EvLink",
+      "atomicType": "atom"
     },
     "hr.onthispage": {
       "pageCount": 23,
@@ -6654,6 +6658,15 @@
       "specFile": "specs/HomehubTop.json",
       "storyFile": "src/stories/molecules/HomehubTop.stories.tsx",
       "atomicType": "molecule"
+    },
+    "EvLink": {
+      "selectors": [
+        ".ev-link",
+        ".ev-link a"
+      ],
+      "specFile": "specs/EvLink.json",
+      "storyFile": "src/stories/atoms/EvLink.stories.tsx",
+      "atomicType": "atom"
     }
   }
 }
