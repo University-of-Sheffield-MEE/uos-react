@@ -163,6 +163,13 @@ const meta: Meta<typeof NewsTeaser> = {
   title: 'Molecules/NewsTeaser',
   component: NewsTeaser,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Displays a news article teaser with title, summary, and optional image.\n\n[Example page](https://sheffield.ac.uk/news/campus-update)',
+      },
+    },
+  },
 };
 
 export default meta;
@@ -199,6 +206,7 @@ export const Featured: Story = {
 
 - `title` in meta: use the `atomicType` from the spec as the prefix — `'Atoms/<ComponentName>'`, `'Molecules/<ComponentName>'`, `'Layouts/<ComponentName>'`, or `'Organisms/<ComponentName>'`.
 - Always include `tags: ['autodocs']`.
+- Always include `parameters.docs.description.component` in meta. Set it to the `description` field from the ComponentSpec, followed by a newline and a link to the first example URL returned by `--get-sample` (printed on the `url:` line before the HTML). Format: `'<spec description>\n\n[Example page](<url>)'`.
 - Story names must **exactly match** the names in the ComponentSpec `stories` array.
 - Use `args` for all prop values. Do NOT use a `render` function unless the story has an `instances` array.
 - **URLS**: when inclduing URLs from your html snippets, in components or stories (e.g. logos), prefix any URLs without a domain with `https://sheffield.ac.uk/`. (e.g. "/images/report.jpg" → "https://sheffield.ac.uk/images/report.jpg"). Any URLs that already include a domain should be left as-is (e.g. "https://cdn.sheffield.ac.uk/sites/default/files/..." should not be changed).
